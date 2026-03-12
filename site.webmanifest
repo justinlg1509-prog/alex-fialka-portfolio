@@ -1,0 +1,24 @@
+{
+  "name": "Alex Fialka | QHSE & Project Management Consulting",
+  "short_name": "Alex Fialka",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/Logo QARP 4.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "images/Logo QARP 4.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
