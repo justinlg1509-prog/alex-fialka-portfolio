@@ -10,10 +10,10 @@ const translations = {
     "nav-contact": "Contacto",
     "hero-title": "Consultoría QHSE Estratégica para el Sector Marítimo e Industrial",
     "hero-subtitle":
-      "Optimizo sus procesos y reduzco sus riesgos operativos con más de 30 años de experiencia internacional.",
+      "Optimizo sus procesos y reduzco sus riesgos operativos con más de 4 décadas de experiencia internacional.",
     "hero-mission":
       "Soluciones pragmáticas en gestión de riesgos, cumplimiento normativo y sostenibilidad para empresas excelentes.",
-    "hero-value-prop": "Más de 3 décadas liderando la gestión de riesgos en corporaciones globales me permiten ofrecer una visión pragmática y directa. No solo implemento normas; transformo la cultura organizacional para convertir el cumplimiento en una ventaja competitiva rentable.",
+    "hero-value-prop": "Más de 4 décadas liderando la gestión de riesgos en corporaciones globales me permiten ofrecer una visión pragmática y directa. No solo implemento normas; transformo la cultura organizacional para convertir el cumplimiento en una ventaja competitiva rentable.",
     "hero-btn-profile": "Mi Perfil",
     "hero-btn-contact": "Solicitar Consultoría",
     "about-title": "Perfil",
@@ -145,7 +145,7 @@ const translations = {
     "services-provided": "Especialidades",
     "services-tag-consultancy": "Gestión de Consultoría",
     "services-tag-project": "Gestión de Proyectos",
-    "srv-iso-title": "Normas ISO (9001, 14001, 45001)",
+    "srv-iso-title": "Normas ISO (9001, 14001, 45001, 50001)",
     "srv-iso-desc": "Implementación de sistemas de gestión de calidad y medio ambiente que no solo cumplen, sino que optimizan su operación diaria.",
     "srv-esg-title": "Estrategia ESG y Sostenibilidad",
     "srv-esg-desc": "Transformo los criterios ambientales, sociales y de gobernanza en valor tangible para sus accionistas y clientes.",
@@ -158,7 +158,7 @@ const translations = {
     "key-skills-title": "Habilidades Clave",
     "page-title": "Alex Fialka | Consultoría QHSE y Estrategia Industrial B2B",
     "meta-desc":
-      "Consultor experto en QHSE, Riesgos y Sostenibilidad (ISO, ESG, EcoVadis). +30 años de experiencia internacional en sector marítimo. Resultados medibles y ahorro.",
+      "Consultor experto en QHSE, Riesgos y Sostenibilidad (ISO, ESG, EcoVadis). +40 años de experiencia internacional en sector marítimo. Resultados medibles y ahorro.",
     "meta-keywords":
       "Consultoría QHSE, Gestión de Riesgos B2B, Auditoría ISO Almería, Sostenibilidad Industrial, Experto en EcoVadis España, Seguridad Industrial, Project Management Marítimo, Cómo mejorar el ranking EcoVadis",
     "og-title": "Alex Fialka | Consultoría Estratégica QHSE",
@@ -308,10 +308,10 @@ const translations = {
     "nav-contact": "Contact",
     "hero-title": "Strategic QHSE Consulting for Maritime and Industrial Sectors",
     "hero-subtitle":
-      "Optimizing your processes and reducing operational risks with over 30 years of international experience.",
+      "Optimizing your processes and reducing operational risks with over 4 decades of international experience.",
     "hero-mission":
       "Pragmatic solutions in risk management, regulatory compliance, and sustainability for excellent companies.",
-    "hero-value-prop": "Over 3 decades leading risk management in global corporations allows me to offer a pragmatic and direct vision. I don't just implement standards; I transform organizational culture to turn compliance into a profitable competitive advantage.",
+    "hero-value-prop": "Over 4 decades leading risk management in global corporations allows me to offer a pragmatic and direct vision. I don't just implement standards; I transform organizational culture to turn compliance into a profitable competitive advantage.",
     "hero-btn-profile": "My Profile",
     "hero-btn-contact": "Request Consulting",
     "about-title": "Profile",
@@ -454,7 +454,7 @@ const translations = {
     "services-provided": "Specialties",
     "services-tag-consultancy": "Management Consulting",
     "services-tag-project": "Project Management",
-    "srv-iso-title": "ISO Standards (9001, 14001, 45001)",
+    "srv-iso-title": "ISO Standards (9001, 14001, 45001, 50001)",
     "srv-iso-desc": "Implementation of quality and environmental management systems that not only comply but optimize your daily operation.",
     "srv-esg-title": "ESG Strategy and Sustainability",
     "srv-esg-desc": "I transform environmental, social, and governance criteria into tangible value for your stakeholders and customers.",
@@ -493,7 +493,7 @@ const translations = {
     "skill-mgmt-consult": "Management Consulting",
     "page-title": "Alex Fialka | QHSE Consulting & Industrial Strategy B2B",
     "meta-desc":
-      "Expert QHSE, Risk, and Sustainability consultant (ISO, ESG, EcoVadis). +30 years of international maritime experience. Measurable results and savings.",
+      "Expert QHSE, Risk, and Sustainability consultant (ISO, ESG, EcoVadis). +40 years of international maritime experience. Measurable results and savings.",
     "meta-keywords":
       "QHSE Consulting, B2B Risk Management, ISO Audit, Industrial Sustainability, Maritime Consultant, EcoVadis Spain, Industrial Safety",
     "og-title": "Alex Fialka | Professional QHSE Consulting",
@@ -593,9 +593,9 @@ const translations = {
     "nav-faq": "FAQ",
     "nav-contact": "Contact",
     "hero-title": "Strategische QHSE-consultancy voor de maritieme en industriële sector",
-    "hero-subtitle": "Ik optimaliseer uw processen en reduceer uw operationele risico's met meer dan 30 jaar internationale ervaring.",
+    "hero-subtitle": "Ik optimaliseer uw processen en reduceer uw operationele risico's met meer dan 4 decennia internationale ervaring.",
     "hero-mission": "Pragmatische oplossingen op het gebied van risicomanagement, naleving van regelgeving en duurzaamheid voor excellente bedrijven.",
-    "hero-value-prop": "Met meer dan 3 decennia ervaring in risicobeheer bij wereldwijde concerns bied ik een pragmatische en directe visie. Ik implementeer niet alleen normen; ik transformeer de organisatiecultuur om compliance om te zetten in een winstgevend concurrentievoordeel.",
+    "hero-value-prop": "Met meer dan 4 decennia ervaring in risicobeheer bij wereldwijde concerns bied ik een pragmatische en directe visie. Ik implementeer niet alleen normen; ik transformeer de organisatiecultuur om compliance om te zetten in een winstgevend concurrentievoordeel.",
     "hero-btn-profile": "Mijn Profiel",
     "hero-btn-contact": "Vraag Consultancy Aan",
     "success-title": "Successverhalen",
@@ -608,7 +608,7 @@ const translations = {
     "success-3-desc": "<strong>Situatie:</strong> Lange doorlooptijden en gebrek aan verbinding tussen QHSE en operaties.<br><strong>Actie:</strong> Leiderschap bij Lean Manufacturing integratie en standaardisatie van QA/HSE processen.<br><strong>Resultaat:</strong> Drastische verkorting van levertijden en verbetering van de operationele veiligheidscultuur.",
     "services-availability": "Internationaal Bereik",
     "services-avail-detail": "Specialist met wereldwijde mobiliteit. Externe consultancy door heel Europa en on-site diensten bij industriële en havenfaciliteiten over het hele continent.",
-    "srv-iso-title": "ISO-normen (9001, 14001, 45001)",
+    "srv-iso-title": "ISO-normen (9001, 14001, 45001, 50001)",
     "srv-iso-desc": "Implementatie van kwaliteits- en milieumanagementsystemen die niet alleen voldoen, maar ook uw dagelijkse werkzaamheden optimaliseren.",
     "srv-esg-title": "ESG-strategie en Duurzaamheid",
     "srv-esg-desc": "Ik vertaal milieu-, sociale en governancecriteria naar tastbare waarde voor uw aandeelhouders en klanten.",
@@ -654,7 +654,7 @@ const translations = {
     "skill-mgmt-consult": "Management Consultancy",
     "page-title": "Alex Fialka | QHSE Consulting & Industrial Strategy B2B",
     "meta-desc":
-      "Expert QHSE, Risicomanagement en Projectmanagement consultancy door Alex Fialka. Meer dan 30 jaar internationale ervaring in ISO-normen en duurzaamheid.",
+      "Expert QHSE, Risicomanagement en Projectmanagement consultancy door Alex Fialka. Meer dan 40 jaar internationale ervaring in ISO-normen en duurzaamheid.",
     "meta-keywords":
       "Alex Fialka, QHSE, Almería, Consultancy Almería, ISO 9001, ISO 14001, Risicomanagement, Projectmanagement, Duurzaamheid, Industriële Consultancy",
     "og-title": "Alex Fialka | Professionele QHSE Consultancy",
