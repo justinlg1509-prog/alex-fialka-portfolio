@@ -6,14 +6,16 @@ const translations = {
     "nav-skills": "Habilidades",
     "nav-experience": "Experiencia",
     "nav-development": "Desarrollo",
+    "nav-faq": "Preguntas",
     "nav-contact": "Contacto",
-    "hero-title": "Alex Fialka",
+    "hero-title": "Consultoría QHSE Estratégica para el Sector Marítimo e Industrial",
     "hero-subtitle":
-      "Profesional en Reestructuración de la organización empresarial",
+      "Optimizo sus procesos y reduzco sus riesgos operativos con más de 30 años de experiencia internacional.",
     "hero-mission":
-      '"Garantizar la máxima concienciación sobre la gestión de seguridad y calidad en las organizaciones."',
-    "hero-btn-profile": "Perfil",
-    "hero-btn-contact": "Contactar",
+      "Soluciones pragmáticas en gestión de riesgos, cumplimiento normativo y sostenibilidad para empresas excelentes.",
+    "hero-value-prop": "Más de 3 décadas liderando la gestión de riesgos en corporaciones globales me permiten ofrecer una visión pragmática y directa. No solo implemento normas; transformo la cultura organizacional para convertir el cumplimiento en una ventaja competitiva rentable.",
+    "hero-btn-profile": "Mi Perfil",
+    "hero-btn-contact": "Solicitar Consultoría",
     "about-title": "Perfil",
     "about-p1":
       "Soy un profesional de QHSE orientado a resultados (Grado en Administración de Empresas). Se me conoce como un gestor de personas versátil y coach de alto rendimiento, capaz de traducir problemas complejos de forma clara y pragmática en una estructura sencilla para la organización.",
@@ -113,6 +115,14 @@ const translations = {
       "Enfoque en concienciación de calidad, evaluaciones económicas e investigación de fraudes.",
     "exp-more":
       'Historial completo disponible en <a href="https://nl.linkedin.com/in/Alex Fialka" target="_blank" class="linkedin-link">LinkedIn</a>.',
+    "success-title": "Casos de Éxito",
+    "success-1-val": "Situación → Acción → Resultado",
+    "success-1-title": "Optimización de Riesgos Financieros",
+    "success-1-desc": "<strong>Situación:</strong> Elevados costes en primas de seguros y falta de gestión de riesgos estructurada.<br><strong>Acción:</strong> Implementación de un marco integral de gestión de riesgos y renegociación estratégica de pólizas.<br><strong>Resultado:</strong> Ahorro inicial del 20% en primas ($1.5M USD) y blindaje de activos por valor de $495M.",
+    "success-2-title": "Reestructuración de Cartera de Seguros",
+    "success-2-desc": "<strong>Situación:</strong> Cartera de seguros ineficiente y costes de reclamaciones fuera de control.<br><strong>Acción:</strong> Reestructuración integral de la cartera y optimización de procesos de inversión en proyectos.<br><strong>Resultado:</strong> Ahorro certificado del 64% ($1.3M USD) y gestión de reparaciones críticas bajo presupuesto.",
+    "success-3-title": "Integración de Lean Manufacturing",
+    "success-3-desc": "<strong>Situación:</strong> Tiempos de producción elevados y desconexión entre QHSE y operaciones.<br><strong>Acción:</strong> Liderazgo en la integración de Lean Manufacturing y estandarización de procesos QA/HSE.<br><strong>Resultado:</strong> Reducción drástica de tiempos de entrega y mejora en la cultura de seguridad operativa.",
     "dev-title": "Desarrollo Profesional",
     "dev-cat-1": "Gestión",
     "dev-cat-2": "QHSE",
@@ -126,24 +136,34 @@ const translations = {
     "footer-contact-title": "Contacto",
     "footer-rights": "Todos los derechos reservados.",
     "nav-services": "Servicios",
-    "services-title": "Servicios de Consultoría",
-    "services-availability": "Disponibilidad",
+    "services-title": "Servicios de Consultoría QHSE",
+    "services-availability": "Alcance Internacional",
     "services-avail-detail":
-      "Remoto o en persona (Área Metropolitana de Almería)",
+      "Especialista con movilidad global. Consultoría remota para toda Europa y servicios presenciales en instalaciones industriales y portuarias de todo el continente.",
     "services-pricing": "Precios",
     "services-price-detail": "A partir de 150,00 €/h",
-    "services-provided": "Servicios prestados",
+    "services-provided": "Especialidades",
     "services-tag-consultancy": "Gestión de Consultoría",
-    "services-tag-project": "Gestión de Proyectos",
+    "services-tag-project": "Gestión de Proyectos",
+    "srv-iso-title": "Normas ISO (9001, 14001, 45001)",
+    "srv-iso-desc": "Implementación de sistemas de gestión de calidad y medio ambiente que no solo cumplen, sino que optimizan su operación diaria.",
+    "srv-esg-title": "Estrategia ESG y Sostenibilidad",
+    "srv-esg-desc": "Transformo los criterios ambientales, sociales y de gobernanza en valor tangible para sus accionistas y clientes.",
+    "srv-ecovadis-title": "Certificación EcoVadis",
+    "srv-ecovadis-desc": "Acompañamiento experto para mejorar su calificación de sostenibilidad y acceder a nuevos mercados internacionales.",
+    "srv-scc-title": "SCC / VCA y Seguridad",
+    "srv-scc-desc": "Garantizo los más altos estándares de seguridad industrial para contratistas y empresas del sector técnico.",
+    "srv-ets-title": "Comercio de Emisiones (ETS)",
+    "srv-ets-desc": "Gestión estratégica de derechos de emisión para minimizar el impacto económico de las normativas ambientales.",
     "key-skills-title": "Habilidades Clave",
-    "page-title": "Alex Fialka | Consultoría en QHSE y Gestión de Proyectos",
+    "page-title": "Alex Fialka | Consultoría QHSE y Estrategia Industrial B2B",
     "meta-desc":
-      "Consultoría experta en QHSE, Gestión de Riesgos y Gestión de Proyectos por Alex Fialka. Más de 30 años de experiencia internacional liderando estándares ISO y sostenibilidad.",
+      "Consultor experto en QHSE, Riesgos y Sostenibilidad (ISO, ESG, EcoVadis). +30 años de experiencia internacional en sector marítimo. Resultados medibles y ahorro.",
     "meta-keywords":
-      "Alex Fialka, QHSE, Almería, Consultoría Almería, ISO 9001, ISO 14001, Gestión de Riesgos, Gestión de Proyectos, Sostenibilidad, Consultoría Industrial",
-    "og-title": "Alex Fialka | Consultoría Profesional en QHSE",
+      "Consultoría QHSE, Gestión de Riesgos B2B, Auditoría ISO Almería, Sostenibilidad Industrial, Experto en EcoVadis España, Seguridad Industrial, Project Management Marítimo, Cómo mejorar el ranking EcoVadis",
+    "og-title": "Alex Fialka | Consultoría Estratégica QHSE",
     "og-desc":
-      "Especialista en QHSE, Riesgos y Proyectos con visión global. Soluciones pragmáticas para empresas excelentes.",
+      "Especialista en QHSE y Riesgos con visión global. Optimización de procesos y cumplimiento normativo para empresas excelentes.",
     "lang-es-short": "ES",
     "lang-en-short": "EN",
     "lang-nl-short": "NL",
@@ -267,6 +287,15 @@ const translations = {
       "Usted puede eliminar los datos guardados en el almacenamiento local en cualquier momento a través de la configuración de su navegador. Tenga en cuenta que si elimina esta información, sus preferencias de idioma se restablecerán a los valores predeterminados la próxima vez que visite la web.",
     "footer-dev": "Web desarrollada por",
     "dev-name": "Justin Manuel Lantigua Germosen",
+    "faq-title": "Preguntas Frecuentes (FAQ)",
+    "faq-q1": "¿Qué es la gestión QHSE y por qué es importante?",
+    "faq-a1": "QHSE (Quality, Health, Safety, Environment) es la disciplina que garantiza que las organizaciones operen bajo estándares de calidad, seguridad y respeto al medio ambiente. Es fundamental para reducir riesgos legales, mejorar la eficiencia operativa y motivar a los empleados bajo un marco de mejora continua.",
+    "faq-q2": "¿Cómo puede ayudar una consultoría ISO a mi empresa en Almería?",
+    "faq-a2": "Implementar normas como ISO 9001 o 14001 en empresas de Almería permite profesionalizar la gestión, acceder a contratos públicos y privados más exigentes, y optimizar el uso de recursos, lo cual es crítico en el entorno industrial y agrícola de la región.",
+    "faq-q3": "¿Alex Fialka trabaja de forma remota o presencial?",
+    "faq-a3": "Ofrezco una flexibilidad total. Puedo trabajar de forma 100% remota utilizando herramientas colaborativas o desplazarme a sus instalaciones en Almerimar, El Ejido y toda la provincia de Almería para una consultoría más directa y personal.",
+    "faq-q4": "¿Qué sectores industriales cubre su consultoría?",
+    "faq-a4": "Mi trayectoria abarca sectores complejos como el marítimo (shipping), offshore, energías, logística internacional y procesos industriales de manufactura. Mi enfoque es adaptable a cualquier organización que busque excelencia operativa.",
   },
   en: {
     "nav-home": "Home",
@@ -275,13 +304,16 @@ const translations = {
     "nav-skills": "Skills",
     "nav-experience": "Experience",
     "nav-development": "Development",
+    "nav-faq": "FAQ",
     "nav-contact": "Contact",
-    "hero-title": "Alex Fialka",
-    "hero-subtitle": "Professional in Business Organization Restructuring",
+    "hero-title": "Strategic QHSE Consulting for Maritime and Industrial Sectors",
+    "hero-subtitle":
+      "Optimizing your processes and reducing operational risks with over 30 years of international experience.",
     "hero-mission":
-      '"Ensure maximum awareness of safety and quality management within organizations."',
-    "hero-btn-profile": "Profile",
-    "hero-btn-contact": "Contact Me",
+      "Pragmatic solutions in risk management, regulatory compliance, and sustainability for excellent companies.",
+    "hero-value-prop": "Over 3 decades leading risk management in global corporations allows me to offer a pragmatic and direct vision. I don't just implement standards; I transform organizational culture to turn compliance into a profitable competitive advantage.",
+    "hero-btn-profile": "My Profile",
+    "hero-btn-contact": "Request Consulting",
     "about-title": "Profile",
     "about-p1":
       "I am a results-oriented QHSE professional (Bachelor Business Administration). I am known as a top-producing versatile people manager and coach who is able to translate complex issues clear and pragmatic into a simple structured manner.",
@@ -381,6 +413,14 @@ const translations = {
       "Quality awareness, economical evaluations, fraud examination and investigation.",
     "exp-more":
       'Full track record found on <a href="https://nl.linkedin.com/in/Alex Fialka" target="_blank" class="linkedin-link">LinkedIn</a>.',
+    "success-title": "Success Stories",
+    "success-1-val": "Situation → Action → Result",
+    "success-1-title": "Financial Risk Optimization",
+    "success-1-desc": "<strong>Situation:</strong> High insurance premium costs and lack of structured risk management.<br><strong>Action:</strong> Implementation of a comprehensive risk management framework and strategic policy renegotiation.<br><strong>Result:</strong> Initial 20% premium savings ($1.5M USD) and protection of assets worth $495M.",
+    "success-2-title": "Insurance Portfolio Restructuring",
+    "success-2-desc": "<strong>Situation:</strong> Inefficient insurance portfolio and out-of-control claims costs.<br><strong>Action:</strong> Integral restructuring of the portfolio and optimization of project investment processes.<br><strong>Result:</strong> Certified 64% saving ($1.3M USD) and management of critical repairs within budget.",
+    "success-3-title": "Lean Manufacturing Integration",
+    "success-3-desc": "<strong>Situation:</strong> High production lead times and disconnection between QHSE and operations.<br><strong>Action:</strong> Leadership in Lean Manufacturing integration and standardization of QA/HSE processes.<br><strong>Result:</strong> Drastic reduction in delivery times and improvement in operational safety culture.",
     "dev-title": "Professional Development",
     "dev-cat-1": "Management",
     "dev-cat-2": "QHSE",
@@ -405,15 +445,25 @@ const translations = {
     "footer-contact-title": "Contact",
     "footer-rights": "All rights reserved.",
     "nav-services": "Services",
-    "services-title": "Consultancy Services",
-    "services-availability": "Availability",
+    "services-title": "QHSE Consulting Services",
+    "services-availability": "International Scope",
     "services-avail-detail":
-      "Remote or in person (Greater Almería Metropolitan Area)",
+      "Specialist with global mobility. Remote consulting across Europe and on-site services at industrial and port facilities throughout the continent.",
     "services-pricing": "Pricing",
     "services-price-detail": "Starting at €150.00/hr",
-    "services-provided": "Services provided",
+    "services-provided": "Specialties",
     "services-tag-consultancy": "Management Consulting",
     "services-tag-project": "Project Management",
+    "srv-iso-title": "ISO Standards (9001, 14001, 45001)",
+    "srv-iso-desc": "Implementation of quality and environmental management systems that not only comply but optimize your daily operation.",
+    "srv-esg-title": "ESG Strategy and Sustainability",
+    "srv-esg-desc": "I transform environmental, social, and governance criteria into tangible value for your stakeholders and customers.",
+    "srv-ecovadis-title": "EcoVadis Certification",
+    "srv-ecovadis-desc": "Expert guidance to improve your sustainability rating and access new international markets.",
+    "srv-scc-title": "SCC / VCA and Safety",
+    "srv-scc-desc": "I ensure the highest industrial safety standards for contractors and companies in the technical sector.",
+    "srv-ets-title": "Emissions Trading (ETS)",
+    "srv-ets-desc": "Strategic management of emission rights to minimize the economic impact of environmental regulations.",
     "key-skills-title": "Key Skills",
     "skill-procurement": "Procurement",
     "skill-ops-mgmt": "Operations Management",
@@ -441,11 +491,11 @@ const translations = {
     "skill-shipping": "International Shipping",
     "skill-maritime-ops": "Maritime Operations",
     "skill-mgmt-consult": "Management Consulting",
-    "page-title": "Alex Fialka | QHSE & Project Management Consulting",
+    "page-title": "Alex Fialka | QHSE Consulting & Industrial Strategy B2B",
     "meta-desc":
-      "Expert QHSE, Risk Management, and Project Management consulting by Alex Fialka. Over 30 years of international experience leading ISO standards and sustainability.",
+      "Expert QHSE, Risk, and Sustainability consultant (ISO, ESG, EcoVadis). +30 years of international maritime experience. Measurable results and savings.",
     "meta-keywords":
-      "Alex Fialka, QHSE, Almería, Consulting Almería, ISO 9001, ISO 14001, Risk Management, Project Management, Sustainability, Industrial Consulting",
+      "QHSE Consulting, B2B Risk Management, ISO Audit, Industrial Sustainability, Maritime Consultant, EcoVadis Spain, Industrial Safety",
     "og-title": "Alex Fialka | Professional QHSE Consulting",
     "og-desc":
       "QHSE, Risk, and Project specialist with a global vision. Pragmatic solutions for excellent companies.",
@@ -523,6 +573,15 @@ const translations = {
       "You can delete the data saved in local storage at any time through your browser settings. Please note that if you delete this information, your language preferences will be reset to default values the next time you visit the website.",
     "footer-dev": "Website developed by",
     "dev-name": "Justin Manuel Lantigua Germosen",
+    "faq-title": "Frequently Asked Questions (FAQ)",
+    "faq-q1": "What is QHSE management and why is it important?",
+    "faq-a1": "QHSE (Quality, Health, Safety, Environment) is the discipline that ensures organizations operate under standards of quality, safety, and environmental respect. It is essential to reduce legal risks, improve operational efficiency, and motivate employees within a continuous improvement framework.",
+    "faq-q2": "How can an ISO consultancy help my company in Almería?",
+    "faq-a2": "Implementing standards like ISO 9001 or 14001 in Almería companies allows for professionalizing management, accessing more demanding public and private contracts, and optimizing resource use, which is critical in the region's industrial and agricultural environment.",
+    "faq-q3": "Does Alex Fialka work remotely or in person?",
+    "faq-a3": "I offer total flexibility. I can work 100% remotely using collaborative tools or travel to your facilities in Almerimar, El Ejido, and throughout the province of Almería for a more direct and personal consultancy.",
+    "faq-q4": "Which industrial sectors does your consultancy cover?",
+    "faq-a4": "My career spans complex sectors such as maritime (shipping), offshore, energy, international logistics, and industrial manufacturing processes. My approach is adaptable to any organization seeking operational excellence.",
   },
   nl: {
     "nav-home": "Home",
@@ -531,144 +590,41 @@ const translations = {
     "nav-skills": "Vaardigheden",
     "nav-experience": "Ervaring",
     "nav-development": "Ontwikkeling",
+    "nav-faq": "FAQ",
     "nav-contact": "Contact",
-    "hero-title": "Alex Fialka",
-    "hero-subtitle": "Professional in bedrijfsherstructurering",
-    "hero-mission":
-      '"Zorg voor maximale bewustwording van veiligheids- en kwaliteitsmanagement binnen organisaties."',
-    "hero-btn-profile": "Profiel",
-    "hero-btn-contact": "Contact mij",
-    "about-title": "Profiel",
-    "about-p1":
-      "Ik ben een resultaatgerichte QHSE-professional (Bachelor Bedrijfskunde). Ik sta bekend als een veelzijdige people manager en coach die complexe vraagstukken helder en pragmatisch kan vertalen.",
-    "about-p2":
-      "Een ervaren professional met een bewezen staat van dienst in procesverbetering en verandermanagement.",
-    "about-mission-title": "Mijn Persoonlijke Missie",
-    "about-mission-text":
-      "Zorg voor maximale bewustwording van veiligheids- en kwaliteitsmanagement binnen organisaties en verhoog de motivatie. Ik beschouw respect en waarden als sleutelelementen voor succes.",
-    "comp-title": "Competenties",
-    "comp-1": "Pragmatisch en resultaatgericht",
-    "comp-2": "Betrouwbaar en communicatief",
-    "comp-3": "Flexibel en gemotiveerd",
-    "comp-4": "Organisator met helikopterview",
-    "comp-5": "Analytisch en probleemoplossend",
-    "comp-6": "Besluitvaardig proactief gedreven",
-    "comp-7": "Rationeel en innovatief",
-    "comp-8": "Bottom line gericht",
-    "skills-title": "Vaardigheden & Expertise",
-    "skill-cat-1": "QHSE Management",
-    "skill-cat-2": "Proces & Verandering",
-    "skill-cat-3": "Bedrijfskunde",
-    "skill-cat-4": "Talen",
-    "skill-1-1": "Veiligheids- en kwaliteitsmanagement",
-    "skill-1-2": "QA en HSE (ISO 9001/14001, EN, ASTM, OHSAS)",
-    "skill-1-3": "Lean Manufacturing / S5 / 8D",
-    "skill-1-4": "TMSA, EBIS, SIRE, ISM, ISPS",
-    "skill-1-5": "Certificering en continue verbetering",
-    "skill-2-1": "Verandermanagement",
-    "skill-2-2": "Ontwikkeling en implementatie van managementsystemen",
-    "skill-2-3": "Risicomanagement / beoordelingen (RI&E, HAZOP, FMEA, LMRA)",
-    "skill-2-4": "Interne en externe audits",
-    "skill-3-1": "Financiën en bedrijfsvoering (SAP, IFS)",
-    "skill-3-2": "Inkoop- en logistiek management",
-    "skill-3-3": "Project- en contractmanagement",
-    "skill-3-4": "Analytisch en probleemoplossend",
-    "lang-nl": "Nederlands",
-    "lang-en": "Engels",
-    "lang-fr": "Frans",
-    "lang-de": "Duits",
-    "lang-mt": "(Moedertaal)",
-    "lang-f": "(Vloeiend)",
-    "lang-d": "(Voldoende vaardigheid)",
-    "exp-title": "Werkervaring",
-    "exp-1-title": "Groep QHSE Manager",
-    "exp-1-company": "Vertom BV, Rotterdam",
-    "exp-1-desc1":
-      "Staflid verantwoordelijk voor kwaliteit, gezondheid, milieu, risico en veiligheid. Eindverantwoordelijk voor QHSE voor zeven divisies met circa 60 werkmaatschappijen.",
-    "exp-1-desc2":
-      "Implementatie en beheer van een integraal managementsysteem dat alle zakelijke disciplines bestrijkt, resulterend in een gestructureerde organisatie, verbeterde processen en standaardisatie.",
-    "exp-2-title": "Risk Manager",
-    "exp-2-company": "Flinter Ship Management, Barendrecht",
-    "exp-2-desc1":
-      "MT-lid verantwoordelijk voor risicomanagement ter bescherming van de organisatie, activa en belangen van belanghebbenden met budgetverantwoordelijkheid voor verzekeringen en aansprakelijkheid ($495 M USD).",
-    "exp-2-desc2":
-      "Initiële premiebesparing van 20% ($1.5 M USD) bereikt en verandermanagementprocessen geïnitieerd.",
-    "exp-3-title": "Quality Assurance Manager",
-    "exp-3-company": "Heerema Fabrication Group, Zwijndrecht",
-    "exp-3-desc1":
-      "Verantwoordelijk voor kwaliteits-, gezondheids-, milieu- en veiligheidsmanagement, en gedeelde verantwoordelijkheid voor contractmanagement voor de firma Grootint.",
-    "exp-3-desc2":
-      "Leidde de integratie van Lean Manufacturing, wat resulteerde in een verkorte productiedoorlooptijd.",
-    "exp-4-title": "Senior Consultant",
-    "exp-4-company": "QARP Process Development, Tilburg",
-    "exp-4-desc1":
-      "Consultancy in inkoop, logistiek, procesverbetering en verandermanagementprojecten.",
-    "exp-4-desc2":
-      "Ontwikkeling van het geïntegreerde intranetbeheersysteem QARP, gekenmerkt door eenvoud, structuur en stabiliteit.",
-    "exp-5-title": "Purchase & Fleet Logistics Manager",
-    "exp-5-company": "Dockwise B.V., Breda",
-    "exp-5-desc1":
-      "Verantwoordelijk voor contractbeheer, inkoop ($120M USD/j), logistiek en wereldwijde agentschapoperaties (700 leveranciers/300 havenagenten).",
-    "exp-5-desc2":
-      "Professionaliseerde de inkoopafdeling en ontwikkelde softwareapplicaties die de efficiëntie verbeterden en kosten met 20% verlaagden.",
-    "exp-6-title": "Insurance & Claims Manager",
-    "exp-6-company": "Anthony Veder Group N.V., Rotterdam",
-    "exp-6-desc1":
-      "Verantwoordelijk voor verzekeringsportefeuille ($300M USD), schadebeheer en kosteninvesteringen in internationale projecten.",
-    "exp-6-desc2":
-      "Herstructureerde de portefeuille en behaalde een besparing van 64% ($1.3M USD). Beheerde grote reparaties en droogdokken binnen budget.",
-    "exp-7-title": "Operations Manager",
-    "exp-7-company": "Workships Group B.V., Rotterdam",
-    "exp-7-desc1":
-      "Bestuurslid (Netcon B.V.) budgetverantwoordelijk voor de exploitatie van twee containerschepen, inclusief financiën en ship management.",
-    "exp-7-desc2":
-      "Behaalde een stijging van het inkomen met 15% en een vermindering van de operationele kosten met 30%.",
-    "exp-8-title": "Financial Manager",
-    "exp-8-company": "Dammers van der Heide (Genag) B.V., Rotterdam",
-    "exp-8-desc1":
-      "Verantwoordelijk voor financiën inclusief toezicht op boekhouding, payroll, documentatie, douane en ICT.",
-    "exp-8-desc2":
-      "Herstructureerde de interne organisatie en verbeterde de prestaties van de afdelingen.",
-    "exp-9-title": "Manager Finance (Meerdere disciplines)",
-    "exp-9-company": "Sealand Service Inc. Maersk Line, Rotterdam",
-    "exp-9-desc1":
-      "Diverse managementfuncties in Europa, het Midden- en Verre Oosten. Focus op credit & risk management, efficiëntiebeoordelingen en auditing.",
-    "exp-9-desc2":
-      "Kwaliteitsbewustzijn, economische evaluaties en fraudeonderzoek.",
-    "exp-more":
-      'Volledige staat van dienst op <a href="https://nl.linkedin.com/in/Alex Fialka" target="_blank" class="linkedin-link">LinkedIn</a>.',
-    "dev-title": "Professionele Ontwikkeling",
-    "dev-cat-1": "Management",
-    "dev-cat-2": "QHSE",
-    "dev-cat-3": "Risicomanagement",
-    "dev-cat-4": "Projectmanagement",
-    "dev-1-1": "Cursus Algemeen Management (1987)",
-    "dev-1-2": "Bedrijfskunde (1987)",
-    "dev-2-1": "Manual Master (2005)",
-    "dev-2-2": "ISM Code (1992)",
-    "dev-2-3": "Kwaliteitsmanagementsystemen (1987)",
-    "dev-2-4": "Audittechnieken (1998)",
-    "dev-3-1": "Maritieme Verzekeringen (1995)",
-    "dev-3-2": "Aansprakelijkheid en Verzekeringen (1994)",
-    "dev-3-3": "Principes van Risicomanagement (1995)",
-    "dev-4-1": "Prince2 Practitioner (2004)",
-    "dev-4-2": "Prince2 Foundation (2004)",
-    "contact-title": "Neem Contact Op",
-    "contact-desc":
-      "Neem gerust contact op voor professionele vragen of samenwerkingen.",
-    "contact-loc": "Almerimar, Spanje",
-    "footer-links-title": "Snelle Links",
-    "footer-contact-title": "Contact",
-    "footer-rights": "Alle rechten voorbehouden.",
-    "nav-services": "Diensten",
-    "services-title": "Consultancy Diensten",
-    "services-availability": "Beschikbaarheid",
-    "services-avail-detail": "Op afstand of in persoon (Regio Almería)",
+    "hero-title": "Strategische QHSE-consultancy voor de maritieme en industriële sector",
+    "hero-subtitle": "Ik optimaliseer uw processen en reduceer uw operationele risico's met meer dan 30 jaar internationale ervaring.",
+    "hero-mission": "Pragmatische oplossingen op het gebied van risicomanagement, naleving van regelgeving en duurzaamheid voor excellente bedrijven.",
+    "hero-value-prop": "Met meer dan 3 decennia ervaring in risicobeheer bij wereldwijde concerns bied ik een pragmatische en directe visie. Ik implementeer niet alleen normen; ik transformeer de organisatiecultuur om compliance om te zetten in een winstgevend concurrentievoordeel.",
+    "hero-btn-profile": "Mijn Profiel",
+    "hero-btn-contact": "Vraag Consultancy Aan",
+    "success-title": "Successverhalen",
+    "success-1-val": "Situatie → Actie → Resultaat",
+    "success-1-title": "Financiële Risico-optimalisatie",
+    "success-1-desc": "<strong>Situatie:</strong> Hoge verzekeringspremies en gebrek aan gestructureerd risicomanagement.<br><strong>Actie:</strong> Implementatie van een integraal risicobeheerkader en strategische heronderhandeling van polissen.<br><strong>Resultaat:</strong> Initiële premiebesparing van 20% ($1.5M USD) en beveiliging van activa t.w.v. $495M.",
+    "success-2-title": "Herstructurering Verzekeringsportefeuille",
+    "success-2-desc": "<strong>Situatie:</strong> Inefficiënte verzekeringsportefeuille en onbeheersbare schadekosten.<br><strong>Actie:</strong> Integrale herstructurering van de portefeuille en optimalisatie van investeringsprocessen in projecten.<br><strong>Resultaat:</strong> Gecertificeerde besparing van 64% ($1.3M USD) en beheer van kritieke reparaties binnen budget.",
+    "success-3-title": "Integratie Lean Manufacturing",
+    "success-3-desc": "<strong>Situatie:</strong> Lange doorlooptijden en gebrek aan verbinding tussen QHSE en operaties.<br><strong>Actie:</strong> Leiderschap bij Lean Manufacturing integratie en standaardisatie van QA/HSE processen.<br><strong>Resultaat:</strong> Drastische verkorting van levertijden en verbetering van de operationele veiligheidscultuur.",
+    "services-availability": "Internationaal Bereik",
+    "services-avail-detail": "Specialist met wereldwijde mobiliteit. Externe consultancy door heel Europa en on-site diensten bij industriële en havenfaciliteiten over het hele continent.",
+    "srv-iso-title": "ISO-normen (9001, 14001, 45001)",
+    "srv-iso-desc": "Implementatie van kwaliteits- en milieumanagementsystemen die niet alleen voldoen, maar ook uw dagelijkse werkzaamheden optimaliseren.",
+    "srv-esg-title": "ESG-strategie en Duurzaamheid",
+    "srv-esg-desc": "Ik vertaal milieu-, sociale en governancecriteria naar tastbare waarde voor uw aandeelhouders en klanten.",
+    "srv-ecovadis-title": "EcoVadis Certificering",
+    "srv-ecovadis-desc": "Deskundige begeleiding om uw duurzaamheidsscore te verbeteren en toegang te krijgen tot nieuwe internationale markten.",
+    "srv-scc-title": "SCC / VCA en Veiligheid",
+    "srv-scc-desc": "Ik waarborg de hoogste standaarden voor industriële veiligheid voor aannemers en bedrijven in de technische sector.",
+    "srv-ets-title": "Emissiehandel (ETS)",
+    "srv-ets-desc": "Strategisch beheer van emissierechten om de economische impact van milieuregelgeving te minimaliseren.",
     "services-pricing": "Tarieven",
     "services-price-detail": "Vanaf €150,00/uur",
     "services-provided": "Geleverde diensten",
     "services-tag-consultancy": "Management Consulting",
     "services-tag-project": "Project Management",
+    "nav-services": "Diensten",
+    "services-title": "Consultancy Diensten",
     "key-skills-title": "Kernvaardigheden",
     "skill-procurement": "Inkoop",
     "skill-ops-mgmt": "Operationeel Management",
@@ -696,7 +652,7 @@ const translations = {
     "skill-shipping": "Internationale Scheepvaart",
     "skill-maritime-ops": "Maritieme Operaties",
     "skill-mgmt-consult": "Management Consultancy",
-    "page-title": "Alex Fialka | QHSE & Project Management Consulting",
+    "page-title": "Alex Fialka | QHSE Consulting & Industrial Strategy B2B",
     "meta-desc":
       "Expert QHSE, Risicomanagement en Projectmanagement consultancy door Alex Fialka. Meer dan 30 jaar internationale ervaring in ISO-normen en duurzaamheid.",
     "meta-keywords":
@@ -778,20 +734,30 @@ const translations = {
       "U kunt de gegevens die in de lokale opslag zijn opgeslagen op elk gewenst moment verwijderen via uw browserinstellingen. Houd er rekening mee dat als u deze informatie verwijdert, uw taalvoorkeuren de volgende keer dat u de website bezoekt, worden hersteld naar de standaardwaarden.",
     "footer-dev": "Website ontwikkeld door",
     "dev-name": "Justin Manuel Lantigua Germosen",
+    "faq-title": "Veelgestelde Vragen (FAQ)",
+    "faq-q1": "Wat is QHSE-management en waarom is het belangrijk?",
+    "faq-a1": "QHSE (Kwaliteit, Gezondheid, Veiligheid, Milieu) is de discipline die ervoor zorgt dat organisaties werken volgens normen van kwaliteit, veiligheid en respect voor het milieu. Het is essentieel om juridische risico's te verminderen, de operationele efficiëntie te verbeteren en werknemers te motiveren binnen een kader van voortdurende verbetering.",
+    "faq-q2": "Hoe kan een ISO-adviesbureau mijn bedrijf in Almería helpen?",
+    "faq-a2": "Het implementeren van normen zoals ISO 9001 of 14001 bij bedrijven in Almería maakt het mogelijk om het management te professionaliseren, toegang te krijgen tot veeleisende publieke en private contracten en het gebruik van middelen te optimaliseren, wat cruciaal is in de industriële en agrarische sector van de regio.",
+    "faq-q3": "Werkt Alex Fialka op afstand of persoonlijk?",
+    "faq-a3": "Ik bied totale flexibiliteit. Ik kan 100% op afstand werken met behulp van samenwerkingstools of naar uw faciliteiten in Almerimar, El Ejido en de hele provincie Almería reizen voor een directer en persoonlijker advies.",
+    "faq-q4": "Welke industriële sectoren dekt uw consultancy?",
+    "faq-a4": "Mijn carrière omvat complexe sectoren zoals de scheepvaart (maritiem), offshore, energie, internationale logistiek en industriële productieprocessen. Mijn aanpak is aanpasbaar aan elke organisatie die operationele uitmuntendheid nastreeft.",
   },
 };
 
-// Scroll Reveal Animation
+// Scroll Reveal Animation with IntersectionObserver
 const revealElements = document.querySelectorAll("[data-reveal]");
-const revealOnScroll = () => {
-  revealElements.forEach((element) => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    if (elementTop < windowHeight - 100) {
-      element.classList.add("active");
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      revealObserver.unobserve(entry.target);
     }
   });
-};
+}, { threshold: 0.15 });
+
+revealElements.forEach(el => revealObserver.observe(el));
 
 // Navbar Scroll Effect
 const navbar = document.querySelector(".navbar");
@@ -801,38 +767,40 @@ const handleScroll = () => {
   } else {
     navbar.classList.remove("scrolled");
   }
-  revealOnScroll();
 };
 
 // Language Switcher Logic
+const i18nElements = document.querySelectorAll("[data-i18n]");
+const langButtons = document.querySelectorAll(".lang-btn");
+
 const setLanguage = (lang) => {
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
+  if (!translations[lang]) return;
+
+  i18nElements.forEach((element) => {
     const key = element.getAttribute("data-i18n");
-    if (translations[lang][key]) {
-      // Handle different element types
+    const translation = translations[lang][key];
+    
+    if (translation) {
       if (element.tagName === "IMG") {
-        element.alt = translations[lang][key];
+        element.alt = translation;
       } else if (element.tagName === "META") {
-        element.content = translations[lang][key];
-      } else if (key === "exp-more") {
-        element.innerHTML = translations[lang][key];
+        element.content = translation;
+      } else if (key === "exp-more" || translation.includes("<br>") || translation.includes("<strong>")) {
+        element.innerHTML = translation;
       } else {
-        element.textContent = translations[lang][key];
+        element.textContent = translation;
       }
     }
   });
 
-  // Special case for Page Title
   if (translations[lang]["page-title"]) {
     document.title = translations[lang]["page-title"];
   }
 
-  // Update active state for buttons
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
+  langButtons.forEach((btn) => {
     btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
   });
 
-  // Store preference
   localStorage.setItem("preferredLang", lang);
   document.documentElement.lang = lang;
 };
@@ -913,15 +881,19 @@ if (contactForm) {
   });
 }
 
-// Hero Particles (Simple dynamic move)
+// Hero Parallax Effect
 const hero = document.getElementById("hero");
-if (hero) {
+const heroParticles = document.getElementById("hero-particles");
+if (hero && heroParticles) {
   hero.addEventListener("mousemove", (e) => {
     const { clientX, clientY } = e;
     const { innerWidth, innerHeight } = window;
-    const moveX = (clientX - innerWidth / 2) / 25;
-    const moveY = (clientY - innerHeight / 2) / 25;
-    hero.style.backgroundPosition = `calc(50% + ${moveX}px) calc(50% + ${moveY}px)`;
+    const moveX = (clientX - innerWidth / 2) / 30;
+    const moveY = (clientY - innerHeight / 2) / 30;
+    
+    heroParticles.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    // Also move the background slightly for depth
+    hero.style.backgroundPosition = `calc(50% + ${moveX * 0.5}px) calc(50% + ${moveY * 0.5}px)`;
   });
 }
 
@@ -930,4 +902,17 @@ window.addEventListener("load", () => {
   const savedLang = localStorage.getItem("preferredLang") || "es";
   setLanguage(savedLang);
   handleScroll();
+});
+
+// FAQ Accordion
+const faqItems = document.querySelectorAll(".faq-item");
+faqItems.forEach((item) => {
+  const question = item.querySelector(".faq-question");
+  question.addEventListener("click", () => {
+    // Optional: Close other items
+    // faqItems.forEach(otherItem => {
+    //   if (otherItem !== item) otherItem.classList.remove('active');
+    // });
+    item.classList.toggle("active");
+  });
 });
