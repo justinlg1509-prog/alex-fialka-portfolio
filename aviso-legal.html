@@ -1,298 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="legal-title-section">Alex Fialka | Aviso Legal</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Aviso legal del sitio web de Alex Fialka — Consultoría QHSE." />
+    <meta name="robots" content="index, follow" />
+    <title>Aviso Legal · Alex Fialka</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Inter:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- Vercel Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
-  </head>
-  <body>
-    <header id="header">
-      <nav class="navbar">
-        <a href="index.html#hero" class="logo">
-          <img
-            src="images/Logo QARP 4.webp"
-            alt="QARP Logo"
-            id="nav-logo"
-            loading="lazy"
-          />
-        </a>
-        <div class="nav-container">
-          <ul class="nav-links">
-            <li><a href="index.html#hero" data-i18n="nav-home">Inicio</a></li>
-            <li>
-              <a href="index.html#about" data-i18n="nav-profile">Perfil</a>
-            </li>
-            <li>
-              <a href="index.html#competences" data-i18n="nav-competences"
-                >Competencias</a
-              >
-            </li>
-            <li>
-              <a href="index.html#skills" data-i18n="nav-skills">Habilidades</a>
-            </li>
-            <li>
-              <a href="index.html#experience" data-i18n="nav-experience"
-                >Experiencia</a
-              >
-            </li>
-            <li>
-              <a href="index.html#contact" data-i18n="nav-contact">Contacto</a>
-            </li>
-          </ul>
-          <div class="lang-switcher">
-            <button class="lang-btn" data-lang="es">
-              <img src="images/es-flag.webp" alt="ES" />
-            </button>
-            <button class="lang-btn" data-lang="en">
-              <img src="images/uk-flag.webp" alt="EN" />
-            </button>
-            <button class="lang-btn" data-lang="nl">
-              <img src="images/nl-flag.webp" alt="NL" />
-            </button>
-          </div>
-          </div>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="legal-body">
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html#hero" class="logo">
+                <img class="logo-mark" src="images/Logo QARP 4.webp" alt="QARP" />
+                <span class="logo-text">Alex&nbsp;Fialka</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html#about">Sobre mí</a>
+                <a href="index.html#services">Servicios</a>
+                <a href="index.html#experience">Experiencia</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#contact" class="nav-cta">Contactar</a>
+            </nav>
+            <div class="nav-right">
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
-        <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </nav>
     </header>
 
-    <div class="mobile-menu">
-      <ul class="mobile-nav-links">
-        <li><a href="index.html#hero" data-i18n="nav-home">Inicio</a></li>
-        <li><a href="index.html#about" data-i18n="nav-profile">Perfil</a></li>
-        <li>
-          <a href="index.html#competences" data-i18n="nav-competences"
-            >Competencias</a
-          >
-        </li>
-        <li>
-          <a href="index.html#skills" data-i18n="nav-skills">Habilidades</a>
-        </li>
-        <li>
-          <a href="index.html#experience" data-i18n="nav-experience"
-            >Experiencia</a
-          >
-        </li>
-        <li>
-          <a href="index.html#contact" data-i18n="nav-contact">Contacto</a>
-        </li>
-      </ul>
-      <div class="mobile-lang-switcher">
-        <button class="lang-btn" data-lang="es">
-          <img src="images/es-flag.webp" alt="ES" />
-          <span data-i18n="lang-es-short">ES</span>
-        </button>
-        <button class="lang-btn" data-lang="en">
-          <img src="images/uk-flag.webp" alt="EN" />
-          <span data-i18n="lang-en-short">EN</span>
-        </button>
-        <button class="lang-btn" data-lang="nl">
-          <img src="images/nl-flag.webp" alt="NL" />
-          <span data-i18n="lang-nl-short">NL</span>
-        </button>
-      </div>
-    </div>
+    <main class="legal-main">
+        <div class="container legal-container">
+            <span class="kicker">Información legal</span>
+            <h1>Aviso Legal</h1>
+            <p class="legal-updated">Última actualización: 13 de mayo de 2026</p>
 
-    <section class="section pt-nav">
-      <div class="container">
-        <div class="legal-content-card" data-reveal="fade">
-          <h1 class="section-title text-center" data-i18n="legal-title-section">
-            Aviso Legal
-          </h1>
-          <p class="mb-4 text-center" data-i18n="legal-intro">
-            El presente Aviso Legal regula el acceso, navegación y uso del sitio
-            web.
-          </p>
+            <section>
+                <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se ponen a disposición del usuario los siguientes datos identificativos del responsable del sitio web.</p>
+            </section>
 
-          <div class="legal-section">
-            <h3 data-i18n="legal-1-title">1. Datos Identificativos</h3>
-            <p data-i18n="legal-1-text">
-              En cumplimiento con el deber de información recogido en el
-              artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la
-              Sociedad de la Información y del Comercio Electrónico, el titular
-              de este sitio web es Alex Fialka, con domicilio en Almerimar,
-              España, y correo electrónico de contacto: alex@fialka.es.
-            </p>
-          </div>
+            <section>
+                <h2>1. Datos identificativos del titular</h2>
+                <ul class="legal-data">
+                    <li><strong>Titular:</strong> Alex Fialka</li>
+                    <li><strong>NIF / NIE:</strong> [PENDIENTE]</li>
+                    <li><strong>Domicilio profesional:</strong> [DIRECCIÓN PENDIENTE], Almerimar, Almería, España</li>
+                    <li><strong>Email de contacto:</strong> <a href="mailto:alex@fialka.es">alex@fialka.es</a></li>
+                    <li><strong>Actividad:</strong> Consultoría profesional en sistemas de gestión QHSE (Calidad, Seguridad, Salud y Medio Ambiente), gestión del riesgo, mejora de procesos y change management.</li>
+                    <li><strong>Sitio web:</strong> [DOMINIO PENDIENTE]</li>
+                </ul>
+                <p class="legal-note">El titular actúa como profesional autónomo. En caso de tratarse de una sociedad mercantil, se incorporarán los datos de inscripción en el Registro Mercantil conforme al art. 10.1.b LSSI-CE.</p>
+            </section>
 
-          <div class="legal-section">
-            <h3 data-i18n="legal-2-title">2. Usuarios</h3>
-            <p data-i18n="legal-2-text">
-              El acceso y/o uso de este portal atribuye la condición de USUARIO,
-              que acepta, desde dicho acceso y/o uso, las Condiciones Generales
-              de Uso aquí reflejadas.
-            </p>
-          </div>
+            <section>
+                <h2>2. Objeto</h2>
+                <p>El presente aviso legal regula el uso del sitio web titularidad de Alex Fialka (en adelante, "el Titular"), accesible en el dominio indicado. El acceso, navegación y utilización del sitio web atribuyen al visitante la condición de Usuario, e implican la aceptación plena y sin reservas de todas las disposiciones del presente Aviso Legal, así como de la Política de Privacidad y la Política de Cookies.</p>
+                <p>El Usuario se compromete a hacer un uso adecuado y lícito del sitio web, de conformidad con la legislación aplicable, el presente Aviso Legal, la moral y las buenas costumbres generalmente aceptadas y el orden público.</p>
+            </section>
 
-          <div class="legal-section">
-            <h3 data-i18n="legal-3-title">3. Uso del Portal</h3>
-            <p data-i18n="legal-3-text">
-              El sitio web proporciona acceso a informaciones, servicios o datos
-              (en adelante, 'los contenidos') en Internet pertenecientes a Alex
-              Fialka. El USUARIO asume la responsabilidad del uso del portal.
-            </p>
-          </div>
+            <section>
+                <h2>3. Condiciones de uso</h2>
+                <p>El Usuario se obliga a no utilizar el sitio web ni los servicios ofrecidos a través del mismo para la realización de actividades contrarias a la ley, a la moral, al orden público o a las presentes condiciones de uso. En particular, queda prohibido:</p>
+                <ul>
+                    <li>Utilizar los contenidos del sitio con fines o efectos contrarios a la ley.</li>
+                    <li>Reproducir, copiar, distribuir, comunicar, transformar o modificar los contenidos sin autorización expresa del Titular.</li>
+                    <li>Introducir o difundir virus informáticos o cualesquiera otros elementos físicos o electrónicos susceptibles de causar daño en los sistemas del Titular o de terceros.</li>
+                    <li>Suplantar la identidad de terceros o emplear datos identificativos de otras personas para el uso del sitio.</li>
+                </ul>
+            </section>
 
-          <div class="legal-section">
-            <h3 data-i18n="legal-4-title">
-              4. Propiedad Intelectual e Industrial
-            </h3>
-            <p data-i18n="legal-4-text">
-              Alex Fialka es titular de todos los derechos de propiedad
-              intelectual e industrial de su página web, así como de los
-              elementos contenidos en la misma.
-            </p>
-          </div>
+            <section>
+                <h2>4. Propiedad intelectual e industrial</h2>
+                <p>Todos los contenidos del sitio web —textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente— constituyen una obra cuya propiedad pertenece al Titular, o en su caso a los licenciantes correspondientes, sin que puedan entenderse cedidos al Usuario ninguno de los derechos de explotación reconocidos por la normativa vigente en materia de propiedad intelectual.</p>
+                <p>Las marcas, nombres comerciales o signos distintivos son titularidad del Titular o de terceros que han autorizado su uso, sin que pueda entenderse que el acceso al sitio web atribuya derecho alguno sobre los citados elementos.</p>
+                <p>El logotipo "QARP" y la metodología asociada son propiedad del Titular y están protegidos por la normativa de propiedad intelectual e industrial.</p>
+            </section>
 
-          <div class="legal-section">
-            <h3 data-i18n="legal-5-title">
-              5. Exclusión de Garantías y Responsabilidad
-            </h3>
-            <p data-i18n="legal-5-text">
-              Alex Fialka no se hace responsable, en ningún caso, de los daños y
-              perjuicios de cualquier naturaleza que pudieran ocasionar.
-            </p>
-          </div>
+            <section>
+                <h2>5. Exclusión de responsabilidad</h2>
+                <p>El Titular no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran derivarse de:</p>
+                <ul>
+                    <li>Interrupciones, virus informáticos, averías telefónicas, desconexiones, retrasos o bloqueos causados por deficiencias o sobrecargas en las líneas telefónicas, en el sistema de Internet o en otros sistemas electrónicos.</li>
+                    <li>Intromisiones ilegítimas mediante el uso de programas malignos por parte de terceros.</li>
+                    <li>El uso indebido o inadecuado del sitio web por parte del Usuario.</li>
+                    <li>Errores de seguridad o navegación producidos por un mal funcionamiento del navegador o por el uso de versiones no actualizadas del mismo.</li>
+                </ul>
+                <p>La información proporcionada en este sitio web tiene carácter divulgativo y no constituye asesoramiento profesional personalizado. Para asesoramiento concreto, el Usuario deberá contactar con el Titular.</p>
+            </section>
 
-          <div class="legal-section">
-            <h3 data-i18n="legal-6-title">
-              6. Legislación Aplicable y Jurisdicción
-            </h3>
-            <p data-i18n="legal-6-text">
-              La relación comercial se rige por la legislación española. Para
-              cualquier controversia, las partes se someten a los Juzgados y
-              Tribunales de la ciudad de Almería, España.
-            </p>
-          </div>
+            <section>
+                <h2>6. Enlaces a sitios web de terceros</h2>
+                <p>El sitio web puede contener enlaces a sitios web de terceros (por ejemplo, LinkedIn). El Titular no asume responsabilidad alguna por los contenidos, informaciones o servicios que pudieran aparecer en dichos sitios, que tendrán exclusivamente carácter informativo y que en ningún caso implican relación alguna entre el Titular y las personas o entidades titulares de tales contenidos o sitios.</p>
+            </section>
 
-          <div class="text-center mt-4">
-            <a href="index.html" class="btn btn-secondary" data-i18n="nav-home"
-              >Volver al Inicio</a
-            >
-          </div>
+            <section>
+                <h2>7. Protección de datos</h2>
+                <p>El tratamiento de los datos personales facilitados por los Usuarios a través del sitio web se regirá por lo establecido en la <a href="privacidad.html">Política de Privacidad</a>, la cual forma parte integrante del presente Aviso Legal.</p>
+            </section>
+
+            <section>
+                <h2>8. Cookies</h2>
+                <p>Este sitio web utiliza tecnologías de almacenamiento local conforme a lo previsto en la <a href="cookies.html">Política de Cookies</a>.</p>
+            </section>
+
+            <section>
+                <h2>9. Modificaciones</h2>
+                <p>El Titular se reserva el derecho a efectuar, sin previo aviso, las modificaciones que considere oportunas en el sitio web, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través del mismo como la forma en la que estos aparezcan presentados o localizados.</p>
+            </section>
+
+            <section>
+                <h2>10. Legislación aplicable y jurisdicción</h2>
+                <p>La relación entre el Titular y el Usuario se regirá por la normativa española vigente. Para la resolución de cualquier controversia que pudiera surgir en relación con el presente Aviso Legal, las partes se someten a los Juzgados y Tribunales del domicilio del Titular, salvo que la ley aplicable disponga otra cosa.</p>
+            </section>
+
+            <p class="legal-back"><a href="index.html">← Volver al inicio</a></p>
         </div>
-      </div>
-    </section>
+    </main>
 
-    <footer class="bg-dark text-white">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col" data-reveal="fade">
-            <a href="index.html#hero" class="logo text-white">
-              <img
-                src="images/Logo QARP 4.webp"
-                alt="QARP Logo"
-                class="footer-logo"
-              />
-            </a>
-            <p class="footer-mission" data-i18n="hero-mission">
-              "Garantizar la máxima concienciación sobre la gestión de seguridad
-              y calidad en las organizaciones."
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>© <span id="year"></span> Alex Fialka — Todos los derechos reservados.</p>
+            <p class="legal-links">
+                <a href="aviso-legal.html">Aviso Legal</a> ·
+                <a href="privacidad.html">Privacidad</a> ·
+                <a href="cookies.html">Cookies</a>
             </p>
-          </div>
-          <div class="footer-col" data-reveal="fade">
-            <h4 data-i18n="footer-links-title">Enlaces Rápidos</h4>
-            <ul class="footer-links">
-              <li><a href="index.html#hero" data-i18n="nav-home">Inicio</a></li>
-              <li>
-                <a href="index.html#about" data-i18n="nav-profile">Perfil</a>
-              </li>
-              <li>
-                <a href="index.html#experience" data-i18n="nav-experience"
-                  >Experiencia</a
-                >
-              </li>
-              <li>
-                <a href="index.html#contact" data-i18n="nav-contact"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col" data-reveal="fade">
-            <h4 data-i18n="footer-contact-title">Contacto</h4>
-            <div class="footer-contact">
-              <p>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:alex@fialka.es">alex@fialka.es</a>
-              </p>
-              <p><i class="fas fa-phone"></i> +31 (0)6 4659 6079</p>
-              <p><i class="fas fa-phone"></i> +34 641 058 422</p>
-              <p>
-                <i class="fas fa-location-dot"></i>
-                <span data-i18n="contact-loc">Almerimar, España</span>
-              </p>
-            </div>
-          </div>
         </div>
-        <hr class="footer-divider" />
-        <div class="footer-bottom">
-          <p>
-            &copy; 2026 Alex Fialka.
-            <span data-i18n="footer-rights"
-              >Todos los derechos reservados.</span
-            >
-            |
-            <a
-              href="aviso-legal.html"
-              data-i18n="footer-legal"
-              class="footer-legal-link"
-              >Aviso Legal</a
-            >
-            |
-            <a
-              href="politica-privacidad.html"
-              data-i18n="footer-privacy"
-              class="footer-legal-link"
-              >Política de Privacidad</a
-            >
-            |
-            <a
-              href="politica-cookies.html"
-              data-i18n="footer-cookies"
-              class="footer-legal-link"
-              >Política de Cookies</a
-            >
-            |
-            <span class="developer-credit">
-              <span data-i18n="footer-dev">Web desarrollada por</span>
-              <a href="https://www.linkedin.com/in/justin-manuel-l-21706a383/?isSelfProfile=true" target="_blank" rel="noopener" class="footer-legal-link" data-i18n="dev-name">Justin Manuel Lantigua Germosen</a>
-            </span>
-          </p>
-          <div class="footer-social">
-            <a
-              href="https://nl.linkedin.com/in/Alex Fialka"
-              target="_blank"
-              rel="noopener"
-              aria-label="LinkedIn Profile"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </div>
-        </div>
-      </div>
     </footer>
 
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" hidden>
+        <div class="cookie-banner-inner">
+            <p data-i18n="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma. No usamos cookies de análisis ni publicidad. Al continuar navegando aceptas nuestra <a href="cookies.html">política de cookies</a>.</p>
+            <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
