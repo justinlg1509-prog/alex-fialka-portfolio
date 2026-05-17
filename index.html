@@ -3,6 +3,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D53PM9XB3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        // Consent Mode v2 — denegado por defecto hasta que el usuario acepte (RGPD)
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+        });
+
+        // Restaurar consent guardado en visitas previas (antes de enviar page_view)
+        try {
+            var __afConsent = localStorage.getItem('af_cookie_consent');
+            if (__afConsent === '1') {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+            }
+        } catch (e) {}
+
+        gtag('js', new Date());
+        gtag('config', 'G-2D53PM9XB3', { 'anonymize_ip': true });
+    </script>
+
     <meta name="description" content="Alex Fialka — Consultor senior de optimización de procesos de negocio. Alineo los procesos con la realidad operativa para impulsar la excelencia operativa, la transformación organizacional y la eficiencia sostenible. 35+ años de experiencia internacional." />
     <meta name="keywords" content="optimización de procesos de negocio, consultoría de procesos, excelencia operativa, transformación organizacional, mejora del rendimiento, eficiencia sostenible, procesos de negocio integrados, método QARP, business process optimisation, consultor empresarial Europa, lean consulting, ISO 9001, PRINCE2" />
     <meta name="author" content="Alex Fialka" />
@@ -169,10 +201,6 @@
                     <div class="hero-card-inner">
                         <div class="hero-photo">
                             <img src="images/alex de cerca.webp" alt="Alex Fialka" loading="eager" />
-                            <span class="hero-photo-badge">
-                                <img src="images/Logo QARP 4.webp" alt="" />
-                                QARP
-                            </span>
                         </div>
                         <div class="hero-card-body">
                             <p class="hc-name">Alex Fialka</p>
@@ -340,27 +368,6 @@
                 </article>
             </div>
 
-            <!-- QARP methodology block -->
-            <div class="qarp-method reveal">
-                <div class="qarp-method-head">
-                    <img src="images/Logo QARP 4.webp" alt="QARP" />
-                    <div>
-                        <span class="kicker" data-i18n="qarp.kicker">Metodología propia</span>
-                        <h3 data-i18n="qarp.title">QARP · Cuatro pilares para optimizar cualquier proceso</h3>
-                    </div>
-                </div>
-                <p class="qarp-method-lead" data-i18n="qarp.lead">
-                    QARP es una metodología propia de optimización de procesos de negocio
-                    aplicable a cualquier sector. Cuatro pilares que estructuran la
-                    transformación organizacional y aseguran resultados medibles y sostenibles.
-                </p>
-                <div class="qarp-pillars">
-                    <div class="qarp-pillar"><strong>Q</strong> <span data-i18n="qarp.q">Quality — procesos diseñados para entregar valor consistente.</span></div>
-                    <div class="qarp-pillar"><strong>A</strong> <span data-i18n="qarp.a">Assurance — controles que protegen el rendimiento en el tiempo.</span></div>
-                    <div class="qarp-pillar"><strong>R</strong> <span data-i18n="qarp.r">Risk — gestión integrada del riesgo operativo, técnico y financiero.</span></div>
-                    <div class="qarp-pillar"><strong>P</strong> <span data-i18n="qarp.p">Process — flujos integrados, alineados con la realidad operativa.</span></div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -625,13 +632,6 @@
                     <span class="logo-text">Alex&nbsp;Fialka</span>
                 </a>
                 <p data-i18n="footer.about">Consultor senior de optimización de procesos de negocio. 35+ años alineando procesos con la realidad operativa para impulsar excelencia operativa, transformación organizacional y eficiencia sostenible.</p>
-                <div class="f-qarp">
-                    <img src="images/Logo QARP 4.webp" alt="QARP" />
-                    <div>
-                        <small data-i18n="footer.qarpKicker">Metodología propia</small>
-                        <strong>QARP</strong>
-                    </div>
-                </div>
             </div>
             <div class="f-col">
                 <h5 data-i18n="footer.nav">Navegación</h5>
@@ -668,7 +668,8 @@
             <p class="legal-links">
                 <a href="aviso-legal.html" data-i18n="footer.legal">Aviso Legal</a> ·
                 <a href="privacidad.html" data-i18n="footer.privacy">Privacidad</a> ·
-                <a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+                <a href="cookies.html" data-i18n="footer.cookies">Cookies</a> ·
+                <a href="#" id="cookiePrefs" data-i18n="footer.cookiePrefs">Preferencias de cookies</a>
             </p>
             <p class="craft" data-i18n="footer.craft">Diseñado con &#9825; · Business Process Consultancy</p>
         </div>
@@ -680,8 +681,11 @@
 
     <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" hidden>
         <div class="cookie-banner-inner">
-            <p data-i18n-html="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma. No usamos cookies de análisis ni publicidad. Al continuar navegando aceptas nuestra <a href="cookies.html">política de cookies</a>.</p>
-            <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+            <p data-i18n-html="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma, y cookies de análisis (Google Analytics) para entender cómo se usa el sitio. Puedes aceptarlas o rechazarlas en cualquier momento. <a href="cookies.html">Más información</a>.</p>
+            <div class="cookie-actions">
+                <button type="button" class="btn btn-ghost cookie-reject" id="cookieReject" data-i18n="cookie.reject">Rechazar</button>
+                <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+            </div>
         </div>
     </div>
 

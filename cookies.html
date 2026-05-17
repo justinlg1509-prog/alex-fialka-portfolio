@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Política de Cookies del sitio web de Alex Fialka — Consultoría QHSE." />
+    <meta name="description" content="Política de Cookies del sitio web de Alex Fialka — Consultoría de Optimización de Procesos de Negocio." />
     <meta name="robots" content="index, follow" />
     <title>Política de Cookies · Alex Fialka</title>
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D53PM9XB3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+        });
+        try {
+            var __afConsent = localStorage.getItem('af_cookie_consent');
+            if (__afConsent === '1') {
+                gtag('consent', 'update', { 'analytics_storage': 'granted' });
+            }
+        } catch (e) {}
+        gtag('js', new Date());
+        gtag('config', 'G-2D53PM9XB3', { 'anonymize_ip': true });
+    </script>
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,7 +82,7 @@
                 <h3>Según la entidad que las gestiona</h3>
                 <ul>
                     <li><strong>Cookies propias:</strong> gestionadas por el Titular del sitio web.</li>
-                    <li><strong>Cookies de terceros:</strong> gestionadas por entidades distintas al Titular. <em>Este sitio web no utiliza cookies de terceros.</em></li>
+                    <li><strong>Cookies de terceros:</strong> gestionadas por entidades distintas al Titular. Este sitio utiliza cookies de terceros de <strong>Google Analytics</strong> con fines exclusivamente analíticos, previo consentimiento del Usuario.</li>
                 </ul>
 
                 <h3>Según su duración</h3>
@@ -70,15 +95,16 @@
                 <ul>
                     <li><strong>Cookies técnicas o estrictamente necesarias:</strong> permiten el funcionamiento básico del sitio web. <strong>No requieren consentimiento</strong> conforme al art. 22.2 LSSI-CE.</li>
                     <li><strong>Cookies de preferencias o personalización:</strong> permiten recordar opciones de configuración del Usuario, como el idioma seleccionado.</li>
-                    <li><strong>Cookies analíticas:</strong> miden el uso del sitio para mejorarlo. <em>Este sitio no las utiliza.</em></li>
+                    <li><strong>Cookies analíticas:</strong> miden el uso del sitio para mejorarlo. Este sitio utiliza Google Analytics 4 con IP anonimizada y <em>Consent Mode v2</em>, activándose únicamente si el Usuario acepta expresamente.</li>
                     <li><strong>Cookies publicitarias o de marketing:</strong> permiten la gestión de espacios publicitarios. <em>Este sitio no las utiliza.</em></li>
                 </ul>
             </section>
 
             <section>
                 <h2>3. Detalle de cookies y almacenamiento local utilizado</h2>
-                <p>Actualmente este sitio web utiliza exclusivamente almacenamiento local del tipo <em>localStorage</em>, considerado técnicamente equivalente a cookies estrictamente necesarias y de personalización:</p>
+                <p>El sitio web utiliza dos categorías de tecnologías de almacenamiento: (i) almacenamiento local técnico/de preferencia gestionado por el propio sitio, y (ii) cookies analíticas de Google Analytics activadas únicamente con consentimiento expreso.</p>
 
+                <h3>3.1 Almacenamiento propio (técnicas / preferencia)</h3>
                 <table class="legal-table">
                     <thead>
                         <tr>
@@ -100,19 +126,60 @@
                         <tr>
                             <td><code>af_cookie_consent</code></td>
                             <td>Técnica</td>
-                            <td>Recordar que el Usuario ya ha visualizado el banner de información sobre cookies, evitando mostrarlo en cada visita.</td>
+                            <td>Almacenar la elección del Usuario sobre cookies analíticas (aceptar/rechazar) para no volver a mostrar el banner en cada visita y respetar su decisión.</td>
                             <td>Persistente (hasta borrado manual)</td>
                             <td>Propia</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="legal-note">Estas tecnologías son <strong>estrictamente necesarias o de personalización mínima</strong> y, conforme al art. 22.2 LSSI-CE y a la Guía sobre uso de cookies de la AEPD (edición vigente), no requieren consentimiento previo del Usuario. No obstante, se informa de su uso a través del banner informativo y de la presente política.</p>
+                <h3>3.2 Cookies analíticas — Google Analytics 4</h3>
+                <p>Este sitio utiliza Google Analytics 4 (GA4), un servicio de analítica web prestado por Google Ireland Limited (Gordon House, Barrow Street, Dublín 4, Irlanda), con función de tratamiento por cuenta del Responsable. La activación está sujeta a <strong>consentimiento previo y expreso</strong> del Usuario, gestionado mediante el banner inicial y el enlace "Preferencias de cookies" del pie de página. Se utiliza <em>Google Consent Mode v2</em>, de modo que sin consentimiento no se establecen cookies analíticas y solo se envían señales agregadas sin identificadores.</p>
+
+                <table class="legal-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Finalidad</th>
+                            <th>Duración</th>
+                            <th>Propia / Terceros</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>_ga</code></td>
+                            <td>Analítica</td>
+                            <td>Distinguir usuarios únicos asignando un identificador aleatorio.</td>
+                            <td>2 años</td>
+                            <td>Terceros (Google)</td>
+                        </tr>
+                        <tr>
+                            <td><code>_ga_2D53PM9XB3</code></td>
+                            <td>Analítica</td>
+                            <td>Conservar el estado de sesión y agregar métricas asociadas a la propiedad GA4 (Measurement ID).</td>
+                            <td>2 años</td>
+                            <td>Terceros (Google)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Transferencias internacionales:</strong> Google puede transferir los datos a servidores ubicados fuera del Espacio Económico Europeo (incluidos los Estados Unidos). Estas transferencias se realizan bajo el <em>EU-US Data Privacy Framework</em> y, cuando proceda, mediante Cláusulas Contractuales Tipo aprobadas por la Comisión Europea. La IP del Usuario se transmite a Google de forma anonimizada (<code>anonymize_ip: true</code>).</p>
+
+                <p><strong>Finalidad concreta del tratamiento analítico:</strong> medir el número de visitantes, las páginas visitadas, la duración de la sesión, el idioma utilizado y las fuentes de tráfico, con el objeto de mejorar la usabilidad y los contenidos del sitio web. Google Analytics 4 no permite la identificación directa del Usuario.</p>
+
+                <p class="legal-note">Las cookies propias son <strong>estrictamente necesarias o de personalización mínima</strong> y no requieren consentimiento (art. 22.2 LSSI-CE). Las cookies de Google Analytics <strong>solo se activan si el Usuario presta su consentimiento</strong> mediante el banner inicial.</p>
             </section>
 
             <section>
                 <h2>4. Aceptación, rechazo y gestión de cookies</h2>
-                <p>Dado que las únicas tecnologías utilizadas son técnicas y de personalización mínima, no es necesario un consentimiento previo. No obstante, el Usuario puede gestionarlas, bloquearlas o eliminarlas en cualquier momento desde la configuración de su navegador.</p>
+                <p>El Usuario puede prestar, denegar o retirar su consentimiento para las cookies analíticas en cualquier momento, mediante:</p>
+                <ul>
+                    <li>El <strong>banner de cookies</strong> mostrado en la primera visita, donde puede pulsar "Aceptar" o "Rechazar".</li>
+                    <li>El enlace <strong>"Preferencias de cookies"</strong> situado en el pie de página, que permite volver a mostrar el banner y modificar la elección.</li>
+                    <li>La configuración del navegador (ver instrucciones más abajo).</li>
+                </ul>
+                <p>La retirada del consentimiento no afectará a la licitud del tratamiento basado en el consentimiento previo a su retirada.</p>
 
                 <h3>Cómo deshabilitar el almacenamiento local</h3>
                 <ul>
@@ -126,7 +193,8 @@
 
             <section>
                 <h2>5. Cookies de terceros</h2>
-                <p>Este sitio web <strong>no utiliza cookies de terceros</strong>, ni de análisis, ni publicitarias, ni de redes sociales. Los enlaces a redes sociales externas (por ejemplo, LinkedIn) se abren en una nueva pestaña sin previa carga de scripts de terceros en este sitio.</p>
+                <p>Este sitio web utiliza cookies de terceros únicamente para fines analíticos (Google Analytics 4, descritas en la sección 3.2) y solo si el Usuario ha prestado su consentimiento. No se utilizan cookies publicitarias, de redes sociales ni de retargeting. Los enlaces a redes sociales externas (por ejemplo, LinkedIn) se abren en una nueva pestaña sin carga previa de scripts de terceros.</p>
+                <p>Para más información sobre el tratamiento de datos por parte de Google, puede consultarse la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a> y la <a href="https://support.google.com/analytics/answer/6004245" target="_blank" rel="noopener">información de Google Analytics sobre tratamiento de datos</a>.</p>
             </section>
 
             <section>
@@ -144,15 +212,19 @@
             <p class="legal-links">
                 <a href="aviso-legal.html">Aviso Legal</a> ·
                 <a href="privacidad.html">Privacidad</a> ·
-                <a href="cookies.html">Cookies</a>
+                <a href="cookies.html">Cookies</a> ·
+                <a href="#" id="cookiePrefs" data-i18n="footer.cookiePrefs">Preferencias de cookies</a>
             </p>
         </div>
     </footer>
 
     <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" hidden>
         <div class="cookie-banner-inner">
-            <p data-i18n="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma. No usamos cookies de análisis ni publicidad. Al continuar navegando aceptas nuestra <a href="cookies.html">política de cookies</a>.</p>
-            <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+            <p data-i18n-html="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma, y cookies de análisis (Google Analytics) para entender cómo se usa el sitio. Puedes aceptarlas o rechazarlas en cualquier momento. <a href="cookies.html">Más información</a>.</p>
+            <div class="cookie-actions">
+                <button type="button" class="btn btn-ghost cookie-reject" id="cookieReject" data-i18n="cookie.reject">Rechazar</button>
+                <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+            </div>
         </div>
     </div>
 

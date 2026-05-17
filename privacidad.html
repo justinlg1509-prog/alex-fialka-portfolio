@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Política de Privacidad del sitio web de Alex Fialka — Consultoría QHSE." />
+    <meta name="description" content="Política de Privacidad del sitio web de Alex Fialka — Consultoría de Optimización de Procesos de Negocio." />
     <meta name="robots" content="index, follow" />
     <title>Política de Privacidad · Alex Fialka</title>
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D53PM9XB3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+        });
+        try {
+            var __afConsent = localStorage.getItem('af_cookie_consent');
+            if (__afConsent === '1') {
+                gtag('consent', 'update', { 'analytics_storage': 'granted' });
+            }
+        } catch (e) {}
+        gtag('js', new Date());
+        gtag('config', 'G-2D53PM9XB3', { 'anonymize_ip': true });
+    </script>
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,7 +121,7 @@
             <section>
                 <h2>6. Destinatarios de los datos</h2>
                 <p>Los datos personales del Usuario no serán cedidos a terceros, salvo obligación legal. Únicamente podrán acceder a los datos los proveedores de servicios estrictamente necesarios para el funcionamiento del sitio (proveedor de correo electrónico y proveedor de hosting), los cuales actuarán como encargados del tratamiento con las debidas garantías de seguridad y confidencialidad conforme al artículo 28 del RGPD.</p>
-                <p>No se prevén transferencias internacionales de datos a países fuera del Espacio Económico Europeo. En caso de que en el futuro se utilicen servicios de proveedores ubicados fuera del EEE, se aplicarán las garantías adecuadas previstas en los artículos 44 y siguientes del RGPD.</p>
+                <p>Adicionalmente, el sitio web utiliza <strong>Google Analytics 4</strong> (Google Ireland Limited) como encargado del tratamiento con fines exclusivamente analíticos y agregados, únicamente cuando el Usuario presta su consentimiento expreso. Google puede transferir datos a servidores ubicados fuera del Espacio Económico Europeo (incluidos los Estados Unidos), amparándose en el <em>EU-US Data Privacy Framework</em> y, cuando proceda, en Cláusulas Contractuales Tipo aprobadas por la Comisión Europea (artículos 44 y siguientes del RGPD). La dirección IP del Usuario se transmite anonimizada. Para más detalle, véase la <a href="cookies.html">Política de Cookies</a>.</p>
             </section>
 
             <section>
@@ -140,15 +165,19 @@
             <p class="legal-links">
                 <a href="aviso-legal.html">Aviso Legal</a> ·
                 <a href="privacidad.html">Privacidad</a> ·
-                <a href="cookies.html">Cookies</a>
+                <a href="cookies.html">Cookies</a> ·
+                <a href="#" id="cookiePrefs" data-i18n="footer.cookiePrefs">Preferencias de cookies</a>
             </p>
         </div>
     </footer>
 
     <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" hidden>
         <div class="cookie-banner-inner">
-            <p data-i18n="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma. No usamos cookies de análisis ni publicidad. Al continuar navegando aceptas nuestra <a href="cookies.html">política de cookies</a>.</p>
-            <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+            <p data-i18n-html="cookie.text">Esta web utiliza almacenamiento técnico necesario para recordar tu idioma, y cookies de análisis (Google Analytics) para entender cómo se usa el sitio. Puedes aceptarlas o rechazarlas en cualquier momento. <a href="cookies.html">Más información</a>.</p>
+            <div class="cookie-actions">
+                <button type="button" class="btn btn-ghost cookie-reject" id="cookieReject" data-i18n="cookie.reject">Rechazar</button>
+                <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Aceptar</button>
+            </div>
         </div>
     </div>
 

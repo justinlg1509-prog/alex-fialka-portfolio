@@ -686,30 +686,6 @@ img.logo-mark {
 
 .hero-card:hover .hero-photo img { transform: scale(1.04); }
 
-.hero-photo-badge {
-    position: absolute;
-    bottom: 14px;
-    left: 14px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 14px 6px 6px;
-    background: var(--c-bg);
-    color: var(--c-headline);
-    border-radius: 999px;
-    font-family: var(--ff-sub);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    box-shadow: var(--shadow-md);
-}
-
-.hero-photo-badge img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-}
-
 .hero-card-body {
     padding: 16px 18px 18px;
 }
@@ -1026,94 +1002,6 @@ img.logo-mark {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
-}
-
-/* ---------- QARP methodology block ---------- */
-.qarp-method {
-    margin-top: 36px;
-    padding: 26px 24px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(184, 193, 236, 0.18));
-    border: 1px solid var(--c-line);
-    border-radius: var(--r-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.qarp-method-head {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 12px;
-}
-
-.qarp-method-head img {
-    width: 44px;
-    height: 44px;
-    flex-shrink: 0;
-}
-
-.qarp-method-head .kicker {
-    display: block;
-    margin-bottom: 4px;
-}
-
-.qarp-method-head h3 {
-    font-size: 1.15rem;
-    line-height: 1.25;
-    color: var(--c-headline);
-    margin: 0;
-}
-
-.qarp-method-lead {
-    color: var(--c-paragraph);
-    max-width: 760px;
-    margin-bottom: 18px;
-    font-size: 0.9rem;
-    line-height: 1.55;
-}
-
-.qarp-pillars {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 14px;
-}
-
-.qarp-pillar {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px 14px;
-    background: var(--c-bg);
-    border: 1px solid var(--c-line);
-    border-radius: var(--r-md, 12px);
-    transition: all var(--t-base);
-}
-
-.qarp-pillar:hover {
-    border-color: var(--c-highlight);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
-}
-
-.qarp-pillar strong {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    display: grid;
-    place-items: center;
-    background: var(--grad-primary);
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 0.95rem;
-    border-radius: 7px;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
-}
-
-.qarp-pillar span {
-    font-size: 0.84rem;
-    line-height: 1.45;
-    color: var(--c-paragraph);
-    padding-top: 3px;
 }
 
 .service {
@@ -1657,35 +1545,6 @@ img.logo-mark {
     color: var(--c-paragraph);
     font-size: 0.92rem;
     line-height: 1.7;
-}
-
-.f-qarp {
-    margin-top: 18px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 14px;
-    background: var(--c-bg);
-    border: 1px solid var(--c-line);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-}
-
-.f-qarp img { width: 30px; height: 30px; object-fit: contain; }
-.f-qarp small {
-    font-family: var(--ff-sub);
-    font-size: 0.74rem;
-    color: var(--c-paragraph);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    display: block;
-    font-weight: 600;
-}
-.f-qarp strong {
-    font-family: var(--ff-display);
-    font-size: 1rem;
-    color: var(--c-headline);
-    font-weight: 700;
 }
 
 .f-col h5 {

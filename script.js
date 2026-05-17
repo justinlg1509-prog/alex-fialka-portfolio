@@ -95,14 +95,6 @@
             'services.5.items.1': 'Control de costes & deliverables',
             'services.5.items.2': 'Stakeholder management',
 
-            'qarp.kicker': 'Metodología propia',
-            'qarp.title': 'QARP · Cuatro pilares para optimizar cualquier proceso',
-            'qarp.lead': 'QARP es una metodología propia de optimización de procesos de negocio aplicable a cualquier sector. Cuatro pilares que estructuran la transformación organizacional y aseguran resultados medibles y sostenibles.',
-            'qarp.q': 'Quality — procesos diseñados para entregar valor consistente.',
-            'qarp.a': 'Assurance — controles que protegen el rendimiento en el tiempo.',
-            'qarp.r': 'Risk — gestión integrada del riesgo operativo, técnico y financiero.',
-            'qarp.p': 'Process — flujos integrados, alineados con la realidad operativa.',
-
             'exp.kicker': '03 — Trayectoria',
             'exp.title': 'Una carrera optimizando <span class="grad">procesos en cualquier sector</span>.',
             'exp.sub': 'De Maersk Line en los 80 a la dirección QHSE de grupos multinacionales. 35+ años aplicando excelencia operativa, gestión integrada de riesgos y transformación organizacional. El sector cambia; los principios, no.',
@@ -181,7 +173,6 @@
             'form.mailTopic': 'Tipo de consultoría', 'form.mailMessage': 'Mensaje',
 
             'footer.about': 'Consultor senior de optimización de procesos de negocio. 35+ años alineando procesos con la realidad operativa para impulsar excelencia operativa, transformación organizacional y eficiencia sostenible.',
-            'footer.qarpKicker': 'Metodología propia',
             'footer.nav': 'Navegación',
             'footer.services': 'Servicios',
             'footer.contact': 'Contacto',
@@ -196,8 +187,10 @@
             'footer.privacy': 'Privacidad',
             'footer.cookies': 'Cookies',
 
-            'cookie.text': 'Esta web utiliza almacenamiento técnico necesario para recordar tu idioma. No usamos cookies de análisis ni publicidad. Al continuar navegando aceptas nuestra <a href="cookies.html">política de cookies</a>.',
+            'cookie.text': 'Esta web utiliza almacenamiento técnico necesario para recordar tu idioma, y cookies de análisis (Google Analytics) para entender cómo se usa el sitio. Puedes aceptarlas o rechazarlas en cualquier momento. <a href="cookies.html">Más información</a>.',
             'cookie.accept': 'Aceptar',
+            'cookie.reject': 'Rechazar',
+            'footer.cookiePrefs': 'Preferencias de cookies',
 
             'docTitle': 'Alex Fialka · Consultoría de Optimización de Procesos de Negocio'
         },
@@ -288,14 +281,6 @@
             'services.5.items.1': 'Cost control & deliverables',
             'services.5.items.2': 'Stakeholder management',
 
-            'qarp.kicker': 'Proprietary methodology',
-            'qarp.title': 'QARP · Four pillars to optimise any process',
-            'qarp.lead': 'QARP is a proprietary business process optimisation methodology that applies to any sector. Four pillars that structure organisational transformation and deliver measurable, sustainable results.',
-            'qarp.q': 'Quality — processes designed to deliver consistent value.',
-            'qarp.a': 'Assurance — controls that protect performance over time.',
-            'qarp.r': 'Risk — integrated management of operational, technical and financial risk.',
-            'qarp.p': 'Process — integrated workflows aligned with operational reality.',
-
             'exp.kicker': '03 — Career',
             'exp.title': 'A career optimising <span class="grad">processes across any sector</span>.',
             'exp.sub': 'From Maersk Line in the 80s to QHSE leadership in multinational groups. 35+ years applying operational excellence, integrated risk management and organisational transformation. The sector changes; the principles do not.',
@@ -374,7 +359,6 @@
             'form.mailTopic': 'Type of consultancy', 'form.mailMessage': 'Message',
 
             'footer.about': 'Senior business process optimisation consultant. 35+ years aligning processes with operational reality to drive operational excellence, organisational transformation and sustainable efficiency.',
-            'footer.qarpKicker': 'Proprietary methodology',
             'footer.nav': 'Navigation',
             'footer.services': 'Services',
             'footer.contact': 'Contact',
@@ -389,8 +373,10 @@
             'footer.privacy': 'Privacy',
             'footer.cookies': 'Cookies',
 
-            'cookie.text': 'This site uses technical storage strictly necessary to remember your language preference. We do not use analytics or advertising cookies. By continuing to browse you accept our <a href="cookies.html">cookie policy</a>.',
+            'cookie.text': 'This site uses technical storage to remember your language preference, and analytics cookies (Google Analytics) to understand how the site is used. You can accept or reject them at any time. <a href="cookies.html">More information</a>.',
             'cookie.accept': 'Accept',
+            'cookie.reject': 'Reject',
+            'footer.cookiePrefs': 'Cookie preferences',
 
             'docTitle': 'Alex Fialka · Business Process Optimisation Consultancy'
         },
@@ -481,14 +467,6 @@
             'services.5.items.1': 'Kostenbeheersing & deliverables',
             'services.5.items.2': 'Stakeholdermanagement',
 
-            'qarp.kicker': 'Eigen methodologie',
-            'qarp.title': 'QARP · Vier pijlers om elk proces te optimaliseren',
-            'qarp.lead': 'QARP is een eigen methodologie voor bedrijfsprocesoptimalisatie die toepasbaar is in elke sector. Vier pijlers die organisatorische transformatie structureren en zorgen voor meetbare en duurzame resultaten.',
-            'qarp.q': 'Quality — processen die consistent waarde leveren.',
-            'qarp.a': 'Assurance — controles die de prestaties in de tijd beschermen.',
-            'qarp.r': 'Risk — geïntegreerd beheer van operationeel, technisch en financieel risico.',
-            'qarp.p': 'Process — geïntegreerde workflows die aansluiten op de operationele realiteit.',
-
             'exp.kicker': '03 — Loopbaan',
             'exp.title': 'Een carrière van <span class="grad">procesoptimalisatie in elke sector</span>.',
             'exp.sub': 'Van Maersk Line in de jaren 80 tot QHSE-leiderschap binnen multinationale groepen. 35+ jaar operationele uitmuntendheid, geïntegreerd risicomanagement en organisatorische transformatie. De sector verandert; de principes niet.',
@@ -567,7 +545,6 @@
             'form.mailTopic': 'Type consultancy', 'form.mailMessage': 'Bericht',
 
             'footer.about': 'Senior consultant bedrijfsprocesoptimalisatie. 35+ jaar processen afstemmen op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie.',
-            'footer.qarpKicker': 'Eigen methodologie',
             'footer.nav': 'Navigatie',
             'footer.services': 'Diensten',
             'footer.contact': 'Contact',
@@ -582,8 +559,10 @@
             'footer.privacy': 'Privacy',
             'footer.cookies': 'Cookies',
 
-            'cookie.text': 'Deze website gebruikt technische opslag die strikt noodzakelijk is om uw taalvoorkeur te onthouden. Wij gebruiken geen analyse- of advertentiecookies. Door verder te bladeren accepteert u ons <a href="cookies.html">cookiebeleid</a>.',
+            'cookie.text': 'Deze website gebruikt technische opslag om uw taalvoorkeur te onthouden en analytische cookies (Google Analytics) om te begrijpen hoe de site wordt gebruikt. U kunt deze op elk moment accepteren of weigeren. <a href="cookies.html">Meer informatie</a>.',
             'cookie.accept': 'Accepteren',
+            'cookie.reject': 'Weigeren',
+            'footer.cookiePrefs': 'Cookievoorkeuren',
 
             'docTitle': 'Alex Fialka · Bedrijfsprocesoptimalisatie Consultancy'
         }
@@ -865,6 +844,15 @@
 
             window.location.href = `mailto:alex@fialka.es?subject=${subject}&body=${body}`;
 
+            // Google Analytics — evento de conversión
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'contact_form_submit', {
+                    'event_category': 'engagement',
+                    'event_label': form.topic.value,
+                    'language': currentLang
+                });
+            }
+
             status.textContent = dict['form.success'];
             status.classList.add('success');
             form.reset();
@@ -887,24 +875,61 @@
         }, { passive: true });
     }
 
-    /* ---------- Cookie banner ---------- */
+    /* ---------- Cookie banner + Google Consent Mode v2 ---------- */
     const banner = document.getElementById('cookieBanner');
     const cookieAccept = document.getElementById('cookieAccept');
+    const cookieReject = document.getElementById('cookieReject');
+    const cookiePrefs = document.getElementById('cookiePrefs');
 
-    if (banner && cookieAccept) {
-        const hasAccepted = safeStorage.get(COOKIE_KEY) === '1';
-        if (!hasAccepted) {
-            banner.hidden = false;
-            // small delay so the slide-in animation plays
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => banner.classList.add('show'));
+    const showBanner = () => {
+        if (!banner) return;
+        banner.hidden = false;
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => banner.classList.add('show'));
+        });
+    };
+
+    const hideBanner = () => {
+        if (!banner) return;
+        banner.classList.remove('show');
+        setTimeout(() => { banner.hidden = true; }, 400);
+    };
+
+    const updateConsent = (granted) => {
+        if (typeof window.gtag !== 'function') return;
+        window.gtag('consent', 'update', {
+            'analytics_storage': granted ? 'granted' : 'denied'
+        });
+    };
+
+    if (banner) {
+        const stored = safeStorage.get(COOKIE_KEY);
+        if (stored !== '1' && stored !== '0') {
+            showBanner();
+        }
+
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', () => {
+                safeStorage.set(COOKIE_KEY, '1');
+                updateConsent(true);
+                hideBanner();
             });
         }
 
-        cookieAccept.addEventListener('click', () => {
-            safeStorage.set(COOKIE_KEY, '1');
-            banner.classList.remove('show');
-            setTimeout(() => { banner.hidden = true; }, 400);
+        if (cookieReject) {
+            cookieReject.addEventListener('click', () => {
+                safeStorage.set(COOKIE_KEY, '0');
+                updateConsent(false);
+                hideBanner();
+            });
+        }
+    }
+
+    // Enlace "Preferencias de cookies" en el footer
+    if (cookiePrefs) {
+        cookiePrefs.addEventListener('click', (e) => {
+            e.preventDefault();
+            showBanner();
         });
     }
 })();
