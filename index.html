@@ -35,19 +35,39 @@
         gtag('config', 'G-2D53PM9XB3', { 'anonymize_ip': true });
     </script>
 
+    <!-- Primary SEO -->
+    <title>Alex Fialka · Consultoría de Optimización de Procesos de Negocio</title>
     <meta name="description" content="Alex Fialka — Consultor senior de optimización de procesos de negocio. Alineo los procesos con la realidad operativa para impulsar la excelencia operativa, la transformación organizacional y la eficiencia sostenible. 35+ años de experiencia internacional." />
     <meta name="keywords" content="optimización de procesos de negocio, consultoría de procesos, excelencia operativa, transformación organizacional, mejora del rendimiento, eficiencia sostenible, procesos de negocio integrados, método QARP, business process optimisation, consultor empresarial Europa, lean consulting, ISO 9001, PRINCE2" />
     <meta name="author" content="Alex Fialka" />
-    <title>Alex Fialka · Consultoría de Optimización de Procesos de Negocio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#1d4e8c" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="geo.region" content="ES-AL" />
+    <meta name="geo.placename" content="Almerimar, Almería" />
+    <link rel="canonical" href="https://fialka.es/" />
+
+    <!-- Hreflang (mismo URL — los idiomas se controlan en cliente vía JS/localStorage) -->
+    <link rel="alternate" hreflang="es" href="https://fialka.es/" />
+    <link rel="alternate" hreflang="en" href="https://fialka.es/" />
+    <link rel="alternate" hreflang="nl" href="https://fialka.es/" />
+    <link rel="alternate" hreflang="x-default" href="https://fialka.es/" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/Logo QARP 4.webp" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Alex Fialka · Optimización de procesos orientada al negocio" />
     <meta property="og:description" content="Consultoría senior en optimización de procesos de negocio. Alineo los procesos con la realidad operativa para impulsar la excelencia operativa, la transformación organizacional y la eficiencia sostenible." />
-    <meta property="og:image" content="images/alex de cerca.webp" />
-    <meta property="og:url" content="https://fialka.es" />
+    <meta property="og:image" content="https://fialka.es/images/alex%20de%20cerca.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alex Fialka — Consultor de optimización de procesos de negocio" />
+    <meta property="og:url" content="https://fialka.es/" />
     <meta property="og:site_name" content="Alex Fialka" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:locale:alternate" content="en_GB" />
@@ -57,32 +77,40 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Alex Fialka · Optimización de procesos de negocio" />
     <meta name="twitter:description" content="Alineo los procesos con la realidad operativa. 35+ años de experiencia internacional en excelencia operativa y transformación organizacional." />
-    <meta name="twitter:image" content="images/alex de cerca.webp" />
+    <meta name="twitter:image" content="https://fialka.es/images/alex%20de%20cerca.webp" />
+    <meta name="twitter:image:alt" content="Alex Fialka — Consultor de optimización de procesos de negocio" />
 
+    <!-- Performance / Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Schema.org structured data -->
+    <!-- Schema.org · ProfessionalService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
+      "@id": "https://fialka.es/#business",
       "name": "Alex Fialka — Business Process Optimisation Consultancy",
+      "alternateName": "Alex Fialka Consultancy",
       "description": "Senior business process optimisation consultancy. Aligning processes with operational reality to drive operational excellence, organisational transformation and sustainable efficiency.",
-      "image": "images/alex de cerca.webp",
-      "url": "https://fialka.es",
+      "image": "https://fialka.es/images/alex%20de%20cerca.webp",
+      "logo": "https://fialka.es/images/Logo%20QARP%204.webp",
+      "url": "https://fialka.es/",
       "telephone": "+31646596079",
       "email": "alex@fialka.es",
       "priceRange": "$$$",
-      "founder": {
-        "@type": "Person",
-        "name": "Alex Fialka",
-        "jobTitle": "Business Process Optimisation Consultant",
-        "knowsLanguage": ["Dutch", "English", "French", "German", "Spanish"]
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Almerimar",
+        "addressRegion": "Almería",
+        "addressCountry": "ES"
       },
+      "founder": { "@id": "https://fialka.es/#person" },
       "areaServed": ["Europe", "Netherlands", "Spain", "International"],
+      "availableLanguage": ["Spanish", "English", "Dutch", "French", "German"],
       "knowsAbout": [
         "Business process optimisation",
         "Operational excellence",
@@ -98,7 +126,55 @@
         "ISO 31000",
         "PRINCE2",
         "QARP methodology"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/alexfialka/"
       ]
+    }
+    </script>
+
+    <!-- Schema.org · Person (Alex) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://fialka.es/#person",
+      "name": "Alex Fialka",
+      "jobTitle": "Business Process Optimisation Consultant",
+      "description": "Senior consultant specialising in business process optimisation, operational excellence, organisational transformation and integrated risk management. 35+ years of international experience across maritime, industrial, logistics and financial sectors.",
+      "image": "https://fialka.es/images/alex%20de%20cerca.webp",
+      "url": "https://fialka.es/",
+      "email": "alex@fialka.es",
+      "telephone": "+31646596079",
+      "nationality": "NL",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Almerimar",
+        "addressRegion": "Almería",
+        "addressCountry": "ES"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Bachelor Business Administration"
+      },
+      "knowsLanguage": ["Dutch", "English", "Spanish", "French", "German"],
+      "sameAs": [
+        "https://www.linkedin.com/in/alexfialka/"
+      ]
+    }
+    </script>
+
+    <!-- Schema.org · WebSite (search-ready) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://fialka.es/#website",
+      "url": "https://fialka.es/",
+      "name": "Alex Fialka",
+      "inLanguage": ["es", "en", "nl"],
+      "publisher": { "@id": "https://fialka.es/#person" },
+      "description": "Consultoría senior de optimización de procesos de negocio."
     }
     </script>
 </head>
@@ -109,11 +185,14 @@
     <!-- Progress bar -->
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
+    <!-- Skip link for keyboard / screen-reader users -->
+    <a class="skip-link" href="#hero">Saltar al contenido</a>
+
     <!-- Navigation -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#hero" class="logo">
-                <img class="logo-mark" src="images/Logo QARP 4.webp" alt="QARP" />
+            <a href="#hero" class="logo" aria-label="Alex Fialka — Inicio">
+                <img class="logo-mark" src="images/Logo QARP 4.webp" alt="Logotipo QARP de Alex Fialka" width="42" height="42" />
                 <span class="logo-text">Alex&nbsp;Fialka</span>
             </a>
             <nav class="nav-links" id="navLinks">
@@ -122,14 +201,14 @@
                 <a href="#experience" data-i18n="nav.experience">Experiencia</a>
                 <a href="#skills" data-i18n="nav.skills">Skills</a>
                 <div class="lang-switcher" role="group" aria-label="Language">
-                    <button class="lang-btn active" type="button" data-lang="es" aria-label="Español">
-                        <img src="images/es-flag.webp" alt="ES" />
+                    <button class="lang-btn active" type="button" data-lang="es" aria-label="Cambiar idioma a Español" aria-pressed="true">
+                        <img src="images/es-flag.webp" alt="" width="32" height="22" aria-hidden="true" />
                     </button>
-                    <button class="lang-btn" type="button" data-lang="en" aria-label="English">
-                        <img src="images/uk-flag.webp" alt="EN" />
+                    <button class="lang-btn" type="button" data-lang="en" aria-label="Switch language to English" aria-pressed="false">
+                        <img src="images/uk-flag.webp" alt="" width="32" height="22" aria-hidden="true" />
                     </button>
-                    <button class="lang-btn" type="button" data-lang="nl" aria-label="Nederlands">
-                        <img src="images/nl-flag.webp" alt="NL" />
+                    <button class="lang-btn" type="button" data-lang="nl" aria-label="Taal wijzigen naar Nederlands" aria-pressed="false">
+                        <img src="images/nl-flag.webp" alt="" width="32" height="22" aria-hidden="true" />
                     </button>
                 </div>
             </nav>
@@ -142,6 +221,7 @@
         </div>
     </header>
 
+    <main id="main">
     <!-- Hero -->
     <section class="hero" id="hero">
         <div class="hero-bg">
@@ -200,7 +280,7 @@
                     <div class="hero-card-glow"></div>
                     <div class="hero-card-inner">
                         <div class="hero-photo">
-                            <img src="images/alex de cerca.webp" alt="Alex Fialka" loading="eager" />
+                            <img src="images/alex de cerca.webp" alt="Alex Fialka, consultor senior de optimización de procesos de negocio" loading="eager" fetchpriority="high" width="600" height="450" />
                         </div>
                         <div class="hero-card-body">
                             <p class="hc-name">Alex Fialka</p>
@@ -231,7 +311,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-portrait reveal">
-                    <img src="images/alex de lejos.webp" alt="Alex Fialka portrait" loading="lazy" />
+                    <img src="images/alex de lejos.webp" alt="Alex Fialka, retrato profesional — más de 35 años de experiencia internacional en consultoría de procesos" loading="lazy" width="720" height="900" />
                     <span class="portrait-tag" data-i18n="hc.role">Consultor de procesos · Asesor senior</span>
                 </div>
                 <div class="about-text reveal">
@@ -537,7 +617,7 @@
                     </div>
                     <div style="margin-top:14px">
                         <span class="qarp-badge">
-                            <img src="images/Logo QARP 4.webp" alt="QARP" />
+                            <img src="images/Logo QARP 4.webp" alt="Logotipo método QARP" width="28" height="28" />
                             <span data-i18n="skills.qarpBadge">Creador del método QARP · Quality · Assurance · Risk · Process</span>
                         </span>
                     </div>
@@ -623,12 +703,14 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="f-col">
-                <a href="#hero" class="logo">
-                    <img class="logo-mark" src="images/Logo QARP 4.webp" alt="QARP" />
+                <a href="#hero" class="logo" aria-label="Alex Fialka — Inicio">
+                    <img class="logo-mark" src="images/Logo QARP 4.webp" alt="Logotipo QARP de Alex Fialka" width="42" height="42" />
                     <span class="logo-text">Alex&nbsp;Fialka</span>
                 </a>
                 <p data-i18n="footer.about">Consultor senior de optimización de procesos de negocio. 35+ años alineando procesos con la realidad operativa para impulsar excelencia operativa, transformación organizacional y eficiencia sostenible.</p>
