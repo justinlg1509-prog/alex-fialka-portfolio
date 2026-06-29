@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +37,8 @@
 
     <!-- Primary SEO -->
     <title>Alex Fialka · Consultoría de Optimización de Procesos de Negocio</title>
-    <meta name="description" content="Alex Fialka — Consultor senior de optimización de procesos de negocio. Alineo los procesos con la realidad operativa para impulsar la excelencia operativa, la transformación organizacional y la eficiencia sostenible. 35+ años de experiencia internacional." />
-    <meta name="keywords" content="optimización de procesos de negocio, consultoría de procesos, excelencia operativa, transformación organizacional, mejora del rendimiento, eficiencia sostenible, procesos de negocio integrados, método QARP, business process optimisation, consultor empresarial Europa, lean consulting, ISO 9001, PRINCE2" />
+    <meta name="description" content="Alex Fialka — Ejecutivo senior de optimización de procesos de negocio. Alineo los procesos con la realidad operativa para impulsar la excelencia operativa, la transformación organizacional y la eficiencia sostenible. 35+ años de experiencia internacional." />
+    <meta name="keywords" content="optimización de procesos de negocio, consultoría de procesos, excelencia operativa, transformación organizacional, mejora del rendimiento, eficiencia sostenible, procesos de negocio integrados, método QARP, business process optimization, ejecutivo empresarial Europa, lean consulting, ISO 9001, PRINCE2" />
     <meta name="author" content="Alex Fialka" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
@@ -48,16 +48,14 @@
     <meta name="geo.placename" content="Almerimar, Almería" />
     <link rel="canonical" href="https://fialka.es/" />
 
-    <!-- Hreflang (mismo URL — los idiomas se controlan en cliente vía JS/localStorage) -->
+    <!-- Hreflang — una URL por idioma -->
     <link rel="alternate" hreflang="es" href="https://fialka.es/" />
-    <link rel="alternate" hreflang="en" href="https://fialka.es/" />
-    <link rel="alternate" hreflang="nl" href="https://fialka.es/" />
+    <link rel="alternate" hreflang="en" href="https://fialka.es/en/" />
+    <link rel="alternate" hreflang="nl" href="https://fialka.es/nl/" />
     <link rel="alternate" hreflang="x-default" href="https://fialka.es/" />
 
     <!-- Icons -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="/images/Logo QARP 4.webp" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -66,7 +64,7 @@
     <meta property="og:image" content="https://fialka.es/images/alex%20de%20cerca.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Alex Fialka — Consultor de optimización de procesos de negocio" />
+    <meta property="og:image:alt" content="Alex Fialka — Ejecutivo de optimización de procesos de negocio" />
     <meta property="og:url" content="https://fialka.es/" />
     <meta property="og:site_name" content="Alex Fialka" />
     <meta property="og:locale" content="es_ES" />
@@ -78,7 +76,7 @@
     <meta name="twitter:title" content="Alex Fialka · Optimización de procesos de negocio" />
     <meta name="twitter:description" content="Alineo los procesos con la realidad operativa. 35+ años de experiencia internacional en excelencia operativa y transformación organizacional." />
     <meta name="twitter:image" content="https://fialka.es/images/alex%20de%20cerca.webp" />
-    <meta name="twitter:image:alt" content="Alex Fialka — Consultor de optimización de procesos de negocio" />
+    <meta name="twitter:image:alt" content="Alex Fialka — Ejecutivo de optimización de procesos de negocio" />
 
     <!-- Performance / Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,19 +85,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="images/alex de cerca.webp" fetchpriority="high" />
+
     <!-- Schema.org · ProfessionalService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "@id": "https://fialka.es/#business",
-      "name": "Alex Fialka — Business Process Optimisation Consultancy",
+      "name": "Alex Fialka — Business Process Optimization Consultancy",
       "alternateName": "Alex Fialka Consultancy",
-      "description": "Senior business process optimisation consultancy. Aligning processes with operational reality to drive operational excellence, organisational transformation and sustainable efficiency.",
+      "description": "Senior business process optimization consultancy. Aligning processes with operational reality to drive operational excellence, organizational transformation and sustainable efficiency.",
       "image": "https://fialka.es/images/alex%20de%20cerca.webp",
-      "logo": "https://fialka.es/images/Logo%20QARP%204.webp",
       "url": "https://fialka.es/",
-      "telephone": "+31646596079",
+      "telephone": "+34641058422",
       "email": "alex@fialka.es",
       "priceRange": "$$$",
       "address": {
@@ -112,9 +112,9 @@
       "areaServed": ["Europe", "Netherlands", "Spain", "International"],
       "availableLanguage": ["Spanish", "English", "Dutch", "French", "German"],
       "knowsAbout": [
-        "Business process optimisation",
+        "Business process optimization",
         "Operational excellence",
-        "Organisational transformation",
+        "Organizational transformation",
         "Performance improvement",
         "Integrated business processes",
         "Sustainable efficiency",
@@ -127,6 +127,18 @@
         "PRINCE2",
         "QARP methodology"
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Business process optimization services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business process optimization", "description": "Diagnosis and redesign of processes to reduce lead times, costs and deviations using Lean, S5 and 8D." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Operational excellence & ISO", "description": "Design and implementation of integrated management systems (ISO 9001, 14001, 45001)." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Organizational transformation", "description": "End-to-end change management: diagnosis, awareness, training and cultural consolidation." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Integrated risk management", "description": "Identification and mitigation of operational, technical and financial risks (HAZOP, FMEA, LMRA, RI&E)." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Procurement & supply chain", "description": "Redesign of procurement, contract management and supply chain processes." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Project & contract management", "description": "PRINCE2-certified project and contract delivery with rigorous budget control." } }
+        ]
+      },
       "sameAs": [
         "https://www.linkedin.com/in/alexfialka/"
       ]
@@ -140,12 +152,12 @@
       "@type": "Person",
       "@id": "https://fialka.es/#person",
       "name": "Alex Fialka",
-      "jobTitle": "Business Process Optimisation Consultant",
-      "description": "Senior consultant specialising in business process optimisation, operational excellence, organisational transformation and integrated risk management. 35+ years of international experience across maritime, industrial, logistics and financial sectors.",
+      "jobTitle": "Business Process Optimization Executive",
+      "description": "Senior executive specializing in business process optimization, operational excellence, organizational transformation and integrated risk management. 35+ years of international experience across maritime, industrial, logistics and financial sectors.",
       "image": "https://fialka.es/images/alex%20de%20cerca.webp",
       "url": "https://fialka.es/",
       "email": "alex@fialka.es",
-      "telephone": "+31646596079",
+      "telephone": "+34641058422",
       "nationality": "NL",
       "address": {
         "@type": "PostalAddress",
@@ -191,8 +203,7 @@
     <!-- Navigation -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#hero" class="logo" aria-label="Alex Fialka — Inicio">
-                <img class="logo-mark" src="images/Logo QARP 4.webp" alt="Logotipo QARP de Alex Fialka" width="42" height="42" />
+            <a href="#hero" class="logo logo--text" aria-label="Alex Fialka — Inicio">
                 <span class="logo-text">Alex&nbsp;Fialka</span>
             </a>
             <nav class="nav-links" id="navLinks">
@@ -225,9 +236,6 @@
     <!-- Hero -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
             <div class="grid-pattern"></div>
         </div>
         <div class="container hero-container">
@@ -246,12 +254,11 @@
                 <p class="hero-subtitle" data-i18n-html="hero.subtitle">
                     Más de <strong>35 años</strong> ayudando a organizaciones internacionales a alcanzar la
                     <em>excelencia operativa</em> a través de la <em>transformación organizacional</em>
-                    y la <em>optimización de procesos de negocio</em>. Pragmático, orientado a resultados
-                    y con visión de helicóptero.
+                    y la <em>optimización de procesos de negocio</em>.
                 </p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary">
-                        <span data-i18n="hero.btnPrimary">Reservar una consultoría</span>
+                        <span data-i18n="hero.btnPrimary">Pedir consultoría</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                     </a>
                     <a href="#experience" class="btn btn-ghost" data-i18n="hero.btnGhost">Ver trayectoria</a>
@@ -280,17 +287,11 @@
                     <div class="hero-card-glow"></div>
                     <div class="hero-card-inner">
                         <div class="hero-photo">
-                            <img src="images/alex de cerca.webp" alt="Alex Fialka, consultor senior de optimización de procesos de negocio" loading="eager" fetchpriority="high" width="600" height="450" />
+                            <img src="images/alex de cerca.webp" data-i18n-alt="img.alt.hero" alt="Alex Fialka, ejecutivo senior de optimización de procesos de negocio" loading="eager" fetchpriority="high" width="600" height="450" />
                         </div>
                         <div class="hero-card-body">
                             <p class="hc-name">Alex Fialka</p>
-                            <p class="hc-role" data-i18n="hc.role">Consultor de procesos · Asesor senior</p>
-                            <ul class="hc-list">
-                                <li><span>📍</span> <span data-i18n="hc.location">Almerimar, España</span></li>
-                                <li><span>🌍</span> <span data-i18n="hc.background">Holandés · Background internacional</span></li>
-                                <li><span>🎓</span> <span data-i18n="hc.degree">Bachelor Business Administration</span></li>
-                                <li><span>✅</span> <span>ISO 9001 / 14001 / 45001 / PRINCE2</span></li>
-                            </ul>
+                            <p class="hc-role" data-i18n="hc.role">Ejecutivo de procesos · Asesor senior [revisar traducción]</p>
                             <div class="hc-tags">
                                 <span data-i18n="hc.tagProcess">Procesos</span><span data-i18n="hc.tagOpex">Excelencia Op.</span><span>Lean</span>
                                 <span data-i18n="hc.tagRisk">Riesgo</span><span data-i18n="hc.tagChange">Gestión del cambio</span>
@@ -307,28 +308,37 @@
         <div class="container">
             <div class="section-head reveal">
                 <span class="kicker" data-i18n="about.kicker">01 — Sobre mí</span>
-                <h2 data-i18n-html="about.title">Convierto la complejidad en <span class="grad">procesos claros, integrados y eficientes</span>.</h2>
+                <h2 data-i18n-html="about.title">Convierto la complejidad en procesos claros, integrados y eficientes.</h2>
             </div>
             <div class="about-grid">
                 <div class="about-portrait reveal">
-                    <img src="images/alex de lejos.webp" alt="Alex Fialka, retrato profesional — más de 35 años de experiencia internacional en consultoría de procesos" loading="lazy" width="720" height="900" />
-                    <span class="portrait-tag" data-i18n="hc.role">Consultor de procesos · Asesor senior</span>
+                    <img src="images/alex de lejos.webp" data-i18n-alt="img.alt.portrait" alt="Alex Fialka, retrato profesional — más de 35 años de experiencia internacional en consultoría de procesos" loading="lazy" decoding="async" width="720" height="900" />
+                    <span class="portrait-tag" data-i18n="hc.role">Ejecutivo de procesos · Asesor senior [revisar traducción]</span>
                 </div>
                 <div class="about-text reveal">
                     <p class="lead" data-i18n="about.lead">
-                        Soy consultor de optimización de procesos de negocio orientado a resultados,
-                        especializado en alinear los procesos con la realidad operativa de cada
-                        organización. He liderado equipos multidisciplinares en sectores diversos:
-                        industrial, logístico, marítimo, financiero y de servicios.
+                        Soy un ejecutivo de optimización de procesos de negocio orientado a resultados,
+                        especializado en alinear los procesos con la realidad operativa de cada organización.
+                        He liderado equipos multidisciplinares en producción industrial, logística,
+                        producción offshore y una variedad de servicios marítimos. [revisar traducción]
+                    </p>
+                    <p data-i18n-html="about.vision">
+                        <strong>Mi visión</strong> — Marcar el estándar en optimización de procesos orientada
+                        al negocio: organizaciones que operan con claridad, eficiencia y un rendimiento que
+                        perdura. [borrador de Visión — revisar]
                     </p>
                     <p data-i18n-html="about.p2">
-                        Mi misión: <strong>impulsar la excelencia operativa y la eficiencia sostenible</strong>
-                        a través de procesos de negocio integrados y de transformaciones organizacionales
-                        que cuajan. En la búsqueda de la mejora continua, considero el respeto,
-                        los principios y los valores como elementos clave para alcanzar el éxito.
+                        <strong>Mi misión</strong> — Impulsar la excelencia operativa y la eficiencia sostenible
+                        a través de procesos de negocio integrados y transformaciones organizacionales que
+                        cuajan. [revisar traducción]
                     </p>
                 </div>
             </div>
+
+            <figure class="about-banner reveal">
+                <img src="images/about-analysis.webp" data-i18n-alt="img.alt.banner" alt="Análisis de procesos de negocio: planificación con datos, diagramas y métricas sobre la mesa de trabajo" loading="lazy" decoding="async" width="1100" height="619" />
+                <figcaption data-i18n="about.bannerCaption">Diagnóstico, datos y rediseño: así alineo los procesos con la realidad operativa.</figcaption>
+            </figure>
 
             <ul class="competence-list reveal">
                 <li data-i18n="about.competence.0">Pragmático &amp; orientado a resultados</li>
@@ -345,10 +355,9 @@
                 <div class="quote-card reveal">
                     <svg class="qmark" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 00-2 2v4a2 2 0 002 2h2v2a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm10 0h-4a2 2 0 00-2 2v4a2 2 0 002 2h2v2a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
                     <p data-i18n="about.quote">
-                        Respeto, principios y valores son elementos clave para alcanzar
-                        el éxito en cualquier proceso de mejora continua.
+                        Los procesos deben servir al negocio, no al revés.
                     </p>
-                    <span data-i18n="about.quoteAuthor">— Filosofía profesional</span>
+                    <span data-i18n="about.quoteAuthor">— Optimización de procesos orientada al negocio</span>
                 </div>
                 <div class="languages reveal">
                     <h4 data-i18n="about.langTitle">Idiomas</h4>
@@ -358,6 +367,23 @@
                     <div class="lang"><span data-i18n="about.lang.german">Alemán</span><div class="bar"><i style="--w:70%"></i></div><small data-i18n="about.level.competent">Competente</small></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Feature band · approach statement -->
+    <section class="feature-band" aria-label="Enfoque">
+        <div class="feature-band-bg">
+            <img src="images/feature-process.webp" data-i18n-alt="img.alt.feature" alt="Vista aérea de una terminal portuaria de contenedores — logística, orden y procesos a gran escala" loading="lazy" decoding="async" width="1500" height="1000" />
+        </div>
+        <div class="container feature-band-inner reveal">
+            <span class="feature-eyebrow" data-i18n="feature.eyebrow">El enfoque</span>
+            <h2 class="feature-title" data-i18n="feature.title">Personas, procesos y tecnología alineados con la realidad de tu negocio.</h2>
+            <p class="feature-sub" data-i18n="feature.sub">De la complejidad operativa a estructuras prácticas, escalables y sostenibles — más de 35 años convirtiendo procesos en resultados medibles.</p>
+            <ul class="feature-pillars">
+                <li data-i18n="feature.p0">Personas</li>
+                <li data-i18n="feature.p1">Procesos</li>
+                <li data-i18n="feature.p2">Tecnología</li>
+            </ul>
         </div>
     </section>
 
@@ -617,7 +643,6 @@
                     </div>
                     <div style="margin-top:14px">
                         <span class="qarp-badge">
-                            <img src="images/Logo QARP 4.webp" alt="Logotipo método QARP" width="28" height="28" />
                             <span data-i18n="skills.qarpBadge">Creador del método QARP · Quality · Assurance · Risk · Process</span>
                         </span>
                     </div>
@@ -641,19 +666,27 @@
                     </p>
                     <ul class="contact-info">
                         <li>
-                            <span class="ci-icon">✉️</span>
+                            <span class="ci-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            </span>
                             <div><small data-i18n="contact.info.email">Email</small><a href="mailto:alex@fialka.es">alex@fialka.es</a></div>
                         </li>
                         <li>
-                            <span class="ci-icon">📞</span>
-                            <div><small data-i18n="contact.info.phone">Teléfono</small><a href="tel:+31646596079">+31 (0)6 4659 6079</a></div>
+                            <span class="ci-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
+                            <div><small data-i18n="contact.info.phone">Teléfono</small><a href="tel:+34641058422">+34 641 05 84 22</a></div>
                         </li>
                         <li>
-                            <span class="ci-icon">📍</span>
+                            <span class="ci-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
                             <div><small data-i18n="contact.info.location">Ubicación</small><span data-i18n="contact.info.locationVal">Almerimar, España</span></div>
                         </li>
                         <li>
-                            <span class="ci-icon">🔗</span>
+                            <span class="ci-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.94H5.56v8.4h2.78zM6.95 8.7a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22zm11.39 9.64v-4.6c0-2.46-1.31-3.6-3.07-3.6-1.42 0-2.05.78-2.4 1.33v-1.14h-2.78v8.4h2.78v-4.69c0-.25.02-.5.09-.67.2-.5.65-1.01 1.41-1.01.99 0 1.39.75 1.39 1.86v4.51h2.78z"/></svg>
+                            </span>
                             <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/alexfialka/" target="_blank" rel="noopener">linkedin.com/in/alexfialka</a></div>
                         </li>
                     </ul>
@@ -710,7 +743,6 @@
         <div class="container footer-grid">
             <div class="f-col">
                 <a href="#hero" class="logo" aria-label="Alex Fialka — Inicio">
-                    <img class="logo-mark" src="images/Logo QARP 4.webp" alt="Logotipo QARP de Alex Fialka" width="42" height="42" />
                     <span class="logo-text">Alex&nbsp;Fialka</span>
                 </a>
                 <p data-i18n="footer.about">Consultor senior de optimización de procesos de negocio. 35+ años alineando procesos con la realidad operativa para impulsar excelencia operativa, transformación organizacional y eficiencia sostenible.</p>
@@ -739,7 +771,7 @@
                 <h5 data-i18n="footer.contact">Contacto</h5>
                 <ul>
                     <li><a href="mailto:alex@fialka.es">alex@fialka.es</a></li>
-                    <li><a href="tel:+31646596079">+31 (0)6 4659 6079</a></li>
+                    <li><a href="tel:+34641058422">+34 641 05 84 22</a></li>
                     <li data-i18n="contact.info.locationVal">Almerimar, España</li>
                     <li><a href="https://www.linkedin.com/in/alexfialka/" target="_blank" rel="noopener">LinkedIn</a></li>
                 </ul>

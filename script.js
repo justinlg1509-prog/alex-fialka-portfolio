@@ -21,15 +21,15 @@
             'hero.title2': 'Optimización de procesos',
             'hero.title3': 'orientada al negocio',
             'hero.mission': 'Alineo los procesos con la realidad operativa para mejorar la eficiencia, el rendimiento organizacional y el crecimiento sostenible.',
-            'hero.subtitle': 'Más de <strong>35 años</strong> ayudando a organizaciones internacionales a alcanzar la <em>excelencia operativa</em> a través de la <em>transformación organizacional</em> y la <em>optimización de procesos de negocio</em>. Pragmático, orientado a resultados y con visión de helicóptero.',
-            'hero.btnPrimary': 'Reservar una consultoría',
+            'hero.subtitle': 'Más de <strong>35 años</strong> ayudando a organizaciones internacionales a alcanzar la <em>excelencia operativa</em> a través de la <em>transformación organizacional</em> y la <em>optimización de procesos de negocio</em>.',
+            'hero.btnPrimary': 'Pedir consultoría',
             'hero.btnGhost': 'Ver trayectoria',
             'hero.stats.years': 'años de experiencia',
             'hero.stats.companies': 'empresas optimizadas',
             'hero.stats.positions': 'posiciones de liderazgo',
             'hero.stats.languages': 'idiomas',
 
-            'hc.role': 'Consultor de procesos · Asesor senior',
+            'hc.role': 'Ejecutivo de procesos · Asesor senior [revisar traducción]',
             'hc.location': 'Almerimar, España',
             'hc.background': 'Holandés · Background internacional',
             'hc.degree': 'Bachelor Business Administration',
@@ -39,9 +39,10 @@
             'hc.tagChange': 'Gestión del cambio',
 
             'about.kicker': '01 — Sobre mí',
-            'about.title': 'Convierto la complejidad en <span class="grad">procesos claros, integrados y eficientes</span>.',
-            'about.lead': 'Soy consultor de optimización de procesos de negocio orientado a resultados, especializado en alinear los procesos con la realidad operativa de cada organización. He liderado equipos multidisciplinares en sectores diversos: industrial, logístico, marítimo, financiero y de servicios.',
-            'about.p2': 'Mi misión: <strong>impulsar la excelencia operativa y la eficiencia sostenible</strong> a través de procesos de negocio integrados y de transformaciones organizacionales que cuajan. En la búsqueda de la mejora continua, considero el respeto, los principios y los valores como elementos clave para alcanzar el éxito.',
+            'about.title': 'Convierto la complejidad en procesos claros, integrados y eficientes.',
+            'about.lead': 'Soy un ejecutivo de optimización de procesos de negocio orientado a resultados, especializado en alinear los procesos con la realidad operativa de cada organización. He liderado equipos multidisciplinares en producción industrial, logística, producción offshore y una variedad de servicios marítimos. [revisar traducción]',
+            'about.vision': '<strong>Mi visión</strong> — Marcar el estándar en optimización de procesos orientada al negocio: organizaciones que operan con claridad, eficiencia y un rendimiento que perdura. [borrador de Visión — revisar]',
+            'about.p2': '<strong>Mi misión</strong> — Impulsar la excelencia operativa y la eficiencia sostenible a través de procesos de negocio integrados y transformaciones organizacionales que cuajan. [revisar traducción]',
             'about.competence.0': 'Pragmático & orientado a resultados',
             'about.competence.1': 'Fiable & comunicativo',
             'about.competence.2': 'Flexible & motivado',
@@ -50,8 +51,8 @@
             'about.competence.5': 'Decisivo y proactivo',
             'about.competence.6': 'Racional & innovador',
             'about.competence.7': 'Enfocado en resultados',
-            'about.quote': 'Respeto, principios y valores son elementos clave para alcanzar el éxito en cualquier proceso de mejora continua.',
-            'about.quoteAuthor': '— Filosofía profesional',
+            'about.quote': 'El respeto, los valores y la integridad son factores clave para alcanzar tus objetivos. [revisar traducción]',
+            'about.quoteAuthor': '— Optimización de procesos orientada al negocio',
             'about.langTitle': 'Idiomas',
             'about.lang.dutch': 'Holandés',
             'about.lang.english': 'Inglés',
@@ -60,6 +61,14 @@
             'about.level.native': 'Nativo',
             'about.level.fluent': 'Fluido',
             'about.level.competent': 'Competente',
+            'about.bannerCaption': 'Diagnóstico, datos y rediseño: así alineo los procesos con la realidad operativa.',
+
+            'feature.eyebrow': 'El enfoque',
+            'feature.title': 'Personas, procesos y tecnología alineados con la realidad de tu negocio.',
+            'feature.sub': 'De la complejidad operativa a estructuras prácticas, escalables y sostenibles — más de 35 años convirtiendo procesos en resultados medibles.',
+            'feature.p0': 'Personas',
+            'feature.p1': 'Procesos',
+            'feature.p2': 'Tecnología',
 
             'services.kicker': '02 — Consultoría',
             'services.title': 'Servicios profesionales <span class="grad">a medida</span> para tu organización.',
@@ -172,7 +181,7 @@
             'form.mailNombre': 'Nombre', 'form.mailEmail': 'Email', 'form.mailEmpresa': 'Empresa',
             'form.mailTopic': 'Tipo de consultoría', 'form.mailMessage': 'Mensaje',
 
-            'footer.about': 'Consultor senior de optimización de procesos de negocio. 35+ años alineando procesos con la realidad operativa para impulsar excelencia operativa, transformación organizacional y eficiencia sostenible.',
+            'footer.about': 'Ejecutivo senior de optimización de procesos de negocio. 35+ años alineando procesos con la realidad operativa para impulsar excelencia operativa, transformación organizacional y eficiencia sostenible.',
             'footer.nav': 'Navegación',
             'footer.services': 'Servicios',
             'footer.contact': 'Contacto',
@@ -192,7 +201,12 @@
             'cookie.reject': 'Rechazar',
             'footer.cookiePrefs': 'Preferencias de cookies',
 
-            'docTitle': 'Alex Fialka · Consultoría de Optimización de Procesos de Negocio'
+            'docTitle': 'Alex Fialka · Consultoría de Optimización de Procesos de Negocio',
+            'metaDesc': 'Alex Fialka — Ejecutivo senior de optimización de procesos de negocio. Alineo los procesos con la realidad operativa para impulsar la excelencia operativa, la transformación organizacional y la eficiencia sostenible. Más de 35 años de experiencia internacional.',
+            'img.alt.hero': 'Alex Fialka, ejecutivo senior de optimización de procesos de negocio',
+            'img.alt.portrait': 'Alex Fialka, retrato profesional — más de 35 años de experiencia internacional en consultoría de procesos',
+            'img.alt.banner': 'Análisis de procesos de negocio: planificación con datos, diagramas y métricas sobre la mesa de trabajo',
+            'img.alt.feature': 'Vista aérea de una terminal portuaria de contenedores — logística, orden y procesos a gran escala'
         },
 
         en: {
@@ -205,17 +219,17 @@
 
             'hero.eyebrow': 'Available for consulting projects',
             'hero.title2': 'Business-driven',
-            'hero.title3': 'process optimisation',
-            'hero.mission': 'Aligning processes with operational reality to improve efficiency, organisational performance and sustainable growth.',
-            'hero.subtitle': 'Over <strong>35 years</strong> helping international organisations achieve <em>operational excellence</em> through <em>organisational transformation</em> and <em>business process optimisation</em>. Pragmatic, results-driven and with a helicopter view.',
-            'hero.btnPrimary': 'Book a consultation',
+            'hero.title3': 'process optimization',
+            'hero.mission': 'Aligning processes with operational reality to improve efficiency, organizational performance and sustainable growth.',
+            'hero.subtitle': 'Over <strong>35 years</strong> helping international organizations achieve <em>operational excellence</em> through <em>organizational transformation</em> and <em>business process optimization</em>.',
+            'hero.btnPrimary': 'Request a consultation',
             'hero.btnGhost': 'See career path',
             'hero.stats.years': 'years of experience',
-            'hero.stats.companies': 'companies optimised',
+            'hero.stats.companies': 'companies optimized',
             'hero.stats.positions': 'leadership roles',
             'hero.stats.languages': 'languages',
 
-            'hc.role': 'Business Process Consultant · Senior Advisor',
+            'hc.role': 'Business Process Executive · Senior Advisor',
             'hc.location': 'Almerimar, Spain',
             'hc.background': 'Dutch · International background',
             'hc.degree': 'Bachelor Business Administration',
@@ -225,19 +239,20 @@
             'hc.tagChange': 'Change Mgmt',
 
             'about.kicker': '01 — About me',
-            'about.title': 'I turn complexity into <span class="grad">clear, integrated, efficient processes</span>.',
-            'about.lead': 'I am a results-driven business process optimisation consultant, specialising in aligning processes with the operational reality of each organisation. I have led multidisciplinary teams across diverse sectors: industrial, logistics, maritime, financial and services.',
-            'about.p2': 'My mission: <strong>driving operational excellence and sustainable efficiency</strong> through integrated business processes and organisational transformations that actually stick. In the pursuit of continuous improvement, I see respect, principles and values as the keys to success.',
+            'about.title': 'I turn complexity into clear, integrated, efficient processes.',
+            'about.lead': 'I am a results-driven business process optimization executive, specialized in aligning processes with the operational reality of each organization. I have led multidisciplinary teams across industrial, logistics, offshore production, and a variety of maritime services.',
+            'about.vision': '<strong>My Vision</strong> — To set the standard for business-driven process optimization, where organizations run on processes that are clear, efficient, and built to last. [borrador de Visión — revisar]',
+            'about.p2': '<strong>My mission</strong> — Driving operational excellence and sustainable efficiency through integrated business processes and organizational transformations that actually stick.',
             'about.competence.0': 'Pragmatic & results-driven',
             'about.competence.1': 'Reliable & communicative',
             'about.competence.2': 'Flexible & motivated',
-            'about.competence.3': 'Organiser with global vision',
+            'about.competence.3': 'Organizer with global vision',
             'about.competence.4': 'Analytical & problem-solver',
             'about.competence.5': 'Decisive and proactive',
             'about.competence.6': 'Rational & innovative',
             'about.competence.7': 'Results-focused',
-            'about.quote': 'Respect, principles and values are the keys to success in any continuous improvement journey.',
-            'about.quoteAuthor': '— Professional philosophy',
+            'about.quote': 'Respect, values, and integrity are key factors in achieving your goals.',
+            'about.quoteAuthor': '— Business-Driven Process Optimization',
             'about.langTitle': 'Languages',
             'about.lang.dutch': 'Dutch',
             'about.lang.english': 'English',
@@ -246,21 +261,29 @@
             'about.level.native': 'Native',
             'about.level.fluent': 'Fluent',
             'about.level.competent': 'Competent',
+            'about.bannerCaption': 'Diagnosis, data and redesign: this is how I align processes with operational reality.',
+
+            'feature.eyebrow': 'The approach',
+            'feature.title': 'People, processes and technology aligned with the reality of your business.',
+            'feature.sub': 'From operational complexity to practical, scalable and sustainable structures — 35+ years turning processes into measurable results.',
+            'feature.p0': 'People',
+            'feature.p1': 'Processes',
+            'feature.p2': 'Technology',
 
             'services.kicker': '02 — Consulting',
-            'services.title': 'Tailored <span class="grad">professional services</span> for your organisation.',
+            'services.title': 'Tailored <span class="grad">professional services</span> for your organization.',
             'services.sub': 'More than three decades of international experience at the service of your company. Every project is tailored, with a focus on integrated business processes and measurable results.',
-            'services.0.title': 'Business process optimisation',
+            'services.0.title': 'Business process optimization',
             'services.0.desc': 'Process diagnosis and redesign to reduce time, cost and deviations applying Lean, S5 and 8D — geared towards operational excellence.',
             'services.0.items.0': 'Value stream mapping',
             'services.0.items.1': 'KPIs & dashboards',
-            'services.0.items.2': 'Process standardisation',
+            'services.0.items.2': 'Process standardization',
             'services.1.title': 'Operational excellence & ISO',
             'services.1.desc': 'Design and implementation of integrated management systems that align quality, safety and environment with business objectives (ISO 9001, 14001, 45001).',
             'services.1.items.0': 'Internal and external audits',
             'services.1.items.1': 'Certification & continuous improvement',
             'services.1.items.2': 'Documentation & flowcharting',
-            'services.2.title': 'Organisational transformation',
+            'services.2.title': 'Organizational transformation',
             'services.2.desc': 'End-to-end support through change: diagnosis, awareness, training and cultural consolidation so the transformation actually sticks.',
             'services.2.items.0': 'Workshops & executive coaching',
             'services.2.items.1': 'Awareness programmes',
@@ -268,7 +291,7 @@
             'services.3.title': 'Integrated risk management',
             'services.3.desc': 'Identification and mitigation of operational, technical and financial risks applying HAZOP, FMEA, LMRA and RI&E to business processes.',
             'services.3.items.0': 'Complete risk assessments',
-            'services.3.items.1': 'Policy and cost optimisation',
+            'services.3.items.1': 'Policy and cost optimization',
             'services.3.items.2': 'Business continuity plans',
             'services.4.title': 'Procurement & supply chain',
             'services.4.desc': 'Process redesign for purchasing, contract management and supply chain to unlock sustainable efficiency from the first order.',
@@ -282,8 +305,8 @@
             'services.5.items.2': 'Stakeholder management',
 
             'exp.kicker': '03 — Career',
-            'exp.title': 'A career optimising <span class="grad">processes across any sector</span>.',
-            'exp.sub': 'From Maersk Line in the 80s to QHSE leadership in multinational groups. 35+ years applying operational excellence, integrated risk management and organisational transformation. The sector changes; the principles do not.',
+            'exp.title': 'A career optimizing <span class="grad">processes across any sector</span>.',
+            'exp.sub': 'From Maersk Line in the 80s to QHSE leadership in multinational groups. 35+ years applying operational excellence, integrated risk management and organizational transformation. The sector changes; the principles do not.',
             'exp.0.title': 'Group QHSE Manager',
             'exp.0.desc': 'Led process integration across 7 divisions and nearly 60 operating companies. Designed an integrated management system that aligned quality, risk and operations across every business discipline.',
             'exp.0.tag0': '60 companies', 'exp.0.tag1': '7 divisions', 'exp.0.tag2': 'Integrated system',
@@ -295,7 +318,7 @@
             'exp.2.desc': 'Implemented an integrated management system and led the introduction of Lean Manufacturing, reducing lead times across the full production cycle.',
             'exp.2.tag1': 'Process',
             'exp.3.title': 'Senior Consultant',
-            'exp.3.desc': 'Consulting in procurement, logistics and change management processes. Developed the QARP methodology (Quality, Assurance, Risk, Process): four pillars to optimise business processes in any sector.',
+            'exp.3.desc': 'Consulting in procurement, logistics and change management processes. Developed the QARP methodology (Quality, Assurance, Risk, Process): four pillars to optimize business processes in any sector.',
             'exp.3.tag2': 'Process',
             'exp.4.title': 'Purchase & Fleet Logistics Manager',
             'exp.4.desc': 'Redesigned the procurement process (US$ 120M/year), supply chain and agency operations (700 suppliers / 300 port agents), generating a 20% cost saving.',
@@ -304,7 +327,7 @@
             'exp.5.desc': 'Redesigned the risk management process across a US$ 300M insured portfolio, generating a 64% saving (US$ 1.3M) and a financial monitoring system for major repairs.',
             'exp.5.tag0': '-64% premium',
             'exp.6.title': 'Operations Manager',
-            'exp.6.desc': 'Optimised the operations and maintenance processes of two container vessels: +15% revenue and -30% operating & maintenance costs.',
+            'exp.6.desc': 'Optimized the operations and maintenance processes of two container vessels: +15% revenue and -30% operating & maintenance costs.',
             'exp.6.tag0': '+15% revenue', 'exp.6.tag1': '-30% costs',
             'exp.7.title': 'Financial Manager',
             'exp.7.desc': 'Redesigned finance, IT, customs and documentation processes. Internal restructuring and departmental performance improvement.',
@@ -326,7 +349,7 @@
 
             'contact.kicker': '05 — Contact',
             'contact.title': 'Want to align your processes with <span class="grad">operational reality</span>?',
-            'contact.p': 'Tell me briefly about your challenge and I will reply within 48 hours. Available for short-term projects, ongoing advisory or one-off interventions in business process optimisation, operational excellence, risk management or organisational transformation.',
+            'contact.p': 'Tell me briefly about your challenge and I will reply within 48 hours. Available for short-term projects, ongoing advisory or one-off interventions in business process optimization, operational excellence, risk management or organizational transformation.',
             'contact.info.email': 'Email',
             'contact.info.phone': 'Phone',
             'contact.info.location': 'Location',
@@ -339,9 +362,9 @@
             'form.company': 'Company',
             'form.companyPh': 'Company (optional)',
             'form.topic': 'Type of consultancy',
-            'form.topic.0': 'Business process optimisation',
+            'form.topic.0': 'Business process optimization',
             'form.topic.1': 'Operational excellence & ISO',
-            'form.topic.2': 'Organisational transformation',
+            'form.topic.2': 'Organizational transformation',
             'form.topic.3': 'Integrated risk management',
             'form.topic.4': 'Procurement & supply chain',
             'form.topic.5': 'Project & contract management',
@@ -358,13 +381,13 @@
             'form.mailNombre': 'Name', 'form.mailEmail': 'Email', 'form.mailEmpresa': 'Company',
             'form.mailTopic': 'Type of consultancy', 'form.mailMessage': 'Message',
 
-            'footer.about': 'Senior business process optimisation consultant. 35+ years aligning processes with operational reality to drive operational excellence, organisational transformation and sustainable efficiency.',
+            'footer.about': 'Senior business process optimization executive. 35+ years aligning processes with operational reality to drive operational excellence, organizational transformation and sustainable efficiency.',
             'footer.nav': 'Navigation',
             'footer.services': 'Services',
             'footer.contact': 'Contact',
-            'footer.s0': 'Business process optimisation',
+            'footer.s0': 'Business process optimization',
             'footer.s1': 'Operational excellence & ISO',
-            'footer.s2': 'Organisational transformation',
+            'footer.s2': 'Organizational transformation',
             'footer.s3': 'Integrated risk management',
             'footer.s4': 'Procurement & project mgmt',
             'footer.copyright': '© __YEAR__ Alex Fialka — All rights reserved.',
@@ -378,7 +401,12 @@
             'cookie.reject': 'Reject',
             'footer.cookiePrefs': 'Cookie preferences',
 
-            'docTitle': 'Alex Fialka · Business Process Optimisation Consultancy'
+            'docTitle': 'Alex Fialka · Business Process Optimization Consultancy',
+            'metaDesc': 'Alex Fialka — Senior business process optimization executive. I align processes with operational reality to drive operational excellence, organizational transformation and sustainable efficiency. 35+ years of international experience.',
+            'img.alt.hero': 'Alex Fialka, senior business process optimization executive',
+            'img.alt.portrait': 'Alex Fialka, professional portrait — 35+ years of international experience in process consultancy',
+            'img.alt.banner': 'Business process analysis: planning with data, diagrams and metrics on the desk',
+            'img.alt.feature': 'Aerial view of a port container terminal — logistics, order and large-scale processes'
         },
 
         nl: {
@@ -393,15 +421,15 @@
             'hero.title2': 'Bedrijfsgerichte',
             'hero.title3': 'procesoptimalisatie',
             'hero.mission': 'Ik breng processen in lijn met de operationele realiteit om efficiëntie, organisatorische prestaties en duurzame groei te verbeteren.',
-            'hero.subtitle': 'Ruim <strong>35 jaar</strong> ervaring in het helpen van internationale organisaties bij het bereiken van <em>operationele uitmuntendheid</em> via <em>organisatorische transformatie</em> en <em>bedrijfsprocesoptimalisatie</em>. Pragmatisch, resultaatgericht en met helikopterview.',
-            'hero.btnPrimary': 'Plan een consult',
+            'hero.subtitle': 'Ruim <strong>35 jaar</strong> ervaring in het helpen van internationale organisaties bij het bereiken van <em>operationele uitmuntendheid</em> via <em>organisatorische transformatie</em> en <em>bedrijfsprocesoptimalisatie</em>.',
+            'hero.btnPrimary': 'Consult aanvragen',
             'hero.btnGhost': 'Bekijk loopbaan',
             'hero.stats.years': 'jaar ervaring',
             'hero.stats.companies': 'geoptimaliseerde bedrijven',
             'hero.stats.positions': 'leiderschapsrollen',
             'hero.stats.languages': 'talen',
 
-            'hc.role': 'Bedrijfsprocesconsultant · Senior adviseur',
+            'hc.role': 'Bedrijfsproces-executive · Senior adviseur [revisar traducción]',
             'hc.location': 'Almerimar, Spanje',
             'hc.background': 'Nederlands · Internationale achtergrond',
             'hc.degree': 'Bachelor Bedrijfskunde',
@@ -411,9 +439,10 @@
             'hc.tagChange': 'Verandermgmt',
 
             'about.kicker': '01 — Over mij',
-            'about.title': 'Ik vertaal complexiteit naar <span class="grad">heldere, geïntegreerde en efficiënte processen</span>.',
-            'about.lead': 'Ik ben een resultaatgerichte consultant in bedrijfsprocesoptimalisatie, gespecialiseerd in het afstemmen van processen op de operationele realiteit van elke organisatie. Ik heb multidisciplinaire teams geleid in uiteenlopende sectoren: industrie, logistiek, maritiem, financieel en dienstverlening.',
-            'about.p2': 'Mijn missie: <strong>operationele uitmuntendheid en duurzame efficiëntie stimuleren</strong> via geïntegreerde bedrijfsprocessen en organisatorische transformaties die echt beklijven. In het streven naar continue verbetering beschouw ik respect, principes en waarden als sleutelelementen voor succes.',
+            'about.title': 'Ik vertaal complexiteit naar heldere, geïntegreerde en efficiënte processen.',
+            'about.lead': 'Ik ben een resultaatgerichte executive in bedrijfsprocesoptimalisatie, gespecialiseerd in het afstemmen van processen op de operationele realiteit van elke organisatie. Ik heb multidisciplinaire teams geleid in industriële productie, logistiek, offshore productie en uiteenlopende maritieme diensten. [revisar traducción]',
+            'about.vision': '<strong>Mijn visie</strong> — De standaard zetten voor bedrijfsgedreven procesoptimalisatie, waar organisaties draaien op processen die helder, efficiënt en duurzaam zijn. [borrador de Visión — revisar]',
+            'about.p2': '<strong>Mijn missie</strong> — Operationele uitmuntendheid en duurzame efficiëntie stimuleren via geïntegreerde bedrijfsprocessen en organisatorische transformaties die echt beklijven. [revisar traducción]',
             'about.competence.0': 'Pragmatisch & resultaatgericht',
             'about.competence.1': 'Betrouwbaar & communicatief',
             'about.competence.2': 'Flexibel & gemotiveerd',
@@ -422,8 +451,8 @@
             'about.competence.5': 'Besluitvaardig en proactief',
             'about.competence.6': 'Rationeel & innovatief',
             'about.competence.7': 'Resultaatgericht',
-            'about.quote': 'Respect, principes en waarden zijn sleutelelementen om succes te bereiken in elk continu verbeteringstraject.',
-            'about.quoteAuthor': '— Professionele filosofie',
+            'about.quote': 'Respect, waarden en integriteit zijn sleutelfactoren om je doelen te bereiken. [revisar traducción]',
+            'about.quoteAuthor': '— Business-Driven Process Optimization',
             'about.langTitle': 'Talen',
             'about.lang.dutch': 'Nederlands',
             'about.lang.english': 'Engels',
@@ -432,6 +461,14 @@
             'about.level.native': 'Moedertaal',
             'about.level.fluent': 'Vloeiend',
             'about.level.competent': 'Competent',
+            'about.bannerCaption': 'Diagnose, data en herontwerp: zo stem ik processen af op de operationele realiteit.',
+
+            'feature.eyebrow': 'De aanpak',
+            'feature.title': 'Mensen, processen en technologie afgestemd op de realiteit van uw bedrijf.',
+            'feature.sub': 'Van operationele complexiteit naar praktische, schaalbare en duurzame structuren — ruim 35 jaar processen omzetten in meetbare resultaten.',
+            'feature.p0': 'Mensen',
+            'feature.p1': 'Processen',
+            'feature.p2': 'Technologie',
 
             'services.kicker': '02 — Consultancy',
             'services.title': 'Professionele diensten <span class="grad">op maat</span> voor uw organisatie.',
@@ -544,7 +581,7 @@
             'form.mailNombre': 'Naam', 'form.mailEmail': 'E-mail', 'form.mailEmpresa': 'Bedrijf',
             'form.mailTopic': 'Type consultancy', 'form.mailMessage': 'Bericht',
 
-            'footer.about': 'Senior consultant bedrijfsprocesoptimalisatie. 35+ jaar processen afstemmen op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie.',
+            'footer.about': 'Senior executive bedrijfsprocesoptimalisatie. 35+ jaar processen afstemmen op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie. [revisar traducción]',
             'footer.nav': 'Navigatie',
             'footer.services': 'Diensten',
             'footer.contact': 'Contact',
@@ -564,7 +601,12 @@
             'cookie.reject': 'Weigeren',
             'footer.cookiePrefs': 'Cookievoorkeuren',
 
-            'docTitle': 'Alex Fialka · Bedrijfsprocesoptimalisatie Consultancy'
+            'docTitle': 'Alex Fialka · Bedrijfsprocesoptimalisatie Consultancy',
+            'metaDesc': 'Alex Fialka — Senior executive bedrijfsprocesoptimalisatie. Ik stem processen af op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie. Ruim 35 jaar internationale ervaring. [revisar traducción]',
+            'img.alt.hero': 'Alex Fialka, senior executive bedrijfsprocesoptimalisatie [revisar traducción]',
+            'img.alt.portrait': 'Alex Fialka, professioneel portret — ruim 35 jaar internationale ervaring in procesconsultancy',
+            'img.alt.banner': 'Analyse van bedrijfsprocessen: plannen met data, diagrammen en cijfers op het werkblad',
+            'img.alt.feature': 'Luchtfoto van een containerterminal in de haven — logistiek, orde en grootschalige processen'
         }
     };
 
@@ -577,7 +619,14 @@
         set(key, val) { try { localStorage.setItem(key, val); } catch {} }
     };
 
+    // Per-language URLs for SEO (each page is served at its own URL).
+    const LANG_URLS = { es: '/', en: '/en/', nl: '/nl/' };
+
     const getInitialLang = () => {
+        // 1) The language statically declared by the page (set per URL) wins.
+        const pageLang = document.documentElement.getAttribute('data-lang');
+        if (pageLang && SUPPORTED.includes(pageLang)) return pageLang;
+        // 2) Fallback: previously stored choice, then browser language.
         const stored = safeStorage.get(LANG_KEY);
         if (stored && SUPPORTED.includes(stored)) return stored;
         const nav = (navigator.language || 'es').slice(0, 2).toLowerCase();
@@ -608,7 +657,21 @@
             if (dict[key] != null) el.setAttribute('placeholder', dict[key]);
         });
 
+        document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+            const key = el.getAttribute('data-i18n-alt');
+            if (dict[key] != null) el.setAttribute('alt', dict[key]);
+        });
+
         if (dict['docTitle']) document.title = dict['docTitle'];
+
+        if (dict['metaDesc']) {
+            const md = document.querySelector('meta[name="description"]');
+            if (md) md.setAttribute('content', dict['metaDesc']);
+            const ogd = document.querySelector('meta[property="og:description"]');
+            if (ogd) ogd.setAttribute('content', dict['metaDesc']);
+        }
+
+        document.documentElement.setAttribute('lang', lang);
 
         const year = new Date().getFullYear();
         const yearEl = document.getElementById('year');
@@ -674,7 +737,11 @@
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.dataset.lang;
-            if (lang && lang !== currentLang) applyLang(lang);
+            if (!lang || lang === currentLang) return;
+            const target = LANG_URLS[lang];
+            // Navigate to the language-specific URL (keeps the current section anchor).
+            if (target) window.location.href = target + (window.location.hash || '');
+            else applyLang(lang);
         });
     });
 
