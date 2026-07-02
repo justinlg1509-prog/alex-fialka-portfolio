@@ -59,8 +59,11 @@ function setAttrPass(html, dataAttr, targetAttr, dict) {
   return html.replace(re, (full, key) => {
     if (dict[key] == null) return full;
     const val = escAttr(dict[key]);
-    if (new RegExp(targetAttr + '="[^"]*"').test(full))
-      return full.replace(new RegExp(targetAttr + '="[^"]*"'), targetAttr + '="' + val + '"');
+    // Match the real attribute (preceded by whitespace) so we don't hit the
+    // "alt=" substring inside data-i18n-alt / similar data-* attributes.
+    const attrRe = new RegExp('(\\s)' + targetAttr + '="[^"]*"');
+    if (attrRe.test(full))
+      return full.replace(attrRe, '$1' + targetAttr + '="' + val + '"');
     return full.replace(/>$/, ' ' + targetAttr + '="' + val + '">');
   });
 }
