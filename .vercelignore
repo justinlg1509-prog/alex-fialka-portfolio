@@ -1,0 +1,4 @@
+# Fuentes del sitio y web antigua: no se publican
+_src/
+_web-anterior/
+.htaccess

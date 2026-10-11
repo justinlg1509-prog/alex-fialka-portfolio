@@ -1,0 +1,8 @@
+# Web anterior archivada (solo copia local)
+_web-anterior/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/

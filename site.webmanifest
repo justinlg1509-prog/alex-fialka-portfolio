@@ -1,24 +1,20 @@
 {
-  "name": "Alex Fialka | QHSE & Project Management Consulting",
-  "short_name": "Alex Fialka",
+  "name": "Enterprise Thinking — Alex Fialka",
+  "short_name": "Enterprise Thinking",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FAFAF8",
+  "theme_color": "#052352",
   "icons": [
     {
-      "src": "images/favicon.ico",
-      "sizes": "64x64",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "images/Logo QARP 4.webp",
+      "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/webp"
+      "type": "image/png"
     },
     {
-      "src": "images/Logo QARP 4.webp",
+      "src": "/icon-512.png",
       "sizes": "512x512",
-      "type": "image/webp"
+      "type": "image/png"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }
