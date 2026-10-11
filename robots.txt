@@ -1,7 +1,7 @@
-# robots.txt — https://fialka.es
+# robots.txt — https://www.fialka.es
 User-agent: *
 Allow: /
 Disallow: /_src/
 Disallow: /_web-anterior/
 
-Sitemap: https://fialka.es/sitemap.xml
+Sitemap: https://www.fialka.es/sitemap.xml
