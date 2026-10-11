@@ -1,0 +1,46 @@
+# ============================================================
+#  fialka.es — Enterprise Thinking (Apache / LiteSpeed)
+# ============================================================
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+AddType font/woff2 .woff2
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
+
+# Carpetas de trabajo: no se sirven aunque se suban por error
+RedirectMatch 404 ^/_(src|web-anterior)(/|$)
+
+# URLs de la web anterior → páginas nuevas
+Redirect 301 /aviso-legal.html /es/aviso-legal/
+Redirect 301 /privacidad.html /es/privacidad/
+Redirect 301 /cookies.html /es/cookies/
+Redirect 301 /index.html /
+
+# --- Compresión ---
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain application/javascript text/javascript application/json application/xml image/svg+xml application/manifest+json
+</IfModule>
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain application/javascript text/javascript application/json application/xml image/svg+xml application/manifest+json
+</IfModule>
+
+# --- Caché ---
+<IfModule mod_headers.c>
+    <FilesMatch "\.woff2$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    # CSS/JS llevan ?v=<hash> (lo pone _src/build.js)
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+    <FilesMatch "\.(webp|jpg|png|svg|ico)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+    <FilesMatch "\.(html|xml|webmanifest)$">
+        Header set Cache-Control "no-cache"
+    </FilesMatch>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

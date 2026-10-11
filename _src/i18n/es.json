@@ -1,0 +1,293 @@
+{
+  "locale": "es_ES",
+  "langName": "Español",
+  "slugs": {
+    "home": "",
+    "book": "libro/",
+    "about": "sobre-alex/",
+    "contact": "contacto/",
+    "legal": "aviso-legal/",
+    "privacy": "privacidad/",
+    "cookies": "cookies/"
+  },
+  "meta": {
+    "home": {
+      "title": "Enterprise Thinking — Alex Fialka | Ver el conjunto, decidir mejor",
+      "desc": "Enterprise Thinking ayuda a los directivos a ver la organización como un todo: cómo se conectan estrategia, procesos, información, personas y tecnología antes de decidir qué cambiar."
+    },
+    "book": {
+      "title": "Enterprise Thinking, el libro de Alex Fialka | La lógica práctica detrás de una empresa sólida",
+      "desc": "Enterprise Thinking: La lógica práctica detrás de una empresa sólida. Un libro de Alex Fialka, disponible en español, inglés y neerlandés, en papel y Kindle."
+    },
+    "about": {
+      "title": "Sobre Alex Fialka — Enterprise Thinking",
+      "desc": "Alex Fialka es ejecutivo y autor de Enterprise Thinking. Su trabajo parte de una pregunta: ¿por qué las organizaciones funcionan como funcionan, y podrían funcionar mejor?"
+    },
+    "contact": {
+      "title": "Empecemos por una conversación — Enterprise Thinking | Alex Fialka",
+      "desc": "No hace falta saber exactamente cuál es el problema. Cuéntale a Alex Fialka qué intentas conseguir y qué se interpone en el camino."
+    },
+    "legal": { "title": "Aviso legal — Enterprise Thinking", "desc": "Aviso legal del sitio web Enterprise Thinking de Alex Fialka: datos del titular, condiciones de uso y propiedad intelectual." },
+    "privacy": { "title": "Política de privacidad — Enterprise Thinking", "desc": "Cómo trata los datos personales el sitio web Enterprise Thinking de Alex Fialka y cómo ejercer tus derechos conforme al RGPD." },
+    "cookies": { "title": "Política de cookies — Enterprise Thinking", "desc": "Qué cookies y almacenamiento local utiliza el sitio web Enterprise Thinking y cómo aceptarlas, rechazarlas o cambiar tu elección." }
+  },
+  "ui": {
+    "skip": "Saltar al contenido",
+    "menu": "Menú",
+    "close": "Cerrar menú",
+    "language": "Idioma",
+    "home": "Inicio",
+    "byline": "Alex Fialka"
+  },
+  "nav": {
+    "et": "Enterprise Thinking",
+    "approach": "Enfoque",
+    "book": "El libro",
+    "about": "Sobre Alex",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Enterprise Thinking",
+    "subtitle": "Ver el conjunto. Entender las conexiones. Decidir mejor.",
+    "cta": "Empecemos a hablar",
+    "book": "Leer el libro",
+    "visualLabel": "Ilustración: puntos dispersos que poco a poco se conectan dentro de un círculo abierto."
+  },
+  "problem": {
+    "p1": "A la mayoría de las organizaciones no les faltan ideas, tecnología ni personas con talento.",
+    "p2": "Lo que les cuesta es que las distintas partes de la organización ya no funcionan como un todo.",
+    "p3": "La estrategia se define en un sitio. Los procesos evolucionan en otro. La tecnología se introduce para resolver problemas aislados. Cada departamento optimiza su propio rendimiento. Y de las personas se espera que, de algún modo, hagan que todo funcione.",
+    "result": "El resultado es complejidad."
+  },
+  "et": {
+    "heading": "Enterprise Thinking consiste en ver la organización como un todo.",
+    "body": "Ayuda a los directivos a entender cómo se influyen entre sí la estrategia, la organización, los procesos, la información, las personas y la tecnología, antes de decidir qué hay que cambiar.",
+    "elements": ["Estrategia", "Organización", "Procesos", "Información", "Personas", "Tecnología"],
+    "diagramLabel": "Diagrama: estrategia, organización, procesos, información, personas y tecnología, cada una conectada con todas las demás."
+  },
+  "help": {
+    "heading": "Cómo ayudo a las empresas",
+    "p1": "Ayudo a las organizaciones a entender dónde se ha generado la complejidad, por qué las cosas no funcionan como se esperaba y dónde se puede lograr una mejora significativa.",
+    "p2": "No empezando por un sistema nuevo, una reorganización u otro programa de transformación.",
+    "lead": "Empiezo por entender la organización.",
+    "questions": [
+      "¿Qué intentas conseguir?",
+      "¿Cómo funciona realmente hoy la organización?",
+      "¿Dónde están las dependencias?",
+      "¿Dónde ha surgido una complejidad innecesaria?",
+      "¿Y qué tiene que cambiar para que la organización funcione mejor en su conjunto?"
+    ],
+    "closing": "A partir de ahí, podemos decidir qué conviene simplificar, rediseñar, conectar o eliminar."
+  },
+  "symptoms": {
+    "heading": "De los síntomas a las causas",
+    "intro": "Las organizaciones suelen intentar resolver síntomas.",
+    "colSymptom": "Síntoma",
+    "colReaction": "Reacción habitual",
+    "rows": [
+      ["Un proceso es demasiado lento", "y se automatiza."],
+      ["La información es difícil de encontrar", "y se introduce otro sistema."],
+      ["Los departamentos no cooperan bien", "y se reestructura la organización."],
+      ["Los costes son demasiado altos", "y se recortan los presupuestos."]
+    ],
+    "after": "A veces estas medidas ayudan. Pero a veces solo trasladan el problema a otro sitio.",
+    "askLead": "Enterprise Thinking plantea otra pregunta:",
+    "question": "¿Qué está causando el problema en primer lugar?",
+    "closing": "Mirando más allá de departamentos, sistemas y procesos concretos, podemos identificar las relaciones que hay detrás del problema y crear soluciones que mejoren la organización entera, y no solo una de sus partes."
+  },
+  "services": {
+    "heading": "En qué puedo ayudarte",
+    "items": [
+      { "title": "Entender tu organización", "text": "Crear una imagen clara de cómo funciona realmente tu organización y de cómo se conectan la estrategia, los procesos, las personas, la información y la tecnología." },
+      { "title": "Reducir la complejidad", "text": "Identificar procesos, capas organizativas, sistemas, traspasos y dependencias innecesarios que hacen la organización más difícil y más cara de gestionar." },
+      { "title": "Mejorar los procesos", "text": "Mirar más allá de los pasos individuales de cada proceso para entender el flujo completo de trabajo e información a través de los límites de la organización." },
+      { "title": "Alinear negocio y tecnología", "text": "La tecnología debe apoyar a la organización, no determinar cómo tiene que funcionar. Ayudo a las empresas a entender qué necesitan antes de decidir qué tecnología necesitan." },
+      { "title": "Transformación organizativa", "text": "Ayudar a la dirección a determinar qué tiene que cambiar de verdad, qué debe mantenerse y cómo se influyen entre sí los distintos cambios." },
+      { "title": "Apoyo a la toma de decisiones", "text": "Ayudar a los directivos a ver las consecuencias más amplias de las decisiones importantes antes de comprometer tiempo, dinero y capacidad organizativa." }
+    ]
+  },
+  "approach": {
+    "heading": "Mi enfoque",
+    "paras": [
+      "No llego con una solución predefinida.",
+      "Cada organización es distinta.",
+      "Por eso, el primer paso es escuchar, observar y entender.",
+      "Miramos la organización desde distintas perspectivas y construimos, poco a poco, una imagen compartida de cómo funciona. Después identificamos las áreas donde el cambio puede marcar la mayor diferencia."
+    ],
+    "highlight1": "El objetivo no es construir el modelo más complicado.",
+    "highlight2": "El objetivo es hacer comprensible la complejidad.",
+    "closing": "Porque cuando las personas entienden cómo funciona de verdad su organización, es posible tomar mejores decisiones."
+  },
+  "transformation": {
+    "heading": "Entender la organización antes de transformarla",
+    "p1": "Transformación se ha convertido en una de las palabras más usadas en el mundo de la empresa.",
+    "words": ["Transformación digital.", "Transformación del negocio.", "Transformación organizativa.", "Transformación con IA."],
+    "p2": "Pero transformar sin entender puede acabar siendo una forma cara de cambiar lo que no hacía falta cambiar.",
+    "p3": "Antes de transformar una organización, deberíamos entenderla.",
+    "p4": "Ese es el principio de Enterprise Thinking.",
+    "closing": "Primero pensar. Entender el conjunto. Después, cambiar lo que importa."
+  },
+  "bookBlock": {
+    "label": "El libro",
+    "text": "¿Qué hace que una empresa sea sólida? No es un único proceso, un único sistema ni un único modelo de gestión. Es la forma en que todas las partes funcionan juntas.",
+    "discover": "Descubrir el libro",
+    "buy": "Comprar en Amazon"
+  },
+  "who": {
+    "heading": "Con quién trabajo",
+    "intro": "Enterprise Thinking puede ayudar a organizaciones que:",
+    "items": [
+      "viven una complejidad organizativa cada vez mayor",
+      "se preparan para una transformación importante",
+      "tienen departamentos o sistemas desconectados entre sí",
+      "estudian grandes inversiones en tecnología",
+      "quieren mejorar su eficiencia operativa",
+      "tienen procesos que se han vuelto difíciles de gestionar",
+      "integran organizaciones tras un crecimiento, una adquisición o una reestructuración"
+    ],
+    "quoteLead": "o que simplemente se preguntan:",
+    "quote": "Tiene que haber una forma mejor de organizar esto."
+  },
+  "aboutShort": {
+    "heading": "Sobre Alex Fialka",
+    "lead": "Mi trabajo siempre ha partido de una curiosidad sencilla:",
+    "quote": "¿Por qué las organizaciones funcionan como funcionan, y podrían funcionar mejor?",
+    "text": "A lo largo de los años he trabajado con organizaciones, procesos, información y tecnología desde perspectivas muy distintas. Esa experiencia me enseñó que los mayores problemas rara vez se limitan a un departamento, un proceso o un sistema.",
+    "link": "Más sobre Alex"
+  },
+  "cta": {
+    "heading": "Empecemos por una conversación",
+    "paras": [
+      "No hace falta saber exactamente cuál es el problema.",
+      "A veces, el punto de partida más valioso es simplemente la sensación de que algo se ha vuelto innecesariamente complicado, caro o difícil.",
+      "Podemos empezar por ahí."
+    ],
+    "strong": "Cuéntame qué intentas conseguir y qué se interpone en el camino.",
+    "after": "Juntos podemos mirar el conjunto y decidir dónde puede empezar un cambio con sentido.",
+    "sign1": "Primero entender. Después cambiar.",
+    "sign2": "Enterprise Thinking."
+  },
+  "form": {
+    "name": "Nombre",
+    "company": "Empresa",
+    "role": "Cargo",
+    "email": "Email",
+    "message": "Mensaje",
+    "goal": "¿Qué intentas conseguir y qué se interpone en el camino?",
+    "optional": "opcional",
+    "consent": "He leído y acepto la <a href=\"{privacy}\">Política de privacidad</a>.",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando…",
+    "hp": "Deja este campo vacío",
+    "errRequired": "Completa tu nombre, tu email y el mensaje.",
+    "errEmail": "Introduce un email válido.",
+    "errConsent": "Acepta la Política de privacidad para enviar el mensaje.",
+    "successMail": "Gracias. Se abrirá tu aplicación de correo con el mensaje listo para enviar.",
+    "successSent": "Gracias. Tu mensaje se ha enviado y Alex te responderá personalmente.",
+    "errSend": "No se ha podido enviar el mensaje. Escribe directamente a alex@fialka.es.",
+    "mailSubject": "Enterprise Thinking — consulta desde la web"
+  },
+  "bookPage": {
+    "label": "El libro",
+    "subtitle": "La lógica práctica detrás de una empresa sólida",
+    "by": "de Alex Fialka",
+    "facts": {
+      "author": "Autor",
+      "published": "Publicación",
+      "publishedValue": "Agosto de 2026",
+      "languages": "Idiomas",
+      "languagesValue": "Español, inglés y neerlandés",
+      "formats": "Formatos",
+      "formatsValue": "Papel y Kindle",
+      "pages": "Páginas",
+      "publisher": "Editorial",
+      "publisherValue": "Publicación independiente"
+    },
+    "aboutHeading": "De qué trata el libro",
+    "aboutParas": [
+      "¿Qué hace que una empresa sea sólida? No es un único proceso, un único sistema ni un único modelo de gestión. Es la forma en que todas las partes funcionan juntas.",
+      "Enterprise Thinking ofrece una forma práctica de comprender una empresa como un todo. Conecta personas, procesos, responsabilidades, información, riesgo, liderazgo, estrategia y tecnología, y hace visible cómo estos elementos se influyen entre sí.",
+      "En lugar de partir de una solución predefinida, Enterprise Thinking comienza con la realidad de la propia empresa: qué funciona ya bien, dónde pueden reforzarse las conexiones y qué decisiones pueden crear el mayor valor."
+    ],
+    "learnHeading": "Qué aprenderás",
+    "learnIntro": "Con un lenguaje claro y ejemplos prácticos, el libro muestra cómo las empresas pueden:",
+    "learn": [
+      "construir una base capaz de crecer junto con la empresa",
+      "aprovechar mejor los conocimientos y capacidades de sus personas",
+      "conectar de forma más eficaz los procesos y las responsabilidades",
+      "mejorar la información y la toma de decisiones",
+      "desarrollar el liderazgo y la cultura empresarial",
+      "comprender los riesgos y las oportunidades dentro de su contexto",
+      "utilizar la tecnología y la IA allí donde realmente aportan valor",
+      "convertir la comprensión en un cambio sostenible"
+    ],
+    "forHeading": "Para quién es",
+    "forText": "Para directivos que quieren tomar decisiones más conscientes para la empresa en su conjunto.",
+    "quote": "Enterprise Thinking no es un modelo fijo ni una fórmula paso a paso. Es una forma de observar, comprender, valorar y actuar.",
+    "tagline": "Ver el conjunto. Comprender las conexiones. Tomar mejores decisiones. Crear valor sostenible.",
+    "editionsHeading": "Disponible en tres idiomas",
+    "editions": { "en": "Edición en inglés", "es": "Edición en español", "nl": "Edición en neerlandés" },
+    "pagesUnit": "páginas",
+    "isbn": "ISBN",
+    "viewOnAmazon": "Ver en Amazon",
+    "allEditions": "Ver todas las ediciones en Amazon",
+    "foundationHeading": "La base de Enterprise Thinking",
+    "foundationText": "El libro es la base de Enterprise Thinking: la forma de mirar las organizaciones que da sentido a todo lo que encontrarás en esta web.",
+    "foundationLink": "Descubrir Enterprise Thinking",
+    "coverAlt": "Portada del libro Enterprise Thinking: La lógica práctica detrás de una empresa sólida, de Alex Fialka"
+  },
+  "aboutPage": {
+    "heading": "Sobre Alex Fialka",
+    "lead": "Mi trabajo siempre ha partido de una curiosidad sencilla:",
+    "quote": "¿Por qué las organizaciones funcionan como funcionan, y podrían funcionar mejor?",
+    "paras": [
+      "A lo largo de los años he trabajado con organizaciones, procesos, información y tecnología desde perspectivas muy distintas.",
+      "Esa experiencia me enseñó que los mayores problemas rara vez se limitan a un departamento, un proceso o un sistema."
+    ],
+    "connections": "Están en las conexiones entre ellos.",
+    "paras2": [
+      "Enterprise Thinking reúne esas experiencias en una forma práctica de mirar las organizaciones.",
+      "No se trata de hacerlas más teóricas, sino más fáciles de entender, para que también sean más fáciles de dirigir y de mejorar."
+    ],
+    "backgroundHeading": "Trayectoria",
+    "background": [
+      "Alex Fialka es un ejecutivo con más de 35 años de experiencia internacional en producción industrial, logística, producción offshore y servicios marítimos. Ha ocupado puestos de dirección en calidad, riesgos, compras, operaciones y finanzas en empresas como Sealand Service (Maersk Line), Anthony Veder Group, Dockwise, Heerema Fabrication Group, Flinter Ship Management y Vertom.",
+      "En todos esos puestos, el trabajo volvía a lo mismo: hacer que procesos, información y responsabilidades encajen. En Vertom integró los procesos de siete divisiones y casi 60 empresas operativas en un único sistema de gestión. Antes había desarrollado QARP (Quality, Assurance, Risk, Process), un método para mejorar los procesos de negocio en cualquier sector.",
+      "Es licenciado en Administración de Empresas (Bachelor Business Administration) y está certificado como PRINCE2 Practitioner. Es neerlandés, vive en Almerimar (Almería) y trabaja en neerlandés e inglés; también habla francés y alemán."
+    ],
+    "photoAlt": "Retrato de Alex Fialka",
+    "bookLink": "Leer el libro",
+    "contactLink": "Empecemos a hablar"
+  },
+  "contactPage": {
+    "heading": "Empecemos por una conversación",
+    "intro": "No hace falta saber exactamente cuál es el problema. Cuéntame qué intentas conseguir y qué se interpone en el camino.",
+    "direct": "O escribe directamente",
+    "emailLabel": "Email",
+    "phoneLabel": "Teléfono",
+    "linkedinLabel": "LinkedIn",
+    "location": "Almerimar, España"
+  },
+  "footer": {
+    "tagline": "Ver el conjunto. Entender las conexiones. Decidir mejor.",
+    "explore": "Explorar",
+    "contact": "Contacto",
+    "legal": "Aviso legal",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "cookieSettings": "Preferencias de cookies",
+    "rights": "© {year} Alex Fialka. Todos los derechos reservados."
+  },
+  "cookie": {
+    "text": "Esta web usa almacenamiento técnico para recordar tus elecciones y, solo si lo aceptas, cookies de análisis (Google Analytics) para entender cómo se usa. <a href=\"{cookies}\">Consulta la política de cookies</a>.",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  },
+  "legal": {
+    "updated": "Última actualización: 11 de octubre de 2026",
+    "back": "Volver al inicio"
+  },
+  "root": {
+    "choose": "Elige tu idioma"
+  }
+}

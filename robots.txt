@@ -1,10 +1,7 @@
 # robots.txt — https://fialka.es
 User-agent: *
 Allow: /
+Disallow: /_src/
+Disallow: /_web-anterior/
 
-# Permitimos a Google rastrear imágenes (clave para Google Imágenes)
-User-agent: Googlebot-Image
-Allow: /images/
-
-# Sitemap
 Sitemap: https://fialka.es/sitemap.xml

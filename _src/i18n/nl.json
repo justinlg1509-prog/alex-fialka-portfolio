@@ -1,0 +1,293 @@
+{
+  "locale": "nl_NL",
+  "langName": "Nederlands",
+  "slugs": {
+    "home": "",
+    "book": "boek/",
+    "about": "over-alex/",
+    "contact": "contact/",
+    "legal": "juridische-informatie/",
+    "privacy": "privacy/",
+    "cookies": "cookies/"
+  },
+  "meta": {
+    "home": {
+      "title": "Enterprise Thinking — Alex Fialka | Zie het geheel, neem betere beslissingen",
+      "desc": "Enterprise Thinking helpt leidinggevenden de organisatie als geheel te zien: hoe strategie, processen, informatie, mensen en technologie samenhangen, voordat wordt besloten wat er moet veranderen."
+    },
+    "book": {
+      "title": "Enterprise Thinking, het boek van Alex Fialka | De praktische logica achter een sterke onderneming",
+      "desc": "Enterprise Thinking: De praktische logica achter een sterke onderneming. Een boek van Alex Fialka, verkrijgbaar in het Nederlands, Engels en Spaans, gedrukt en als Kindle-editie."
+    },
+    "about": {
+      "title": "Over Alex Fialka — Enterprise Thinking",
+      "desc": "Alex Fialka is executive en auteur van Enterprise Thinking. Zijn werk begint bij één vraag: waarom werken organisaties zoals ze werken, en kan het beter?"
+    },
+    "contact": {
+      "title": "Begin met een gesprek — Enterprise Thinking | Alex Fialka",
+      "desc": "U hoeft niet precies te weten wat het probleem is. Vertel Alex Fialka wat u wilt bereiken en wat daarbij in de weg staat."
+    },
+    "legal": { "title": "Juridische informatie — Enterprise Thinking", "desc": "Juridische informatie over de website Enterprise Thinking van Alex Fialka: gegevens van de eigenaar, gebruiksvoorwaarden en intellectueel eigendom." },
+    "privacy": { "title": "Privacybeleid — Enterprise Thinking", "desc": "Hoe de website Enterprise Thinking van Alex Fialka persoonsgegevens verwerkt en hoe u uw rechten onder de AVG kunt uitoefenen." },
+    "cookies": { "title": "Cookiebeleid — Enterprise Thinking", "desc": "Welke cookies en lokale opslag de website Enterprise Thinking gebruikt en hoe u ze kunt accepteren, weigeren of uw keuze kunt wijzigen." }
+  },
+  "ui": {
+    "skip": "Naar de inhoud",
+    "menu": "Menu",
+    "close": "Menu sluiten",
+    "language": "Taal",
+    "home": "Home",
+    "byline": "Alex Fialka"
+  },
+  "nav": {
+    "et": "Enterprise Thinking",
+    "approach": "Aanpak",
+    "book": "Het boek",
+    "about": "Over Alex",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Enterprise Thinking",
+    "subtitle": "Zie het geheel. Begrijp de verbanden. Neem betere beslissingen.",
+    "cta": "Begin een gesprek",
+    "book": "Lees het boek",
+    "visualLabel": "Illustratie: losse punten die binnen een open cirkel geleidelijk met elkaar verbonden raken."
+  },
+  "problem": {
+    "p1": "De meeste organisaties hebben geen gebrek aan ideeën, technologie of talentvolle mensen.",
+    "p2": "Ze lopen vast omdat de verschillende onderdelen van de organisatie niet langer als één geheel samenwerken.",
+    "p3": "De strategie wordt op de ene plek bepaald. Processen ontwikkelen zich ergens anders. Technologie wordt ingevoerd om losse problemen op te lossen. Afdelingen optimaliseren hun eigen prestaties. En van mensen wordt verwacht dat ze het op de een of andere manier allemaal laten werken.",
+    "result": "Het resultaat is complexiteit."
+  },
+  "et": {
+    "heading": "Enterprise Thinking draait om het zien van de organisatie als geheel.",
+    "body": "Het helpt leidinggevenden te begrijpen hoe strategie, organisatie, processen, informatie, mensen en technologie elkaar beïnvloeden, voordat ze besluiten wat er moet veranderen.",
+    "elements": ["Strategie", "Organisatie", "Processen", "Informatie", "Mensen", "Technologie"],
+    "diagramLabel": "Diagram: strategie, organisatie, processen, informatie, mensen en technologie, elk verbonden met alle andere."
+  },
+  "help": {
+    "heading": "Hoe ik bedrijven help",
+    "p1": "Ik help organisaties te begrijpen waar complexiteit is ontstaan, waarom dingen niet werken zoals verwacht en waar een betekenisvolle verbetering mogelijk is.",
+    "p2": "Niet door te beginnen met een nieuw systeem, een reorganisatie of weer een transformatieprogramma.",
+    "lead": "Ik begin met het begrijpen van de organisatie.",
+    "questions": [
+      "Wat wilt u bereiken?",
+      "Hoe werkt de organisatie vandaag werkelijk?",
+      "Waar zitten de afhankelijkheden?",
+      "Waar is onnodige complexiteit ontstaan?",
+      "En wat moet er veranderen zodat de organisatie als geheel beter werkt?"
+    ],
+    "closing": "Van daaruit bepalen we wat vereenvoudigd, opnieuw ontworpen, verbonden of geschrapt moet worden."
+  },
+  "symptoms": {
+    "heading": "Van symptomen naar oorzaken",
+    "intro": "Organisaties proberen vaak symptomen op te lossen.",
+    "colSymptom": "Symptoom",
+    "colReaction": "Gebruikelijke reactie",
+    "rows": [
+      ["Een proces is te traag", "dus het wordt geautomatiseerd."],
+      ["Informatie is moeilijk te vinden", "dus er komt nog een systeem bij."],
+      ["Afdelingen werken niet goed samen", "dus de organisatie wordt geherstructureerd."],
+      ["De kosten zijn te hoog", "dus de budgetten worden verlaagd."]
+    ],
+    "after": "Soms helpen deze maatregelen. Maar soms verplaatsen ze het probleem alleen naar een andere plek.",
+    "askLead": "Enterprise Thinking stelt een andere vraag:",
+    "question": "Wat veroorzaakt het probleem eigenlijk?",
+    "closing": "Door verder te kijken dan afzonderlijke afdelingen, systemen en processen, kunnen we de verbanden achter het probleem herkennen en oplossingen creëren die de hele organisatie verbeteren, en niet alleen één onderdeel ervan."
+  },
+  "services": {
+    "heading": "Waarmee ik u kan helpen",
+    "items": [
+      { "title": "Uw organisatie begrijpen", "text": "Een helder beeld scheppen van hoe uw organisatie werkelijk werkt en hoe strategie, processen, mensen, informatie en technologie met elkaar verbonden zijn." },
+      { "title": "Complexiteit verminderen", "text": "Onnodige processen, organisatielagen, systemen, overdrachten en afhankelijkheden opsporen die de organisatie moeilijker en duurder maken om te besturen." },
+      { "title": "Processen verbeteren", "text": "Verder kijken dan losse processtappen om de volledige stroom van werk en informatie over de grenzen van de organisatie heen te begrijpen." },
+      { "title": "Business en technologie op elkaar afstemmen", "text": "Technologie moet de organisatie ondersteunen, niet bepalen hoe de organisatie moet werken. Ik help bedrijven te begrijpen wat ze nodig hebben voordat ze kiezen welke technologie ze nodig hebben." },
+      { "title": "Organisatorische transformatie", "text": "Het management helpen bepalen wat er echt moet veranderen, wat moet blijven en hoe verschillende veranderingen elkaar beïnvloeden." },
+      { "title": "Ondersteuning bij besluitvorming", "text": "Leidinggevenden helpen de bredere gevolgen van belangrijke beslissingen te zien, voordat zij veel tijd, geld en organisatiecapaciteit inzetten." }
+    ]
+  },
+  "approach": {
+    "heading": "Mijn aanpak",
+    "paras": [
+      "Ik kom niet met een kant-en-klare oplossing.",
+      "Elke organisatie is anders.",
+      "De eerste stap is daarom luisteren, observeren en begrijpen.",
+      "We bekijken de organisatie vanuit verschillende perspectieven en bouwen stap voor stap een gedeeld beeld op van hoe zij functioneert. Daarna bepalen we waar verandering het meeste verschil kan maken."
+    ],
+    "highlight1": "Het doel is niet om het meest ingewikkelde model te maken.",
+    "highlight2": "Het doel is om complexiteit begrijpelijk te maken.",
+    "closing": "Want wanneer mensen begrijpen hoe hun organisatie werkelijk werkt, worden betere beslissingen mogelijk."
+  },
+  "transformation": {
+    "heading": "Eerst begrijpen, dan transformeren",
+    "p1": "Transformatie is een van de meest gebruikte woorden in het bedrijfsleven geworden.",
+    "words": ["Digitale transformatie.", "Bedrijfstransformatie.", "Organisatietransformatie.", "AI-transformatie."],
+    "p2": "Maar transformatie zonder begrip kan een dure manier worden om de verkeerde dingen te veranderen.",
+    "p3": "Voordat we een organisatie transformeren, moeten we haar begrijpen.",
+    "p4": "Dat is het principe achter Enterprise Thinking.",
+    "closing": "Eerst denken. Het geheel begrijpen. Dan veranderen wat ertoe doet."
+  },
+  "bookBlock": {
+    "label": "Het boek",
+    "text": "Wat maakt een onderneming sterk? Niet één proces, één systeem of één managementmodel. Het is de manier waarop alle onderdelen met elkaar samenhangen.",
+    "discover": "Ontdek het boek",
+    "buy": "Kopen op Amazon"
+  },
+  "who": {
+    "heading": "Met wie ik werk",
+    "intro": "Enterprise Thinking kan organisaties helpen die:",
+    "items": [
+      "te maken hebben met toenemende organisatorische complexiteit",
+      "zich voorbereiden op een ingrijpende transformatie",
+      "worstelen met afdelingen of systemen die niet op elkaar aansluiten",
+      "grote investeringen in technologie overwegen",
+      "hun operationele efficiëntie willen verbeteren",
+      "processen hebben die moeilijk beheersbaar zijn geworden",
+      "organisaties samenvoegen na groei, een overname of een herstructurering"
+    ],
+    "quoteLead": "of die zich simpelweg afvragen:",
+    "quote": "Dit moet toch beter te organiseren zijn?"
+  },
+  "aboutShort": {
+    "heading": "Over Alex Fialka",
+    "lead": "Mijn werk is altijd gedreven door een eenvoudige nieuwsgierigheid:",
+    "quote": "Waarom werken organisaties zoals ze werken — en kan het beter?",
+    "text": "Door de jaren heen heb ik vanuit veel verschillende perspectieven gewerkt met organisaties, processen, informatie en technologie. Die ervaring leerde me dat de grootste problemen zelden beperkt blijven tot één afdeling, één proces of één systeem.",
+    "link": "Meer over Alex"
+  },
+  "cta": {
+    "heading": "Begin met een gesprek",
+    "paras": [
+      "U hoeft niet precies te weten wat het probleem is.",
+      "Soms is het waardevolste vertrekpunt simpelweg het gevoel dat iets onnodig ingewikkeld, duur of moeilijk is geworden.",
+      "Daar kunnen we beginnen."
+    ],
+    "strong": "Vertel me wat u wilt bereiken en wat daarbij in de weg staat.",
+    "after": "Samen kijken we naar het grotere geheel en bepalen we waar een zinvolle verandering kan beginnen.",
+    "sign1": "Eerst begrijpen. Dan veranderen.",
+    "sign2": "Enterprise Thinking."
+  },
+  "form": {
+    "name": "Naam",
+    "company": "Bedrijf",
+    "role": "Functie",
+    "email": "E-mail",
+    "message": "Bericht",
+    "goal": "Wat wilt u bereiken, en wat staat daarbij in de weg?",
+    "optional": "optioneel",
+    "consent": "Ik heb het <a href=\"{privacy}\">privacybeleid</a> gelezen en ga ermee akkoord.",
+    "submit": "Bericht versturen",
+    "sending": "Bezig met versturen…",
+    "hp": "Laat dit veld leeg",
+    "errRequired": "Vul uw naam, e-mailadres en bericht in.",
+    "errEmail": "Voer een geldig e-mailadres in.",
+    "errConsent": "Ga akkoord met het privacybeleid om uw bericht te versturen.",
+    "successMail": "Dank u. Uw e-mailprogramma wordt geopend met het bericht klaar om te versturen.",
+    "successSent": "Dank u. Uw bericht is verstuurd en Alex reageert persoonlijk.",
+    "errSend": "Het bericht kon niet worden verstuurd. Schrijf rechtstreeks naar alex@fialka.es.",
+    "mailSubject": "Enterprise Thinking — vraag via de website"
+  },
+  "bookPage": {
+    "label": "Het boek",
+    "subtitle": "De praktische logica achter een sterke onderneming",
+    "by": "door Alex Fialka",
+    "facts": {
+      "author": "Auteur",
+      "published": "Verschenen",
+      "publishedValue": "Augustus 2026",
+      "languages": "Talen",
+      "languagesValue": "Nederlands, Engels en Spaans",
+      "formats": "Uitvoeringen",
+      "formatsValue": "Gedrukt en Kindle",
+      "pages": "Pagina's",
+      "publisher": "Uitgever",
+      "publisherValue": "In eigen beheer uitgegeven"
+    },
+    "aboutHeading": "Waar het boek over gaat",
+    "aboutParas": [
+      "Wat maakt een onderneming sterk? Niet één proces, één systeem of één managementmodel. Het is de manier waarop alle onderdelen met elkaar samenhangen.",
+      "Enterprise Thinking biedt een praktische manier om naar een onderneming als geheel te kijken. Het verbindt mensen, processen, verantwoordelijkheden, informatie, risico, leiderschap, strategie en technologie en maakt zichtbaar hoe deze onderdelen elkaar beïnvloeden.",
+      "In plaats van te beginnen met een vooraf bedachte oplossing, start Enterprise Thinking bij de werkelijkheid van de onderneming zelf: wat al goed werkt, waar verbindingen sterker kunnen worden en welke keuzes de meeste waarde kunnen creëren."
+    ],
+    "learnHeading": "Wat u leert",
+    "learnIntro": "In heldere taal en met praktische voorbeelden laat het boek zien hoe ondernemingen onder andere:",
+    "learn": [
+      "een fundament kunnen bouwen dat meegroeit met de onderneming",
+      "beter gebruik kunnen maken van de kennis en mogelijkheden van hun mensen",
+      "processen en verantwoordelijkheden beter op elkaar kunnen laten aansluiten",
+      "informatie en besluitvorming kunnen verbeteren",
+      "leiderschap en organisatiecultuur kunnen ontwikkelen",
+      "risico en kansen in samenhang kunnen beoordelen",
+      "technologie en AI kunnen inzetten waar die werkelijk waarde toevoegen",
+      "inzicht kunnen vertalen naar duurzame verandering"
+    ],
+    "forHeading": "Voor wie het is",
+    "forText": "Voor leidinggevenden die bewustere keuzes willen maken voor de onderneming als geheel.",
+    "quote": "Enterprise Thinking is geen vast model en geen stappenplan. Het is een manier van kijken, begrijpen, afwegen en handelen.",
+    "tagline": "Zie het geheel. Begrijp de samenhang. Maak betere keuzes. Creëer duurzame waarde.",
+    "editionsHeading": "Verkrijgbaar in drie talen",
+    "editions": { "en": "Engelse editie", "es": "Spaanse editie", "nl": "Nederlandse editie" },
+    "pagesUnit": "pagina's",
+    "isbn": "ISBN",
+    "viewOnAmazon": "Bekijk op Amazon",
+    "allEditions": "Alle edities op Amazon",
+    "foundationHeading": "Het fundament van Enterprise Thinking",
+    "foundationText": "Het boek is het fundament van Enterprise Thinking: de manier van kijken naar organisaties die de basis vormt van alles op deze website.",
+    "foundationLink": "Ontdek Enterprise Thinking",
+    "coverAlt": "Omslag van het boek Enterprise Thinking: De praktische logica achter een sterke onderneming, door Alex Fialka"
+  },
+  "aboutPage": {
+    "heading": "Over Alex Fialka",
+    "lead": "Mijn werk is altijd gedreven door een eenvoudige nieuwsgierigheid:",
+    "quote": "Waarom werken organisaties zoals ze werken — en kan het beter?",
+    "paras": [
+      "Door de jaren heen heb ik vanuit veel verschillende perspectieven gewerkt met organisaties, processen, informatie en technologie.",
+      "Die ervaring leerde me dat de grootste problemen zelden beperkt blijven tot één afdeling, één proces of één systeem."
+    ],
+    "connections": "Ze zitten in de verbindingen daartussen.",
+    "paras2": [
+      "Enterprise Thinking brengt die ervaringen samen in een praktische manier van kijken naar organisaties.",
+      "Het gaat er niet om organisaties theoretischer te maken. Het gaat erom ze begrijpelijker te maken, zodat ze ook makkelijker te besturen en te verbeteren zijn."
+    ],
+    "backgroundHeading": "Achtergrond",
+    "background": [
+      "Alex Fialka is executive met ruim 35 jaar internationale ervaring in industriële productie, logistiek, offshoreproductie en maritieme dienstverlening. Hij bekleedde leidinggevende functies op het gebied van kwaliteit, risico, inkoop, operations en financiën bij onder meer Sealand Service (Maersk Line), Anthony Veder Group, Dockwise, Heerema Fabrication Group, Flinter Ship Management en Vertom.",
+      "In al die functies kwam het werk op hetzelfde neer: processen, informatie en verantwoordelijkheden op elkaar laten aansluiten. Bij Vertom integreerde hij de processen van zeven divisies en bijna 60 werkmaatschappijen in één managementsysteem. Daarvoor ontwikkelde hij QARP (Quality, Assurance, Risk, Process), een methode om bedrijfsprocessen in elke sector te verbeteren.",
+      "Hij heeft een bachelor Bedrijfskunde (Business Administration) en is gecertificeerd PRINCE2 Practitioner. Hij is Nederlander, woont in Almerimar (Spanje), werkt in het Nederlands en Engels en spreekt daarnaast Frans en Duits."
+    ],
+    "photoAlt": "Portret van Alex Fialka",
+    "bookLink": "Lees het boek",
+    "contactLink": "Begin een gesprek"
+  },
+  "contactPage": {
+    "heading": "Begin met een gesprek",
+    "intro": "U hoeft niet precies te weten wat het probleem is. Vertel me wat u wilt bereiken en wat daarbij in de weg staat.",
+    "direct": "Of neem direct contact op",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefoon",
+    "linkedinLabel": "LinkedIn",
+    "location": "Almerimar, Spanje"
+  },
+  "footer": {
+    "tagline": "Zie het geheel. Begrijp de verbanden. Neem betere beslissingen.",
+    "explore": "Verkennen",
+    "contact": "Contact",
+    "legal": "Juridische informatie",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "cookieSettings": "Cookie-instellingen",
+    "rights": "© {year} Alex Fialka. Alle rechten voorbehouden."
+  },
+  "cookie": {
+    "text": "Deze website gebruikt technische opslag om uw keuzes te onthouden en, alleen als u daarmee akkoord gaat, analytische cookies (Google Analytics) om te begrijpen hoe de site wordt gebruikt. <a href=\"{cookies}\">Lees het cookiebeleid</a>.",
+    "accept": "Accepteren",
+    "reject": "Weigeren"
+  },
+  "legal": {
+    "updated": "Laatst bijgewerkt: 11 oktober 2026",
+    "back": "Terug naar home"
+  },
+  "root": {
+    "choose": "Kies uw taal"
+  }
+}

@@ -1,774 +1,328 @@
 <!DOCTYPE html>
-<html lang="nl" data-lang="nl">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enterprise Thinking — Alex Fialka | Zie het geheel, neem betere beslissingen</title>
+    <meta name="description" content="Enterprise Thinking helpt leidinggevenden de organisatie als geheel te zien: hoe strategie, processen, informatie, mensen en technologie samenhangen, voordat wordt besloten wat er moet veranderen.">
+    <meta name="author" content="Alex Fialka">
+    <meta name="theme-color" content="#052352">
+    <link rel="canonical" href="https://fialka.es/nl/">
+    <link rel="alternate" hreflang="en" href="https://fialka.es/en/">
+    <link rel="alternate" hreflang="es" href="https://fialka.es/es/">
+    <link rel="alternate" hreflang="nl" href="https://fialka.es/nl/">
+    <link rel="alternate" hreflang="x-default" href="https://fialka.es/en/">
 
-    <!-- Google tag (gtag.js) with Consent Mode v2 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D53PM9XB3"></script>
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Enterprise Thinking">
+    <meta property="og:title" content="Enterprise Thinking — Alex Fialka | Zie het geheel, neem betere beslissingen">
+    <meta property="og:description" content="Enterprise Thinking helpt leidinggevenden de organisatie als geheel te zien: hoe strategie, processen, informatie, mensen en technologie samenhangen, voordat wordt besloten wat er moet veranderen.">
+    <meta property="og:url" content="https://fialka.es/nl/">
+    <meta property="og:image" content="https://fialka.es/assets/img/og-nl.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Enterprise Thinking — Alex Fialka | Zie het geheel, neem betere beslissingen">
+    <meta name="twitter:description" content="Enterprise Thinking helpt leidinggevenden de organisatie als geheel te zien: hoe strategie, processen, informatie, mensen en technologie samenhangen, voordat wordt besloten wat er moet veranderen.">
+    <meta name="twitter:image" content="https://fialka.es/assets/img/og-nl.jpg">
+
+    <link rel="preload" href="/assets/fonts/libre-caslon-text-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/site.css?v=6c8e57f5">
+
+    <!-- Google Analytics 4 con Consent Mode v2: denegado hasta que se acepte.
+         gtag.js se descarga con la primera interacción o a los 4 s. -->
     <script>
+        document.documentElement.classList.add('js');
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-
-        // Consent Mode v2 — denegado por defecto hasta que el usuario acepte (RGPD)
-        gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'denied',
-            'functionality_storage': 'granted',
-            'security_storage': 'granted',
-            'wait_for_update': 500
-        });
-
-        // Restaurar consent guardado en visitas previas (antes de enviar page_view)
-        try {
-            var __afConsent = localStorage.getItem('af_cookie_consent');
-            if (__afConsent === '1') {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'granted'
-                });
-            }
-        } catch (e) {}
-
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500 });
+        try { if (localStorage.getItem('af_cookie_consent') === '1') gtag('consent', 'update', { analytics_storage: 'granted' }); } catch (e) {}
         gtag('js', new Date());
-        gtag('config', 'G-2D53PM9XB3', { 'anonymize_ip': true });
+        gtag('config', 'G-2D53PM9XB3', { anonymize_ip: true });
+        (function () {
+            var done = false, ev = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+            var load = function () {
+                if (done) return; done = true;
+                ev.forEach(function (e) { window.removeEventListener(e, load, true); });
+                var s = document.createElement('script'); s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2D53PM9XB3';
+                document.head.appendChild(s);
+            };
+            ev.forEach(function (e) { window.addEventListener(e, load, { passive: true, capture: true }); });
+            window.addEventListener('load', function () { setTimeout(load, 4000); });
+        })();
     </script>
-
-    <!-- Primary SEO -->
-    <title>Alex Fialka · Bedrijfsprocesoptimalisatie Consultancy</title>
-    <meta name="description" content="Alex Fialka — Senior executive bedrijfsprocesoptimalisatie. Ik stem processen af op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie. Ruim 35 jaar internationale ervaring." />
-    <meta name="keywords" content="optimización de procesos de negocio, consultoría de procesos, excelencia operativa, transformación organizacional, mejora del rendimiento, eficiencia sostenible, procesos de negocio integrados, método QARP, business process optimization, ejecutivo empresarial Europa, lean consulting, ISO 9001, PRINCE2" />
-    <meta name="author" content="Alex Fialka" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="theme-color" content="#1d4e8c" />
-    <meta name="format-detection" content="telephone=yes" />
-    <meta name="geo.region" content="ES-AL" />
-    <meta name="geo.placename" content="Almerimar, Almería" />
-    <link rel="canonical" href="https://fialka.es/nl/" />
-
-    <!-- Hreflang — una URL por idioma -->
-    <link rel="alternate" hreflang="es" href="https://fialka.es/" />
-    <link rel="alternate" hreflang="en" href="https://fialka.es/en/" />
-    <link rel="alternate" hreflang="nl" href="https://fialka.es/nl/" />
-    <link rel="alternate" hreflang="x-default" href="https://fialka.es/" />
-
-    <!-- Icons -->
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Alex Fialka · Bedrijfsprocesoptimalisatie Consultancy" />
-    <meta property="og:description" content="Alex Fialka — Senior executive bedrijfsprocesoptimalisatie. Ik stem processen af op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie. Ruim 35 jaar internationale ervaring." />
-    <meta property="og:image" content="https://fialka.es/images/alex%20de%20cerca.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Alex Fialka — Ejecutivo de optimización de procesos de negocio" />
-    <meta property="og:url" content="https://fialka.es/" />
-    <meta property="og:site_name" content="Alex Fialka" />
-    <meta property="og:locale" content="nl_NL" />
-    <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:locale:alternate" content="nl_NL" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Alex Fialka · Bedrijfsprocesoptimalisatie Consultancy" />
-    <meta name="twitter:description" content="Alex Fialka — Senior executive bedrijfsprocesoptimalisatie. Ik stem processen af op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie. Ruim 35 jaar internationale ervaring." />
-    <meta name="twitter:image" content="https://fialka.es/images/alex%20de%20cerca.webp" />
-    <meta name="twitter:image:alt" content="Alex Fialka — Ejecutivo de optimización de procesos de negocio" />
-
-    <!-- Performance / Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css" />
-
-    <!-- Preload LCP hero image -->
-    <link rel="preload" as="image" href="/images/alex de cerca.webp" fetchpriority="high" />
-
-    <!-- Schema.org · ProfessionalService -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "@id": "https://fialka.es/#business",
-      "name": "Alex Fialka — Business Process Optimization Consultancy",
-      "alternateName": "Alex Fialka Consultancy",
-      "description": "Senior business process optimization consultancy. Aligning processes with operational reality to drive operational excellence, organizational transformation and sustainable efficiency.",
-      "image": "https://fialka.es/images/alex%20de%20cerca.webp",
-      "url": "https://fialka.es/",
-      "telephone": "+34641058422",
-      "email": "alex@fialka.es",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Almerimar",
-        "addressRegion": "Almería",
-        "addressCountry": "ES"
-      },
-      "founder": { "@id": "https://fialka.es/#person" },
-      "areaServed": ["Europe", "Netherlands", "Spain", "International"],
-      "availableLanguage": ["Spanish", "English", "Dutch", "French", "German"],
-      "knowsAbout": [
-        "Business process optimization",
-        "Operational excellence",
-        "Organizational transformation",
-        "Performance improvement",
-        "Integrated business processes",
-        "Sustainable efficiency",
-        "Risk management",
-        "Lean Manufacturing",
-        "ISO 9001",
-        "ISO 14001",
-        "ISO 45001",
-        "ISO 31000",
-        "PRINCE2",
-        "QARP methodology"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Business process optimization services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business process optimization", "description": "Diagnosis and redesign of processes to reduce lead times, costs and deviations using Lean, S5 and 8D." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Operational excellence & ISO", "description": "Design and implementation of integrated management systems (ISO 9001, 14001, 45001)." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Organizational transformation", "description": "End-to-end change management: diagnosis, awareness, training and cultural consolidation." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Integrated risk management", "description": "Identification and mitigation of operational, technical and financial risks (HAZOP, FMEA, LMRA, RI&E)." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Procurement & supply chain", "description": "Redesign of procurement, contract management and supply chain processes." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Project & contract management", "description": "PRINCE2-certified project and contract delivery with rigorous budget control." } }
-        ]
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/alexfialka/"
-      ]
-    }
-    </script>
-
-    <!-- Schema.org · Person (Alex) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "@id": "https://fialka.es/#person",
-      "name": "Alex Fialka",
-      "jobTitle": "Business Process Optimization Executive",
-      "description": "Senior executive specializing in business process optimization, operational excellence, organizational transformation and integrated risk management. 35+ years of international experience across maritime, industrial, logistics and financial sectors.",
-      "image": "https://fialka.es/images/alex%20de%20cerca.webp",
-      "url": "https://fialka.es/",
-      "email": "alex@fialka.es",
-      "telephone": "+34641058422",
-      "nationality": "NL",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Almerimar",
-        "addressRegion": "Almería",
-        "addressCountry": "ES"
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Bachelor Business Administration"
-      },
-      "knowsLanguage": ["Dutch", "English", "Spanish", "French", "German"],
-      "sameAs": [
-        "https://www.linkedin.com/in/alexfialka/"
-      ]
-    }
-    </script>
-
-    <!-- Schema.org · WebSite (search-ready) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://fialka.es/#website",
-      "url": "https://fialka.es/",
-      "name": "Alex Fialka",
-      "inLanguage": ["es", "en", "nl"],
-      "publisher": { "@id": "https://fialka.es/#person" },
-      "description": "Consultoría senior de optimización de procesos de negocio."
-    }
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://fialka.es/#website","url":"https://fialka.es/","name":"Enterprise Thinking","inLanguage":["en","es","nl"],"publisher":{"@id":"https://fialka.es/#alex-fialka"}},{"@type":"Person","@id":"https://fialka.es/#alex-fialka","name":"Alex Fialka","jobTitle":"Executive","url":"https://fialka.es/nl/over-alex/","image":"https://fialka.es/assets/img/alex-fialka-760.webp","email":"mailto:alex@fialka.es","sameAs":["https://www.linkedin.com/in/alexfialka/"],"nationality":"NL","knowsLanguage":["nl","en","fr","de"],"address":{"@type":"PostalAddress","addressLocality":"Almerimar","addressRegion":"Almería","addressCountry":"ES"}},{"@type":"ProfessionalService","@id":"https://fialka.es/#enterprise-thinking","name":"Enterprise Thinking","description":"Enterprise Thinking helpt leidinggevenden de organisatie als geheel te zien: hoe strategie, processen, informatie, mensen en technologie samenhangen, voordat wordt besloten wat er moet veranderen.","url":"https://fialka.es/nl/","logo":"https://fialka.es/assets/img/et-logo.png","image":"https://fialka.es/assets/img/og-nl.jpg","founder":{"@id":"https://fialka.es/#alex-fialka"},"email":"alex@fialka.es","telephone":"+34641058422","areaServed":["Europe","International"],"availableLanguage":["English","Spanish","Dutch"],"address":{"@type":"PostalAddress","addressLocality":"Almerimar","addressRegion":"Almería","addressCountry":"ES"}},{"@type":"Book","@id":"https://fialka.es/#book","name":"Enterprise Thinking","alternateName":"Enterprise Thinking: De praktische logica achter een sterke onderneming","author":{"@id":"https://fialka.es/#alex-fialka"},"description":"Wat maakt een onderneming sterk? Niet één proces, één systeem of één managementmodel. Het is de manier waarop alle onderdelen met elkaar samenhangen. Enterprise Thinking biedt een praktische manier om naar een onderneming als geheel te kijken. Het verbindt mensen, processen, verantwoordelijkheden, informatie, risico, leiderschap, strategie en technologie en maakt zichtbaar hoe deze onderdelen elkaar beïnvloeden. In plaats van te beginnen met een vooraf bedachte oplossing, start Enterprise Thinking bij de werkelijkheid van de onderneming zelf: wat al goed werkt, waar verbindingen sterker kunnen worden en welke keuzes de meeste waarde kunnen creëren.","inLanguage":"nl","image":"https://fialka.es/assets/img/book-cover-nl-900.webp","url":"https://fialka.es/nl/boek/","workExample":[{"@type":"Book","name":"Enterprise Thinking: The practical logic behind a strong enterprise","inLanguage":"en","isbn":"979-8170076987","numberOfPages":240,"datePublished":"2026-08-26","publisher":{"@type":"Organization","name":"Independently published"},"url":"https://www.amazon.es/dp/B0HGRXD4M3","image":"https://fialka.es/assets/img/book-cover-en-900.webp"},{"@type":"Book","name":"Enterprise Thinking: La lógica práctica detrás de una empresa sólida","inLanguage":"es","isbn":"979-8170191796","numberOfPages":268,"datePublished":"2026-08-27","publisher":{"@type":"Organization","name":"Independently published"},"url":"https://www.amazon.es/dp/B0HGX1CB8W","image":"https://fialka.es/assets/img/book-cover-es-900.webp"},{"@type":"Book","name":"Enterprise Thinking: De praktische logica achter een sterke onderneming","inLanguage":"nl","isbn":"979-8170189878","numberOfPages":285,"datePublished":"2026-08-27","publisher":{"@type":"Organization","name":"Independently published"},"url":"https://www.amazon.es/dp/B0HGX8F8BJ","image":"https://fialka.es/assets/img/book-cover-nl-900.webp"}]}]}</script>
 </head>
 <body>
-    <!-- Cursor follower -->
-    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<a class="skip" href="#main">Naar de inhoud</a>
+<header class="site-header">
+    <div class="wrap header-inner">
+        <a class="brand" href="/nl/">
+            <img src="/assets/img/et-logo-96.webp" width="93" height="96" alt="">
+            <span class="brand-text"><span class="brand-name">Enterprise Thinking</span><span class="brand-by">Alex Fialka</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Menu">
+            <ul class="nav-list"><li><a href="/nl/#enterprise-thinking">Enterprise Thinking</a></li><li><a href="/nl/#approach">Aanpak</a></li><li><a href="/nl/boek/">Het boek</a></li><li><a href="/nl/over-alex/">Over Alex</a></li><li><a href="/nl/contact/">Contact</a></li></ul>
+            <ul class="langs" aria-label="Taal"><li><a href="/en/" hreflang="en" lang="en" title="English">EN</a></li><li><a href="/es/" hreflang="es" lang="es" title="Español">ES</a></li><li><a href="/nl/" hreflang="nl" lang="nl" aria-current="true" title="Nederlands">NL</a></li></ul>
+        </nav>
+    </div>
+</header>
+<main id="main">
 
-    <!-- Progress bar -->
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-    <!-- Skip link for keyboard / screen-reader users -->
-    <a class="skip-link" href="#hero">Saltar al contenido</a>
-
-    <!-- Navigation -->
-    <header class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="logo logo--text" aria-label="Alex Fialka — Inicio">
-                <span class="logo-text">Alex&nbsp;Fialka</span>
-            </a>
-            <nav class="nav-links" id="navLinks">
-                <a href="#about" data-i18n="nav.about">Over mij</a>
-                <a href="#services" data-i18n="nav.services">Diensten</a>
-                <a href="#experience" data-i18n="nav.experience">Ervaring</a>
-                <a href="#skills" data-i18n="nav.skills">Skills</a>
-                <div class="lang-switcher" role="group" aria-label="Language">
-                    <button class="lang-btn" type="button" data-lang="es" aria-label="Cambiar idioma a Español" aria-pressed="false">
-                        <img src="/images/es-flag.webp" alt="" width="32" height="22" aria-hidden="true" />
-                    </button>
-                    <button class="lang-btn" type="button" data-lang="en" aria-label="Switch language to English" aria-pressed="false">
-                        <img src="/images/uk-flag.webp" alt="" width="32" height="22" aria-hidden="true" />
-                    </button>
-                    <button class="lang-btn active" type="button" data-lang="nl" aria-label="Taal wijzigen naar Nederlands" aria-pressed="true">
-                        <img src="/images/nl-flag.webp" alt="" width="32" height="22" aria-hidden="true" />
-                    </button>
-                </div>
-            </nav>
-            <div class="nav-right">
-                <a href="#contact" class="nav-cta" data-i18n="nav.cta">Contact</a>
-                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
+<section class="hero">
+    <div class="wrap hero-grid">
+        <div>
+            <h1>Enterprise Thinking</h1>
+            <p class="hero-sub">Zie het geheel. Begrijp de verbanden. Neem betere beslissingen.</p>
+            <div class="btn-row">
+                <a class="btn btn-primary" href="#contact">Begin een gesprek</a>
+                <a class="btn btn-secondary" href="/nl/boek/">Lees het boek</a>
             </div>
         </div>
-    </header>
+        <svg class="hero-art" viewBox="0 0 520 520" role="img" aria-label="Illustratie: losse punten die binnen een open cirkel geleidelijk met elkaar verbonden raken.">
+        <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#052352"/><stop offset="1" stop-color="#79808A"/></linearGradient><mask id="hm"><path class="ring-draw" d="M478.8 171.6A236 236 0 1 0 478.8 348.4" fill="none" stroke="#fff" stroke-width="30" pathLength="1"/></mask></defs>
+        <path d="M482.5 170.1A240 240 0 1 0 482.5 349.9L482.3 347.7A234.20000000000002 234.20000000000002 0 1 1 482.3 172.3Z" fill="url(#hg)" mask="url(#hm)"/>
+        <g><line class="art-edge" x1="260" y1="112" x2="170" y2="160" pathLength="1" style="--i:0"/><line class="art-edge" x1="260" y1="112" x2="352" y2="156" pathLength="1" style="--i:1"/><line class="art-edge" x1="260" y1="112" x2="260" y2="290" pathLength="1" style="--i:2"/><line class="art-edge" x1="170" y1="160" x2="112" y2="250" pathLength="1" style="--i:3"/><line class="art-edge" x1="170" y1="160" x2="214" y2="228" pathLength="1" style="--i:4"/><line class="art-edge" x1="352" y1="156" x2="306" y2="232" pathLength="1" style="--i:5"/><line class="art-edge" x1="352" y1="156" x2="404" y2="258" pathLength="1" style="--i:6"/><line class="art-edge" x1="112" y1="250" x2="160" y2="336" pathLength="1" style="--i:7"/><line class="art-edge" x1="214" y1="228" x2="260" y2="290" pathLength="1" style="--i:8"/><line class="art-edge" x1="306" y1="232" x2="260" y2="290" pathLength="1" style="--i:9"/><line class="art-edge" x1="306" y1="232" x2="404" y2="258" pathLength="1" style="--i:10"/><line class="art-edge" x1="260" y1="290" x2="252" y2="372" pathLength="1" style="--i:11"/><line class="art-edge" x1="160" y1="336" x2="252" y2="372" pathLength="1" style="--i:12"/><line class="art-edge" x1="160" y1="336" x2="206" y2="430" pathLength="1" style="--i:13"/><line class="art-edge" x1="252" y1="372" x2="350" y2="340" pathLength="1" style="--i:14"/><line class="art-edge" x1="404" y1="258" x2="350" y2="340" pathLength="1" style="--i:15"/><line class="art-edge" x1="350" y1="340" x2="318" y2="428" pathLength="1" style="--i:16"/><line class="art-edge" x1="206" y1="430" x2="318" y2="428" pathLength="1" style="--i:17"/><line class="art-edge" x1="214" y1="228" x2="160" y2="336" pathLength="1" style="--i:18"/><line class="art-edge" x1="252" y1="372" x2="318" y2="428" pathLength="1" style="--i:19"/></g><g><circle class="art-node is-key" cx="260" cy="112" r="7" style="--i:0;--dx:-2px;--dy:13px"/><circle class="art-node" cx="170" cy="160" r="4.5" style="--i:1;--dx:-85px;--dy:-56px"/><circle class="art-node" cx="352" cy="156" r="4.5" style="--i:2;--dx:-12px;--dy:1px"/><circle class="art-node" cx="112" cy="250" r="4.5" style="--i:3;--dx:-93px;--dy:83px"/><circle class="art-node" cx="214" cy="228" r="4.5" style="--i:4;--dx:20px;--dy:-20px"/><circle class="art-node" cx="306" cy="232" r="4.5" style="--i:5;--dx:-47px;--dy:62px"/><circle class="art-node" cx="404" cy="258" r="4.5" style="--i:6;--dx:35px;--dy:-93px"/><circle class="art-node is-key" cx="260" cy="290" r="7" style="--i:7;--dx:0px;--dy:-58px"/><circle class="art-node" cx="160" cy="336" r="4.5" style="--i:8;--dx:38px;--dy:-75px"/><circle class="art-node" cx="252" cy="372" r="4.5" style="--i:9;--dx:13px;--dy:-3px"/><circle class="art-node is-key" cx="350" cy="340" r="7" style="--i:10;--dx:-71px;--dy:-99px"/><circle class="art-node" cx="206" cy="430" r="4.5" style="--i:11;--dx:97px;--dy:103px"/><circle class="art-node" cx="318" cy="428" r="4.5" style="--i:12;--dx:-83px;--dy:-12px"/></g>
+        <g class="art-pi" transform="translate(482 256)" aria-hidden="true"><path d="M1 7C2.5 4.5 5 3.6 8 3.6H32M11.5 3.6C11.5 14 10.5 23 7 30M23 3.6V25C23 29 25 30.5 28.5 29"/></g>
+    </svg>
+    </div>
+</section>
 
-    <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <div class="grid-pattern"></div>
+<section class="section problem" aria-label="Het resultaat is complexiteit.">
+    <div class="wrap">
+        <div class="prose">
+            <p class="reveal">De meeste organisaties hebben geen gebrek aan ideeën, technologie of talentvolle mensen.</p>
+            <p class="reveal">Ze lopen vast omdat de verschillende onderdelen van de organisatie niet langer als één geheel samenwerken.</p>
+            <p class="reveal">De strategie wordt op de ene plek bepaald. Processen ontwikkelen zich ergens anders. Technologie wordt ingevoerd om losse problemen op te lossen. Afdelingen optimaliseren hun eigen prestaties. En van mensen wordt verwacht dat ze het op de een of andere manier allemaal laten werken.</p>
+            <p class="statement reveal">Het resultaat is complexiteit.</p>
         </div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="hero-eyebrow">
-                    <span class="dot"></span> <span data-i18n="hero.eyebrow">Beschikbaar voor consultancyprojecten</span>
-                </span>
-                <h1 class="hero-title">
-                    <span class="line">Alex Fialka</span>
-                    <span class="line accent" data-i18n="hero.title2">Bedrijfsgerichte</span>
-                    <span class="line subtle" data-i18n="hero.title3">procesoptimalisatie</span>
-                </h1>
-                <p class="hero-mission" data-i18n="hero.mission">Ik breng processen in lijn met de operationele realiteit om efficiëntie, organisatorische prestaties en duurzame groei te verbeteren.</p>
-                <p class="hero-subtitle" data-i18n-html="hero.subtitle">Ruim <strong>35 jaar</strong> ervaring in het helpen van internationale organisaties bij het bereiken van <em>operationele uitmuntendheid</em> via <em>organisatorische transformatie</em> en <em>bedrijfsprocesoptimalisatie</em>.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">
-                        <span data-i18n="hero.btnPrimary">Consult aanvragen</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="#experience" class="btn btn-ghost" data-i18n="hero.btnGhost">Bekijk loopbaan</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-num" data-count="35">0</span><span>+</span>
-                        <p data-i18n="hero.stats.years">jaar ervaring</p>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num" data-count="60">0</span><span>+</span>
-                        <p data-i18n="hero.stats.companies">geoptimaliseerde bedrijven</p>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num" data-count="9">0</span>
-                        <p data-i18n="hero.stats.positions">leiderschapsrollen</p>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num" data-count="4">0</span>
-                        <p data-i18n="hero.stats.languages">talen</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-card-wrap">
-                <div class="hero-card" id="heroCard">
-                    <div class="hero-card-glow"></div>
-                    <div class="hero-card-inner">
-                        <div class="hero-photo">
-                            <img src="/images/alex de cerca.webp" data-i18n-alt="img.alt.hero" alt="Alex Fialka, senior executive bedrijfsprocesoptimalisatie" loading="eager" fetchpriority="high" width="600" height="450" />
-                        </div>
-                        <div class="hero-card-body">
-                            <p class="hc-name">Alex Fialka</p>
-                            <p class="hc-role" data-i18n="hc.role">Bedrijfsproces-executive · Senior adviseur</p>
-                            <div class="hc-tags">
-                                <span data-i18n="hc.tagProcess">Processen</span><span data-i18n="hc.tagOpex">Op. uitmuntendheid</span><span>Lean</span>
-                                <span data-i18n="hc.tagRisk">Risico</span><span data-i18n="hc.tagChange">Verandermgmt</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+</section>
+
+<div class="sep" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#052352"/><stop offset="1" stop-color="#79808A"/></linearGradient></defs><path d="M35.5 13.1A17 17 0 1 0 35.5 26.9L35.1 26.3A15.500000000000002 15.500000000000002 0 1 1 35.1 13.7Z" fill="url(#sg)"/></svg></div>
+
+<section class="section" id="enterprise-thinking">
+    <div class="wrap et-grid">
+        <div class="reveal">
+            <h2>Enterprise Thinking draait om het zien van de organisatie als geheel.</h2>
+            <p class="lead">Het helpt leidinggevenden te begrijpen hoe strategie, organisatie, processen, informatie, mensen en technologie elkaar beïnvloeden, voordat ze besluiten wat er moet veranderen.</p>
         </div>
-    </section>
+        <svg class="diagram diagram-circle" viewBox="0 0 720 560" role="img" aria-label="Diagram: strategie, organisatie, processen, informatie, mensen en technologie, elk verbonden met alle andere.">
+        <defs><linearGradient id="dg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#052352"/><stop offset="1" stop-color="#79808A"/></linearGradient></defs>
+        <path class="rim" d="M544.4 234A190 190 0 1 0 544.4 326" stroke="url(#dg)" stroke-width="2.4" pathLength="1" style="--i:0"/>
+        <line class="chord" x1="360" y1="90" x2="524.5" y2="375" pathLength="1" style="--i:0"/><line class="chord" x1="360" y1="90" x2="360" y2="470" pathLength="1" style="--i:1"/><line class="chord" x1="360" y1="90" x2="195.5" y2="375" pathLength="1" style="--i:2"/><line class="chord" x1="524.5" y1="185" x2="360" y2="470" pathLength="1" style="--i:3"/><line class="chord" x1="524.5" y1="185" x2="195.5" y2="375" pathLength="1" style="--i:4"/><line class="chord" x1="524.5" y1="185" x2="195.5" y2="185" pathLength="1" style="--i:5"/><line class="chord" x1="524.5" y1="375" x2="195.5" y2="375" pathLength="1" style="--i:6"/><line class="chord" x1="524.5" y1="375" x2="195.5" y2="185" pathLength="1" style="--i:7"/><line class="chord" x1="360" y1="470" x2="195.5" y2="185" pathLength="1" style="--i:8"/><circle class="dot" cx="360" cy="90" r="9" style="--i:0"/><text x="360" y="60" text-anchor="middle" style="--i:0">Strategie</text><circle class="dot" cx="524.5" cy="185" r="9" style="--i:1"/><text x="547.1" y="179" text-anchor="start" style="--i:1">Organisatie</text><circle class="dot" cx="524.5" cy="375" r="9" style="--i:2"/><text x="547.1" y="395" text-anchor="start" style="--i:2">Processen</text><circle class="dot" cx="360" cy="470" r="9" style="--i:3"/><text x="360" y="516" text-anchor="middle" style="--i:3">Informatie</text><circle class="dot" cx="195.5" cy="375" r="9" style="--i:4"/><text x="172.9" y="395" text-anchor="end" style="--i:4">Mensen</text><circle class="dot" cx="195.5" cy="185" r="9" style="--i:5"/><text x="172.9" y="179" text-anchor="end" style="--i:5">Technologie</text>
+    </svg>
+        <svg class="diagram diagram-arcs" viewBox="0 0 360 400" role="img" aria-label="Diagram: strategie, organisatie, processen, informatie, mensen en technologie, elk verbonden met alle andere."><path class="chord rim" d="M176 40A32 32 0 0 0 176 104" pathLength="1" style="--i:0"/><path class="chord" d="M176 40A64 64 0 0 0 176 168" pathLength="1" style="--i:1"/><path class="chord" d="M176 40A96 96 0 0 0 176 232" pathLength="1" style="--i:2"/><path class="chord" d="M176 40A128 128 0 0 0 176 296" pathLength="1" style="--i:3"/><path class="chord" d="M176 40A160 160 0 0 0 176 360" pathLength="1" style="--i:4"/><path class="chord rim" d="M176 104A32 32 0 0 0 176 168" pathLength="1" style="--i:5"/><path class="chord" d="M176 104A64 64 0 0 0 176 232" pathLength="1" style="--i:6"/><path class="chord" d="M176 104A96 96 0 0 0 176 296" pathLength="1" style="--i:7"/><path class="chord" d="M176 104A128 128 0 0 0 176 360" pathLength="1" style="--i:8"/><path class="chord rim" d="M176 168A32 32 0 0 0 176 232" pathLength="1" style="--i:9"/><path class="chord" d="M176 168A64 64 0 0 0 176 296" pathLength="1" style="--i:10"/><path class="chord" d="M176 168A96 96 0 0 0 176 360" pathLength="1" style="--i:11"/><path class="chord rim" d="M176 232A32 32 0 0 0 176 296" pathLength="1" style="--i:12"/><path class="chord" d="M176 232A64 64 0 0 0 176 360" pathLength="1" style="--i:13"/><path class="chord rim" d="M176 296A32 32 0 0 0 176 360" pathLength="1" style="--i:14"/><circle class="dot" cx="176" cy="40" r="8" style="--i:0"/><text x="198" y="46" style="--i:0">Strategie</text><circle class="dot" cx="176" cy="104" r="8" style="--i:1"/><text x="198" y="110" style="--i:1">Organisatie</text><circle class="dot" cx="176" cy="168" r="8" style="--i:2"/><text x="198" y="174" style="--i:2">Processen</text><circle class="dot" cx="176" cy="232" r="8" style="--i:3"/><text x="198" y="238" style="--i:3">Informatie</text><circle class="dot" cx="176" cy="296" r="8" style="--i:4"/><text x="198" y="302" style="--i:4">Mensen</text><circle class="dot" cx="176" cy="360" r="8" style="--i:5"/><text x="198" y="366" style="--i:5">Technologie</text></svg>
+    </div>
+</section>
 
-    <!-- About -->
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="kicker" data-i18n="about.kicker">01 — Over mij</span>
-                <h2 data-i18n-html="about.title">Ik vertaal complexiteit naar heldere, geïntegreerde en efficiënte processen.</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-portrait reveal">
-                    <img src="/images/alex de lejos.webp" data-i18n-alt="img.alt.portrait" alt="Alex Fialka, professioneel portret — ruim 35 jaar internationale ervaring in procesconsultancy" loading="lazy" decoding="async" width="720" height="900" />
-                    <span class="portrait-tag" data-i18n="hc.role">Bedrijfsproces-executive · Senior adviseur</span>
-                </div>
-                <div class="about-text reveal">
-                    <p class="lead" data-i18n="about.lead">Ik ben een resultaatgerichte executive in bedrijfsprocesoptimalisatie, gespecialiseerd in het afstemmen van processen op de operationele realiteit van elke organisatie. Ik heb multidisciplinaire teams geleid in industriële productie, logistiek, offshore productie en uiteenlopende maritieme diensten.</p>
-                    <p data-i18n-html="about.vision"><strong>Mijn visie</strong> — De standaard zetten voor bedrijfsgedreven procesoptimalisatie, waar organisaties draaien op processen die helder, efficiënt en duurzaam zijn.</p>
-                    <p data-i18n-html="about.p2"><strong>Mijn missie</strong> — Operationele uitmuntendheid en duurzame efficiëntie stimuleren via geïntegreerde bedrijfsprocessen en organisatorische transformaties die echt beklijven.</p>
-                </div>
-            </div>
-
-            <figure class="about-banner reveal">
-                <img src="/images/about-analysis.webp" data-i18n-alt="img.alt.banner" alt="Analyse van bedrijfsprocessen: plannen met data, diagrammen en cijfers op het werkblad" loading="lazy" decoding="async" width="1100" height="619" />
-                <figcaption data-i18n="about.bannerCaption">Diagnose, data en herontwerp: zo stem ik processen af op de operationele realiteit.</figcaption>
-            </figure>
-
-            <ul class="competence-list reveal">
-                <li data-i18n="about.competence.0">Pragmatisch & resultaatgericht</li>
-                <li data-i18n="about.competence.1">Betrouwbaar & communicatief</li>
-                <li data-i18n="about.competence.2">Flexibel & gemotiveerd</li>
-                <li data-i18n="about.competence.3">Organisator met globale visie</li>
-                <li data-i18n="about.competence.4">Analytisch & oplossingsgericht</li>
-                <li data-i18n="about.competence.5">Besluitvaardig en proactief</li>
-                <li data-i18n="about.competence.6">Rationeel & innovatief</li>
-                <li data-i18n="about.competence.7">Resultaatgericht</li>
-            </ul>
-
-            <div class="about-extras">
-                <div class="quote-card reveal">
-                    <svg class="qmark" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 00-2 2v4a2 2 0 002 2h2v2a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm10 0h-4a2 2 0 00-2 2v4a2 2 0 002 2h2v2a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
-                    <p data-i18n="about.quote">Respect, waarden en integriteit zijn sleutelfactoren om je doelen te bereiken.</p>
-                    <span data-i18n="about.quoteAuthor">— Business-Driven Process Optimization</span>
-                </div>
-                <div class="languages reveal">
-                    <h4 data-i18n="about.langTitle">Talen</h4>
-                    <div class="lang"><span data-i18n="about.lang.dutch">Nederlands</span><div class="bar"><i style="--w:100%"></i></div><small data-i18n="about.level.native">Moedertaal</small></div>
-                    <div class="lang"><span data-i18n="about.lang.english">Engels</span><div class="bar"><i style="--w:95%"></i></div><small data-i18n="about.level.fluent">Vloeiend</small></div>
-                    <div class="lang"><span data-i18n="about.lang.french">Frans</span><div class="bar"><i style="--w:70%"></i></div><small data-i18n="about.level.competent">Competent</small></div>
-                    <div class="lang"><span data-i18n="about.lang.german">Duits</span><div class="bar"><i style="--w:70%"></i></div><small data-i18n="about.level.competent">Competent</small></div>
-                </div>
-            </div>
+<section class="section" id="how-i-help">
+    <div class="wrap">
+        <div class="prose">
+            <h2 class="section-title reveal">Hoe ik bedrijven help</h2>
+            <p class="lead reveal">Ik help organisaties te begrijpen waar complexiteit is ontstaan, waarom dingen niet werken zoals verwacht en waar een betekenisvolle verbetering mogelijk is.</p>
+            <p class="reveal">Niet door te beginnen met een nieuw systeem, een reorganisatie of weer een transformatieprogramma.</p>
+            <p class="help-lead reveal">Ik begin met het begrijpen van de organisatie.</p>
         </div>
-    </section>
+        <ul class="questions"><li class="reveal">Wat wilt u bereiken?</li><li class="reveal">Hoe werkt de organisatie vandaag werkelijk?</li><li class="reveal">Waar zitten de afhankelijkheden?</li><li class="reveal">Waar is onnodige complexiteit ontstaan?</li><li class="reveal">En wat moet er veranderen zodat de organisatie als geheel beter werkt?</li></ul>
+        <p class="prose lead reveal">Van daaruit bepalen we wat vereenvoudigd, opnieuw ontworpen, verbonden of geschrapt moet worden.</p>
+    </div>
+</section>
 
-    <!-- Feature band · approach statement -->
-    <section class="feature-band" aria-label="Enfoque">
-        <div class="feature-band-bg">
-            <img src="/images/feature-process.webp" data-i18n-alt="img.alt.feature" alt="Luchtfoto van een containerterminal in de haven — logistiek, orde en grootschalige processen" loading="lazy" decoding="async" width="1500" height="1000" />
+<section class="section" id="symptoms-to-causes">
+    <div class="wrap">
+        <div class="prose">
+            <h2 class="section-title reveal">Van symptomen naar oorzaken</h2>
+            <p class="lead reveal">Organisaties proberen vaak symptomen op te lossen.</p>
         </div>
-        <div class="container feature-band-inner reveal">
-            <span class="feature-eyebrow" data-i18n="feature.eyebrow">De aanpak</span>
-            <h2 class="feature-title" data-i18n="feature.title">Mensen, processen en technologie afgestemd op de realiteit van uw bedrijf.</h2>
-            <p class="feature-sub" data-i18n="feature.sub">Van operationele complexiteit naar praktische, schaalbare en duurzame structuren — ruim 35 jaar processen omzetten in meetbare resultaten.</p>
-            <ul class="feature-pillars">
-                <li data-i18n="feature.p0">Mensen</li>
-                <li data-i18n="feature.p1">Processen</li>
-                <li data-i18n="feature.p2">Technologie</li>
-            </ul>
+        <table class="symptoms-table reveal">
+            <thead><tr><th scope="col">Symptoom</th><th scope="col">Gebruikelijke reactie</th></tr></thead>
+            <tbody><tr><td>Een proces is te traag</td><td>dus het wordt geautomatiseerd.</td></tr><tr><td>Informatie is moeilijk te vinden</td><td>dus er komt nog een systeem bij.</td></tr><tr><td>Afdelingen werken niet goed samen</td><td>dus de organisatie wordt geherstructureerd.</td></tr><tr><td>De kosten zijn te hoog</td><td>dus de budgetten worden verlaagd.</td></tr></tbody>
+        </table>
+        <div class="prose">
+            <p class="reveal">Soms helpen deze maatregelen. Maar soms verplaatsen ze het probleem alleen naar een andere plek.</p>
+            <p class="help-lead reveal" style="margin-top:1.6em">Enterprise Thinking stelt een andere vraag:</p>
         </div>
-    </section>
+        <p class="big-question reveal">Wat veroorzaakt het probleem eigenlijk?</p>
+        <p class="prose reveal">Door verder te kijken dan afzonderlijke afdelingen, systemen en processen, kunnen we de verbanden achter het probleem herkennen en oplossingen creëren die de hele organisatie verbeteren, en niet alleen één onderdeel ervan.</p>
+    </div>
+</section>
 
-    <!-- Services -->
-    <section class="section services" id="services">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="kicker" data-i18n="services.kicker">02 — Consultancy</span>
-                <h2 data-i18n-html="services.title">Professionele diensten <span class="grad">op maat</span> voor uw organisatie.</h2>
-                <p class="section-sub" data-i18n="services.sub">Meer dan drie decennia internationale ervaring ten dienste van uw bedrijf. Elk project wordt op maat ontworpen, met focus op geïntegreerde bedrijfsprocessen en meetbare resultaten.</p>
-            </div>
-            <div class="services-grid">
-                <article class="service reveal" style="--delay:0ms">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18M7 14l4-4 4 4 5-5"/></svg>
-                    </div>
-                    <h3 data-i18n="services.0.title">Bedrijfsprocesoptimalisatie</h3>
-                    <p data-i18n="services.0.desc">Diagnose en herontwerp van processen om doorlooptijden, kosten en afwijkingen te verminderen met Lean, S5 en 8D — gericht op operationele uitmuntendheid.</p>
-                    <ul>
-                        <li data-i18n="services.0.items.0">Value stream mapping</li>
-                        <li data-i18n="services.0.items.1">KPI's & dashboards</li>
-                        <li data-i18n="services.0.items.2">Procesharmonisatie</li>
-                    </ul>
-                </article>
-                <article class="service reveal" style="--delay:80ms">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4M12 22a10 10 0 110-20 10 10 0 010 20z"/></svg>
-                    </div>
-                    <h3 data-i18n="services.1.title">Operationele uitmuntendheid & ISO</h3>
-                    <p data-i18n="services.1.desc">Ontwerp en implementatie van geïntegreerde managementsystemen die kwaliteit, veiligheid en milieu afstemmen op de bedrijfsdoelen (ISO 9001, 14001, 45001).</p>
-                    <ul>
-                        <li data-i18n="services.1.items.0">Interne en externe audits</li>
-                        <li data-i18n="services.1.items.1">Certificering & continue verbetering</li>
-                        <li data-i18n="services.1.items.2">Documentatie & flowcharting</li>
-                    </ul>
-                </article>
-                <article class="service reveal" style="--delay:160ms">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    </div>
-                    <h3 data-i18n="services.2.title">Organisatorische transformatie</h3>
-                    <p data-i18n="services.2.desc">End-to-end begeleiding bij verandering: diagnose, awareness, training en culturele consolidatie, zodat de transformatie écht beklijft.</p>
-                    <ul>
-                        <li data-i18n="services.2.items.0">Workshops & executive coaching</li>
-                        <li data-i18n="services.2.items.1">Awareness-programma's</li>
-                        <li data-i18n="services.2.items.2">Intern communicatieplan</li>
-                    </ul>
-                </article>
-                <article class="service reveal" style="--delay:240ms">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg>
-                    </div>
-                    <h3 data-i18n="services.3.title">Geïntegreerd risicomanagement</h3>
-                    <p data-i18n="services.3.desc">Identificatie en mitigatie van operationele, technische en financiële risico's door HAZOP, FMEA, LMRA en RI&E toe te passen op bedrijfsprocessen.</p>
-                    <ul>
-                        <li data-i18n="services.3.items.0">Volledige risico-assessments</li>
-                        <li data-i18n="services.3.items.1">Optimalisatie van polissen en kosten</li>
-                        <li data-i18n="services.3.items.2">Continuïteitsplannen</li>
-                    </ul>
-                </article>
-                <article class="service reveal" style="--delay:320ms">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7l9-4 9 4-9 4-9-4zM3 7v10l9 4 9-4V7"/></svg>
-                    </div>
-                    <h3 data-i18n="services.4.title">Inkoop & supply chain</h3>
-                    <p data-i18n="services.4.desc">Herontwerp van inkoopprocessen, contractmanagement en supply chain om duurzame efficiëntie te ontsluiten vanaf de eerste bestelling.</p>
-                    <ul>
-                        <li data-i18n="services.4.items.0">Procurement-strategie</li>
-                        <li data-i18n="services.4.items.1">Contract writing & onderhandeling</li>
-                        <li data-i18n="services.4.items.2">SAP / IFS implementatie</li>
-                    </ul>
-                </article>
-                <article class="service reveal" style="--delay:400ms">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                    </div>
-                    <h3 data-i18n="services.5.title">Project- & contractmanagement</h3>
-                    <p data-i18n="services.5.desc">PRINCE2-gecertificeerde project- en contractleiding — transformatie leveren met strakke budgetbewaking.</p>
-                    <ul>
-                        <li data-i18n="services.5.items.0">PRINCE2 Practitioner</li>
-                        <li data-i18n="services.5.items.1">Kostenbeheersing & deliverables</li>
-                        <li data-i18n="services.5.items.2">Stakeholdermanagement</li>
-                    </ul>
-                </article>
-            </div>
+<div class="sep" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#052352"/><stop offset="1" stop-color="#79808A"/></linearGradient></defs><path d="M35.5 13.1A17 17 0 1 0 35.5 26.9L35.1 26.3A15.500000000000002 15.500000000000002 0 1 1 35.1 13.7Z" fill="url(#sg)"/></svg></div>
 
+<section class="section" id="services">
+    <div class="wrap">
+        <h2 class="section-title reveal">Waarmee ik u kan helpen</h2>
+        <ul class="services-grid"><li class="service reveal" style="--i:0"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/><circle cx="8.5" cy="9.5" r="1.2"/><circle cx="12.5" cy="12" r="1.2"/><path d="M9.5 10.3l2 1"/></svg><h3>Uw organisatie begrijpen</h3><p>Een helder beeld scheppen van hoe uw organisatie werkelijk werkt en hoe strategie, processen, mensen, informatie en technologie met elkaar verbonden zijn.</p></li><li class="service reveal" style="--i:1"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h4.5l4.5 7H21"/><path d="M3 12h9"/><path d="M3 19h4.5l4.5-7"/></svg><h3>Complexiteit verminderen</h3><p>Onnodige processen, organisatielagen, systemen, overdrachten en afhankelijkheden opsporen die de organisatie moeilijker en duurder maken om te besturen.</p></li><li class="service reveal" style="--i:2"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19.5" cy="12" r="2"/><circle cx="12" cy="19" r="2"/><path d="M6 10.5l4.5-4M13.5 6.5l4.5 4M18 13.5l-4.5 4M10.5 17.5l-4.5-4"/></svg><h3>Processen verbeteren</h3><p>Verder kijken dan losse processtappen om de volledige stroom van werk en informatie over de grenzen van de organisatie heen te begrijpen.</p></li><li class="service reveal" style="--i:0"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="8" height="8" rx="1"/><rect x="13" y="12" width="8" height="8" rx="1"/><path d="M11 8h5v4"/><path d="M14.5 10.5 16 12l1.5-1.5"/></svg><h3>Business en technologie op elkaar afstemmen</h3><p>Technologie moet de organisatie ondersteunen, niet bepalen hoe de organisatie moet werken. Ik help bedrijven te begrijpen wat ze nodig hebben voordat ze kiezen welke technologie ze nodig hebben.</p></li><li class="service reveal" style="--i:1"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4h-4"/></svg><h3>Organisatorische transformatie</h3><p>Het management helpen bepalen wat er echt moet veranderen, wat moet blijven en hoe verschillende veranderingen elkaar beïnvloeden.</p></li><li class="service reveal" style="--i:2"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-8"/><path d="M12 13 6.5 7.5"/><path d="M12 13l5.5-5.5"/><path d="M6.5 11V7.5H10"/><path d="M17.5 11V7.5H14"/></svg><h3>Ondersteuning bij besluitvorming</h3><p>Leidinggevenden helpen de bredere gevolgen van belangrijke beslissingen te zien, voordat zij veel tijd, geld en organisatiecapaciteit inzetten.</p></li></ul>
+    </div>
+</section>
+
+<section class="section" id="approach">
+    <div class="wrap split">
+        <h2 class="section-title reveal">Mijn aanpak</h2>
+        <div class="prose">
+            <p class="reveal">Ik kom niet met een kant-en-klare oplossing.</p>
+            <p class="reveal">Elke organisatie is anders.</p>
+            <p class="reveal">De eerste stap is daarom luisteren, observeren en begrijpen.</p>
+            <p class="reveal">We bekijken de organisatie vanuit verschillende perspectieven en bouwen stap voor stap een gedeeld beeld op van hoe zij functioneert. Daarna bepalen we waar verandering het meeste verschil kan maken.</p>
+            <div class="highlights reveal">
+                <p>Het doel is niet om het meest ingewikkelde model te maken.</p>
+                <p>Het doel is om complexiteit begrijpelijk te maken.</p>
+            </div>
+            <p class="lead reveal">Want wanneer mensen begrijpen hoe hun organisatie werkelijk werkt, worden betere beslissingen mogelijk.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experience -->
-    <section class="section experience" id="experience">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="kicker" data-i18n="exp.kicker">03 — Loopbaan</span>
-                <h2 data-i18n-html="exp.title">Een carrière van <span class="grad">procesoptimalisatie in elke sector</span>.</h2>
-                <p class="section-sub" data-i18n="exp.sub">Van Maersk Line in de jaren 80 tot QHSE-leiderschap binnen multinationale groepen. 35+ jaar operationele uitmuntendheid, geïntegreerd risicomanagement en organisatorische transformatie. De sector verandert; de principes niet.</p>
-            </div>
-            <div class="timeline">
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">2013 — 2024</span>
-                        <h3 data-i18n="exp.0.title">Group QHSE Manager</h3>
-                        <p class="t-company">Vertom BV · Rotterdam</p>
-                        <p data-i18n="exp.0.desc">Leidde de procesintegratie binnen 7 divisies en bijna 60 operationele bedrijven. Ontwierp een geïntegreerd managementsysteem dat kwaliteit, risico en operations afstemde over alle bedrijfsdisciplines.</p>
-                        <div class="t-tags"><span data-i18n="exp.0.tag0">60 bedrijven</span><span data-i18n="exp.0.tag1">7 divisies</span><span data-i18n="exp.0.tag2">Geïntegreerd systeem</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">2011 — 2013</span>
-                        <h3 data-i18n="exp.1.title">Risk Manager</h3>
-                        <p class="t-company">Flinter Ship Management · Barendrecht</p>
-                        <p data-i18n="exp.1.desc">Herontwierp het risicomanagementproces over US$ 490 mln aan verzekerde activa. De reorganisatie leverde een initiële besparing van 20% op (US$ 1,5 mln) en een herhaalbaar controlemodel.</p>
-                        <div class="t-tags"><span>US$ 490M</span><span data-i18n="exp.1.tag1">-20% kosten</span><span data-i18n="exp.1.tag2">Risico</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">2008 — 2011</span>
-                        <h3 data-i18n="exp.2.title">Quality Assurance Manager</h3>
-                        <p class="t-company">Heerema Fabrication Group · Zwijndrecht</p>
-                        <p data-i18n="exp.2.desc">Implementeerde een geïntegreerd managementsysteem en leidde de invoering van Lean Manufacturing, met kortere doorlooptijden in de hele productiecyclus.</p>
-                        <div class="t-tags"><span>Lean</span><span data-i18n="exp.2.tag1">Processen</span><span>Contract Mgmt</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">2007 — 2008</span>
-                        <h3 data-i18n="exp.3.title">Senior Consultant</h3>
-                        <p class="t-company">QARP Process Development · Tilburg</p>
-                        <p data-i18n="exp.3.desc">Consultancy in inkoop-, logistieke en change-managementprocessen. Ontwikkeling van de QARP-methodologie (Quality, Assurance, Risk, Process): vier pijlers om bedrijfsprocessen in elke sector te optimaliseren.</p>
-                        <div class="t-tags"><span>Consulting</span><span>QARP</span><span data-i18n="exp.3.tag2">Processen</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">1999 — 2006</span>
-                        <h3 data-i18n="exp.4.title">Purchase & Fleet Logistics Manager</h3>
-                        <p class="t-company">Dockwise B.V. · Breda</p>
-                        <p data-i18n="exp.4.desc">Herontwierp het inkoopproces (US$ 120 mln/jaar), de supply chain en de agency-operaties (700 leveranciers / 300 havenagenten), met 20% kostenbesparing als resultaat.</p>
-                        <div class="t-tags"><span data-i18n="exp.4.tag0">US$ 120M/jaar</span><span data-i18n="exp.4.tag1">700 leveranciers</span><span>-20%</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">1992 — 1999</span>
-                        <h3 data-i18n="exp.5.title">Insurance & Claims Manager</h3>
-                        <p class="t-company">Anthony Veder Group N.V. · Rotterdam</p>
-                        <p data-i18n="exp.5.desc">Herontwierp het risicomanagementproces over een portefeuille van US$ 300 mln aan verzekerde waarde, met 64% besparing (US$ 1,3 mln) en een financieel monitoringsysteem voor grote reparaties.</p>
-                        <div class="t-tags"><span data-i18n="exp.5.tag0">-64% premie</span><span>US$ 300M</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">1991 — 1992</span>
-                        <h3 data-i18n="exp.6.title">Operations Manager</h3>
-                        <p class="t-company">Workships Group B.V. · Rotterdam</p>
-                        <p data-i18n="exp.6.desc">Optimaliseerde de operations en onderhoudsprocessen van twee containerschepen: +15% omzet en -30% operationele en onderhoudskosten.</p>
-                        <div class="t-tags"><span data-i18n="exp.6.tag0">+15% omzet</span><span data-i18n="exp.6.tag1">-30% kosten</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">1990 — 1991</span>
-                        <h3 data-i18n="exp.7.title">Financial Manager</h3>
-                        <p class="t-company">Dammers van der Heide (Genag) B.V. · Rotterdam</p>
-                        <p data-i18n="exp.7.desc">Herontwierp de financiële, IT-, douane- en documentatieprocessen. Interne herstructurering en verbetering van afdelingsprestaties.</p>
-                        <div class="t-tags"><span data-i18n="exp.7.tag0">Finance</span><span>IT</span><span data-i18n="exp.7.tag2">Processen</span></div>
-                    </div>
-                </div>
-                <div class="t-item reveal">
-                    <span class="t-dot"></span>
-                    <div class="t-card">
-                        <span class="t-date">1982 — 1990</span>
-                        <h3 data-i18n="exp.8.title">Manager Finance (meerdere disciplines)</h3>
-                        <p class="t-company">Sealand Service Inc. · Maersk Line · Rotterdam</p>
-                        <p data-i18n="exp.8.desc">Leidinggevende functies in Europa, het Midden-Oosten en het Verre Oosten. Projectmanager binnen de internationale auditgroep: credit & risk, operationele efficiëntie, training en anti-fraudeprocessen.</p>
-                        <div class="t-tags"><span data-i18n="exp.8.tag0">Internationaal</span><span>Audit</span><span>Maersk</span></div>
-                    </div>
-                </div>
-            </div>
+<section class="band on-dark" id="transformation">
+    <svg class="band-ring" viewBox="0 0 520 520" aria-hidden="true"><path d="M482.5 170.1A240 240 0 1 0 482.5 349.9L482.4 347.5A233.70000000000002 233.70000000000002 0 1 1 482.4 172.5Z" fill="#fff"/></svg>
+    <div class="wrap">
+        <h2 class="reveal">Eerst begrijpen, dan transformeren</h2>
+        <div class="prose">
+            <p class="reveal">Transformatie is een van de meest gebruikte woorden in het bedrijfsleven geworden.</p>
         </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section skills" id="skills">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="kicker" data-i18n="skills.kicker">04 — Competenties</span>
-                <h2 data-i18n-html="skills.title">Skills, certificeringen en <span class="grad">expertisegebieden</span>.</h2>
-            </div>
-            <div class="skills-wrap">
-                <div class="skill-block reveal">
-                    <h3 data-i18n="skills.0">Operationele uitmuntendheid & ISO</h3>
-                    <div class="chips">
-                        <span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span>
-                        <span>ISO 22301</span><span>Lean Manufacturing</span>
-                        <span>S5</span><span>8D</span>
-                        <span>EN</span><span>ASTM</span><span>GMP</span>
-                    </div>
-                </div>
-                <div class="skill-block reveal">
-                    <h3 data-i18n="skills.1">Risicomanagement</h3>
-                    <div class="chips">
-                        <span>ISO 31000</span><span>RI&amp;E</span><span>HAZOP</span>
-                        <span>FMEA</span><span>LMRA</span>
-                        <span>Enterprise Risk</span><span>Insurance &amp; Claims</span><span>Liability</span>
-                    </div>
-                </div>
-                <div class="skill-block reveal">
-                    <h3 data-i18n="skills.2">Processen & Audit</h3>
-                    <div class="chips">
-                        <span>Business Process Management</span>
-                        <span>Internal Audit</span><span>External Audit</span>
-                        <span>Audit Techniques</span><span>Flowcharting</span>
-                        <span>Manual Master</span><span>Change Management</span>
-                    </div>
-                </div>
-                <div class="skill-block reveal">
-                    <h3 data-i18n="skills.3">Project & Procurement</h3>
-                    <div class="chips">
-                        <span>PRINCE2 Foundation</span><span>PRINCE2 Practitioner</span>
-                        <span>Contract Writing</span><span>Negotiation</span>
-                        <span>Supply Chain</span><span>Procurement Strategy</span>
-                    </div>
-                </div>
-                <div class="skill-block reveal">
-                    <h3 data-i18n="skills.4">Finance & ICT</h3>
-                    <div class="chips">
-                        <span>SAP R/3 Logistics</span><span>SAP R/3 PM</span>
-                        <span>IFS</span><span>Credit Mgmt</span>
-                        <span>Mgmt Reporting</span>
-                    </div>
-                </div>
-                <div class="skill-block reveal">
-                    <h3 data-i18n="skills.5">Lidmaatschappen & Prestaties</h3>
-                    <div class="chips">
-                        <span>SGVRE Europe</span>
-                        <span>IMPA</span>
-                        <span>Average Adjusters (London)</span>
-                    </div>
-                    <div style="margin-top:14px">
-                        <span class="qarp-badge">
-                            <span data-i18n="skills.qarpBadge">Maker van de QARP-methode · Quality · Assurance · Risk · Process</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
+        <ul class="strike-list"><li><s>Digitale transformatie.</s></li><li><s>Bedrijfstransformatie.</s></li><li><s>Organisatietransformatie.</s></li><li><s>AI-transformatie.</s></li></ul>
+        <div class="prose">
+            <p class="reveal">Maar transformatie zonder begrip kan een dure manier worden om de verkeerde dingen te veranderen.</p>
+            <p class="reveal">Voordat we een organisatie transformeren, moeten we haar begrijpen.</p>
+            <p class="reveal">Dat is het principe achter Enterprise Thinking.</p>
         </div>
-    </section>
+        <p class="band-closing reveal">Eerst denken. Het geheel begrijpen. Dan veranderen wat ertoe doet.</p>
+    </div>
+</section>
 
-    <!-- Contact -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="contact-wrap reveal">
-                <div class="contact-left">
-                    <span class="kicker" data-i18n="contact.kicker">05 — Contact</span>
-                    <h2 data-i18n-html="contact.title">Wilt u uw processen afstemmen op de <span class="grad">operationele realiteit</span>?</h2>
-                    <p data-i18n="contact.p">Vertel kort over uw uitdaging en ik reageer binnen 48 uur. Beschikbaar voor kortlopende projecten, doorlopend advies of eenmalige interventies in bedrijfsprocesoptimalisatie, operationele uitmuntendheid, risicomanagement of organisatorische transformatie.</p>
-                    <ul class="contact-info">
-                        <li>
-                            <span class="ci-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-                            </span>
-                            <div><small data-i18n="contact.info.email">E-mail</small><a href="mailto:alex@fialka.es">alex@fialka.es</a></div>
-                        </li>
-                        <li>
-                            <span class="ci-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </span>
-                            <div><small data-i18n="contact.info.phone">Telefoon</small><a href="tel:+34641058422">+34 641 05 84 22</a></div>
-                        </li>
-                        <li>
-                            <span class="ci-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </span>
-                            <div><small data-i18n="contact.info.location">Locatie</small><span data-i18n="contact.info.locationVal">Almerimar, Spanje</span></div>
-                        </li>
-                        <li>
-                            <span class="ci-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.94H5.56v8.4h2.78zM6.95 8.7a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22zm11.39 9.64v-4.6c0-2.46-1.31-3.6-3.07-3.6-1.42 0-2.05.78-2.4 1.33v-1.14h-2.78v8.4h2.78v-4.69c0-.25.02-.5.09-.67.2-.5.65-1.01 1.41-1.01.99 0 1.39.75 1.39 1.86v4.51h2.78z"/></svg>
-                            </span>
-                            <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/alexfialka/" target="_blank" rel="noopener">linkedin.com/in/alexfialka</a></div>
-                        </li>
-                    </ul>
-                </div>
-                <form class="contact-form" id="contactForm" novalidate>
-                    <div class="field">
-                        <label for="name" data-i18n="form.name">Volledige naam</label>
-                        <input type="text" id="name" name="name" required data-i18n-ph="form.namePh" placeholder="Uw naam" />
-                    </div>
-                    <div class="field-row">
-                        <div class="field">
-                            <label for="email" data-i18n="form.email">E-mail</label>
-                            <input type="email" id="email" name="email" required data-i18n-ph="form.emailPh" placeholder="u@bedrijf.com" />
-                        </div>
-                        <div class="field">
-                            <label for="company" data-i18n="form.company">Bedrijf</label>
-                            <input type="text" id="company" name="company" data-i18n-ph="form.companyPh" placeholder="Bedrijf (optioneel)" />
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label for="topic" data-i18n="form.topic">Type consultancy</label>
-                        <select id="topic" name="topic">
-                            <option data-i18n="form.topic.0">Bedrijfsprocesoptimalisatie</option>
-                            <option data-i18n="form.topic.1">Operationele uitmuntendheid & ISO</option>
-                            <option data-i18n="form.topic.2">Organisatorische transformatie</option>
-                            <option data-i18n="form.topic.3">Geïntegreerd risicomanagement</option>
-                            <option data-i18n="form.topic.4">Inkoop & supply chain</option>
-                            <option data-i18n="form.topic.5">Project- & contractmanagement</option>
-                            <option data-i18n="form.topic.6">Anders</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label for="message" data-i18n="form.message">Bericht</label>
-                        <textarea id="message" name="message" required rows="5" data-i18n-ph="form.messagePh" placeholder="Vertel in een paar regels over uw situatie of uitdaging..."></textarea>
-                    </div>
-                    <label class="consent">
-                        <input type="checkbox" id="consent" name="consent" required />
-                        <span class="consent-text" data-i18n-html="form.consent">Ik heb het <a href="/privacidad.html" target="_blank" rel="noopener">privacybeleid</a> gelezen en accepteer het.</span>
-                    </label>
-                    <button type="submit" class="btn btn-primary btn-block">
-                        <span data-i18n="form.send">Bericht versturen</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                    </button>
-                    <p class="form-status" id="formStatus" aria-live="polite"></p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="f-col">
-                <a href="#hero" class="logo" aria-label="Alex Fialka — Inicio">
-                    <span class="logo-text">Alex&nbsp;Fialka</span>
-                </a>
-                <p data-i18n="footer.about">Senior executive bedrijfsprocesoptimalisatie. 35+ jaar processen afstemmen op de operationele realiteit voor operationele uitmuntendheid, organisatorische transformatie en duurzame efficiëntie.</p>
-            </div>
-            <div class="f-col">
-                <h5 data-i18n="footer.nav">Navigatie</h5>
-                <ul>
-                    <li><a href="#about" data-i18n="nav.about">Over mij</a></li>
-                    <li><a href="#services" data-i18n="nav.services">Diensten</a></li>
-                    <li><a href="#experience" data-i18n="nav.experience">Ervaring</a></li>
-                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="f-col">
-                <h5 data-i18n="footer.services">Diensten</h5>
-                <ul>
-                    <li data-i18n="footer.s0">Bedrijfsprocesoptimalisatie</li>
-                    <li data-i18n="footer.s1">Operationele uitmuntendheid & ISO</li>
-                    <li data-i18n="footer.s2">Organisatorische transformatie</li>
-                    <li data-i18n="footer.s3">Geïntegreerd risicomanagement</li>
-                    <li data-i18n="footer.s4">Procurement & project mgmt</li>
-                </ul>
-            </div>
-            <div class="f-col">
-                <h5 data-i18n="footer.contact">Contact</h5>
-                <ul>
-                    <li><a href="mailto:alex@fialka.es">alex@fialka.es</a></li>
-                    <li><a href="tel:+34641058422">+34 641 05 84 22</a></li>
-                    <li data-i18n="contact.info.locationVal">Almerimar, Spanje</li>
-                    <li><a href="https://www.linkedin.com/in/alexfialka/" target="_blank" rel="noopener">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p><span data-i18n="footer.copyright">© 2026 Alex Fialka — Alle rechten voorbehouden.</span></p>
-            <p class="legal-links">
-                <a href="/aviso-legal.html" data-i18n="footer.legal">Juridische kennisgeving</a> ·
-                <a href="/privacidad.html" data-i18n="footer.privacy">Privacy</a> ·
-                <a href="/cookies.html" data-i18n="footer.cookies">Cookies</a> ·
-                <a href="#" id="cookiePrefs" data-i18n="footer.cookiePrefs">Cookievoorkeuren</a>
-            </p>
-            <p class="craft" data-i18n="footer.craft">Ontworpen met ♡ · Business Process Consultancy</p>
-        </div>
-    </footer>
-
-    <a href="#hero" class="back-top" id="backTop" aria-label="Top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-    </a>
-
-    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" hidden>
-        <div class="cookie-banner-inner">
-            <p data-i18n-html="cookie.text">Deze website gebruikt technische opslag om uw taalvoorkeur te onthouden en analytische cookies (Google Analytics) om te begrijpen hoe de site wordt gebruikt. U kunt deze op elk moment accepteren of weigeren. <a href="/cookies.html">Meer informatie</a>.</p>
-            <div class="cookie-actions">
-                <button type="button" class="btn btn-ghost cookie-reject" id="cookieReject" data-i18n="cookie.reject">Weigeren</button>
-                <button type="button" class="btn btn-primary cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Accepteren</button>
+<section class="section" id="book">
+    <div class="wrap book-feature">
+        <div class="book-3d reveal"><a class="book" href="/nl/boek/" tabindex="-1" aria-hidden="true"><img src="/assets/img/book-cover-nl-480.webp" srcset="/assets/img/book-cover-nl-480.webp 480w, /assets/img/book-cover-nl-900.webp 900w" sizes="(max-width: 860px) 70vw, 360px" width="480" height="716" alt="Omslag van het boek Enterprise Thinking: De praktische logica achter een sterke onderneming, door Alex Fialka" loading="lazy" decoding="async"></a></div>
+        <div class="reveal">
+            <span class="book-label">Het boek</span>
+            <h2 class="book-title">Enterprise Thinking</h2>
+            <p class="book-subtitle">De praktische logica achter een sterke onderneming</p>
+            <p class="lead">Wat maakt een onderneming sterk? Niet één proces, één systeem of één managementmodel. Het is de manier waarop alle onderdelen met elkaar samenhangen.</p>
+            <div class="btn-row">
+                <a class="btn btn-primary" href="/nl/boek/">Ontdek het boek</a>
+                <a class="btn btn-secondary" href="https://www.amazon.es/dp/B0HGX8F8BJ" target="_blank" rel="noopener">Kopen op Amazon</a>
             </div>
         </div>
     </div>
+</section>
 
-    <script src="/script.js"></script>
+<section class="section" id="who-i-work-with">
+    <div class="wrap split">
+        <h2 class="section-title reveal">Met wie ik werk</h2>
+        <div class="prose">
+            <p class="lead reveal">Enterprise Thinking kan organisaties helpen die:</p>
+            <ul class="checks"><li class="reveal">te maken hebben met toenemende organisatorische complexiteit</li><li class="reveal">zich voorbereiden op een ingrijpende transformatie</li><li class="reveal">worstelen met afdelingen of systemen die niet op elkaar aansluiten</li><li class="reveal">grote investeringen in technologie overwegen</li><li class="reveal">hun operationele efficiëntie willen verbeteren</li><li class="reveal">processen hebben die moeilijk beheersbaar zijn geworden</li><li class="reveal">organisaties samenvoegen na groei, een overname of een herstructurering</li></ul>
+            <div class="pull-quote reveal">
+                <p class="quote-lead">of die zich simpelweg afvragen:</p>
+                <blockquote><p>“Dit moet toch beter te organiseren zijn?”</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="sep" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#052352"/><stop offset="1" stop-color="#79808A"/></linearGradient></defs><path d="M35.5 13.1A17 17 0 1 0 35.5 26.9L35.1 26.3A15.500000000000002 15.500000000000002 0 1 1 35.1 13.7Z" fill="url(#sg)"/></svg></div>
+
+<section class="section" id="about">
+    <div class="wrap about-grid">
+        <figure class="portrait reveal"><img src="/assets/img/alex-fialka-480.webp" srcset="/assets/img/alex-fialka-480.webp 480w, /assets/img/alex-fialka-760.webp 760w" sizes="(max-width: 860px) 90vw, 420px" width="480" height="640" alt="Portret van Alex Fialka" loading="lazy" decoding="async"></figure>
+        <div class="prose">
+            <h2 class="section-title reveal">Over Alex Fialka</h2>
+            <p class="reveal">Mijn werk is altijd gedreven door een eenvoudige nieuwsgierigheid:</p>
+            <p class="about-quote reveal">Waarom werken organisaties zoals ze werken — en kan het beter?</p>
+            <p class="reveal">Door de jaren heen heb ik vanuit veel verschillende perspectieven gewerkt met organisaties, processen, informatie en technologie. Die ervaring leerde me dat de grootste problemen zelden beperkt blijven tot één afdeling, één proces of één systeem.</p>
+            <a class="text-link reveal" href="/nl/over-alex/">Meer over Alex</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="wrap cta-grid">
+        <div class="prose">
+            <h2 class="section-title reveal">Begin met een gesprek</h2>
+            <p class="reveal">U hoeft niet precies te weten wat het probleem is.</p>
+            <p class="reveal">Soms is het waardevolste vertrekpunt simpelweg het gevoel dat iets onnodig ingewikkeld, duur of moeilijk is geworden.</p>
+            <p class="reveal">Daar kunnen we beginnen.</p>
+            <p class="cta-strong reveal">Vertel me wat u wilt bereiken en wat daarbij in de weg staat.</p>
+            <p class="reveal">Samen kijken we naar het grotere geheel en bepalen we waar een zinvolle verandering kan beginnen.</p>
+            <div class="signature reveal"><p>Eerst begrijpen. Dan veranderen.</p><p>Enterprise Thinking.</p></div>
+        </div>
+        <div class="reveal"><form class="form" id="home-form" novalidate>
+        <input type="hidden" name="_subject" value="Enterprise Thinking — vraag via de website">
+        <input type="hidden" name="language" value="nl">
+        <div class="field"><label for="home-form-name">Naam</label><input id="home-form-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="home-form-company">Bedrijf <span class="opt">(optioneel)</span></label><input id="home-form-company" name="company" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="home-form-email">E-mail</label><input id="home-form-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="home-form-message">Wat wilt u bereiken, en wat staat daarbij in de weg?</label>
+            <textarea id="home-form-message" name="message" rows="5" required></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="home-form-website">Laat dit veld leeg</label><input id="home-form-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Ik heb het <a href="/nl/privacy/">privacybeleid</a> gelezen en ga ermee akkoord.</span></label>
+        <button class="btn btn-primary" type="submit">Bericht versturen</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+    </form></div>
+    </div>
+</section>
+</main>
+<footer class="site-footer on-dark">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div>
+                <a class="footer-brand" href="/nl/">
+                    <img src="/assets/img/et-logo-white-96.webp" width="93" height="96" alt="" loading="lazy">
+                    <span class="brand-text"><span class="brand-name">Enterprise Thinking</span><span class="brand-by">Alex Fialka</span></span>
+                </a>
+                <p class="footer-tagline">Zie het geheel. Begrijp de verbanden. Neem betere beslissingen.</p>
+            </div>
+            <div class="footer-col">
+                <h2>Verkennen</h2>
+                <ul>
+                    <li><a href="/nl/#enterprise-thinking">Enterprise Thinking</a></li>
+                    <li><a href="/nl/#approach">Aanpak</a></li>
+                    <li><a href="/nl/boek/">Het boek</a></li>
+                    <li><a href="/nl/over-alex/">Over Alex</a></li>
+                    <li><a href="/nl/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:alex@fialka.es">alex@fialka.es</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexfialka/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+                <h2 style="margin-top:24px">Taal</h2>
+                <ul class="langs" aria-label="Taal"><li><a href="/en/" hreflang="en" lang="en" title="English">EN</a></li><li><a href="/es/" hreflang="es" lang="es" title="Español">ES</a></li><li><a href="/nl/" hreflang="nl" lang="nl" aria-current="true" title="Nederlands">NL</a></li></ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Alex Fialka. Alle rechten voorbehouden.</p>
+            <ul class="footer-legal">
+                <li><a href="/nl/juridische-informatie/">Juridische informatie</a></li>
+                <li><a href="/nl/privacy/">Privacy</a></li>
+                <li><a href="/nl/cookies/">Cookies</a></li>
+                <li><button class="link-button" type="button" data-cookie-settings>Cookie-instellingen</button></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookies" hidden>
+    <p>Deze website gebruikt technische opslag om uw keuzes te onthouden en, alleen als u daarmee akkoord gaat, analytische cookies (Google Analytics) om te begrijpen hoe de site wordt gebruikt. <a href="/nl/cookies/">Lees het cookiebeleid</a>.</p>
+    <div class="cookie-actions">
+        <button type="button" class="btn btn-secondary" data-consent="reject">Weigeren</button>
+        <button type="button" class="btn btn-primary" data-consent="accept">Accepteren</button>
+    </div>
+</div>
+<script id="i18n" type="application/json">{"menu":"Menu","close":"Menu sluiten","name":"Naam","company":"Bedrijf","role":"Functie","email":"E-mail","sending":"Bezig met versturen…","errRequired":"Vul uw naam, e-mailadres en bericht in.","errEmail":"Voer een geldig e-mailadres in.","errConsent":"Ga akkoord met het privacybeleid om uw bericht te versturen.","successMail":"Dank u. Uw e-mailprogramma wordt geopend met het bericht klaar om te versturen.","successSent":"Dank u. Uw bericht is verstuurd en Alex reageert persoonlijk.","errSend":"Het bericht kon niet worden verstuurd. Schrijf rechtstreeks naar alex@fialka.es.","mailSubject":"Enterprise Thinking — vraag via de website"}</script>
+<script src="/assets/js/site.js?v=f819c2b7" defer></script>
 </body>
 </html>
