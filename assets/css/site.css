@@ -383,9 +383,12 @@ p, li, blockquote { text-wrap: pretty; }
     stroke-dasharray: 1;
     stroke-dashoffset: 0;
 }
-.art-node { fill: var(--grey); }
-.art-node.is-key { fill: var(--navy); }
-.art-edge { stroke: var(--grey); stroke-width: 1.2; opacity: 0.55; fill: none; }
+/* Puzle del hero: piezas claras con juntas grises; dos piezas de acento */
+.pz { transform-box: fill-box; transform-origin: center; }
+.pz path { fill: #EDF0F5; stroke: var(--grey); stroke-width: 1.3; stroke-linejoin: round; }
+.pz.is-key path { fill: var(--navy); stroke: var(--navy); }
+.pz.is-alt path { fill: #CDD2DA; }
+.pz-whole { fill: none; stroke: var(--grey); stroke-width: 1.2; opacity: 0.45; }
 /* La π del logo, a la derecha de la abertura del círculo */
 .art-pi path { fill: none; stroke: var(--navy); stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; }
 
@@ -983,16 +986,17 @@ p, li, blockquote { text-wrap: pretty; }
 
     /* Hero: el círculo se dibuja y los nodos dispersos se ordenan y conectan */
     .ring-draw { animation: draw 2200ms var(--ease) 150ms both; }
-    .art-node {
-        animation: settle 1700ms var(--ease) both;
-        animation-delay: calc(500ms + var(--i) * 60ms);
+    /* Las piezas llegan dispersas y giradas y encajan con un pequeño rebote */
+    .pz {
+        animation: piece-in 1100ms cubic-bezier(.2, 1.12, .35, 1) both;
+        animation-delay: calc(400ms + var(--i) * 70ms);
     }
-    .art-pi { animation: pi-in 1200ms var(--ease) 2200ms both; }
-    .art-edge {
-        stroke-dasharray: 1;
-        animation: draw 1300ms var(--ease) both;
-        animation-delay: calc(1500ms + var(--i) * 70ms);
-    }
+    /* La pieza clave llega sola, tras una breve pausa */
+    .pz.is-key { animation-delay: calc(400ms + var(--i) * 70ms + 380ms); }
+    .pz-whole { animation: fade-in 900ms ease 150ms both; }
+    /* Completo: las juntas se suavizan y se lee como un todo */
+    .pz path { animation: seam-soft 1400ms ease 2850ms both; }
+    .art-pi { animation: pi-in 1200ms var(--ease) 2850ms both; }
 
     /* Diagramas: se trazan al entrar en pantalla */
     .js .diagram:not(.is-visible) .chord,
@@ -1007,7 +1011,13 @@ p, li, blockquote { text-wrap: pretty; }
 
 @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 @keyframes pi-in { from { opacity: 0; translate: 14px 0; } }
-@keyframes settle { from { opacity: 0; translate: var(--dx) var(--dy); } }
+@keyframes piece-in {
+    0% { opacity: 0; translate: var(--dx) var(--dy); rotate: var(--rot); }
+    35% { opacity: 1; }
+    100% { opacity: 1; translate: 0 0; rotate: 0deg; }
+}
+@keyframes seam-soft { to { stroke-opacity: 0.35; } }
+@keyframes fade-in { from { opacity: 0; } }
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }

@@ -93,26 +93,97 @@ function sep() {
     return `<div class="sep" aria-hidden="true"><svg viewBox="0 0 40 40"><defs>${gradient('sg')}</defs><path d="${crescent(20, 20, 17, 2.4, 24)}" fill="url(#sg)"/></svg></div>`;
 }
 
-// Hero: nodos dispersos que se ordenan y conectan dentro del círculo abierto
-function heroArt(label) {
-    const N = [
-        [260, 112, 1], [170, 160, 0], [352, 156, 0], [112, 250, 0], [214, 228, 0], [306, 232, 0],
-        [404, 258, 0], [260, 290, 1], [160, 336, 0], [252, 372, 0], [350, 340, 1], [206, 430, 0], [318, 428, 0]
-    ];
-    const E = [[0, 1], [0, 2], [0, 7], [1, 3], [1, 4], [2, 5], [2, 6], [3, 8], [4, 7], [5, 7], [5, 6], [7, 9], [8, 9], [8, 11],
-               [9, 10], [6, 10], [10, 12], [11, 12], [4, 8], [9, 12]];
-    let seed = 7;
+/* Hero: puzle redondo dentro del círculo abierto del logo.
+   Las piezas llegan dispersas y giradas, encajan de fuera hacia dentro y
+   la última (azul marino) completa el conjunto: "ver el todo". */
+const PUZZLE = { cx: 260, cy: 260, r: 196, n: 4, seed: 11 };
+
+// Pestaña de puzle sobre una arista (0→1 en x, saliente hacia y negativa)
+const TAB = [
+    [[0.42, 0], [0.46, -0.04], [0.44, -0.10]],
+    [[0.40, -0.20], [0.33, -0.30], [0.50, -0.30]],
+    [[0.67, -0.30], [0.60, -0.20], [0.56, -0.10]],
+    [[0.54, -0.04], [0.58, 0], [1, 0]]
+];
+
+function puzzlePieces() {
+    const { cx, cy, r, n } = PUZZLE;
+    let seed = PUZZLE.seed;
     const rnd = () => { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; };
-    const nodes = N.map(([x, y, key], i) => {
-        const dx = Math.round((rnd() - 0.5) * 220), dy = Math.round((rnd() - 0.5) * 220);
-        return `<circle class="art-node${key ? ' is-key' : ''}" cx="${x}" cy="${y}" r="${key ? 7 : 4.5}" style="--i:${i};--dx:${dx}px;--dy:${dy}px"/>`;
+    const size = r * 2, cell = size / n, x0 = cx - r, y0 = cy - r;
+
+    // Arista como lista de segmentos cúbicos en coordenadas absolutas.
+    // dir: 0 = recta (borde exterior), ±1 = pestaña hacia un lado u otro.
+    function edge(ax, ay, bx, by, dir) {
+        const ux = bx - ax, uy = by - ay;
+        if (!dir) return { start: [ax, ay], segs: [[[ax, ay], [bx, by], [bx, by]]] };
+        const L = Math.hypot(ux, uy), nx = -uy / L, ny = ux / L;
+        const shift = (rnd() - 0.5) * 0.08, scale = 0.92 + rnd() * 0.16;
+        const map = ([x, y]) => {
+            const t = x === 0 || x === 1 ? x : x + shift;
+            return [r1(ax + ux * t + nx * L * y * scale * dir), r1(ay + uy * t + ny * L * y * scale * dir)];
+        };
+        const first = [[ax, ay], map([0.36, 0]), map([0.36, 0])];
+        return { start: [ax, ay], segs: [first, ...TAB.map(seg => seg.map(map))] };
+    }
+    const reverse = e => {
+        const pts = [e.start, ...e.segs.map(s => s[2])];
+        const segs = e.segs.map((s, i) => [s[1], s[0], pts[i]]).reverse();
+        return { start: pts[pts.length - 1], segs };
+    };
+    const toPath = edges => 'M' + edges[0].start.join(' ') +
+        edges.map(e => e.segs.map(s => 'C' + s.map(p => p.join(' ')).join(' ')).join('')).join('') + 'Z';
+
+    // Aristas compartidas: horizontales H[fila][col] y verticales V[fila][col]
+    const H = [], V = [];
+    for (let i = 0; i <= n; i++) {
+        H[i] = []; V[i] = [];
+        for (let j = 0; j < n; j++) {
+            const y = y0 + i * cell, x = x0 + j * cell;
+            H[i][j] = edge(x, y, x + cell, y, i === 0 || i === n ? 0 : (rnd() < 0.5 ? 1 : -1));
+        }
+        for (let j = 0; j <= n && i < n; j++) {
+            const x = x0 + j * cell, y = y0 + i * cell;
+            V[i][j] = edge(x, y, x, y + cell, j === 0 || j === n ? 0 : (rnd() < 0.5 ? 1 : -1));
+        }
+    }
+
+    const pieces = [];
+    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
+        // Solo las celdas que tocan el disco
+        const nxp = Math.max(x0 + j * cell, Math.min(cx, x0 + (j + 1) * cell));
+        const nyp = Math.max(y0 + i * cell, Math.min(cy, y0 + (i + 1) * cell));
+        if (Math.hypot(nxp - cx, nyp - cy) >= r) continue;
+        const d = toPath([H[i][j], V[i][j + 1], reverse(H[i + 1][j]), reverse(V[i][j])]);
+        const mx = x0 + (j + 0.5) * cell - cx, my = y0 + (i + 0.5) * cell - cy;
+        pieces.push({ i, j, d, dist: Math.hypot(mx, my), ang: Math.atan2(my, mx) });
+    }
+
+    // Orden de llegada: de fuera hacia dentro; las dos piezas destacadas, al final
+    const accent = { '1-1': 'is-key', '2-2': 'is-alt' };
+    pieces.forEach(p => { p.cls = accent[`${p.i}-${p.j}`] || ''; });
+    pieces.sort((a, b) => (!!a.cls - !!b.cls) || (b.dist - a.dist) || (a.ang - b.ang));
+    const keyLast = pieces.splice(pieces.findIndex(p => p.cls === 'is-key'), 1)[0];
+    pieces.push(keyLast);
+
+    return pieces.map((p, k) => {
+        // Posición inicial: desplazada hacia fuera (con algo de azar) y girada
+        const out = 70 + rnd() * 80;
+        const a = p.ang + (rnd() - 0.5) * 0.9;
+        const dx = Math.round(Math.cos(a) * out), dy = Math.round(Math.sin(a) * out);
+        const rot = Math.round((rnd() < 0.5 ? -1 : 1) * (14 + rnd() * 34));
+        return `<g class="pz${p.cls ? ' ' + p.cls : ''}" style="--i:${k};--dx:${dx}px;--dy:${dy}px;--rot:${rot}deg"><path d="${p.d}" clip-path="url(#pzc)"/></g>`;
     }).join('');
-    const edges = E.map(([a, b], i) =>
-        `<line class="art-edge" x1="${N[a][0]}" y1="${N[a][1]}" x2="${N[b][0]}" y2="${N[b][1]}" pathLength="1" style="--i:${i}"/>`).join('');
+}
+
+function heroArt(label) {
+    const { cx, cy, r } = PUZZLE;
     return `<svg class="hero-art" viewBox="0 0 520 520" role="img" aria-label="${esc(label)}">
-        <defs>${gradient('hg')}<mask id="hm"><path class="ring-draw" d="${arcPath(260, 260, 236, 22)}" fill="none" stroke="#fff" stroke-width="30" pathLength="1"/></mask></defs>
+        <defs>${gradient('hg')}<mask id="hm"><path class="ring-draw" d="${arcPath(260, 260, 236, 22)}" fill="none" stroke="#fff" stroke-width="30" pathLength="1"/></mask>
+            <clipPath id="pzc"><circle cx="${cx}" cy="${cy}" r="${r}"/></clipPath></defs>
         <path d="${crescent(260, 260, 240, 11, 22)}" fill="url(#hg)" mask="url(#hm)"/>
-        <g>${edges}</g><g>${nodes}</g>
+        <g class="puzzle">${puzzlePieces()}</g>
+        <circle class="pz-whole" cx="${cx}" cy="${cy}" r="${r}"/>
         <g class="art-pi" transform="translate(482 256)" aria-hidden="true"><path d="M1 7C2.5 4.5 5 3.6 8 3.6H32M11.5 3.6C11.5 14 10.5 23 7 30M23 3.6V25C23 29 25 30.5 28.5 29"/></g>
     </svg>`;
 }
