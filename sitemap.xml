@@ -1,192 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fialka.es/en/</loc>
+    <loc>https://www.fialka.es/en/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/</loc>
+    <loc>https://www.fialka.es/es/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/</loc>
+    <loc>https://www.fialka.es/nl/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fialka.es/en/book/</loc>
+    <loc>https://www.fialka.es/en/book/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/book/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/libro/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/boek/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/libro/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/boek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/book/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/libro/</loc>
+    <loc>https://www.fialka.es/es/libro/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/book/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/libro/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/boek/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/libro/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/boek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/book/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/boek/</loc>
+    <loc>https://www.fialka.es/nl/boek/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/book/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/libro/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/boek/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/libro/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/boek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/book/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/en/about/</loc>
+    <loc>https://www.fialka.es/en/about/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/sobre-alex/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/over-alex/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/sobre-alex/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/over-alex/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/about/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/sobre-alex/</loc>
+    <loc>https://www.fialka.es/es/sobre-alex/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/sobre-alex/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/over-alex/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/sobre-alex/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/over-alex/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/about/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/over-alex/</loc>
+    <loc>https://www.fialka.es/nl/over-alex/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/sobre-alex/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/over-alex/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/sobre-alex/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/over-alex/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/about/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/en/contact/</loc>
+    <loc>https://www.fialka.es/en/contact/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/contact/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/contacto/</loc>
+    <loc>https://www.fialka.es/es/contacto/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/contact/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/contact/</loc>
+    <loc>https://www.fialka.es/nl/contact/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/contact/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fialka.es/en/legal-notice/</loc>
+    <loc>https://www.fialka.es/en/legal-notice/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/legal-notice/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/aviso-legal/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/juridische-informatie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/juridische-informatie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/legal-notice/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/aviso-legal/</loc>
+    <loc>https://www.fialka.es/es/aviso-legal/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/legal-notice/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/aviso-legal/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/juridische-informatie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/juridische-informatie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/legal-notice/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/juridische-informatie/</loc>
+    <loc>https://www.fialka.es/nl/juridische-informatie/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/legal-notice/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/aviso-legal/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/juridische-informatie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/juridische-informatie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/legal-notice/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/en/privacy/</loc>
+    <loc>https://www.fialka.es/en/privacy/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/privacy/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/privacidad/</loc>
+    <loc>https://www.fialka.es/es/privacidad/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/privacy/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/privacy/</loc>
+    <loc>https://www.fialka.es/nl/privacy/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/privacy/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/en/cookies/</loc>
+    <loc>https://www.fialka.es/en/cookies/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/cookies/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/es/cookies/</loc>
+    <loc>https://www.fialka.es/es/cookies/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/cookies/"/>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fialka.es/nl/cookies/</loc>
+    <loc>https://www.fialka.es/nl/cookies/</loc>
     <lastmod>2026-10-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fialka.es/en/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fialka.es/es/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fialka.es/nl/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fialka.es/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/cookies/"/>
     <priority>0.3</priority>
   </url>
 </urlset>

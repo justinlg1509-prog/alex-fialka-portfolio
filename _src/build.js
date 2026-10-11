@@ -19,7 +19,7 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const YEAR = new Date().getFullYear();
 
 const SITE = {
-    url: 'https://fialka.es',
+    url: 'https://www.fialka.es',
     email: 'alex@fialka.es',
     phone: '+34641058422',
     phoneDisplay: '+34 641 05 84 22',
