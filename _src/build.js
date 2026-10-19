@@ -14,7 +14,8 @@ const crypto = require('crypto');
 const SRC = __dirname;
 const ROOT = path.resolve(SRC, '..');
 const LANGS = ['en', 'es', 'nl'];
-const PAGES = ['home', 'book', 'about', 'contact', 'legal', 'privacy', 'cookies'];
+const PAGES = ['home', 'et', 'book', 'about', 'contact', 'legal', 'privacy', 'cookies'];
+const BRAND = 'Fialka Enterprise Thinking';
 const TODAY = new Date().toISOString().slice(0, 10);
 const YEAR = new Date().getFullYear();
 
@@ -188,49 +189,60 @@ function heroArt(label) {
     </svg>`;
 }
 
-// Diagrama de los 6 elementos sobre el círculo abierto (escritorio)
-function diagramCircle(els, label) {
-    const cx = 360, cy = 280, R = 190;
-    const pts = els.map((_, k) => P(cx, cy, R, -90 + k * 60));
-    let chords = '', i = 0;
-    for (let a = 0; a < 6; a++) for (let b = a + 1; b < 6; b++) {
-        if (b - a === 1 || (a === 0 && b === 5)) continue;
-        chords += `<line class="chord" x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" pathLength="1" style="--i:${i++}"/>`;
+// Diagrama sobre el círculo abierto (escritorio): los elementos conectados
+// entre sí y todos con los resultados del centro.
+function diagramCircle(els, center, label) {
+    // Ancho extra a la derecha para etiquetas largas ("Verantwoordelijkheden")
+    const cx = 340, cy = 280, R = 190, n = els.length, step = 360 / n;
+    const pts = els.map((_, k) => P(cx, cy, R, -90 + k * step));
+    let lines = '', i = 0;
+    for (let a = 0; a < n; a++) for (let b = a + 1; b < n; b++) {
+        if (b - a === 1 || (a === 0 && b === n - 1)) continue;
+        lines += `<line class="chord" x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" pathLength="1" style="--i:${i++}"/>`;
     }
+    pts.forEach(([x, y]) => {
+        lines += `<line class="spoke" x1="${x}" y1="${y}" x2="${cx}" y2="${cy}" pathLength="1" style="--i:${i++}"/>`;
+    });
     const labels = els.map((name, k) => {
-        const ang = -90 + k * 60;
-        const [lx, ly] = P(cx, cy, R + 26, ang);
-        const anchor = Math.abs(Math.cos(ang * Math.PI / 180)) < 0.2 ? 'middle' : (Math.cos(ang * Math.PI / 180) > 0 ? 'start' : 'end');
-        const dy = ang === -90 ? -4 : ang === 90 ? 20 : 7;
+        const ang = (-90 + k * step) * Math.PI / 180;
+        const [lx, ly] = P(cx, cy, R + 26, -90 + k * step);
+        const anchor = Math.abs(Math.cos(ang)) < 0.2 ? 'middle' : (Math.cos(ang) > 0 ? 'start' : 'end');
+        const dy = Math.sin(ang) < -0.9 ? -4 : Math.sin(ang) > 0.5 ? 22 : 7;
         return `<circle class="dot" cx="${pts[k][0]}" cy="${pts[k][1]}" r="9" style="--i:${k}"/>` +
                `<text x="${lx}" y="${r1(ly + dy)}" text-anchor="${anchor}" style="--i:${k}">${esc(name)}</text>`;
     }).join('');
-    return `<svg class="diagram diagram-circle" viewBox="0 0 720 560" role="img" aria-label="${esc(label)}">
+    return `<svg class="diagram diagram-circle" viewBox="0 0 800 560" role="img" aria-label="${esc(label)}">
         <defs>${gradient('dg')}</defs>
         <path class="rim" d="${arcPath(cx, cy, R, 14)}" stroke="url(#dg)" stroke-width="2.4" pathLength="1" style="--i:0"/>
-        ${chords}${labels}
+        ${lines}${labels}
+        <circle class="core" cx="${cx}" cy="${cy}" r="64" style="--i:${n}"/>
+        <text class="core-label" x="${cx}" y="${cy + 7}" text-anchor="middle" style="--i:${n}">${esc(center)}</text>
     </svg>`;
 }
 
-// Versión vertical para móvil: diagrama de arcos (todos conectados con todos)
-function diagramArcs(els, label) {
-    const x = 176, top = 40, step = 64;
-    const ys = els.map((_, k) => top + k * step);
+// Versión vertical para móvil: diagrama de arcos (todos conectados con todos);
+// el último nodo son los resultados.
+function diagramArcs(els, center, label) {
+    const all = [...els, center], n = all.length;
+    const x = 166, top = 40, step = 64;
+    const ys = all.map((_, k) => top + k * step);
     let arcs = '', i = 0;
-    for (let a = 0; a < 6; a++) for (let b = a + 1; b < 6; b++) {
+    for (let a = 0; a < n; a++) for (let b = a + 1; b < n; b++) {
         const r = (ys[b] - ys[a]) / 2;
         arcs += `<path class="chord${b - a === 1 ? ' rim' : ''}" d="M${x} ${ys[a]}A${r} ${r} 0 0 0 ${x} ${ys[b]}" pathLength="1" style="--i:${i++}"/>`;
     }
-    const dots = els.map((name, k) =>
-        `<circle class="dot" cx="${x}" cy="${ys[k]}" r="8" style="--i:${k}"/><text x="${x + 22}" y="${ys[k] + 6}" style="--i:${k}">${esc(name)}</text>`).join('');
-    return `<svg class="diagram diagram-arcs" viewBox="0 0 360 ${top * 2 + step * 5}" role="img" aria-label="${esc(label)}">${arcs}${dots}</svg>`;
+    const dots = all.map((name, k) => k === n - 1
+        ? `<circle class="core" cx="${x}" cy="${ys[k]}" r="11" style="--i:${k}"/><text class="core-text" x="${x + 24}" y="${ys[k] + 6}" style="--i:${k}">${esc(name)}</text>`
+        : `<circle class="dot" cx="${x}" cy="${ys[k]}" r="8" style="--i:${k}"/><text x="${x + 22}" y="${ys[k] + 6}" style="--i:${k}">${esc(name)}</text>`).join('');
+    return `<svg class="diagram diagram-arcs" viewBox="0 0 410 ${top * 2 + step * (n - 1)}" role="img" aria-label="${esc(label)}">${arcs}${dots}</svg>`;
 }
 
+// Iconos de los cinco servicios: diagnóstico, cadena completa, gestión y riesgo,
+// cambio e implantación, asesoramiento independiente.
 const ICONS = [
     '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/><circle cx="8.5" cy="9.5" r="1.2"/><circle cx="12.5" cy="12" r="1.2"/><path d="M9.5 10.3l2 1"/>',
     '<path d="M3 5h4.5l4.5 7H21"/><path d="M3 12h9"/><path d="M3 19h4.5l4.5-7"/>',
-    '<circle cx="4.5" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19.5" cy="12" r="2"/><circle cx="12" cy="19" r="2"/><path d="M6 10.5l4.5-4M13.5 6.5l4.5 4M18 13.5l-4.5 4M10.5 17.5l-4.5-4"/>',
-    '<rect x="3" y="4" width="8" height="8" rx="1"/><rect x="13" y="12" width="8" height="8" rx="1"/><path d="M11 8h5v4"/><path d="M14.5 10.5 16 12l1.5-1.5"/>',
+    '<path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
     '<path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4h-4"/>',
     '<path d="M12 21v-8"/><path d="M12 13 6.5 7.5"/><path d="M12 13l5.5-5.5"/><path d="M6.5 11V7.5H10"/><path d="M17.5 11V7.5H14"/>'
 ];
@@ -246,10 +258,9 @@ const portraitImg = (alt, opts = 'loading="lazy" decoding="async"') =>
 function graph(lang, page) {
     const t = T[lang];
     const person = {
-        '@type': 'Person', '@id': SITE.url + '/#alex-fialka', name: 'Alex Fialka', jobTitle: 'Executive',
+        '@type': 'Person', '@id': SITE.url + '/#alex-fialka', name: 'Alex Fialka', jobTitle: 'Business Architect',
         url: abs(lang, 'about'), image: SITE.url + '/assets/img/alex-fialka-760.webp',
         email: 'mailto:' + SITE.email, sameAs: [SITE.linkedin], nationality: 'NL',
-        knowsLanguage: ['nl', 'en', 'fr', 'de'],
         address: { '@type': 'PostalAddress', addressLocality: 'Almerimar', addressRegion: 'Almería', addressCountry: 'ES' }
     };
     const editions = LANGS.map(l => ({
@@ -266,25 +277,30 @@ function graph(lang, page) {
         workExample: editions
     };
     const service = {
-        '@type': 'ProfessionalService', '@id': SITE.url + '/#enterprise-thinking', name: 'Enterprise Thinking',
+        '@type': 'ProfessionalService', '@id': SITE.url + '/#enterprise-thinking', name: BRAND,
         description: t.meta.home.desc, url: abs(lang, 'home'), logo: SITE.url + '/assets/img/et-logo.png',
         image: SITE.url + `/assets/img/og-${lang}.jpg`, founder: { '@id': person['@id'] },
         email: SITE.email, telephone: SITE.phone, areaServed: ['Europe', 'International'],
         availableLanguage: ['English', 'Spanish', 'Dutch'],
-        address: person.address
+        address: person.address,
+        hasOfferCatalog: {
+            '@type': 'OfferCatalog', name: t.services.heading,
+            itemListElement: t.services.items.map(s => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.title, description: s.text } }))
+        }
     };
     const website = {
-        '@type': 'WebSite', '@id': SITE.url + '/#website', url: SITE.url + '/', name: 'Enterprise Thinking',
+        '@type': 'WebSite', '@id': SITE.url + '/#website', url: SITE.url + '/', name: BRAND,
         inLanguage: LANGS, publisher: { '@id': person['@id'] }
     };
     const crumbs = (key) => ({
         '@type': 'BreadcrumbList', itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Enterprise Thinking', item: abs(lang, 'home') },
+            { '@type': 'ListItem', position: 1, name: BRAND, item: abs(lang, 'home') },
             { '@type': 'ListItem', position: 2, name: t.nav[key] || t.meta[key].title, item: abs(lang, key) }
         ]
     });
     const byPage = {
         home: [website, person, service, book],
+        et: [{ '@type': 'WebPage', url: abs(lang, 'et'), name: t.meta.et.title, about: { '@id': service['@id'] } }, service, crumbs('et')],
         book: [book, person, crumbs('book')],
         about: [{ '@type': 'ProfilePage', url: abs(lang, 'about'), mainEntity: { '@id': person['@id'] } }, person, crumbs('about')],
         contact: [{ '@type': 'ContactPage', url: abs(lang, 'contact') }, service, person]
@@ -320,7 +336,7 @@ function head(lang, page) {
     <link rel="manifest" href="/site.webmanifest">
 
     <meta property="og:type" content="${page === 'book' ? 'book' : 'website'}">
-    <meta property="og:site_name" content="Enterprise Thinking">
+    <meta property="og:site_name" content="${BRAND}">
     <meta property="og:title" content="${esc(m.title)}">
     <meta property="og:description" content="${esc(m.desc)}">
     <meta property="og:url" content="${abs(lang, page)}">
@@ -370,22 +386,24 @@ function langLinks(lang, page) {
         `<li><a href="${url(l, page)}" hreflang="${l}" lang="${l}"${l === lang ? ' aria-current="true"' : ''} title="${esc(T[l].langName)}">${l.toUpperCase()}</a></li>`).join('') + '</ul>';
 }
 
+const navItems = lang => [
+    ['et', url(lang, 'et')],
+    ['services', url(lang, 'home') + '#services'],
+    ['book', url(lang, 'book')],
+    ['about', url(lang, 'about')],
+    ['contact', url(lang, 'contact')]
+];
+
 function header(lang, page) {
     const t = T[lang];
     const home = url(lang, 'home');
-    const items = [
-        ['et', home + '#enterprise-thinking', null],
-        ['approach', home + '#approach', null],
-        ['book', url(lang, 'book'), 'book'],
-        ['about', url(lang, 'about'), 'about'],
-        ['contact', url(lang, 'contact'), 'contact']
-    ];
+    const items = navItems(lang).map(([k, href]) => [k, href, ['et', 'book', 'about', 'contact'].includes(k) ? k : null]);
     return `<a class="skip" href="#main">${esc(t.ui.skip)}</a>
 <header class="site-header">
     <div class="wrap header-inner">
         <a class="brand" href="${home}">
             <img src="/assets/img/et-logo-96.webp" width="93" height="96" alt="">
-            <span class="brand-text"><span class="brand-name">Enterprise Thinking</span><span class="brand-by">Alex Fialka</span></span>
+            <span class="brand-text"><span class="brand-name">${BRAND}</span><span class="brand-by">${esc(t.ui.byline)}</span></span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">${esc(t.ui.menu)}</span><span class="bars" aria-hidden="true"></span></button>
         <nav class="site-nav" id="site-nav" aria-label="${esc(t.ui.menu)}">
@@ -407,18 +425,14 @@ function footer(lang, page) {
             <div>
                 <a class="footer-brand" href="${home}">
                     <img src="/assets/img/et-logo-white-96.webp" width="93" height="96" alt="" loading="lazy">
-                    <span class="brand-text"><span class="brand-name">Enterprise Thinking</span><span class="brand-by">Alex Fialka</span></span>
+                    <span class="brand-text"><span class="brand-name">${BRAND}</span><span class="brand-by">${esc(t.ui.byline)}</span></span>
                 </a>
                 <p class="footer-tagline">${esc(f.tagline)}</p>
             </div>
             <div class="footer-col">
                 <h2>${esc(f.explore)}</h2>
                 <ul>
-                    <li><a href="${home}#enterprise-thinking">${esc(t.nav.et)}</a></li>
-                    <li><a href="${home}#approach">${esc(t.nav.approach)}</a></li>
-                    <li><a href="${url(lang, 'book')}">${esc(t.nav.book)}</a></li>
-                    <li><a href="${url(lang, 'about')}">${esc(t.nav.about)}</a></li>
-                    <li><a href="${url(lang, 'contact')}">${esc(t.nav.contact)}</a></li>
+                    ${navItems(lang).map(([k, href]) => `<li><a href="${href}">${esc(t.nav[k])}</a></li>`).join('\n                    ')}
                 </ul>
             </div>
             <div class="footer-col">
@@ -512,24 +526,25 @@ function homePage(lang) {
 <section class="hero">
     <div class="wrap hero-grid">
         <div>
+            <span class="eyebrow">${BRAND}</span>
             <h1>${esc(t.hero.title)}</h1>
             <p class="hero-sub">${esc(t.hero.subtitle)}</p>
             <div class="btn-row">
-                <a class="btn btn-primary" href="#contact">${esc(t.hero.cta)}</a>
-                <a class="btn btn-secondary" href="${url(lang, 'book')}">${esc(t.hero.book)}</a>
+                <a class="btn btn-primary" href="${url(lang, 'et')}">${esc(t.hero.ctaEt)}</a>
+                <a class="btn btn-secondary" href="#contact">${esc(t.hero.ctaContact)}</a>
             </div>
         </div>
         ${heroArt(t.hero.visualLabel)}
     </div>
 </section>
 
-<section class="section problem" aria-label="${esc(t.problem.result)}">
+<section class="section problem" id="challenge" aria-label="${esc(t.problem.label)}">
     <div class="wrap">
         <div class="prose">
-            <p class="reveal">${esc(t.problem.p1)}</p>
-            <p class="reveal">${esc(t.problem.p2)}</p>
-            <p class="reveal">${esc(t.problem.p3)}</p>
-            <p class="statement reveal">${esc(t.problem.result)}</p>
+            ${t.problem.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
+            <p class="statement reveal">${esc(t.problem.why)}</p>
+            <p class="cta-strong reveal">${esc(t.problem.because)}</p>
+            <p class="reveal">${esc(t.problem.how)}</p>
         </div>
     </div>
 </section>
@@ -539,84 +554,50 @@ ${sep()}
 <section class="section" id="enterprise-thinking">
     <div class="wrap et-grid">
         <div class="reveal">
+            <span class="eyebrow">${esc(t.et.label)}</span>
             <h2>${esc(t.et.heading)}</h2>
-            <p class="lead">${esc(t.et.body)}</p>
+            <p class="lead">${esc(t.et.question)}</p>
+            ${t.et.paras.map(p => `<p>${esc(p)}</p>`).join('\n            ')}
+            <p class="et-closing">${esc(t.et.closing)}</p>
+            <a class="text-link" href="${url(lang, 'et')}">${esc(t.hero.ctaEt)}</a>
         </div>
-        ${diagramCircle(t.et.elements, t.et.diagramLabel)}
-        ${diagramArcs(t.et.elements, t.et.diagramLabel)}
+        ${diagramCircle(t.et.elements, t.et.center, t.et.diagramLabel)}
+        ${diagramArcs(t.et.elements, t.et.center, t.et.diagramLabel)}
     </div>
 </section>
 
-<section class="section" id="how-i-help">
+<section class="section" id="why">
     <div class="wrap">
         <div class="prose">
-            <h2 class="section-title reveal">${esc(t.help.heading)}</h2>
-            <p class="lead reveal">${esc(t.help.p1)}</p>
-            <p class="reveal">${esc(t.help.p2)}</p>
-            <p class="help-lead reveal">${esc(t.help.lead)}</p>
-        </div>
-        <ul class="questions">${t.help.questions.map(q => `<li class="reveal">${esc(q)}</li>`).join('')}</ul>
-        <p class="prose lead reveal">${esc(t.help.closing)}</p>
-    </div>
-</section>
-
-<section class="section" id="symptoms-to-causes">
-    <div class="wrap">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(t.symptoms.heading)}</h2>
-            <p class="lead reveal">${esc(t.symptoms.intro)}</p>
+            <h2 class="section-title reveal">${esc(t.why.heading)}</h2>
+            <p class="lead reveal">${esc(t.why.intro)}</p>
         </div>
         <table class="symptoms-table reveal">
-            <thead><tr><th scope="col">${esc(t.symptoms.colSymptom)}</th><th scope="col">${esc(t.symptoms.colReaction)}</th></tr></thead>
-            <tbody>${t.symptoms.rows.map(([a, b]) => `<tr><td>${esc(a)}</td><td>${esc(b)}</td></tr>`).join('')}</tbody>
+            <thead><tr><th scope="col">${esc(t.why.colLocal)}</th><th scope="col">${esc(t.why.colWhole)}</th></tr></thead>
+            <tbody>${t.why.rows.map(([a, b]) => `<tr><td>${esc(a)}</td><td>${esc(b)}</td></tr>`).join('')}</tbody>
         </table>
         <div class="prose">
-            <p class="reveal">${esc(t.symptoms.after)}</p>
-            <p class="help-lead reveal" style="margin-top:1.6em">${esc(t.symptoms.askLead)}</p>
+            <p class="reveal">${esc(t.why.after)}</p>
         </div>
-        <p class="big-question reveal">${esc(t.symptoms.question)}</p>
-        <p class="prose reveal">${esc(t.symptoms.closing)}</p>
+        <p class="big-question reveal">${esc(t.why.statement)}</p>
     </div>
 </section>
 
 ${sep()}
 
-<section class="section" id="services">
-    <div class="wrap">
-        <h2 class="section-title reveal">${esc(t.services.heading)}</h2>
-        <ul class="services-grid">${t.services.items.map((s, i) =>
-            `<li class="service reveal" style="--i:${i % 3}">${icon(i)}<h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('')}</ul>
-    </div>
-</section>
+${servicesSection(lang)}
 
-<section class="section" id="approach">
+<section class="section" id="what-to-expect">
     <div class="wrap split">
-        <h2 class="section-title reveal">${esc(t.approach.heading)}</h2>
+        <h2 class="section-title reveal">${esc(t.expect.heading)}</h2>
         <div class="prose">
-            ${t.approach.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
+            ${t.expect.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
             <div class="highlights reveal">
-                <p>${esc(t.approach.highlight1)}</p>
-                <p>${esc(t.approach.highlight2)}</p>
+                <p>${esc(t.expect.highlight1)}</p>
+                <p>${esc(t.expect.highlight2)}</p>
             </div>
-            <p class="lead reveal">${esc(t.approach.closing)}</p>
+            ${gainsList(lang)}
         </div>
-    </div>
-</section>
-
-<section class="band on-dark" id="transformation">
-    <svg class="band-ring" viewBox="0 0 520 520" aria-hidden="true"><path d="${crescent(260, 260, 240, 12, 22)}" fill="#fff"/></svg>
-    <div class="wrap">
-        <h2 class="reveal">${esc(t.transformation.heading)}</h2>
-        <div class="prose">
-            <p class="reveal">${esc(t.transformation.p1)}</p>
-        </div>
-        <ul class="strike-list">${t.transformation.words.map(w => `<li><s>${esc(w)}</s></li>`).join('')}</ul>
-        <div class="prose">
-            <p class="reveal">${esc(t.transformation.p2)}</p>
-            <p class="reveal">${esc(t.transformation.p3)}</p>
-            <p class="reveal">${esc(t.transformation.p4)}</p>
-        </div>
-        <p class="band-closing reveal">${esc(t.transformation.closing)}</p>
     </div>
 </section>
 
@@ -656,10 +637,10 @@ ${sep()}
     <div class="wrap about-grid">
         <figure class="portrait reveal">${portraitImg(t.aboutPage.photoAlt)}</figure>
         <div class="prose">
-            <h2 class="section-title reveal">${esc(t.aboutShort.heading)}</h2>
-            <p class="reveal">${esc(t.aboutShort.lead)}</p>
-            <p class="about-quote reveal">${esc(t.aboutShort.quote)}</p>
-            <p class="reveal">${esc(t.aboutShort.text)}</p>
+            <h2 class="section-title reveal">${esc(t.aboutPage.heading)}</h2>
+            <p class="role reveal">${esc(t.aboutPage.role)}</p>
+            <p class="reveal">${esc(t.aboutPage.paras[0])}</p>
+            <p class="connections reveal">${esc(t.aboutPage.focus)}</p>
             <a class="text-link reveal" href="${url(lang, 'about')}">${esc(t.aboutShort.link)}</a>
         </div>
     </div>
@@ -672,9 +653,126 @@ ${sep()}
             ${t.cta.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
             <p class="cta-strong reveal">${esc(t.cta.strong)}</p>
             <p class="reveal">${esc(t.cta.after)}</p>
-            <div class="signature reveal"><p>${esc(t.cta.sign1)}</p><p>${esc(t.cta.sign2)}</p></div>
+            <div class="signature reveal"><p>${esc(t.cta.sign1)}</p><p>${BRAND}</p></div>
         </div>
         <div class="reveal">${form(lang, 'short')}</div>
+    </div>
+</section>`;
+}
+
+function servicesSection(lang) {
+    const s = T[lang].services;
+    return `<section class="section" id="services">
+    <div class="wrap">
+        <div class="prose">
+            <h2 class="section-title reveal">${esc(s.heading)}</h2>
+            <p class="lead reveal services-intro">${esc(s.intro)}</p>
+        </div>
+        <ul class="services-grid">${s.items.map((item, i) =>
+            `<li class="service reveal" style="--i:${i % 3}">${icon(i)}<h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></li>`).join('')}</ul>
+        <p class="services-note reveal">${esc(s.note)}</p>
+    </div>
+</section>`;
+}
+
+function gainsList(lang) {
+    const g = T[lang].gains;
+    return `<h3 class="gains-title reveal">${esc(g.heading)}</h3>
+            <ul class="checks">${g.items.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>`;
+}
+
+function etPage(lang) {
+    const t = T[lang], e = t.etPage;
+    return `
+<section class="page-hero et-hero">
+    <div class="wrap et-grid">
+        <div>
+            <span class="eyebrow">${BRAND}</span>
+            <h1>${esc(e.heading)}</h1>
+            <p class="hero-sub">${esc(e.tagline)}</p>
+            <p class="lead" style="margin-top:28px">${esc(e.intro)}</p>
+        </div>
+        ${diagramCircle(t.et.elements, t.et.center, t.et.diagramLabel)}
+        ${diagramArcs(t.et.elements, t.et.center, t.et.diagramLabel)}
+    </div>
+</section>
+
+<section class="section" id="what-is-enterprise-thinking">
+    <div class="wrap split">
+        <h2 class="section-title reveal">${esc(e.whatHeading)}</h2>
+        <div class="prose">
+            ${e.whatParas.map((p, i) => `<p class="${i === 0 ? 'lead ' : ''}reveal">${esc(p)}</p>`).join('\n            ')}
+            <p class="et-closing reveal">${esc(t.et.closing)}</p>
+        </div>
+    </div>
+</section>
+
+${sep()}
+
+<section class="section" id="why-organizations-underperform">
+    <div class="wrap">
+        <div class="prose">
+            <h2 class="section-title reveal">${esc(e.whyHeading)}</h2>
+            <p class="lead reveal">${esc(e.whyIntro)}</p>
+        </div>
+        <ul class="causes">${e.causes.map((c, i) =>
+            `<li class="cause reveal" style="--i:${i % 3}"><h3>${esc(c.title)}</h3><p>${esc(c.text)}</p></li>`).join('')}</ul>
+    </div>
+</section>
+
+<section class="section" id="how-it-works">
+    <div class="wrap">
+        <div class="prose">
+            <h2 class="section-title reveal">${esc(e.howHeading)}</h2>
+            <p class="lead reveal">${esc(e.howIntro)}</p>
+        </div>
+        <ol class="chain" aria-label="${esc(e.howHeading)}">${e.steps.map((s, i) =>
+            `<li class="chain-step reveal" style="--i:${i}"><span class="chain-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('')}</ol>
+        <div class="highlights reveal prose">
+            <p>${esc(t.expect.highlight1)}</p>
+            <p>${esc(t.expect.highlight2)}</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="what-clients-gain">
+    <div class="wrap split">
+        <h2 class="section-title reveal">${esc(t.gains.heading)}</h2>
+        <div class="prose">
+            <p class="lead reveal">${esc(t.gains.intro)}</p>
+            <ul class="checks">${t.gains.items.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>
+        </div>
+    </div>
+</section>
+
+<section class="band on-dark" id="transformation">
+    <svg class="band-ring" viewBox="0 0 520 520" aria-hidden="true"><path d="${crescent(260, 260, 240, 12, 22)}" fill="#fff"/></svg>
+    <div class="wrap">
+        <h2 class="reveal">${esc(t.transformation.heading)}</h2>
+        <div class="prose">
+            <p class="reveal">${esc(t.transformation.p1)}</p>
+        </div>
+        <ul class="strike-list">${t.transformation.words.map(w => `<li><s>${esc(w)}</s></li>`).join('')}</ul>
+        <div class="prose">
+            <p class="reveal">${esc(t.transformation.p2)}</p>
+            <p class="reveal">${esc(t.transformation.p3)}</p>
+            <p class="reveal">${esc(t.transformation.p4)}</p>
+        </div>
+        <p class="band-closing reveal">${esc(t.transformation.closing)}</p>
+    </div>
+</section>
+
+<section class="section" id="next">
+    <div class="wrap book-feature">
+        <div class="book-3d reveal"><a class="book" href="${url(lang, 'book')}" tabindex="-1" aria-hidden="true">${coverImg(lang, t.bookPage.coverAlt, '(max-width: 860px) 70vw, 360px', 'loading="lazy" decoding="async"')}</a></div>
+        <div class="reveal">
+            <h2 class="book-title">${esc(e.nextHeading)}</h2>
+            <p class="lead">${esc(e.nextText)}</p>
+            <div class="btn-row">
+                <a class="btn btn-primary" href="${url(lang, 'contact')}">${esc(t.hero.ctaContact)}</a>
+                <a class="btn btn-secondary" href="${url(lang, 'book')}">${esc(t.bookBlock.discover)}</a>
+            </div>
+        </div>
     </div>
 </section>`;
 }
@@ -761,7 +859,7 @@ ${sep()}
         <div class="prose">
             <h2 class="section-title reveal">${esc(b.foundationHeading)}</h2>
             <p class="lead reveal">${esc(b.foundationText)}</p>
-            <p class="reveal" style="margin-top:24px"><a class="text-link" href="${url(lang, 'home')}#enterprise-thinking">${esc(b.foundationLink)}</a></p>
+            <p class="reveal" style="margin-top:24px"><a class="text-link" href="${url(lang, 'et')}">${esc(b.foundationLink)}</a></p>
         </div>
     </div>
 </section>`;
@@ -775,22 +873,31 @@ function aboutPage(lang) {
         <figure class="portrait">${portraitImg(a.photoAlt, 'fetchpriority="high"')}</figure>
         <div class="prose">
             <h1>${esc(a.heading)}</h1>
-            <p class="lead" style="margin-top:28px">${esc(a.lead)}</p>
-            <p class="about-quote">${esc(a.quote)}</p>
-            ${a.paras.map(p => `<p>${esc(p)}</p>`).join('\n            ')}
-            <p class="connections">${esc(a.connections)}</p>
-            ${a.paras2.map(p => `<p>${esc(p)}</p>`).join('\n            ')}
+            <p class="role">${esc(a.role)}</p>
+            ${a.paras.map((p, i) => `<p${i === 0 ? ' class="lead"' : ''}>${esc(p)}</p>`).join('\n            ')}
+            <p class="connections">${esc(a.focus)}</p>
+            <p>${esc(a.linkedinNote)}</p>
             <div class="btn-row" style="margin-top:36px">
-                <a class="btn btn-primary" href="${url(lang, 'contact')}">${esc(a.contactLink)}</a>
-                <a class="btn btn-secondary" href="${url(lang, 'book')}">${esc(a.bookLink)}</a>
+                <a class="btn btn-primary" href="${url(lang, 'contact')}">${esc(t.hero.ctaContact)}</a>
+                <a class="btn btn-secondary" href="${SITE.linkedin}" target="_blank" rel="noopener">${esc(a.linkedinBtn)}</a>
             </div>
         </div>
     </div>
-    <div class="wrap">
-        <div class="background prose">
-            <h2 class="reveal">${esc(a.backgroundHeading)}</h2>
-            ${a.background.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
-            <!-- TODO: si Alex tiene software propio, añadir una línea aquí (en los 3 idiomas, _src/i18n/*.json → aboutPage.background) -->
+</section>
+
+<section class="section" id="experience">
+    <div class="wrap split">
+        <h2 class="section-title reveal">${esc(a.expHeading)}</h2>
+        <div class="prose">
+            ${a.expParas.map((p, i) => `<p class="${i === 0 ? 'lead ' : ''}reveal">${esc(p)}</p>`).join('\n            ')}
+            <div class="pull-quote reveal">
+                <p class="quote-lead">${esc(a.exampleLabel)}</p>
+                <p class="example">${esc(a.example)}</p>
+            </div>
+            <div class="btn-row reveal" style="margin-top:40px">
+                <a class="btn btn-primary" href="${SITE.linkedin}" target="_blank" rel="noopener">${esc(a.expBtn)}</a>
+                <a class="btn btn-secondary" href="${url(lang, 'et')}">${esc(t.hero.ctaEt)}</a>
+            </div>
         </div>
     </div>
 </section>`;
@@ -806,7 +913,7 @@ function contactPage(lang) {
             <p class="lead" style="margin-top:28px">${esc(c.intro)}</p>
             <p>${esc(t.cta.paras[1])}</p>
             <p>${esc(t.cta.after)}</p>
-            <div class="signature"><p>${esc(t.cta.sign1)}</p><p>${esc(t.cta.sign2)}</p></div>
+            <div class="signature"><p>${esc(t.cta.sign1)}</p><p>${BRAND}</p></div>
             <dl class="contact-direct">
                 <div><dt>${esc(c.emailLabel)}</dt><dd><a href="mailto:${SITE.email}">${SITE.email}</a></dd></div>
                 <div><dt>${esc(c.linkedinLabel)}</dt><dd><a href="${SITE.linkedin}" target="_blank" rel="noopener">linkedin.com/in/alexfialka</a></dd></div>
@@ -844,7 +951,7 @@ ${body}
 }
 
 /* ---------- Write pages ---------- */
-const RENDER = { home: homePage, book: bookPage, about: aboutPage, contact: contactPage };
+const RENDER = { home: homePage, et: etPage, book: bookPage, about: aboutPage, contact: contactPage };
 let count = 0;
 LANGS.forEach(lang => {
     PAGES.forEach(page => {
@@ -860,7 +967,7 @@ write('index.html', `<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Enterprise Thinking — Alex Fialka</title>
+    <title>${BRAND} — Alex Fialka</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="${esc(T.en.meta.home.desc)}">
     ${LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${abs(l, 'home')}">`).join('\n    ')}
@@ -886,7 +993,7 @@ write('index.html', `<!DOCTYPE html>
 </head>
 <body>
     <main>
-        <p>Enterprise Thinking — Alex Fialka</p>
+        <p>${BRAND} — Alex Fialka</p>
         <p>${LANGS.map(l => `<a href="${url(l, 'home')}" hreflang="${l}" lang="${l}">${esc(T[l].root.choose)} · ${l.toUpperCase()}</a>`).join('')}</p>
     </main>
 </body>
@@ -899,14 +1006,14 @@ write('404.html', `<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 — Enterprise Thinking</title>
+    <title>404 — ${BRAND}</title>
     <meta name="robots" content="noindex">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/css/site.css?v=${V.css}">
 </head>
 <body>
 <main class="legal"><div class="wrap">
-    <img src="/assets/img/et-logo-192.webp" width="186" height="192" alt="Enterprise Thinking" style="width:96px">
+    <img src="/assets/img/et-logo-192.webp" width="186" height="192" alt="${BRAND}" style="width:96px">
     <h1 style="margin-top:32px">404</h1>
     <p class="lead" style="margin-top:16px">This page does not exist. · Esta página no existe. · Deze pagina bestaat niet.</p>
     <p style="margin-top:28px">${LANGS.map(l => `<a class="text-link" href="${url(l, 'home')}" hreflang="${l}" lang="${l}" style="margin-right:24px">${esc(T[l].legal.back)}</a>`).join('')}</p>
@@ -922,7 +1029,7 @@ PAGES.forEach(page => LANGS.forEach(lang => {
     sitemap.push('  <url>', `    <loc>${abs(lang, page)}</loc>`, `    <lastmod>${TODAY}</lastmod>`);
     LANGS.forEach(l => sitemap.push(`    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(l, page)}"/>`));
     sitemap.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', page)}"/>`);
-    sitemap.push(`    <priority>${page === 'home' ? '1.0' : ['book', 'about', 'contact'].includes(page) ? '0.8' : '0.3'}</priority>`, '  </url>');
+    sitemap.push(`    <priority>${page === 'home' ? '1.0' : page === 'et' ? '0.9' : ['book', 'about', 'contact'].includes(page) ? '0.8' : '0.3'}</priority>`, '  </url>');
 }));
 sitemap.push('</urlset>', '');
 write('sitemap.xml', sitemap.join('\n'));
@@ -937,8 +1044,8 @@ Sitemap: ${SITE.url}/sitemap.xml
 `);
 
 write('site.webmanifest', JSON.stringify({
-    name: 'Enterprise Thinking — Alex Fialka',
-    short_name: 'Enterprise Thinking',
+    name: BRAND + ' — Alex Fialka',
+    short_name: 'Fialka ET',
     start_url: '/',
     display: 'browser',
     background_color: '#FAFAF8',

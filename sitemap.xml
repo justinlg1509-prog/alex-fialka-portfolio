@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.fialka.es/en/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/"/>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/"/>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/"/>
@@ -28,8 +28,35 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.fialka.es/en/enterprise-thinking/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/enterprise-thinking/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fialka.es/es/enterprise-thinking/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/enterprise-thinking/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fialka.es/nl/enterprise-thinking/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/enterprise-thinking/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fialka.es/en/enterprise-thinking/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.fialka.es/en/book/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/book/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/libro/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/boek/"/>
@@ -38,7 +65,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/libro/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/book/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/libro/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/boek/"/>
@@ -47,7 +74,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/boek/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/book/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/libro/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/boek/"/>
@@ -56,7 +83,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/en/about/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/about/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/sobre-alex/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/over-alex/"/>
@@ -65,7 +92,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/sobre-alex/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/about/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/sobre-alex/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/over-alex/"/>
@@ -74,7 +101,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/over-alex/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/about/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/sobre-alex/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/over-alex/"/>
@@ -83,7 +110,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/en/contact/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/contacto/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/contact/"/>
@@ -92,7 +119,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/contacto/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/contacto/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/contact/"/>
@@ -101,7 +128,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/contact/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/contacto/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/contact/"/>
@@ -110,7 +137,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/en/legal-notice/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/aviso-legal/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/juridische-informatie/"/>
@@ -119,7 +146,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/aviso-legal/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/aviso-legal/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/juridische-informatie/"/>
@@ -128,7 +155,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/juridische-informatie/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/aviso-legal/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/juridische-informatie/"/>
@@ -137,7 +164,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/en/privacy/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/privacidad/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/privacy/"/>
@@ -146,7 +173,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/privacidad/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/privacidad/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/privacy/"/>
@@ -155,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/privacy/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/privacidad/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/privacy/"/>
@@ -164,7 +191,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/en/cookies/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/cookies/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/cookies/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/cookies/"/>
@@ -173,7 +200,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/es/cookies/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/cookies/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/cookies/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/cookies/"/>
@@ -182,7 +209,7 @@
   </url>
   <url>
     <loc>https://www.fialka.es/nl/cookies/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fialka.es/en/cookies/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.fialka.es/es/cookies/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.fialka.es/nl/cookies/"/>
