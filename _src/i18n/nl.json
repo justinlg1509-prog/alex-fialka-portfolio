@@ -3,6 +3,7 @@
   "langName": "Nederlands",
   "slugs": {
     "home": "",
+    "et": "enterprise-thinking/",
     "book": "boek/",
     "about": "over-alex/",
     "contact": "contact/",
@@ -12,24 +13,37 @@
   },
   "meta": {
     "home": {
-      "title": "Enterprise Thinking — Alex Fialka | Zie het geheel, neem betere beslissingen",
-      "desc": "Enterprise Thinking helpt leidinggevenden de organisatie als geheel te zien: hoe strategie, processen, informatie, mensen en technologie samenhangen, voordat wordt besloten wat er moet veranderen."
+      "title": "Fialka Enterprise Thinking — Werkt uw organisatie als één geheel? | Alex Fialka",
+      "desc": "De totale bedrijfsprestatie verbeteren door strategie, mensen, processen en uitvoering met elkaar te verbinden. Enterprise Thinking van bedrijfsarchitect Alex Fialka."
+    },
+    "et": {
+      "title": "Wat is Enterprise Thinking? Zie het hele bedrijf | Fialka Enterprise Thinking",
+      "desc": "Enterprise Thinking begint bij de resultaten die een organisatie wil bereiken en onderzoekt of de hele organisatie zo is ingericht, verbonden en aangestuurd dat die resultaten haalbaar zijn."
     },
     "book": {
       "title": "Enterprise Thinking, het boek van Alex Fialka | De praktische logica achter een sterke onderneming",
       "desc": "Enterprise Thinking: De praktische logica achter een sterke onderneming. Een boek van Alex Fialka, verkrijgbaar in het Nederlands, Engels en Spaans, gedrukt en als Kindle-editie."
     },
     "about": {
-      "title": "Over Alex Fialka — Enterprise Thinking",
-      "desc": "Alex Fialka is executive en auteur van Enterprise Thinking. Zijn werk begint bij één vraag: waarom werken organisaties zoals ze werken, en kan het beter?"
+      "title": "Over Alex Fialka — Bedrijfsarchitect | Fialka Enterprise Thinking",
+      "desc": "Alex Fialka is een internationale bedrijfsarchitect met meer dan 35 jaar ervaring in operationele, industriële, logistieke en maritieme omgevingen."
     },
     "contact": {
-      "title": "Begin met een gesprek — Enterprise Thinking | Alex Fialka",
-      "desc": "U hoeft niet precies te weten wat het probleem is. Vertel Alex Fialka wat u wilt bereiken en wat daarbij in de weg staat."
+      "title": "Bespreek uw bedrijfsvraagstuk — Fialka Enterprise Thinking",
+      "desc": "U hoeft niet precies te weten wat het probleem is. Vertel Alex Fialka wat uw organisatie wil bereiken en wat daarbij in de weg staat."
     },
-    "legal": { "title": "Juridische informatie — Enterprise Thinking", "desc": "Juridische informatie over de website Enterprise Thinking van Alex Fialka: gegevens van de eigenaar, gebruiksvoorwaarden en intellectueel eigendom." },
-    "privacy": { "title": "Privacybeleid — Enterprise Thinking", "desc": "Hoe de website Enterprise Thinking van Alex Fialka persoonsgegevens verwerkt en hoe u uw rechten onder de AVG kunt uitoefenen." },
-    "cookies": { "title": "Cookiebeleid — Enterprise Thinking", "desc": "Welke cookies en lokale opslag de website Enterprise Thinking gebruikt en hoe u ze kunt accepteren, weigeren of uw keuze kunt wijzigen." }
+    "legal": {
+      "title": "Juridische informatie — Fialka Enterprise Thinking",
+      "desc": "Juridische informatie over de website Enterprise Thinking van Alex Fialka: gegevens van de eigenaar, gebruiksvoorwaarden en intellectueel eigendom."
+    },
+    "privacy": {
+      "title": "Privacybeleid — Fialka Enterprise Thinking",
+      "desc": "Hoe de website Enterprise Thinking van Alex Fialka persoonsgegevens verwerkt en hoe u uw rechten onder de AVG kunt uitoefenen."
+    },
+    "cookies": {
+      "title": "Cookiebeleid — Fialka Enterprise Thinking",
+      "desc": "Welke cookies en lokale opslag de website Enterprise Thinking gebruikt en hoe u ze kunt accepteren, weigeren of uw keuze kunt wijzigen."
+    }
   },
   "ui": {
     "skip": "Naar de inhoud",
@@ -37,91 +51,200 @@
     "close": "Menu sluiten",
     "language": "Taal",
     "home": "Home",
-    "byline": "Alex Fialka"
+    "byline": "Alex Fialka · Bedrijfsarchitect"
   },
   "nav": {
     "et": "Enterprise Thinking",
-    "approach": "Aanpak",
+    "services": "Diensten",
     "book": "Het boek",
     "about": "Over Alex",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Enterprise Thinking",
-    "subtitle": "Zie het geheel. Begrijp de verbanden. Neem betere beslissingen.",
-    "cta": "Begin een gesprek",
-    "book": "Lees het boek",
+    "title": "Werkt uw organisatie als één geheel?",
+    "subtitle": "De totale bedrijfsprestatie verbeteren door strategie, mensen, processen en uitvoering met elkaar te verbinden.",
+    "ctaEt": "Ontdek Enterprise Thinking",
+    "ctaContact": "Bespreek uw vraagstuk",
     "visualLabel": "Illustratie: losse puzzelstukjes die binnen een open cirkel samen één geheel vormen."
   },
   "problem": {
-    "p1": "De meeste organisaties hebben geen gebrek aan ideeën, technologie of talentvolle mensen.",
-    "p2": "Ze lopen vast omdat de verschillende onderdelen van de organisatie niet langer als één geheel samenwerken.",
-    "p3": "De strategie wordt op de ene plek bepaald. Processen ontwikkelen zich ergens anders. Technologie wordt ingevoerd om losse problemen op te lossen. Afdelingen optimaliseren hun eigen prestaties. En van mensen wordt verwacht dat ze het op de een of andere manier allemaal laten werken.",
-    "result": "Het resultaat is complexiteit."
+    "label": "Werkt uw organisatie als één geheel?",
+    "paras": [
+      "Uw organisatie heeft misschien bekwame mensen, ervaren managers en goed beschreven procedures.",
+      "Toch blijven de kosten stijgen. Beslissingen duren te lang. Afdelingen werken aan verschillende prioriteiten. Problemen schuiven van het ene team naar het andere zonder te worden opgelost."
+    ],
+    "why": "Waarom?",
+    "because": "Omdat het verbeteren van afzonderlijke afdelingen niet automatisch de prestatie van de hele organisatie verbetert.",
+    "how": "Met Enterprise Thinking help ik organisaties deze ontkoppelingen te vinden, de onderliggende oorzaken te begrijpen en praktische verbeteringen te ontwikkelen die in het hele bedrijf werken."
   },
   "et": {
-    "heading": "Enterprise Thinking draait om het zien van de organisatie als geheel.",
-    "body": "Het helpt leidinggevenden te begrijpen hoe strategie, organisatie, processen, informatie, mensen en technologie elkaar beïnvloeden, voordat ze besluiten wat er moet veranderen.",
-    "elements": ["Strategie", "Organisatie", "Processen", "Informatie", "Mensen", "Technologie"],
-    "diagramLabel": "Diagram: strategie, organisatie, processen, informatie, mensen en technologie, elk verbonden met alle andere."
-  },
-  "help": {
-    "heading": "Hoe ik bedrijven help",
-    "p1": "Ik help organisaties te begrijpen waar complexiteit is ontstaan, waarom dingen niet werken zoals verwacht en waar een betekenisvolle verbetering mogelijk is.",
-    "p2": "Niet door te beginnen met een nieuw systeem, een reorganisatie of weer een transformatieprogramma.",
-    "lead": "Ik begin met het begrijpen van de organisatie.",
-    "questions": [
-      "Wat wilt u bereiken?",
-      "Hoe werkt de organisatie vandaag werkelijk?",
-      "Waar zitten de afhankelijkheden?",
-      "Waar is onnodige complexiteit ontstaan?",
-      "En wat moet er veranderen zodat de organisatie als geheel beter werkt?"
+    "label": "Enterprise Thinking",
+    "heading": "Zie het hele bedrijf",
+    "question": "Uw afdelingen presteren afzonderlijk misschien goed. Maar bereikt uw organisatie waarvoor zij is opgericht?",
+    "paras": [
+      "Enterprise Thinking kijkt over de grenzen van afdelingen heen. Het verbindt strategie, verantwoordelijkheden, mensen, processen en middelen met de resultaten die een organisatie wil leveren.",
+      "Door de hele bedrijfsketen te onderzoeken, zien we waar activiteiten niet op elkaar aansluiten, waar middelen verloren gaan en waar lokale verbeteringen niet bijdragen aan de totale prestatie."
     ],
-    "closing": "Van daaruit bepalen we wat vereenvoudigd, opnieuw ontworpen, verbonden of geschrapt moet worden."
+    "closing": "Optimaliseer niet alleen de afzonderlijke delen. Laat de hele organisatie werken.",
+    "elements": [
+      "Strategie",
+      "Verantwoordelijkheden",
+      "Mensen",
+      "Processen",
+      "Middelen"
+    ],
+    "center": "Resultaten",
+    "diagramLabel": "Diagram: strategie, verantwoordelijkheden, mensen, processen en middelen, met elkaar verbonden en allemaal verbonden met de resultaten in het midden."
   },
-  "symptoms": {
-    "heading": "Van symptomen naar oorzaken",
-    "intro": "Organisaties proberen vaak symptomen op te lossen.",
-    "colSymptom": "Symptoom",
-    "colReaction": "Gebruikelijke reactie",
+  "why": {
+    "heading": "Waarom problemen ontstaan, ook in goed geleide organisaties",
+    "intro": "De meeste organisaties zijn opgedeeld in afdelingen, functies, managementlagen en eigen budgetten. Die structuur is nodig, maar kan ook problemen veroorzaken.",
+    "colLocal": "In één deel van de organisatie",
+    "colWhole": "In de organisatie als geheel",
     "rows": [
-      ["Een proces is te traag", "dus het wordt geautomatiseerd."],
-      ["Informatie is moeilijk te vinden", "dus er komt nog een systeem bij."],
-      ["Afdelingen werken niet goed samen", "dus de organisatie wordt geherstructureerd."],
-      ["De kosten zijn te hoog", "dus de budgetten worden verlaagd."]
+      [
+        "Een afdeling haalt haar eigen doelen",
+        "terwijl de organisatie als geheel haar doelstellingen niet haalt."
+      ],
+      [
+        "De kosten van één afdeling worden verlaagd",
+        "en elders ontstaan extra kosten."
+      ],
+      [
+        "Een nieuwe rapportageverplichting verbetert de managementinformatie",
+        "maar kost operationele medewerkers waardevolle werktijd."
+      ],
+      [
+        "Een proces wordt verbeterd",
+        "maar mislukt omdat de volgende afdeling niet klaar is om het resultaat te ontvangen."
+      ]
     ],
-    "after": "Soms helpen deze maatregelen. Maar soms verplaatsen ze het probleem alleen naar een andere plek.",
-    "askLead": "Enterprise Thinking stelt een andere vraag:",
-    "question": "Wat veroorzaakt het probleem eigenlijk?",
-    "closing": "Door verder te kijken dan afzonderlijke afdelingen, systemen en processen, kunnen we de verbanden achter het probleem herkennen en oplossingen creëren die de hele organisatie verbeteren, en niet alleen één onderdeel ervan."
+    "after": "Enterprise Thinking onderzoekt deze verbanden over de hele bedrijfsketen. Het doel is niet alleen om afzonderlijke afdelingen efficiënter te maken.",
+    "statement": "Het doel is de prestatie van de hele organisatie te verbeteren."
   },
   "services": {
-    "heading": "Waarmee ik u kan helpen",
+    "heading": "Waarmee ik kan helpen",
+    "intro": "Elke dienst begint bij een bedrijfsprobleem, niet bij een methode.",
     "items": [
-      { "title": "Uw organisatie begrijpen", "text": "Een helder beeld scheppen van hoe uw organisatie werkelijk werkt en hoe strategie, processen, mensen, informatie en technologie met elkaar verbonden zijn." },
-      { "title": "Complexiteit verminderen", "text": "Onnodige processen, organisatielagen, systemen, overdrachten en afhankelijkheden opsporen die de organisatie moeilijker en duurder maken om te besturen." },
-      { "title": "Processen verbeteren", "text": "Verder kijken dan losse processtappen om de volledige stroom van werk en informatie over de grenzen van de organisatie heen te begrijpen." },
-      { "title": "Business en technologie op elkaar afstemmen", "text": "Technologie moet de organisatie ondersteunen, niet bepalen hoe de organisatie moet werken. Ik help bedrijven te begrijpen wat ze nodig hebben voordat ze kiezen welke technologie ze nodig hebben." },
-      { "title": "Organisatorische transformatie", "text": "Het management helpen bepalen wat er echt moet veranderen, wat moet blijven en hoe verschillende veranderingen elkaar beïnvloeden." },
-      { "title": "Ondersteuning bij besluitvorming", "text": "Leidinggevenden helpen de bredere gevolgen van belangrijke beslissingen te zien, voordat zij veel tijd, geld en organisatiecapaciteit inzetten." }
-    ]
+      {
+        "title": "Beoordeling van organisatie en prestaties",
+        "text": "Onderzoeken hoe goed de structuur, verantwoordelijkheden, middelen en processen van de organisatie haar strategische doelen ondersteunen, en losse activiteiten, dubbel werk, onduidelijke verantwoordelijkheden en prestatieproblemen in kaart brengen."
+      },
+      {
+        "title": "Procesverbetering van begin tot eind",
+        "text": "De volledige operationele keten analyseren in plaats van losse afdelingsprocessen, inclusief de overdrachten tussen activiteiten en afdelingen en de kwaliteit van de informatie en resultaten die worden doorgegeven."
+      },
+      {
+        "title": "Integrale bedrijfsvoering en risico",
+        "text": "Operationele risico’s, managementsystemen, compliance-eisen en bedrijfsdoelen met elkaar verbinden, zodat managementsystemen de operatie ondersteunen in plaats van onnodige administratieve complexiteit te veroorzaken."
+      },
+      {
+        "title": "Organisatieverandering en implementatie",
+        "text": "Bevindingen vertalen naar praktische verbeteringen: verantwoordelijkheden verduidelijken, operationele medewerkers betrekken en zorgen dat afgesproken veranderingen in de dagelijkse praktijk werken."
+      },
+      {
+        "title": "Onafhankelijk managementadvies",
+        "text": "Een ervaren blik van buiten op complexe organisatievraagstukken, vooral wanneer gangbare verbeterprogramma’s niet de verwachte resultaten hebben opgeleverd."
+      }
+    ],
+    "note": "Ondersteund door praktijkervaring met Lean, ISO-managementsystemen, inkoop, logistiek, financiën en risicomanagement."
   },
-  "approach": {
-    "heading": "Mijn aanpak",
+  "expect": {
+    "heading": "Wat u kunt verwachten",
     "paras": [
-      "Ik kom niet met een kant-en-klare oplossing.",
-      "Elke organisatie is anders.",
-      "De eerste stap is daarom luisteren, observeren en begrijpen.",
-      "We bekijken de organisatie vanuit verschillende perspectieven en bouwen stap voor stap een gedeeld beeld op van hoe zij functioneert. Daarna bepalen we waar verandering het meeste verschil kan maken."
+      "Ik kom niet met een kant-en-klare oplossing. Elke organisatie is anders.",
+      "De eerste stap is luisteren, observeren en begrijpen: wat de organisatie wil bereiken, hoe zij vandaag werkelijk werkt en wat haar belemmert om de beoogde resultaten te halen.",
+      "Verbeteringen worden samen met het management en de mensen die het werk doen ontwikkeld, zodat ze in de dagelijkse praktijk werken en niet alleen op papier."
     ],
     "highlight1": "Het doel is niet om het meest ingewikkelde model te maken.",
-    "highlight2": "Het doel is om complexiteit begrijpelijk te maken.",
-    "closing": "Want wanneer mensen begrijpen hoe hun organisatie werkelijk werkt, worden betere beslissingen mogelijk."
+    "highlight2": "Het doel is om complexiteit begrijpelijk te maken."
+  },
+  "gains": {
+    "heading": "Wat klanten winnen",
+    "intro": "Elke organisatie is anders, dus resultaten worden nooit vooraf beloofd. Wat de aanpak beoogt te brengen:",
+    "items": [
+      "Betere afstemming tussen strategie en uitvoering.",
+      "Duidelijkere verantwoordelijkheden tussen afdelingen.",
+      "Minder dubbel werk en onnodige administratie.",
+      "Beter zicht op de onderliggende oorzaken.",
+      "Betere besluitvorming op basis van de impact op het hele bedrijf.",
+      "Effectievere implementatie en opvolging."
+    ]
+  },
+  "etPage": {
+    "heading": "Enterprise Thinking",
+    "tagline": "Zie het hele bedrijf.",
+    "intro": "Enterprise Thinking begint bij de visie, de missie en de beoogde resultaten van de organisatie. Daarna wordt onderzocht of de hele organisatie zo is ingericht, verbonden en aangestuurd dat die resultaten worden bereikt.",
+    "whatHeading": "Wat is Enterprise Thinking?",
+    "whatParas": [
+      "De meeste organisaties zijn opgedeeld in afdelingen, functies, managementlagen en eigen budgetten. Die structuur is nodig, maar kan ook problemen veroorzaken.",
+      "Een afdeling kan haar eigen doelen halen terwijl de organisatie als geheel haar doelstellingen niet haalt. Een kostenbesparing in de ene afdeling kan elders extra kosten veroorzaken.",
+      "Enterprise Thinking kijkt over die grenzen heen, naar de hele bedrijfsketen. Het doel is niet alleen om afzonderlijke afdelingen efficiënter te maken. Het doel is de prestatie van de hele organisatie te verbeteren."
+    ],
+    "whyHeading": "Waarom organisaties onderpresteren",
+    "whyIntro": "Onderpresteren komt zelden door gebrek aan inzet of bekwame mensen. Het ontstaat meestal in de ruimte tussen afdelingen.",
+    "causes": [
+      {
+        "title": "Afdelingsgrenzen",
+        "text": "Elke afdeling optimaliseert haar eigen deel van het werk. Een afdeling kan haar doelen halen terwijl de organisatie als geheel haar doelstellingen mist."
+      },
+      {
+        "title": "Gescheiden budgetten",
+        "text": "Een besparing op het ene budget kan extra kosten op een ander budget veroorzaken. Op papier wordt geld bespaard; in werkelijkheid is het alleen verschoven."
+      },
+      {
+        "title": "Tegenstrijdige prioriteiten",
+        "text": "Wanneer afdelingen aan verschillende doelen werken, duren beslissingen langer en schuiven problemen van team naar team zonder te worden opgelost."
+      },
+      {
+        "title": "Zwakke overdrachten",
+        "text": "Werk en informatie gaan vele malen van team naar team. Een procesverbetering mislukt wanneer de volgende afdeling niet klaar is om het resultaat te ontvangen."
+      },
+      {
+        "title": "Overmatige rapportage",
+        "text": "Elke nieuwe rapportageverplichting kost operationele medewerkers werktijd. De managementinformatie verbetert, terwijl het werk zelf vertraagt."
+      }
+    ],
+    "howHeading": "Hoe de aanpak werkt",
+    "howIntro": "Een heldere volgorde die begint bij de resultaten die de organisatie wil bereiken en eindigt met de controle of de verbeteringen die resultaten opleveren.",
+    "steps": [
+      {
+        "title": "Visie en doelstellingen",
+        "text": "Wat wil de organisatie bereiken, en welke resultaten wil zij leveren?"
+      },
+      {
+        "title": "De hele bedrijfsketen",
+        "text": "Hoe stroomt het werk werkelijk van begin tot eind, door alle afdelingen heen?"
+      },
+      {
+        "title": "Verantwoordelijkheden en overdrachten",
+        "text": "Wie is waarvoor verantwoordelijk, en wat gebeurt er waar werk en informatie van het ene team naar het volgende gaan?"
+      },
+      {
+        "title": "Middelen en risico’s",
+        "text": "Worden mensen, budgetten en systemen ingezet waar ze het meest bijdragen, en welke risico’s raken de hele keten?"
+      },
+      {
+        "title": "Praktische verbeteringen",
+        "text": "Welke veranderingen verbeteren de hele organisatie en niet slechts één deel? Ontwikkeld met de mensen die het werk doen."
+      },
+      {
+        "title": "Meten en verifiëren",
+        "text": "Werken de veranderingen in de dagelijkse praktijk, en leveren ze de beoogde resultaten op?"
+      }
+    ],
+    "nextHeading": "Begin bij uw eigen organisatie",
+    "nextText": "De ideeën achter Enterprise Thinking staan beschreven in het gelijknamige boek. De nuttigste volgende stap is echter een gesprek over uw eigen organisatie: wat zij wil bereiken en wat daarbij in de weg staat."
   },
   "transformation": {
     "heading": "Eerst begrijpen, dan transformeren",
     "p1": "Transformatie is een van de meest gebruikte woorden in het bedrijfsleven geworden.",
-    "words": ["Digitale transformatie.", "Bedrijfstransformatie.", "Organisatietransformatie.", "AI-transformatie."],
+    "words": [
+      "Digitale transformatie.",
+      "Bedrijfstransformatie.",
+      "Organisatietransformatie.",
+      "AI-transformatie."
+    ],
     "p2": "Maar transformatie zonder begrip kan een dure manier worden om de verkeerde dingen te veranderen.",
     "p3": "Voordat we een organisatie transformeren, moeten we haar begrijpen.",
     "p4": "Dat is het principe achter Enterprise Thinking.",
@@ -149,14 +272,32 @@
     "quote": "Dit moet toch beter te organiseren zijn?"
   },
   "aboutShort": {
-    "heading": "Over Alex Fialka",
-    "lead": "Mijn werk is altijd gedreven door een eenvoudige nieuwsgierigheid:",
-    "quote": "Waarom werken organisaties zoals ze werken — en kan het beter?",
-    "text": "Door de jaren heen heb ik vanuit veel verschillende perspectieven gewerkt met organisaties, processen, informatie en technologie. Die ervaring leerde me dat de grootste problemen zelden beperkt blijven tot één afdeling, één proces of één systeem.",
     "link": "Meer over Alex"
   },
+  "aboutPage": {
+    "heading": "Over Alex Fialka",
+    "role": "Bedrijfsarchitect · Auteur van Enterprise Thinking",
+    "paras": [
+      "Ik ben een internationale bedrijfsarchitect met meer dan 35 jaar ervaring in bedrijfsprocessen en organisatieverbetering in operationele, industriële, logistieke en maritieme omgevingen.",
+      "In mijn loopbaan heb ik gezien dat organisaties vaak veel moeite steken in het verbeteren van afzonderlijke activiteiten, zonder voldoende te kijken naar hoe het hele bedrijf werkt.",
+      "Die ervaring bracht me ertoe Enterprise Thinking te ontwikkelen en toe te passen: een praktische aanpak die de doelen van een organisatie verbindt met de volledige keten van activiteiten die nodig is om ze te bereiken."
+    ],
+    "focus": "Mijn focus is eenvoudig: begrijpen wat een organisatie wil bereiken, vaststellen wat haar daarbij belemmert en helpen verbeteringen te ontwikkelen die in de praktijk werken.",
+    "linkedinNote": "Mijn volledige professionele achtergrond, eerdere functies en kwalificaties vindt u op mijn LinkedIn-profiel.",
+    "linkedinBtn": "Bekijk LinkedIn-profiel",
+    "expHeading": "Ervaring die de aanpak onderbouwt",
+    "expParas": [
+      "Enterprise Thinking is gebaseerd op praktische managementervaring in internationale organisaties, complexe operaties, bedrijfsprocessen, risicomanagement en organisatieverandering.",
+      "Mijn werk bestond uit het verbeteren van de samenwerking tussen afdelingen, het opbouwen van geïntegreerde managementsystemen, het aanpakken van operationele risico’s en het verbinden van managementbeslissingen met de praktische uitvoering.",
+      "Die ervaring vormt de basis om organisaties te helpen over hun interne grenzen heen te kijken."
+    ],
+    "exampleLabel": "Een voorbeeld",
+    "example": "Bij Vertom integreerde ik de processen van zeven divisies en bijna 60 werkmaatschappijen in één managementsysteem, zodat de groep kon worden geleid als één verbonden organisatie in plaats van als losse delen.",
+    "expBtn": "Bekijk de volledige werkervaring op LinkedIn",
+    "photoAlt": "Portret van Alex Fialka"
+  },
   "cta": {
-    "heading": "Begin met een gesprek",
+    "heading": "Bespreek uw bedrijfsvraagstuk",
     "paras": [
       "U hoeft niet precies te weten wat het probleem is.",
       "Soms is het waardevolste vertrekpunt simpelweg het gevoel dat iets onnodig ingewikkeld, duur of moeilijk is geworden.",
@@ -164,8 +305,7 @@
     ],
     "strong": "Vertel me wat u wilt bereiken en wat daarbij in de weg staat.",
     "after": "Samen kijken we naar het grotere geheel en bepalen we waar een zinvolle verandering kan beginnen.",
-    "sign1": "Eerst begrijpen. Dan veranderen.",
-    "sign2": "Enterprise Thinking."
+    "sign1": "Eerst begrijpen. Dan veranderen."
   },
   "form": {
     "name": "Naam",
@@ -185,7 +325,7 @@
     "successMail": "Dank u. Uw e-mailprogramma wordt geopend met het bericht klaar om te versturen.",
     "successSent": "Dank u. Uw bericht is verstuurd en Alex reageert persoonlijk.",
     "errSend": "Het bericht kon niet worden verstuurd. Schrijf rechtstreeks naar alex@fialka.es.",
-    "mailSubject": "Enterprise Thinking — vraag via de website"
+    "mailSubject": "Fialka Enterprise Thinking — vraag via de website"
   },
   "bookPage": {
     "label": "Het boek",
@@ -226,42 +366,23 @@
     "quote": "Enterprise Thinking is geen vast model en geen stappenplan. Het is een manier van kijken, begrijpen, afwegen en handelen.",
     "tagline": "Zie het geheel. Begrijp de samenhang. Maak betere keuzes. Creëer duurzame waarde.",
     "editionsHeading": "Verkrijgbaar in drie talen",
-    "editions": { "en": "Engelse editie", "es": "Spaanse editie", "nl": "Nederlandse editie" },
+    "editions": {
+      "en": "Engelse editie",
+      "es": "Spaanse editie",
+      "nl": "Nederlandse editie"
+    },
     "pagesUnit": "pagina's",
     "isbn": "ISBN",
     "viewOnAmazon": "Bekijk op Amazon",
     "allEditions": "Alle edities op Amazon",
     "foundationHeading": "Het fundament van Enterprise Thinking",
-    "foundationText": "Het boek is het fundament van Enterprise Thinking: de manier van kijken naar organisaties die de basis vormt van alles op deze website.",
+    "foundationText": "Het boek is het fundament van Enterprise Thinking: de manier van kijken naar organisaties achter alles op deze website.",
     "foundationLink": "Ontdek Enterprise Thinking",
     "coverAlt": "Omslag van het boek Enterprise Thinking: De praktische logica achter een sterke onderneming, door Alex Fialka"
   },
-  "aboutPage": {
-    "heading": "Over Alex Fialka",
-    "lead": "Mijn werk is altijd gedreven door een eenvoudige nieuwsgierigheid:",
-    "quote": "Waarom werken organisaties zoals ze werken — en kan het beter?",
-    "paras": [
-      "Door de jaren heen heb ik vanuit veel verschillende perspectieven gewerkt met organisaties, processen, informatie en technologie.",
-      "Die ervaring leerde me dat de grootste problemen zelden beperkt blijven tot één afdeling, één proces of één systeem."
-    ],
-    "connections": "Ze zitten in de verbindingen daartussen.",
-    "paras2": [
-      "Enterprise Thinking brengt die ervaringen samen in een praktische manier van kijken naar organisaties.",
-      "Het gaat er niet om organisaties theoretischer te maken. Het gaat erom ze begrijpelijker te maken, zodat ze ook makkelijker te besturen en te verbeteren zijn."
-    ],
-    "backgroundHeading": "Achtergrond",
-    "background": [
-      "Alex Fialka is executive met ruim 35 jaar internationale ervaring in industriële productie, logistiek, offshoreproductie en maritieme dienstverlening. Hij bekleedde leidinggevende functies op het gebied van kwaliteit, risico, inkoop, operations en financiën bij onder meer Sealand Service (Maersk Line), Anthony Veder Group, Dockwise, Heerema Fabrication Group, Flinter Ship Management en Vertom.",
-      "In al die functies kwam het werk op hetzelfde neer: processen, informatie en verantwoordelijkheden op elkaar laten aansluiten. Bij Vertom integreerde hij de processen van zeven divisies en bijna 60 werkmaatschappijen in één managementsysteem. Daarvoor ontwikkelde hij QARP (Quality, Assurance, Risk, Process), een methode om bedrijfsprocessen in elke sector te verbeteren.",
-      "Hij heeft een bachelor Bedrijfskunde (Business Administration) en is gecertificeerd PRINCE2 Practitioner. Hij is Nederlander, woont in Almerimar (Spanje), werkt in het Nederlands en Engels en spreekt daarnaast Frans en Duits."
-    ],
-    "photoAlt": "Portret van Alex Fialka",
-    "bookLink": "Lees het boek",
-    "contactLink": "Begin een gesprek"
-  },
   "contactPage": {
-    "heading": "Begin met een gesprek",
-    "intro": "U hoeft niet precies te weten wat het probleem is. Vertel me wat u wilt bereiken en wat daarbij in de weg staat.",
+    "heading": "Bespreek uw bedrijfsvraagstuk",
+    "intro": "U hoeft niet precies te weten wat het probleem is. Vertel me wat uw organisatie wil bereiken en wat daarbij in de weg staat.",
     "direct": "Of neem direct contact op",
     "emailLabel": "E-mail",
     "phoneLabel": "Telefoon",
@@ -269,7 +390,7 @@
     "location": "Almerimar, Spanje"
   },
   "footer": {
-    "tagline": "Zie het geheel. Begrijp de verbanden. Neem betere beslissingen.",
+    "tagline": "Zie het hele bedrijf. Laat de hele organisatie werken.",
     "explore": "Verkennen",
     "contact": "Contact",
     "legal": "Juridische informatie",
