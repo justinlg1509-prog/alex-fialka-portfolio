@@ -14,7 +14,7 @@
   "meta": {
     "home": {
       "title": "Fialka Enterprise Thinking — Is your organization working as one? | Alex Fialka",
-      "desc": "Improving overall business performance by connecting strategy, people, processes and execution. Enterprise Thinking by business architect Alex Fialka."
+      "desc": "Helping organizations improve performance by strengthening their foundations and connecting the different parts of their business. Enterprise Thinking by business architect Alex Fialka."
     },
     "et": {
       "title": "What Is Enterprise Thinking? See the Whole Business | Fialka Enterprise Thinking",
@@ -56,34 +56,34 @@
   "nav": {
     "et": "Enterprise Thinking",
     "services": "Services",
-    "book": "The Book",
+    "book": "Books",
     "about": "About",
     "contact": "Contact"
   },
   "hero": {
     "title": "Is Your Organization Working as One?",
-    "subtitle": "Improving overall business performance by connecting strategy, people, processes and execution.",
+    "subtitle": "Helping organizations improve performance by strengthening their foundations and connecting the different parts of their business.",
     "ctaEt": "Explore Enterprise Thinking",
-    "ctaContact": "Discuss Your Business Challenge",
+    "ctaContact": "Get in Touch",
     "visualLabel": "Illustration: scattered points that gradually connect inside an open circle."
   },
   "problem": {
     "label": "Is your organization working as one?",
     "paras": [
-      "Your organization may have capable people, experienced managers and well-defined procedures.",
-      "Yet costs continue to rise. Decisions take too long. Departments work towards different priorities. Problems move from one team to another without being resolved."
+      "Your organization may have experienced people, good systems and well-defined processes.",
+      "Yet costs increase, decisions take too long and departments do not always work towards the same objectives."
     ],
     "why": "Why?",
-    "because": "Because improving individual departments does not automatically improve the performance of the entire organization.",
-    "how": "Through Enterprise Thinking, I help organizations identify these disconnects, understand their underlying causes and develop practical improvements that work across the whole business."
+    "because": "Because improving individual parts does not necessarily improve the organization as a whole.",
+    "how": "As a Business Architect, I examine how the different parts of an organization work together, identify weaknesses and help develop practical improvements."
   },
   "et": {
     "label": "Enterprise Thinking",
     "heading": "See the Whole Business",
     "question": "Your departments may be performing well individually. But is your organization achieving what it was created to achieve?",
     "paras": [
-      "Enterprise Thinking looks beyond departmental boundaries. It connects strategy, responsibilities, people, processes and resources to the results an organization wants to deliver.",
-      "By examining the entire business chain, we identify where activities fail to connect, where resources are wasted and where local improvements do not contribute to overall performance."
+      "Enterprise Thinking examines how people, processes, responsibilities and resources contribute to the organization’s objectives.",
+      "By looking at the entire business chain, I identify weaknesses, unnecessary complexity and opportunities for improvement."
     ],
     "closing": "Don’t just optimize the individual parts. Make the entire organization work.",
     "elements": [
@@ -96,68 +96,40 @@
     "center": "Results",
     "diagramLabel": "Diagram: strategy, responsibilities, people, processes and resources, each connected to the others and all connected to the results in the center."
   },
-  "why": {
-    "heading": "Why Problems Occur, Even in Well-Managed Organizations",
-    "intro": "Most organizations are divided into departments, functions, management layers and individual budgets. That structure is necessary, but it can also create problems.",
-    "colLocal": "In one part of the organization",
-    "colWhole": "Across the whole organization",
-    "rows": [
-      [
-        "A department achieves its own targets",
-        "while the organization as a whole fails to achieve its objectives."
-      ],
-      [
-        "Costs are reduced in one department",
-        "and additional costs appear elsewhere."
-      ],
-      [
-        "A new reporting requirement improves management information",
-        "but takes valuable working time away from operational staff."
-      ],
-      [
-        "A process is improved",
-        "but fails because the next department is not ready to receive the output."
-      ]
-    ],
-    "after": "Enterprise Thinking examines these relationships across the full business chain. The objective is not merely to make individual departments more efficient.",
-    "statement": "It is to improve the performance of the entire organization."
-  },
   "services": {
-    "heading": "How I Can Help",
-    "intro": "Each service starts from a business problem, not from a methodology.",
+    "heading": "Where I Can Add Value",
+    "intro": "My approach starts with understanding the organization, not with applying a standard solution.",
     "items": [
       {
-        "title": "Organization and Performance Assessment",
-        "text": "Examining how effectively the organization’s structure, responsibilities, resources and processes support its strategic objectives, and identifying disconnected activities, duplicated work, unclear responsibilities and performance problems."
+        "title": "Organizational Performance",
+        "text": "Identifying weaknesses in organizational structures, responsibilities and resources that affect overall performance."
       },
       {
-        "title": "End-to-End Process Improvement",
-        "text": "Analyzing the complete operational chain rather than isolated departmental processes, including the handovers between activities and departments and the quality of the information and outputs passed on."
+        "title": "Business Processes and Connections",
+        "text": "Examining the complete business chain, including the connections between departments and processes."
       },
       {
-        "title": "Integrated Management and Risk",
-        "text": "Connecting operational risks, management systems, compliance requirements and business objectives, so that management systems support operations instead of creating unnecessary administrative complexity."
+        "title": "Management and Risk",
+        "text": "Ensuring that management systems and risk management support business objectives without unnecessary complexity."
       },
       {
-        "title": "Organizational Change and Implementation",
-        "text": "Translating findings into practical improvements: clarifying responsibilities, involving operational employees and making sure that agreed changes work in day-to-day practice."
+        "title": "Practical Improvements",
+        "text": "Developing improvements together with the people involved, ensuring they work in daily operations."
       },
       {
-        "title": "Independent Management Advice",
-        "text": "An experienced external perspective on complex organizational challenges, especially where conventional improvement programs have not delivered the expected results."
+        "title": "Independent Perspective",
+        "text": "Bringing broad experience and an independent view to organizational challenges."
       }
-    ],
-    "note": "Supported by practical experience in Lean, ISO management systems, procurement, logistics, finance and risk management."
+    ]
   },
   "expect": {
-    "heading": "What You Can Expect",
+    "heading": "How I Work",
     "paras": [
       "I do not arrive with a predefined solution. Every organization is different.",
-      "The first step is to listen, observe and understand: what the organization wants to achieve, how it actually works today and what prevents it from achieving its intended results.",
-      "Improvements are developed together with management and the people who do the work, so that they work in day-to-day practice and not only on paper."
+      "I start by understanding what the organization wants to achieve, how it works and what stands in the way.",
+      "Improvements must be practical, supported by the people involved and effective in daily operations."
     ],
-    "highlight1": "The objective is not to produce the most complicated model.",
-    "highlight2": "The objective is to make complexity understandable."
+    "highlight": "My objective is to make complex problems easier to understand and solve."
   },
   "gains": {
     "heading": "What Clients Gain",
@@ -234,7 +206,9 @@
       }
     ],
     "nextHeading": "Start With Your Own Organization",
-    "nextText": "The ideas behind Enterprise Thinking are set out in the book of the same name. The most useful next step, though, is a conversation about your own organization: what it is trying to achieve and what is getting in the way."
+    "nextText": "The ideas behind Enterprise Thinking are set out in the book of the same name. The most useful next step, though, is a conversation about your own organization: what it is trying to achieve and what is getting in the way.",
+    "highlight1": "The objective is not to produce the most complicated model.",
+    "highlight2": "The objective is to make complexity understandable."
   },
   "transformation": {
     "heading": "Enterprise Thinking Before Enterprise Transformation",
@@ -251,27 +225,16 @@
     "closing": "Think first. Understand the whole. Then change what matters."
   },
   "bookBlock": {
-    "label": "The book",
-    "text": "What makes an enterprise strong is not one process, one system or one management model. It is the way all the pieces work together.",
+    "heading": "My Books",
+    "subtitle": "Sharing experience, ideas and a different way of thinking.",
+    "text": "My books reflect my experience and my belief that understanding complex problems begins with asking simple questions.",
+    "explore": "Explore My Books",
     "discover": "Discover the book",
     "buy": "Buy on Amazon"
   },
-  "who": {
-    "heading": "Who I Work With",
-    "intro": "Enterprise Thinking can help organizations that are:",
-    "items": [
-      "experiencing increasing organizational complexity",
-      "preparing for significant transformation",
-      "struggling with disconnected departments or systems",
-      "considering major technology investments",
-      "trying to improve operational efficiency",
-      "dealing with processes that have become difficult to manage",
-      "integrating organizations following growth, acquisition or restructuring"
-    ],
-    "quoteLead": "or simply asking:",
-    "quote": "There must be a better way to organize this."
-  },
   "aboutShort": {
+    "role": "Business Architect · Author",
+    "intro": "I am a Business Architect and author with more than 35 years of international experience across different industries and management disciplines.",
     "link": "More about Alex"
   },
   "aboutPage": {
@@ -297,14 +260,14 @@
     "photoAlt": "Portrait of Alex Fialka"
   },
   "cta": {
-    "heading": "Discuss Your Business Challenge",
+    "heading": "Get in Touch",
     "paras": [
       "You do not need to know exactly what the problem is.",
-      "Sometimes the most valuable starting point is simply the feeling that something has become unnecessarily complicated, expensive or difficult.",
+      "Sometimes the starting point is simply the feeling that something could work better.",
       "We can start there."
     ],
     "strong": "Tell me what you are trying to achieve and what is getting in the way.",
-    "after": "Together, we can look at the bigger picture and determine where meaningful change can begin.",
+    "after": "Together, we can examine the bigger picture and identify possible improvements.",
     "sign1": "Understand first. Change second."
   },
   "form": {
@@ -312,7 +275,7 @@
     "company": "Company",
     "role": "Role",
     "email": "Email",
-    "message": "Message",
+    "message": "Your message",
     "goal": "What are you trying to achieve, and what is getting in the way?",
     "optional": "optional",
     "consent": "I have read and accept the <a href=\"{privacy}\">Privacy Policy</a>.",
