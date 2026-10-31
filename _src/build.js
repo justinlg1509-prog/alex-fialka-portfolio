@@ -60,6 +60,16 @@ const url = (lang, page) => `/${lang}/${T[lang].slugs[page]}`;
 const abs = (lang, page) => SITE.url + url(lang, page);
 const hash = file => crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, file))).digest('hex').slice(0, 8);
 const V = { css: hash('assets/css/site.css'), js: hash('assets/js/site.js') };
+
+// CSS en línea en cada página: evita una petición que bloquea el render (en móvil
+// lento son ~0,5 s de LCP). Solo se quitan comentarios y espacios, y las rutas
+// relativas de las fuentes pasan a absolutas porque ya no salen de /assets/css/.
+const INLINE_CSS = fs.readFileSync(path.join(ROOT, 'assets/css/site.css'), 'utf8')
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([{};])\s*/g, '$1')
+    .replace(/url\('\.\.\//g, "url('/assets/")
+    .trim();
 const r1 = n => Math.round(n * 10) / 10;
 
 function write(rel, content) {
@@ -281,7 +291,7 @@ function head(lang, page) {
 
     <link rel="preload" href="/assets/fonts/libre-caslon-text-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/site.css?v=${V.css}">
+    <style>${INLINE_CSS}</style>
 
     <!-- Google Analytics 4 con Consent Mode v2: denegado hasta que se acepte.
          gtag.js se descarga con la primera interacción o a los 4 s. -->
