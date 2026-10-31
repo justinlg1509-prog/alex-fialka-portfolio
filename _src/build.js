@@ -438,7 +438,7 @@ function form(lang, variant) {
         ${field('name', f.name, 'text', 'autocomplete="name" required')}
         ${variant === 'full' ? `<div class="field-row">${company}${role}</div>` : company}
         ${field('email', f.email, 'email', 'autocomplete="email" required')}
-        <div class="field"><label for="${p}message">${esc(variant === 'full' ? f.message : f.goal)}</label>
+        <div class="field"><label for="${p}message">${esc(f.message)}</label>
             <textarea id="${p}message" name="message" rows="${variant === 'full' ? 7 : 5}" required${variant === 'full' ? ` placeholder="${esc(f.goal)}"` : ''}></textarea></div>
         <div class="hp" aria-hidden="true"><label for="${p}website">${esc(f.hp)}</label><input id="${p}website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
         <label class="consent"><input type="checkbox" name="consent" required><span>${fill(f.consent, { privacy: url(lang, 'privacy') })}</span></label>
@@ -449,8 +449,11 @@ function form(lang, variant) {
 
 /* ---------- Pages ---------- */
 function homePage(lang) {
-    const t = T[lang];
+    const t = T[lang], b = t.bookBlock;
     const bookAlt = t.bookPage.coverAlt;
+    // Solo libros publicados, cada uno con su botón de Amazon.
+    // TODO: añadir "De Politieke File" cuando se publique.
+    const books = [{ title: 'Enterprise Thinking', subtitle: t.bookPage.subtitle, amazon: amazon(lang) }];
     return `
 <section class="hero">
     <div class="wrap hero-grid">
@@ -495,23 +498,6 @@ ${sep()}
     </div>
 </section>
 
-<section class="section" id="why">
-    <div class="wrap">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(t.why.heading)}</h2>
-            <p class="lead reveal">${esc(t.why.intro)}</p>
-        </div>
-        <table class="symptoms-table reveal">
-            <thead><tr><th scope="col">${esc(t.why.colLocal)}</th><th scope="col">${esc(t.why.colWhole)}</th></tr></thead>
-            <tbody>${t.why.rows.map(([a, b]) => `<tr><td>${esc(a)}</td><td>${esc(b)}</td></tr>`).join('')}</tbody>
-        </table>
-        <div class="prose">
-            <p class="reveal">${esc(t.why.after)}</p>
-        </div>
-        <p class="big-question reveal">${esc(t.why.statement)}</p>
-    </div>
-</section>
-
 ${sep()}
 
 ${servicesSection(lang)}
@@ -522,39 +508,23 @@ ${servicesSection(lang)}
         <div class="prose">
             ${t.expect.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
             <div class="highlights reveal">
-                <p>${esc(t.expect.highlight1)}</p>
-                <p>${esc(t.expect.highlight2)}</p>
+                <p>${esc(t.expect.highlight)}</p>
             </div>
-            ${gainsList(lang)}
         </div>
     </div>
 </section>
 
-<section class="section" id="book">
+<section class="section" id="books">
     <div class="wrap book-feature">
         <div class="book-3d reveal"><a class="book" href="${url(lang, 'book')}" tabindex="-1" aria-hidden="true">${coverImg(lang, bookAlt, '(max-width: 860px) 70vw, 360px', 'loading="lazy" decoding="async"')}</a></div>
         <div class="reveal">
-            <span class="book-label">${esc(t.bookBlock.label)}</span>
-            <h2 class="book-title">Enterprise Thinking</h2>
-            <p class="book-subtitle">${esc(t.bookPage.subtitle)}</p>
-            <p class="lead">${esc(t.bookBlock.text)}</p>
+            <h2 class="book-title">${esc(b.heading)}</h2>
+            <p class="book-subtitle">${esc(b.subtitle)}</p>
+            <p class="lead">${esc(b.text)}</p>
+            <ul class="book-list">${books.map(k => `<li><div><h3>${esc(k.title)}</h3><p>${esc(k.subtitle)}</p></div>` +
+                `<a class="btn btn-secondary" href="${k.amazon}" target="_blank" rel="noopener">${esc(b.buy)}</a></li>`).join('')}</ul>
             <div class="btn-row">
-                <a class="btn btn-primary" href="${url(lang, 'book')}">${esc(t.bookBlock.discover)}</a>
-                <a class="btn btn-secondary" href="${amazon(lang)}" target="_blank" rel="noopener">${esc(t.bookBlock.buy)}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="who-i-work-with">
-    <div class="wrap split">
-        <h2 class="section-title reveal">${esc(t.who.heading)}</h2>
-        <div class="prose">
-            <p class="lead reveal">${esc(t.who.intro)}</p>
-            <ul class="checks">${t.who.items.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>
-            <div class="pull-quote reveal">
-                <p class="quote-lead">${esc(t.who.quoteLead)}</p>
-                <blockquote><p>“${esc(t.who.quote)}”</p></blockquote>
+                <a class="btn btn-primary" href="${url(lang, 'book')}">${esc(b.explore)}</a>
             </div>
         </div>
     </div>
@@ -567,8 +537,8 @@ ${sep()}
         <figure class="portrait reveal">${portraitImg(t.aboutPage.photoAlt)}</figure>
         <div class="prose">
             <h2 class="section-title reveal">${esc(t.aboutPage.heading)}</h2>
-            <p class="role reveal">${esc(t.aboutPage.role)}</p>
-            <p class="reveal">${esc(t.aboutPage.paras[0])}</p>
+            <p class="role reveal">${esc(t.aboutShort.role)}</p>
+            <p class="reveal">${esc(t.aboutShort.intro)}</p>
             <p class="connections reveal">${esc(t.aboutPage.focus)}</p>
             <a class="text-link reveal" href="${url(lang, 'about')}">${esc(t.aboutShort.link)}</a>
         </div>
@@ -599,15 +569,8 @@ function servicesSection(lang) {
         </div>
         <ul class="services-grid">${s.items.map((item, i) =>
             `<li class="service reveal" style="--i:${i % 3}">${icon(i)}<h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></li>`).join('')}</ul>
-        <p class="services-note reveal">${esc(s.note)}</p>
     </div>
 </section>`;
-}
-
-function gainsList(lang) {
-    const g = T[lang].gains;
-    return `<h3 class="gains-title reveal">${esc(g.heading)}</h3>
-            <ul class="checks">${g.items.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>`;
 }
 
 function etPage(lang) {
@@ -658,8 +621,8 @@ ${sep()}
         <ol class="chain" aria-label="${esc(e.howHeading)}">${e.steps.map((s, i) =>
             `<li class="chain-step reveal" style="--i:${i}"><span class="chain-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('')}</ol>
         <div class="highlights reveal prose">
-            <p>${esc(t.expect.highlight1)}</p>
-            <p>${esc(t.expect.highlight2)}</p>
+            <p>${esc(e.highlight1)}</p>
+            <p>${esc(e.highlight2)}</p>
         </div>
     </div>
 </section>

@@ -14,7 +14,7 @@
   "meta": {
     "home": {
       "title": "Fialka Enterprise Thinking — ¿Funciona tu organización como un todo? | Alex Fialka",
-      "desc": "Mejorar el rendimiento global de la empresa conectando estrategia, personas, procesos y ejecución. Enterprise Thinking, de la mano del arquitecto de negocio Alex Fialka."
+      "desc": "Ayudar a las organizaciones a mejorar su rendimiento reforzando sus cimientos y conectando las distintas partes de su negocio. Enterprise Thinking, de la mano del arquitecto de negocio Alex Fialka."
     },
     "et": {
       "title": "¿Qué es Enterprise Thinking? Ver la empresa completa | Fialka Enterprise Thinking",
@@ -56,34 +56,34 @@
   "nav": {
     "et": "Enterprise Thinking",
     "services": "Servicios",
-    "book": "El libro",
+    "book": "Libros",
     "about": "Sobre Alex",
     "contact": "Contacto"
   },
   "hero": {
     "title": "¿Funciona tu organización como un todo?",
-    "subtitle": "Mejorar el rendimiento global de la empresa conectando estrategia, personas, procesos y ejecución.",
+    "subtitle": "Ayudar a las organizaciones a mejorar su rendimiento reforzando sus cimientos y conectando las distintas partes de su negocio.",
     "ctaEt": "Descubrir Enterprise Thinking",
-    "ctaContact": "Hablemos de tu reto",
+    "ctaContact": "Ponte en contacto",
     "visualLabel": "Ilustración: puntos dispersos que poco a poco se conectan dentro de un círculo abierto."
   },
   "problem": {
     "label": "¿Funciona tu organización como un todo?",
     "paras": [
-      "Puede que tu organización tenga personas capaces, directivos con experiencia y procedimientos bien definidos.",
-      "Y aun así los costes siguen subiendo. Las decisiones tardan demasiado. Los departamentos trabajan con prioridades distintas. Los problemas pasan de un equipo a otro sin resolverse."
+      "Puede que tu organización tenga personas con experiencia, buenos sistemas y procesos bien definidos.",
+      "Y aun así los costes aumentan, las decisiones tardan demasiado y los departamentos no siempre trabajan hacia los mismos objetivos."
     ],
     "why": "¿Por qué?",
-    "because": "Porque mejorar cada departamento por separado no mejora automáticamente el rendimiento de la organización en su conjunto.",
-    "how": "Con Enterprise Thinking ayudo a las organizaciones a detectar esas desconexiones, entender sus causas de fondo y desarrollar mejoras prácticas que funcionen en toda la empresa."
+    "because": "Porque mejorar cada parte por separado no mejora necesariamente la organización en su conjunto.",
+    "how": "Como arquitecto de negocio, analizo cómo funcionan juntas las distintas partes de una organización, identifico sus puntos débiles y ayudo a desarrollar mejoras prácticas."
   },
   "et": {
     "label": "Enterprise Thinking",
     "heading": "Ver la empresa completa",
     "question": "Puede que tus departamentos funcionen bien por separado. Pero ¿está consiguiendo tu organización aquello para lo que fue creada?",
     "paras": [
-      "Enterprise Thinking mira más allá de los límites de cada departamento. Conecta la estrategia, las responsabilidades, las personas, los procesos y los recursos con los resultados que la organización quiere conseguir.",
-      "Al examinar toda la cadena de negocio, identificamos dónde las actividades no encajan, dónde se desperdician recursos y dónde las mejoras locales no contribuyen al rendimiento global."
+      "Enterprise Thinking analiza cómo contribuyen las personas, los procesos, las responsabilidades y los recursos a los objetivos de la organización.",
+      "Al mirar toda la cadena de negocio, identifico puntos débiles, complejidad innecesaria y oportunidades de mejora."
     ],
     "closing": "No optimices solo las partes. Haz que funcione toda la organización.",
     "elements": [
@@ -96,68 +96,40 @@
     "center": "Resultados",
     "diagramLabel": "Diagrama: estrategia, responsabilidades, personas, procesos y recursos, conectados entre sí y todos ellos con los resultados, en el centro."
   },
-  "why": {
-    "heading": "Por qué surgen los problemas, incluso en organizaciones bien gestionadas",
-    "intro": "La mayoría de las organizaciones se dividen en departamentos, funciones, niveles de dirección y presupuestos propios. Esa estructura es necesaria, pero también puede crear problemas.",
-    "colLocal": "En una parte de la organización",
-    "colWhole": "En el conjunto de la organización",
-    "rows": [
-      [
-        "Un departamento cumple sus propios objetivos",
-        "mientras la organización en su conjunto no alcanza los suyos."
-      ],
-      [
-        "Se reducen costes en un departamento",
-        "y aparecen costes adicionales en otro."
-      ],
-      [
-        "Un nuevo informe mejora la información de gestión",
-        "pero quita tiempo de trabajo valioso al personal operativo."
-      ],
-      [
-        "Se mejora un proceso",
-        "pero fracasa porque el siguiente departamento no está preparado para recibir el resultado."
-      ]
-    ],
-    "after": "Enterprise Thinking examina estas relaciones a lo largo de toda la cadena de negocio. El objetivo no es solo que cada departamento sea más eficiente.",
-    "statement": "Es mejorar el rendimiento de toda la organización."
-  },
   "services": {
-    "heading": "Cómo puedo ayudarte",
-    "intro": "Cada servicio parte de un problema de negocio, no de una metodología.",
+    "heading": "Dónde puedo aportar valor",
+    "intro": "Mi enfoque empieza por entender la organización, no por aplicar una solución estándar.",
     "items": [
       {
-        "title": "Evaluación de la organización y su rendimiento",
-        "text": "Examinar hasta qué punto la estructura, las responsabilidades, los recursos y los procesos de la organización apoyan sus objetivos estratégicos, e identificar actividades desconectadas, trabajo duplicado, responsabilidades poco claras y problemas de rendimiento."
+        "title": "Rendimiento organizativo",
+        "text": "Identificar los puntos débiles de las estructuras organizativas, las responsabilidades y los recursos que afectan al rendimiento global."
       },
       {
-        "title": "Mejora de procesos de principio a fin",
-        "text": "Analizar la cadena operativa completa en lugar de procesos aislados de cada departamento, incluidos los traspasos entre actividades y departamentos y la calidad de la información y los resultados que se entregan."
+        "title": "Procesos de negocio y conexiones",
+        "text": "Examinar toda la cadena de negocio, incluidas las conexiones entre departamentos y procesos."
       },
       {
-        "title": "Gestión integrada y riesgos",
-        "text": "Conectar los riesgos operativos, los sistemas de gestión, los requisitos de cumplimiento y los objetivos de negocio, para que los sistemas de gestión apoyen la operación en lugar de añadir complejidad administrativa innecesaria."
+        "title": "Gestión y riesgos",
+        "text": "Asegurar que los sistemas de gestión y la gestión de riesgos apoyen los objetivos del negocio sin complejidad innecesaria."
       },
       {
-        "title": "Cambio organizativo e implantación",
-        "text": "Convertir los hallazgos en mejoras prácticas: aclarar responsabilidades, implicar al personal operativo y asegurarse de que los cambios acordados funcionan en el día a día."
+        "title": "Mejoras prácticas",
+        "text": "Desarrollar mejoras junto con las personas implicadas y asegurar que funcionen en el día a día."
       },
       {
-        "title": "Asesoramiento independiente a la dirección",
-        "text": "Una perspectiva externa y con experiencia sobre retos organizativos complejos, sobre todo cuando los programas de mejora convencionales no han dado los resultados esperados."
+        "title": "Perspectiva independiente",
+        "text": "Aportar una amplia experiencia y una mirada independiente a los retos organizativos."
       }
-    ],
-    "note": "Con el respaldo de experiencia práctica en Lean, sistemas de gestión ISO, compras, logística, finanzas y gestión de riesgos."
+    ]
   },
   "expect": {
-    "heading": "Qué puedes esperar",
+    "heading": "Cómo trabajo",
     "paras": [
       "No llego con una solución predefinida. Cada organización es distinta.",
-      "El primer paso es escuchar, observar y entender: qué quiere conseguir la organización, cómo funciona de verdad hoy y qué le impide alcanzar los resultados que busca.",
-      "Las mejoras se desarrollan junto con la dirección y con las personas que hacen el trabajo, para que funcionen en el día a día y no solo sobre el papel."
+      "Empiezo por entender qué quiere conseguir la organización, cómo funciona y qué se interpone en el camino.",
+      "Las mejoras deben ser prácticas, contar con el apoyo de las personas implicadas y funcionar en el día a día."
     ],
-    "highlight1": "El objetivo no es construir el modelo más complicado.",
-    "highlight2": "El objetivo es hacer comprensible la complejidad."
+    "highlight": "Mi objetivo es que los problemas complejos sean más fáciles de entender y de resolver."
   },
   "gains": {
     "heading": "Qué gana el cliente",
@@ -234,7 +206,9 @@
       }
     ],
     "nextHeading": "Empieza por tu propia organización",
-    "nextText": "Las ideas de Enterprise Thinking están recogidas en el libro del mismo nombre. Pero el siguiente paso más útil es una conversación sobre tu organización: qué intenta conseguir y qué se interpone en el camino."
+    "nextText": "Las ideas de Enterprise Thinking están recogidas en el libro del mismo nombre. Pero el siguiente paso más útil es una conversación sobre tu organización: qué intenta conseguir y qué se interpone en el camino.",
+    "highlight1": "El objetivo no es construir el modelo más complicado.",
+    "highlight2": "El objetivo es hacer comprensible la complejidad."
   },
   "transformation": {
     "heading": "Entender la organización antes de transformarla",
@@ -251,27 +225,16 @@
     "closing": "Primero pensar. Entender el conjunto. Después, cambiar lo que importa."
   },
   "bookBlock": {
-    "label": "El libro",
-    "text": "¿Qué hace que una empresa sea sólida? No es un único proceso, un único sistema ni un único modelo de gestión. Es la forma en que todas las partes funcionan juntas.",
+    "heading": "Mis libros",
+    "subtitle": "Compartir experiencia, ideas y otra forma de pensar.",
+    "text": "Mis libros reflejan mi experiencia y mi convicción de que entender los problemas complejos empieza por hacerse preguntas sencillas.",
+    "explore": "Descubrir mis libros",
     "discover": "Descubrir el libro",
     "buy": "Comprar en Amazon"
   },
-  "who": {
-    "heading": "Con quién trabajo",
-    "intro": "Enterprise Thinking puede ayudar a organizaciones que:",
-    "items": [
-      "viven una complejidad organizativa cada vez mayor",
-      "se preparan para una transformación importante",
-      "tienen departamentos o sistemas desconectados entre sí",
-      "estudian grandes inversiones en tecnología",
-      "quieren mejorar su eficiencia operativa",
-      "tienen procesos que se han vuelto difíciles de gestionar",
-      "integran organizaciones tras un crecimiento, una adquisición o una reestructuración"
-    ],
-    "quoteLead": "o que simplemente se preguntan:",
-    "quote": "Tiene que haber una forma mejor de organizar esto."
-  },
   "aboutShort": {
+    "role": "Arquitecto de negocio · Autor",
+    "intro": "Soy arquitecto de negocio y autor, con más de 35 años de experiencia internacional en distintos sectores y disciplinas de gestión.",
     "link": "Más sobre Alex"
   },
   "aboutPage": {
@@ -297,14 +260,14 @@
     "photoAlt": "Retrato de Alex Fialka"
   },
   "cta": {
-    "heading": "Hablemos de tu reto empresarial",
+    "heading": "Ponte en contacto",
     "paras": [
       "No hace falta saber exactamente cuál es el problema.",
-      "A veces, el punto de partida más valioso es simplemente la sensación de que algo se ha vuelto innecesariamente complicado, caro o difícil.",
+      "A veces, el punto de partida es simplemente la sensación de que algo podría funcionar mejor.",
       "Podemos empezar por ahí."
     ],
     "strong": "Cuéntame qué intentas conseguir y qué se interpone en el camino.",
-    "after": "Juntos podemos mirar el conjunto y decidir dónde puede empezar un cambio con sentido.",
+    "after": "Juntos podemos analizar el conjunto e identificar posibles mejoras.",
     "sign1": "Primero entender. Después cambiar."
   },
   "form": {
@@ -312,7 +275,7 @@
     "company": "Empresa",
     "role": "Cargo",
     "email": "Email",
-    "message": "Mensaje",
+    "message": "Tu mensaje",
     "goal": "¿Qué intentas conseguir y qué se interpone en el camino?",
     "optional": "opcional",
     "consent": "He leído y acepto la <a href=\"{privacy}\">Política de privacidad</a>.",
