@@ -274,6 +274,7 @@ p, li, blockquote { text-wrap: pretty; }
 .nav-list a {
     font-size: 0.95rem;
     font-weight: 500;
+    white-space: nowrap;
     color: var(--ink);
     text-decoration: none;
     padding-block: 6px;
@@ -321,7 +322,8 @@ p, li, blockquote { text-wrap: pretty; }
 .nav-toggle[aria-expanded="true"] .bars::before { transform: translateY(7px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] .bars::after { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 960px) {
+/* Menú móvil: el menú completo en español necesita ~1040 px en una línea */
+@media (max-width: 1080px) {
     .nav-toggle { display: block; }
     .brand img { height: 40px; }
     .site-nav {
