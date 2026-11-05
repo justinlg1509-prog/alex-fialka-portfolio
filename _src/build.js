@@ -14,7 +14,9 @@ const crypto = require('crypto');
 const SRC = __dirname;
 const ROOT = path.resolve(SRC, '..');
 const LANGS = ['en', 'es', 'nl'];
-const PAGES = ['home', 'et', 'book', 'about', 'contact', 'legal', 'privacy', 'cookies'];
+// Landing de una sola página + legales. Las antiguas páginas (Enterprise Thinking,
+// libro, sobre Alex, contacto) son ahora secciones y redirigen a ellas (vercel.json).
+const PAGES = ['home', 'legal', 'privacy', 'cookies'];
 const BRAND = 'Fialka Enterprise Thinking';
 const TODAY = new Date().toISOString().slice(0, 10);
 const YEAR = new Date().getFullYear();
@@ -198,7 +200,7 @@ function graph(lang, page) {
     const t = T[lang];
     const person = {
         '@type': 'Person', '@id': SITE.url + '/#alex-fialka', name: 'Alex Fialka', jobTitle: 'Business Architect',
-        url: abs(lang, 'about'), image: SITE.url + '/assets/img/alex-fialka-thinking-760.webp',
+        url: abs(lang, 'home') + '#about', image: SITE.url + '/assets/img/alex-fialka-thinking-760.webp',
         email: 'mailto:' + SITE.email, sameAs: [SITE.linkedin], nationality: 'NL',
         address: { '@type': 'PostalAddress', addressLocality: 'Almerimar', addressRegion: 'Almería', addressCountry: 'ES' }
     };
@@ -212,7 +214,7 @@ function graph(lang, page) {
         '@type': 'Book', '@id': SITE.url + '/#book', name: 'Enterprise Thinking',
         alternateName: BOOK.editions[lang].title, author: { '@id': person['@id'] },
         description: t.bookPage.aboutParas.join(' '), inLanguage: lang,
-        image: SITE.url + `/assets/img/book-cover-${lang}-900.webp`, url: abs(lang, 'book'),
+        image: SITE.url + `/assets/img/book-cover-${lang}-900.webp`, url: abs(lang, 'home') + '#books',
         workExample: editions
     };
     const service = {
@@ -231,29 +233,15 @@ function graph(lang, page) {
         '@type': 'WebSite', '@id': SITE.url + '/#website', url: SITE.url + '/', name: BRAND,
         inLanguage: LANGS, publisher: { '@id': person['@id'] }
     };
-    const crumbs = (key) => ({
-        '@type': 'BreadcrumbList', itemListElement: [
-            { '@type': 'ListItem', position: 1, name: BRAND, item: abs(lang, 'home') },
-            { '@type': 'ListItem', position: 2, name: t.nav[key] || t.meta[key].title, item: abs(lang, key) }
-        ]
-    });
-    const byPage = {
-        home: [website, person, service, book],
-        et: [{ '@type': 'WebPage', url: abs(lang, 'et'), name: t.meta.et.title, about: { '@id': service['@id'] } }, service, crumbs('et')],
-        book: [book, person, crumbs('book')],
-        about: [{ '@type': 'ProfilePage', url: abs(lang, 'about'), mainEntity: { '@id': person['@id'] } }, person, crumbs('about')],
-        contact: [{ '@type': 'ContactPage', url: abs(lang, 'contact') }, service, person]
-    };
-    if (!byPage[page]) return '';
-    return `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': byPage[page] })}</script>`;
+    if (page !== 'home') return '';
+    return `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [website, person, service, book] })}</script>`;
 }
 
 /* ---------- Layout ---------- */
 function head(lang, page) {
     const t = T[lang];
     const m = t.meta[page];
-    const ogImage = page === 'book' ? `${SITE.url}/assets/img/book-cover-${lang}-600.jpg` : `${SITE.url}/assets/img/og-${lang}.jpg`;
-    const ogSize = page === 'book' ? ['600', '894'] : ['1200', '630'];
+    const ogImage = `${SITE.url}/assets/img/og-${lang}.jpg`;
     const alternates = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${abs(l, page)}">`).join('\n    ') +
         `\n    <link rel="alternate" hreflang="x-default" href="${abs('en', page)}">`;
     const ogAlt = LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" content="${T[l].locale}">`).join('\n    ');
@@ -274,14 +262,14 @@ function head(lang, page) {
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <meta property="og:type" content="${page === 'book' ? 'book' : 'website'}">
+    <meta property="og:type" content="website">
     <meta property="og:site_name" content="${BRAND}">
     <meta property="og:title" content="${esc(m.title)}">
     <meta property="og:description" content="${esc(m.desc)}">
     <meta property="og:url" content="${abs(lang, page)}">
     <meta property="og:image" content="${ogImage}">
-    <meta property="og:image:width" content="${ogSize[0]}">
-    <meta property="og:image:height" content="${ogSize[1]}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="${t.locale}">
     ${ogAlt}
     <meta name="twitter:card" content="summary_large_image">
@@ -325,18 +313,14 @@ function langLinks(lang, page) {
         `<li><a href="${url(l, page)}" hreflang="${l}" lang="${l}"${l === lang ? ' aria-current="true"' : ''} title="${esc(T[l].langName)}">${l.toUpperCase()}</a></li>`).join('') + '</ul>';
 }
 
-const navItems = lang => [
-    ['et', url(lang, 'et')],
-    ['services', url(lang, 'home') + '#services'],
-    ['book', url(lang, 'book')],
-    ['about', url(lang, 'about')],
-    ['contact', url(lang, 'contact')]
-];
+// Secciones de la landing que salen en el menú. Los id son iguales en los tres
+// idiomas, así el cambio de idioma conserva la sección (ver site.js).
+const SECTIONS = [['et', 'enterprise-thinking'], ['services', 'services'], ['book', 'books'], ['about', 'about'], ['contact', 'contact']];
+const navItems = lang => SECTIONS.map(([k, id]) => [k, `${url(lang, 'home')}#${id}`]);
 
 function header(lang, page) {
     const t = T[lang];
     const home = url(lang, 'home');
-    const items = navItems(lang).map(([k, href]) => [k, href, ['et', 'book', 'about', 'contact'].includes(k) ? k : null]);
     return `<a class="skip" href="#main">${esc(t.ui.skip)}</a>
 <header class="site-header">
     <div class="wrap header-inner">
@@ -346,8 +330,8 @@ function header(lang, page) {
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">${esc(t.ui.menu)}</span><span class="bars" aria-hidden="true"></span></button>
         <nav class="site-nav" id="site-nav" aria-label="${esc(t.ui.menu)}">
-            <ul class="nav-list">${items.map(([k, href, p]) =>
-                `<li><a href="${href}"${p && p === page ? ' aria-current="page"' : ''}>${esc(t.nav[k])}</a></li>`).join('')}</ul>
+            <ul class="nav-list">${navItems(lang).map(([k, href]) =>
+                `<li><a href="${href}">${esc(t.nav[k])}</a></li>`).join('')}</ul>
             ${langLinks(lang, page)}
         </nav>
     </div>
@@ -433,9 +417,9 @@ ${cookieBanner(lang)}
 }
 
 /* ---------- Forms ---------- */
-function form(lang, variant) {
+function form(lang) {
     const t = T[lang], f = t.form;
-    const id = variant === 'full' ? 'contact-form' : 'home-form';
+    const id = 'contact-form';
     const p = id + '-';
     const field = (name, label, type = 'text', extra = '', optional = false) =>
         `<div class="field"><label for="${p}${name}">${esc(label)}${optional ? ` <span class="opt">(${esc(f.optional)})</span>` : ''}</label>` +
@@ -446,10 +430,10 @@ function form(lang, variant) {
         <input type="hidden" name="_subject" value="${esc(f.mailSubject)}">
         <input type="hidden" name="language" value="${lang}">
         ${field('name', f.name, 'text', 'autocomplete="name" required')}
-        ${variant === 'full' ? `<div class="field-row">${company}${role}</div>` : company}
+        <div class="field-row">${company}${role}</div>
         ${field('email', f.email, 'email', 'autocomplete="email" required')}
         <div class="field"><label for="${p}message">${esc(f.message)}</label>
-            <textarea id="${p}message" name="message" rows="${variant === 'full' ? 7 : 5}" required${variant === 'full' ? ` placeholder="${esc(f.goal)}"` : ''}></textarea></div>
+            <textarea id="${p}message" name="message" rows="6" required placeholder="${esc(f.goal)}"></textarea></div>
         <div class="hp" aria-hidden="true"><label for="${p}website">${esc(f.hp)}</label><input id="${p}website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
         <label class="consent"><input type="checkbox" name="consent" required><span>${fill(f.consent, { privacy: url(lang, 'privacy') })}</span></label>
         <button class="btn btn-primary" type="submit">${esc(f.submit)}</button>
@@ -457,13 +441,14 @@ function form(lang, variant) {
     </form>`;
 }
 
-/* ---------- Pages ---------- */
+/* ---------- Landing ----------
+   Una sola página. Cada sección del menú lleva un id fijo (SECTIONS) y site.js
+   salta a ella al instante, como si fuera otra página. Orden:
+   hero · reto · Enterprise Thinking (idea + método) · servicios · cómo trabajo ·
+   manifiesto · libros · sobre Alex · contacto */
 function homePage(lang) {
-    const t = T[lang], b = t.bookBlock;
-    const bookAlt = t.bookPage.coverAlt;
-    // Solo libros publicados, cada uno con su botón de Amazon.
-    // TODO: añadir "De Politieke File" cuando se publique.
-    const books = [{ title: 'Enterprise Thinking', subtitle: t.bookPage.subtitle, amazon: amazon(lang) }];
+    const t = T[lang], e = t.etPage, b = t.bookBlock, bp = t.bookPage, a = t.aboutPage, c = t.contactPage;
+    const ed = BOOK.editions[lang];
     return `
 <section class="hero">
     <div class="wrap hero-grid">
@@ -472,7 +457,7 @@ function homePage(lang) {
             <h1>${esc(t.hero.title)}</h1>
             <p class="hero-sub">${esc(t.hero.subtitle)}</p>
             <div class="btn-row">
-                <a class="btn btn-primary" href="${url(lang, 'et')}">${esc(t.hero.ctaEt)}</a>
+                <a class="btn btn-primary" href="#enterprise-thinking">${esc(t.hero.ctaEt)}</a>
                 <a class="btn btn-secondary" href="#contact">${esc(t.hero.ctaContact)}</a>
             </div>
         </div>
@@ -501,148 +486,39 @@ ${sep()}
             <p class="lead">${esc(t.et.question)}</p>
             ${t.et.paras.map(p => `<p>${esc(p)}</p>`).join('\n            ')}
             <p class="et-closing">${esc(t.et.closing)}</p>
-            <a class="text-link" href="${url(lang, 'et')}">${esc(t.hero.ctaEt)}</a>
         </div>
         ${diagramCircle(t.et.elements, t.et.center, t.et.diagramLabel)}
         ${diagramArcs(t.et.elements, t.et.center, t.et.diagramLabel)}
     </div>
+    <div class="wrap method">
+        <div class="prose">
+            <h3 class="method-title reveal">${esc(e.howHeading)}</h3>
+            <p class="reveal">${esc(e.howIntro)}</p>
+        </div>
+        <ol class="chain" aria-label="${esc(e.howHeading)}">${e.steps.map((s, i) =>
+            `<li class="chain-step reveal" style="--i:${i}"><span class="chain-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><h4>${esc(s.title)}</h4><p>${esc(s.text)}</p></li>`).join('')}</ol>
+    </div>
 </section>
 
-${sep()}
+<section class="section section-alt" id="services">
+    <div class="wrap">
+        <div class="prose">
+            <h2 class="section-title reveal">${esc(t.services.heading)}</h2>
+            <p class="lead reveal services-intro">${esc(t.services.intro)}</p>
+        </div>
+        <ul class="services-grid">${t.services.items.map((item, i) =>
+            `<li class="service reveal" style="--i:${i % 3}">${icon(i)}<h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></li>`).join('')}</ul>
+    </div>
+</section>
 
-${servicesSection(lang)}
-
-<section class="section" id="what-to-expect">
+<section class="section" id="approach">
     <div class="wrap split">
         <h2 class="section-title reveal">${esc(t.expect.heading)}</h2>
         <div class="prose">
-            ${t.expect.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
+            ${t.expect.paras.map((p, i) => `<p class="${i === 0 ? 'lead ' : ''}reveal">${esc(p)}</p>`).join('\n            ')}
             <div class="highlights reveal">
                 <p>${esc(t.expect.highlight)}</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="books">
-    <div class="wrap book-feature">
-        <div class="book-3d reveal"><a class="book" href="${url(lang, 'book')}" tabindex="-1" aria-hidden="true">${coverImg(lang, bookAlt, '(max-width: 860px) 70vw, 360px', 'loading="lazy" decoding="async"')}</a></div>
-        <div class="reveal">
-            <h2 class="book-title">${esc(b.heading)}</h2>
-            <p class="book-subtitle">${esc(b.subtitle)}</p>
-            <p class="lead">${esc(b.text)}</p>
-            <ul class="book-list">${books.map(k => `<li><div><h3>${esc(k.title)}</h3><p>${esc(k.subtitle)}</p></div>` +
-                `<a class="btn btn-secondary" href="${k.amazon}" target="_blank" rel="noopener">${esc(b.buy)}</a></li>`).join('')}</ul>
-            <div class="btn-row">
-                <a class="btn btn-primary" href="${url(lang, 'book')}">${esc(b.explore)}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-${sep()}
-
-<section class="section" id="about">
-    <div class="wrap about-grid">
-        <figure class="portrait reveal">${portraitImg(t.aboutPage.photoAlt)}</figure>
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(t.aboutPage.heading)}</h2>
-            <p class="role reveal">${esc(t.aboutShort.role)}</p>
-            <p class="reveal">${esc(t.aboutShort.intro)}</p>
-            <p class="connections reveal">${esc(t.aboutPage.focus)}</p>
-            <a class="text-link reveal" href="${url(lang, 'about')}">${esc(t.aboutShort.link)}</a>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="contact">
-    <div class="wrap cta-grid">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(t.cta.heading)}</h2>
-            ${t.cta.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
-            <p class="cta-strong reveal">${esc(t.cta.strong)}</p>
-            <p class="reveal">${esc(t.cta.after)}</p>
-            <div class="signature reveal"><p>${esc(t.cta.sign1)}</p><p>${BRAND}</p></div>
-        </div>
-        <div class="reveal">${form(lang, 'short')}</div>
-    </div>
-</section>`;
-}
-
-function servicesSection(lang) {
-    const s = T[lang].services;
-    return `<section class="section" id="services">
-    <div class="wrap">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(s.heading)}</h2>
-            <p class="lead reveal services-intro">${esc(s.intro)}</p>
-        </div>
-        <ul class="services-grid">${s.items.map((item, i) =>
-            `<li class="service reveal" style="--i:${i % 3}">${icon(i)}<h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></li>`).join('')}</ul>
-    </div>
-</section>`;
-}
-
-function etPage(lang) {
-    const t = T[lang], e = t.etPage;
-    return `
-<section class="page-hero et-hero">
-    <div class="wrap et-grid">
-        <div>
-            <span class="eyebrow">${BRAND}</span>
-            <h1>${esc(e.heading)}</h1>
-            <p class="hero-sub">${esc(e.tagline)}</p>
-            <p class="lead" style="margin-top:28px">${esc(e.intro)}</p>
-        </div>
-        ${diagramCircle(t.et.elements, t.et.center, t.et.diagramLabel)}
-        ${diagramArcs(t.et.elements, t.et.center, t.et.diagramLabel)}
-    </div>
-</section>
-
-<section class="section" id="what-is-enterprise-thinking">
-    <div class="wrap split">
-        <h2 class="section-title reveal">${esc(e.whatHeading)}</h2>
-        <div class="prose">
-            ${e.whatParas.map((p, i) => `<p class="${i === 0 ? 'lead ' : ''}reveal">${esc(p)}</p>`).join('\n            ')}
-            <p class="et-closing reveal">${esc(t.et.closing)}</p>
-        </div>
-    </div>
-</section>
-
-${sep()}
-
-<section class="section" id="why-organizations-underperform">
-    <div class="wrap">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(e.whyHeading)}</h2>
-            <p class="lead reveal">${esc(e.whyIntro)}</p>
-        </div>
-        <ul class="causes">${e.causes.map((c, i) =>
-            `<li class="cause reveal" style="--i:${i % 3}"><h3>${esc(c.title)}</h3><p>${esc(c.text)}</p></li>`).join('')}</ul>
-    </div>
-</section>
-
-<section class="section" id="how-it-works">
-    <div class="wrap">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(e.howHeading)}</h2>
-            <p class="lead reveal">${esc(e.howIntro)}</p>
-        </div>
-        <ol class="chain" aria-label="${esc(e.howHeading)}">${e.steps.map((s, i) =>
-            `<li class="chain-step reveal" style="--i:${i}"><span class="chain-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('')}</ol>
-        <div class="highlights reveal prose">
-            <p>${esc(e.highlight1)}</p>
-            <p>${esc(e.highlight2)}</p>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="what-clients-gain">
-    <div class="wrap split">
-        <h2 class="section-title reveal">${esc(t.gains.heading)}</h2>
-        <div class="prose">
-            <p class="lead reveal">${esc(t.gains.intro)}</p>
-            <ul class="checks">${t.gains.items.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>
         </div>
     </div>
 </section>
@@ -658,172 +534,79 @@ ${sep()}
         <div class="prose">
             <p class="reveal">${esc(t.transformation.p2)}</p>
             <p class="reveal">${esc(t.transformation.p3)}</p>
-            <p class="reveal">${esc(t.transformation.p4)}</p>
         </div>
         <p class="band-closing reveal">${esc(t.transformation.closing)}</p>
     </div>
 </section>
 
-<section class="section" id="next">
+<section class="section" id="books">
     <div class="wrap book-feature">
-        <div class="book-3d reveal"><a class="book" href="${url(lang, 'book')}" tabindex="-1" aria-hidden="true">${coverImg(lang, t.bookPage.coverAlt, '(max-width: 860px) 70vw, 360px', 'loading="lazy" decoding="async"')}</a></div>
-        <div class="reveal">
-            <h2 class="book-title">${esc(e.nextHeading)}</h2>
-            <p class="lead">${esc(e.nextText)}</p>
-            <div class="btn-row">
-                <a class="btn btn-primary" href="${url(lang, 'contact')}">${esc(t.hero.ctaContact)}</a>
-                <a class="btn btn-secondary" href="${url(lang, 'book')}">${esc(t.bookBlock.discover)}</a>
-            </div>
-        </div>
-    </div>
-</section>`;
-}
-
-function bookPage(lang) {
-    const t = T[lang], b = t.bookPage, fct = b.facts;
-    const ed = BOOK.editions[lang];
-    return `
-<section class="page-hero">
-    <div class="wrap book-feature">
-        <div class="book-3d">
-            <div class="book">${coverImg(lang, b.coverAlt, '(max-width: 860px) 70vw, 360px', 'fetchpriority="high"')}</div>
-        </div>
+        <div class="book-3d reveal"><div class="book">${coverImg(lang, bp.coverAlt, '(max-width: 860px) 70vw, 360px', 'loading="lazy" decoding="async"')}</div></div>
         <div>
-            <span class="book-label">${esc(b.label)}</span>
-            <h1>Enterprise Thinking</h1>
-            <p class="book-subtitle">${esc(b.subtitle)}</p>
-            <p class="muted" style="margin-top:8px">${esc(b.by)}</p>
-            <div class="btn-row" style="margin-top:28px">
-                <a class="btn btn-primary" href="${amazon(lang)}" target="_blank" rel="noopener">${esc(t.bookBlock.buy)}</a>
-                <a class="btn btn-secondary" href="${BOOK.search}" target="_blank" rel="noopener">${esc(b.allEditions)}</a>
+            <h2 class="section-title reveal">${esc(b.heading)}</h2>
+            <p class="book-subtitle reveal">${esc(b.subtitle)}</p>
+            <p class="lead reveal">${esc(b.text)}</p>
+            <!-- TODO: añadir "De Politieke File" como segundo libro cuando se publique -->
+            <div class="book-entry reveal">
+                <h3>Enterprise Thinking</h3>
+                <p class="book-tag">${esc(bp.subtitle)}</p>
+                <p>${esc(bp.aboutParas[1])}</p>
+                <p class="book-meta">${esc(bp.facts.publishedValue)} · ${esc(bp.facts.formatsValue)} · ${ed.pages} ${esc(bp.pagesUnit)}</p>
+                <div class="btn-row">
+                    <a class="btn btn-primary" href="${amazon(lang)}" target="_blank" rel="noopener">${esc(b.buy)}</a>
+                </div>
+                <p class="editions-line">${esc(bp.editionsHeading)}: ${LANGS.map(l =>
+                    `<a href="${amazon(l)}" target="_blank" rel="noopener">${esc(bp.editions[l])}</a>`).join(' · ')}</p>
             </div>
-            <!-- TODO: si existe un capítulo de muestra, añadir aquí el botón "Download a sample chapter" (y en ES/NL) -->
-            <dl class="facts">
-                <dt>${esc(fct.author)}</dt><dd>Alex Fialka</dd>
-                <dt>${esc(fct.published)}</dt><dd>${esc(fct.publishedValue)}</dd>
-                <dt>${esc(fct.languages)}</dt><dd>${esc(fct.languagesValue)}</dd>
-                <dt>${esc(fct.pages)}</dt><dd>${ed.pages}</dd>
-                <dt>${esc(fct.formats)}</dt><dd>${esc(fct.formatsValue)}</dd>
-                <dt>ISBN</dt><dd>${ed.isbn}</dd>
-                <dt>${esc(fct.publisher)}</dt><dd>${esc(fct.publisherValue)}</dd>
-            </dl>
         </div>
     </div>
-</section>
-
-<section class="section" id="about-the-book">
-    <div class="wrap split">
-        <h2 class="section-title reveal">${esc(b.aboutHeading)}</h2>
-        <div class="prose">
-            ${b.aboutParas.map((p, i) => `<p class="${i === 0 ? 'lead ' : ''}reveal">${esc(p)}</p>`).join('\n            ')}
-        </div>
-    </div>
-</section>
-
-<section class="quote-band">
-    <div class="wrap">
-        <blockquote class="reveal"><p>“${esc(b.quote)}”</p></blockquote>
-        <p class="tagline reveal">${esc(b.tagline)}</p>
-    </div>
-</section>
-
-<section class="section" id="what-you-will-learn">
-    <div class="wrap split">
-        <h2 class="section-title reveal">${esc(b.learnHeading)}</h2>
-        <div class="prose">
-            <p class="lead reveal">${esc(b.learnIntro)}</p>
-            <ul class="learn-list">${b.learn.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>
-            <h3 class="reveal" style="margin-top:56px;font-size:var(--fs-h3)">${esc(b.forHeading)}</h3>
-            <p class="reveal">${esc(b.forText)}</p>
+    <div class="wrap split learn">
+        <h3 class="method-title reveal">${esc(bp.learnHeading)}</h3>
+        <div>
+            <p class="lead reveal">${esc(bp.learnIntro)}</p>
+            <ul class="learn-list">${bp.learn.map(i => `<li class="reveal">${esc(i)}</li>`).join('')}</ul>
         </div>
     </div>
 </section>
 
 ${sep()}
 
-<section class="section" id="editions">
-    <div class="wrap">
-        <h2 class="section-title reveal">${esc(b.editionsHeading)}</h2>
-        <ul class="editions">${LANGS.map((l, i) => {
-            const e = BOOK.editions[l];
-            return `<li class="edition reveal" style="--i:${i}" lang="${l}">
-                <img src="/assets/img/book-cover-${l}-480.webp" width="480" height="716" alt="" loading="lazy" decoding="async">
-                <div><h3 lang="${lang}">${esc(b.editions[l])}</h3><p>${esc(e.title)}</p>
-                <p lang="${lang}">${e.pages} ${esc(b.pagesUnit)} · ISBN ${e.isbn}</p>
-                <a class="text-link" lang="${lang}" href="${amazon(l)}" target="_blank" rel="noopener">${esc(b.viewOnAmazon)}</a></div>
-            </li>`;
-        }).join('')}</ul>
-    </div>
-</section>
-
-<section class="section">
-    <div class="wrap">
-        <div class="prose">
-            <h2 class="section-title reveal">${esc(b.foundationHeading)}</h2>
-            <p class="lead reveal">${esc(b.foundationText)}</p>
-            <p class="reveal" style="margin-top:24px"><a class="text-link" href="${url(lang, 'et')}">${esc(b.foundationLink)}</a></p>
-        </div>
-    </div>
-</section>`;
-}
-
-function aboutPage(lang) {
-    const t = T[lang], a = t.aboutPage;
-    return `
-<section class="page-hero">
+<section class="section" id="about">
     <div class="wrap about-grid">
-        <figure class="portrait">${portraitImg(a.photoAlt, 'fetchpriority="high"')}</figure>
+        <figure class="portrait reveal">${portraitImg(a.photoAlt)}</figure>
         <div class="prose">
-            <h1>${esc(a.heading)}</h1>
-            <p class="role">${esc(a.role)}</p>
-            ${a.paras.map((p, i) => `<p${i === 0 ? ' class="lead"' : ''}>${esc(p)}</p>`).join('\n            ')}
-            <p class="connections">${esc(a.focus)}</p>
-            <p>${esc(a.linkedinNote)}</p>
-            <div class="btn-row" style="margin-top:36px">
-                <a class="btn btn-primary" href="${url(lang, 'contact')}">${esc(t.hero.ctaContact)}</a>
+            <h2 class="section-title reveal">${esc(a.heading)}</h2>
+            <p class="role reveal">${esc(t.aboutShort.role)}</p>
+            <p class="lead reveal">${esc(t.aboutShort.intro)}</p>
+            ${a.paras.slice(1).map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
+            <p class="connections reveal">${esc(a.focus)}</p>
+            <div class="pull-quote reveal">
+                <p class="quote-lead">${esc(a.exampleLabel)}</p>
+                <p class="example">${esc(a.example)}</p>
+            </div>
+            <div class="btn-row reveal">
                 <a class="btn btn-secondary" href="${SITE.linkedin}" target="_blank" rel="noopener">${esc(a.linkedinBtn)}</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section" id="experience">
-    <div class="wrap split">
-        <h2 class="section-title reveal">${esc(a.expHeading)}</h2>
-        <div class="prose">
-            ${a.expParas.map((p, i) => `<p class="${i === 0 ? 'lead ' : ''}reveal">${esc(p)}</p>`).join('\n            ')}
-            <div class="pull-quote reveal">
-                <p class="quote-lead">${esc(a.exampleLabel)}</p>
-                <p class="example">${esc(a.example)}</p>
-            </div>
-            <div class="btn-row reveal" style="margin-top:40px">
-                <a class="btn btn-primary" href="${SITE.linkedin}" target="_blank" rel="noopener">${esc(a.expBtn)}</a>
-                <a class="btn btn-secondary" href="${url(lang, 'et')}">${esc(t.hero.ctaEt)}</a>
-            </div>
-        </div>
-    </div>
-</section>`;
-}
-
-function contactPage(lang) {
-    const t = T[lang], c = t.contactPage;
-    return `
-<section class="page-hero">
+<section class="section section-alt" id="contact">
     <div class="wrap cta-grid">
         <div class="prose">
-            <h1>${esc(c.heading)}</h1>
-            <p class="lead" style="margin-top:28px">${esc(c.intro)}</p>
-            <p>${esc(t.cta.paras[1])}</p>
-            <p>${esc(t.cta.after)}</p>
-            <div class="signature"><p>${esc(t.cta.sign1)}</p><p>${BRAND}</p></div>
-            <dl class="contact-direct">
+            <h2 class="section-title reveal">${esc(t.cta.heading)}</h2>
+            ${t.cta.paras.map(p => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
+            <p class="cta-strong reveal">${esc(t.cta.strong)}</p>
+            <p class="reveal">${esc(t.cta.after)}</p>
+            <div class="signature reveal"><p>${esc(t.cta.sign1)}</p><p>${BRAND}</p></div>
+            <dl class="contact-direct reveal">
                 <div><dt>${esc(c.emailLabel)}</dt><dd><a href="mailto:${SITE.email}">${SITE.email}</a></dd></div>
-                <div><dt>${esc(c.linkedinLabel)}</dt><dd><a href="${SITE.linkedin}" target="_blank" rel="noopener">linkedin.com/in/alexfialka</a></dd></div>
                 <div><dt>${esc(c.phoneLabel)}</dt><dd><a href="tel:${SITE.phone}">${SITE.phoneDisplay}</a></dd></div>
+                <div><dt>${esc(c.linkedinLabel)}</dt><dd><a href="${SITE.linkedin}" target="_blank" rel="noopener">linkedin.com/in/alexfialka</a></dd></div>
                 <div><dt>&nbsp;</dt><dd class="muted">${esc(c.location)}</dd></div>
             </dl>
         </div>
-        <div>${form(lang, 'full')}</div>
+        <div class="reveal">${form(lang)}</div>
     </div>
 </section>`;
 }
@@ -853,7 +636,7 @@ ${body}
 }
 
 /* ---------- Write pages ---------- */
-const RENDER = { home: homePage, et: etPage, book: bookPage, about: aboutPage, contact: contactPage };
+const RENDER = { home: homePage };
 let count = 0;
 LANGS.forEach(lang => {
     PAGES.forEach(page => {
@@ -931,7 +714,7 @@ PAGES.forEach(page => LANGS.forEach(lang => {
     sitemap.push('  <url>', `    <loc>${abs(lang, page)}</loc>`, `    <lastmod>${TODAY}</lastmod>`);
     LANGS.forEach(l => sitemap.push(`    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(l, page)}"/>`));
     sitemap.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', page)}"/>`);
-    sitemap.push(`    <priority>${page === 'home' ? '1.0' : page === 'et' ? '0.9' : ['book', 'about', 'contact'].includes(page) ? '0.8' : '0.3'}</priority>`, '  </url>');
+    sitemap.push(`    <priority>${page === 'home' ? '1.0' : '0.3'}</priority>`, '  </url>');
 }));
 sitemap.push('</urlset>', '');
 write('sitemap.xml', sitemap.join('\n'));

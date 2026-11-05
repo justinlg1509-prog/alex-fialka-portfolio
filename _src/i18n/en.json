@@ -3,10 +3,6 @@
   "langName": "English",
   "slugs": {
     "home": "",
-    "et": "enterprise-thinking/",
-    "book": "book/",
-    "about": "about/",
-    "contact": "contact/",
     "legal": "legal-notice/",
     "privacy": "privacy/",
     "cookies": "cookies/"
@@ -15,22 +11,6 @@
     "home": {
       "title": "Fialka Enterprise Thinking — Is your organization working as one? | Alex Fialka",
       "desc": "Helping organizations improve performance by strengthening their foundations and connecting the different parts of their business. Enterprise Thinking by business architect Alex Fialka."
-    },
-    "et": {
-      "title": "What Is Enterprise Thinking? See the Whole Business | Fialka Enterprise Thinking",
-      "desc": "Enterprise Thinking starts from the results an organization wants to deliver and examines whether the whole organization is structured, connected and managed to achieve them."
-    },
-    "book": {
-      "title": "Enterprise Thinking, the book by Alex Fialka | The practical logic behind a strong enterprise",
-      "desc": "Enterprise Thinking: The practical logic behind a strong enterprise. A book by Alex Fialka, available in English, Spanish and Dutch, in print and Kindle."
-    },
-    "about": {
-      "title": "About Alex Fialka — Business Architect | Fialka Enterprise Thinking",
-      "desc": "Alex Fialka is an international business architect with more than 35 years of experience across operational, industrial, logistics and maritime environments."
-    },
-    "contact": {
-      "title": "Discuss Your Business Challenge — Fialka Enterprise Thinking",
-      "desc": "You do not need to know exactly what the problem is. Tell Alex Fialka what your organization is trying to achieve and what is getting in the way."
     },
     "legal": {
       "title": "Legal Notice — Fialka Enterprise Thinking",
@@ -131,52 +111,7 @@
     ],
     "highlight": "My objective is to make complex problems easier to understand and solve."
   },
-  "gains": {
-    "heading": "What Clients Gain",
-    "intro": "Every organization is different, so results are never promised in advance. What the approach is designed to bring:",
-    "items": [
-      "Better alignment between strategy and operations.",
-      "Clearer responsibilities across departments.",
-      "Less duplication and unnecessary administration.",
-      "Better identification of underlying causes.",
-      "Improved decision-making based on overall business impact.",
-      "More effective implementation and follow-up."
-    ]
-  },
   "etPage": {
-    "heading": "Enterprise Thinking",
-    "tagline": "See the whole business.",
-    "intro": "Enterprise Thinking begins with the organization’s vision, mission and intended results. It then examines whether the entire organization is structured, connected and managed to achieve those results.",
-    "whatHeading": "What Is Enterprise Thinking?",
-    "whatParas": [
-      "Most organizations are divided into departments, functions, management layers and individual budgets. That structure is necessary, but it can also create problems.",
-      "A department may achieve its own targets while the organization as a whole fails to achieve its objectives. A cost reduction in one department may create additional costs elsewhere.",
-      "Enterprise Thinking looks across those boundaries, at the full business chain. The objective is not merely to make individual departments more efficient. It is to improve the performance of the entire organization."
-    ],
-    "whyHeading": "Why Organizations Underperform",
-    "whyIntro": "Underperformance is rarely caused by a lack of effort or capable people. It usually develops in the spaces between departments.",
-    "causes": [
-      {
-        "title": "Departmental boundaries",
-        "text": "Each department optimizes its own part of the work. A department can meet its own targets while the organization as a whole misses its objectives."
-      },
-      {
-        "title": "Separate budgets",
-        "text": "A cost reduction in one budget can create additional costs in another. On paper, money is saved; in reality, it has only moved."
-      },
-      {
-        "title": "Conflicting priorities",
-        "text": "When departments work towards different goals, decisions take longer and problems move from one team to the next without being resolved."
-      },
-      {
-        "title": "Weak handovers",
-        "text": "Work and information pass between teams many times. A process improvement fails when the next department is not ready to receive the output."
-      },
-      {
-        "title": "Excessive reporting",
-        "text": "Every new reporting requirement takes working time away from operational staff. Management information improves while the work itself slows down."
-      }
-    ],
     "howHeading": "How the Approach Works",
     "howIntro": "A clear sequence that starts with the results the organization wants to deliver and ends by verifying that the improvements deliver them.",
     "steps": [
@@ -204,11 +139,7 @@
         "title": "Measurement and verification",
         "text": "Are the changes working in day-to-day practice, and are they delivering the intended results?"
       }
-    ],
-    "nextHeading": "Start With Your Own Organization",
-    "nextText": "The ideas behind Enterprise Thinking are set out in the book of the same name. The most useful next step, though, is a conversation about your own organization: what it is trying to achieve and what is getting in the way.",
-    "highlight1": "The objective is not to produce the most complicated model.",
-    "highlight2": "The objective is to make complexity understandable."
+    ]
   },
   "transformation": {
     "heading": "Enterprise Thinking Before Enterprise Transformation",
@@ -221,42 +152,29 @@
     ],
     "p2": "But transformation without understanding can become an expensive way of changing the wrong things.",
     "p3": "Before transforming an enterprise, we should understand it.",
-    "p4": "That is the principle behind Enterprise Thinking.",
     "closing": "Think first. Understand the whole. Then change what matters."
   },
   "bookBlock": {
     "heading": "My Books",
     "subtitle": "Sharing experience, ideas and a different way of thinking.",
     "text": "My books reflect my experience and my belief that understanding complex problems begins with asking simple questions.",
-    "explore": "Explore My Books",
-    "discover": "Discover the book",
     "buy": "Buy on Amazon"
   },
   "aboutShort": {
     "role": "Business Architect · Author",
-    "intro": "I am a Business Architect and author with more than 35 years of international experience across different industries and management disciplines.",
-    "link": "More about Alex"
+    "intro": "I am a Business Architect and author with more than 35 years of international experience across different industries and management disciplines."
   },
   "aboutPage": {
     "heading": "About Alex Fialka",
-    "role": "Business Architect · Author of Enterprise Thinking",
     "paras": [
       "I am an international business architect with more than 35 years of experience in business processes and organizational improvement across operational, industrial, logistics and maritime environments.",
       "Throughout my career, I have seen that organizations often invest considerable effort in improving individual activities without sufficiently examining how the entire business operates.",
       "This experience led me to develop and apply Enterprise Thinking: a practical approach that connects organizational objectives with the complete chain of activities needed to achieve them."
     ],
     "focus": "My focus is straightforward: understand what an organization wants to achieve, identify what prevents it from achieving those results and help develop improvements that work in practice.",
-    "linkedinNote": "For my full professional background, previous positions and qualifications, please visit my LinkedIn profile.",
     "linkedinBtn": "View LinkedIn profile",
-    "expHeading": "Experience That Supports the Approach",
-    "expParas": [
-      "Enterprise Thinking is based on practical management experience across international organizations, complex operations, business processes, risk management and organizational change.",
-      "My work has involved improving the interaction between departments, building integrated management systems, addressing operational risks and connecting management decisions with practical execution.",
-      "This experience provides the foundation for helping organizations see beyond their internal boundaries."
-    ],
     "exampleLabel": "An example",
     "example": "At Vertom, I integrated the processes of seven divisions and close to 60 operating companies into a single management system, so the group could be managed as one connected organization rather than as separate parts.",
-    "expBtn": "View Full Professional Experience on LinkedIn",
     "photoAlt": "Portrait of Alex Fialka"
   },
   "cta": {
@@ -291,22 +209,11 @@
     "mailSubject": "Fialka Enterprise Thinking — website inquiry"
   },
   "bookPage": {
-    "label": "The book",
     "subtitle": "The practical logic behind a strong enterprise",
-    "by": "by Alex Fialka",
     "facts": {
-      "author": "Author",
-      "published": "Published",
       "publishedValue": "August 2026",
-      "languages": "Languages",
-      "languagesValue": "English, Spanish and Dutch",
-      "formats": "Formats",
-      "formatsValue": "Print and Kindle",
-      "pages": "Pages",
-      "publisher": "Publisher",
-      "publisherValue": "Independently published"
+      "formatsValue": "Print and Kindle"
     },
-    "aboutHeading": "What the book is about",
     "aboutParas": [
       "What makes an enterprise strong is not one process, one system or one management model. It is the way all the pieces work together.",
       "Enterprise Thinking offers a practical way to understand an enterprise as a whole. It connects people, processes, responsibilities, information, risk, leadership, strategy and technology, making visible how these different elements influence one another.",
@@ -324,10 +231,6 @@
       "use technology and AI where they genuinely add value",
       "translate insight into sustainable change"
     ],
-    "forHeading": "Who it is for",
-    "forText": "For leaders who want to make more conscious choices for the enterprise as a whole.",
-    "quote": "Enterprise Thinking is not a fixed model or a step-by-step formula. It is a way of looking, understanding, weighing and acting.",
-    "tagline": "See the whole. Understand the connections. Make better choices. Create sustainable value.",
     "editionsHeading": "Available in three languages",
     "editions": {
       "en": "English edition",
@@ -335,18 +238,9 @@
       "nl": "Dutch edition"
     },
     "pagesUnit": "pages",
-    "isbn": "ISBN",
-    "viewOnAmazon": "View on Amazon",
-    "allEditions": "See all editions on Amazon",
-    "foundationHeading": "The foundation of Enterprise Thinking",
-    "foundationText": "The book is the foundation of Enterprise Thinking: the way of looking at organizations behind everything on this site.",
-    "foundationLink": "Explore Enterprise Thinking",
     "coverAlt": "Cover of the book Enterprise Thinking: The practical logic behind a strong enterprise, by Alex Fialka"
   },
   "contactPage": {
-    "heading": "Discuss Your Business Challenge",
-    "intro": "You do not need to know exactly what the problem is. Tell me what your organization is trying to achieve and what is getting in the way.",
-    "direct": "Or write directly",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "linkedinLabel": "LinkedIn",

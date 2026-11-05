@@ -48,6 +48,59 @@
         });
     });
 
+    /* ---------- Landing: cada sección se abre como si fuera otra página ----------
+       Nada de desplazamiento suave: el salto es instantáneo, la sección entra con
+       un fundido corto y ya completa, y la URL (#sección) admite Atrás/Adelante. */
+    const main = document.getElementById('main');
+    const navLinks = [...document.querySelectorAll('.nav-list a')];
+    const VISUALS = '.reveal, .diagram, .strike-list';
+
+    const open = (id, push) => {
+        const target = id ? document.getElementById(id) : null;
+        if (id && (!target || target === main)) return false;
+        const section = target ? target.closest('main > section') || target : main.firstElementChild;
+        section.querySelectorAll(VISUALS).forEach(el => el.classList.add('is-visible'));
+        section.classList.remove('is-entering');
+        void section.offsetWidth; // reinicia la animación si se repite la misma sección
+        section.classList.add('is-entering');
+        if (target) target.scrollIntoView({ block: 'start', behavior: 'instant' });
+        else window.scrollTo({ top: 0, behavior: 'instant' });
+        if (push) history.pushState(null, '', id ? '#' + id : location.pathname);
+        return true;
+    };
+
+    document.addEventListener('click', e => {
+        const a = e.target.closest('a[href]');
+        if (!a || !main || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        const href = new URL(a.href, location.href);
+        if (href.origin !== location.origin || href.pathname !== location.pathname) return;
+        if (open(href.hash.slice(1), href.hash !== location.hash)) {
+            e.preventDefault();
+            if (a.closest('.site-nav, .brand')) a.blur();
+        }
+    });
+    window.addEventListener('popstate', () => open(location.hash.slice(1), false));
+    // Llegada con #sección (desde las legales o una URL antigua redirigida)
+    if (main && location.hash) open(location.hash.slice(1), false);
+    if (main) main.addEventListener('animationend', e => {
+        if (e.animationName === 'page-in') e.target.classList.remove('is-entering');
+    });
+
+    // Enlace del menú activo según la sección que ocupa el centro de la pantalla
+    // (las secciones que no están en el menú, como la portada, no marcan ninguno).
+    if (main && navLinks.length && 'IntersectionObserver' in window) {
+        const byId = new Map(navLinks.map(a => [new URL(a.href).hash.slice(1), a]));
+        const spy = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                navLinks.forEach(a => a.removeAttribute('aria-current'));
+                const link = byId.get(entry.target.id);
+                if (link) link.setAttribute('aria-current', 'location');
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        main.querySelectorAll(':scope > section').forEach(s => spy.observe(s));
+    }
+
     /* ---------- Revelados al entrar en pantalla ---------- */
     const targets = document.querySelectorAll('.reveal, .diagram, .strike-list');
     if ('IntersectionObserver' in window) {
